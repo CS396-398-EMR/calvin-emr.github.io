@@ -1,2 +1,2 @@
-# calvin-emr.github.io
+# Calvin EMR Project
 Project website for CS 396/398.
