@@ -1,0 +1,1855 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>calvin-emr documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">calvin-emr documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  PatientListComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/patient-list/patient-list.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-patient-list</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./patient-list.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./patient-list.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentUser" >currentUser</a>
+                            </li>
+                            <li>
+                                <a href="#histAndPhysForm" >histAndPhysForm</a>
+                            </li>
+                            <li>
+                                <a href="#importedPatientHistory" >importedPatientHistory</a>
+                            </li>
+                            <li>
+                                <a href="#importedStudents" >importedStudents</a>
+                            </li>
+                            <li>
+                                <a href="#importErrors" >importErrors</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#patientColumns" >patientColumns</a>
+                            </li>
+                            <li>
+                                <a href="#patients" >patients</a>
+                            </li>
+                            <li>
+                                <a href="#selectedPatient" >selectedPatient</a>
+                            </li>
+                            <li>
+                                <a href="#students" >students</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#mode" >mode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                            <li>
+                                <a href="#value" >value</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createPatientHistory" >createPatientHistory</a>
+                            </li>
+                            <li>
+                                <a href="#getCurrentUser" >getCurrentUser</a>
+                            </li>
+                            <li>
+                                <a href="#getPatients" >getPatients</a>
+                            </li>
+                            <li>
+                                <a href="#goToPatient" >goToPatient</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onActionClick" >onActionClick</a>
+                            </li>
+                            <li>
+                                <a href="#openDeletePatientsDialog" >openDeletePatientsDialog</a>
+                            </li>
+                            <li>
+                                <a href="#openUploadPatientHistoryDialog" >openUploadPatientHistoryDialog</a>
+                            </li>
+                            <li>
+                                <a href="#setCurrentUser" >setCurrentUser</a>
+                            </li>
+                            <li>
+                                <a href="#startLoading" >startLoading</a>
+                            </li>
+                            <li>
+                                <a href="#stopLoading" >stopLoading</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, patientService: <a href="../injectables/PatientService.html" target="_self">PatientService</a>, dialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>patientService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PatientService.html" target="_self" >PatientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createPatientHistory"></a>
+                    <span class="name">
+                        <span ><b>createPatientHistory</b></span>
+                        <a href="#createPatientHistory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createPatientHistory(patientHistoryList: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:153</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>patientHistoryList</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCurrentUser"></a>
+                    <span class="name">
+                        <span ><b>getCurrentUser</b></span>
+                        <a href="#getCurrentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCurrentUser(uid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve a user information from the firebase with the specified uid</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPatients"></a>
+                    <span class="name">
+                        <span ><b>getPatients</b></span>
+                        <a href="#getPatients"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPatients()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="131"
+                            class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:131</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Subscribe to the firebase observable that contains patient information
+and add resulting data to the &quot;patients&quot; array</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToPatient"></a>
+                    <span class="name">
+                        <span ><b>goToPatient</b></span>
+                        <a href="#goToPatient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToPatient(event: <a href="../classes/TableEvent.html" target="_self">TableEvent</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Route to the patient page with the clicked row&#39;s patient id</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="../classes/TableEvent.html" target="_self" >TableEvent</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:54</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onActionClick"></a>
+                    <span class="name">
+                        <span ><b>onActionClick</b></span>
+                        <a href="#onActionClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onActionClick(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDeletePatientsDialog"></a>
+                    <span class="name">
+                        <span ><b>openDeletePatientsDialog</b></span>
+                        <a href="#openDeletePatientsDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDeletePatientsDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="222"
+                            class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:222</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open up the dialog for deleting patient template</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openUploadPatientHistoryDialog"></a>
+                    <span class="name">
+                        <span ><b>openUploadPatientHistoryDialog</b></span>
+                        <a href="#openUploadPatientHistoryDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openUploadPatientHistoryDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open up the dialog for uploading history and physical form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setCurrentUser"></a>
+                    <span class="name">
+                        <span ><b>setCurrentUser</b></span>
+                        <a href="#setCurrentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setCurrentUser(action: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="111"
+                            class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Set currentUser from the retrieved information.
+currentUser data is used to get the linked patient documents.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>action</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>user documents from the firebase</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startLoading"></a>
+                    <span class="name">
+                        <span ><b>startLoading</b></span>
+                        <a href="#startLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>startLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:50</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the isLoading property to true.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stopLoading"></a>
+                    <span class="name">
+                        <span ><b>stopLoading</b></span>
+                        <a href="#stopLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>stopLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:57</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the isLoading property to false.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUser"></a>
+                    <span class="name">
+                        <span ><b>currentUser</b></span>
+                        <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new User()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="histAndPhysForm"></a>
+                    <span class="name">
+                        <span ><b>histAndPhysForm</b></span>
+                        <a href="#histAndPhysForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new HistoryAndPhysical()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="importedPatientHistory"></a>
+                    <span class="name">
+                        <span ><b>importedPatientHistory</b></span>
+                        <a href="#importedPatientHistory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="importedStudents"></a>
+                    <span class="name">
+                        <span ><b>importedStudents</b></span>
+                        <a href="#importedStudents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="importErrors"></a>
+                    <span class="name">
+                        <span ><b>importErrors</b></span>
+                        <a href="#importErrors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="patientColumns"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>patientColumns</b></span>
+                        <a href="#patientColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/TableColumn.html" target="_self" >TableColumn[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new TableColumn(&quot;MRN&quot;, &quot;mrn&quot;,
+      (element: Patient) &#x3D;&gt; element.getId()),
+    new TableColumn(&quot;Patient Name&quot;, &quot;patientName&quot;,
+      (element: Patient) &#x3D;&gt; element.getLastFirstMiddleName())
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="patients"></a>
+                    <span class="name">
+                        <span ><b>patients</b></span>
+                        <a href="#patients"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Patient.html" target="_self" >Patient[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedPatient"></a>
+                    <span class="name">
+                        <span ><b>selectedPatient</b></span>
+                        <a href="#selectedPatient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="students"></a>
+                    <span class="name">
+                        <span ><b>students</b></span>
+                        <a href="#students"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >User[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/pages/patient-list/patient-list.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoading"></a>
+                    <span class="name">
+                        <span ><b>isLoading</b></span>
+                        <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:20</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Flag to indicate whether the page is loading or not.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mode"></a>
+                    <span class="name">
+                        <span ><b>mode</b></span>
+                        <a href="#mode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ProgressSpinnerMode</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;indeterminate&#x27;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:25</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The mode of the ProgressSpinner. Defaults to &#39;indeterminate&#39;.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:33</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="value"></a>
+                    <span class="name">
+                        <span ><b>value</b></span>
+                        <a href="#value"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>50</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:31</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The value of the ProgressSpinner that indicates how far the page has loaded.
+Used only with the &#39;determinate&#39; mode.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { User } from &#x27;../../type/user.type&#x27;;
+import { Patient } from &#x27;src/app/type/patient.type&#x27;;
+import { UserService } from &#x27;src/app/services/user.service&#x27;;
+import { PageComponent } from &#x27;src/app/shared/page.component&#x27;;
+import { PatientService } from &#x27;src/app/services/patient.service&#x27;;
+import { TableColumn } from &#x27;src/app/type/table-column.type&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { onAuthStateChanged, getAuth } from &#x27;firebase/auth&#x27;;
+import { ActionName, TableAction, TableEvent } from &#x27;src/app/type/table-action.enum&#x27;;
+import { FileUploadDialogComponent } from &#x27;src/app/shared/file-upload-dialog/file-upload-dialog.component&#x27;;
+import { HistoryAndPhysical } from &#x27;src/app/type/hist-and-phys.type&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { PatientListDialogComponent } from &#x27;src/app/component/patient-list-dialog/patient-list-dialog.component&#x27;;
+import { ConfirmationDialogComponent } from &#x27;src/app/shared/confirmation-dialog/confirmation-dialog.component&#x27;;
+
+@Component({
+  selector: &#x27;app-patient-list&#x27;,
+  templateUrl: &#x27;./patient-list.component.html&#x27;,
+  styleUrls: [&#x27;./patient-list.component.scss&#x27;]
+})
+export class PatientListComponent extends PageComponent implements OnInit {
+
+  currentUser &#x3D; new User();
+  patients: Patient[] &#x3D; [];
+  students: User[] &#x3D; [];
+  histAndPhysForm &#x3D; new HistoryAndPhysical();
+
+  // Variable used for accepting return value from modal
+  selectedPatient: string &#x3D; &quot;&quot;;
+
+  // Patient table configurations
+  public patientColumns: TableColumn[] &#x3D; [
+    new TableColumn(&quot;MRN&quot;, &quot;mrn&quot;,
+      (element: Patient) &#x3D;&gt; element.getId()),
+    new TableColumn(&quot;Patient Name&quot;, &quot;patientName&quot;,
+      (element: Patient) &#x3D;&gt; element.getLastFirstMiddleName())
+  ];
+
+  // Used for importing users
+  importedStudents: string[] &#x3D; [];
+  importErrors: string[] &#x3D; [];
+
+  // Used for importing history and physical form
+  importedPatientHistory: string[] &#x3D; [];
+
+  constructor(private router: Router,
+              userService: UserService, 
+              private patientService: PatientService,
+              private dialog: MatDialog) { 
+    super(userService);
+  }
+
+  ngOnInit(): void {
+    super.ngOnInit();
+    onAuthStateChanged(getAuth(), (user) &#x3D;&gt; {
+      // User login
+      if (user) {
+        this.getCurrentUser(user.uid)
+      }
+
+      // Guest login
+      else {
+        this.getCurrentUser(&quot;lNKFBDVYH5ZToKW93hviSiNFkOt2&quot;)   // TODO: remove id
+      }
+    })
+  }
+
+  onActionClick(event: any) {
+    console.log(event)
+  }
+
+  /**
+   * Route to the patient page with the clicked row&#x27;s patient id
+   * 
+   * @param {TableEvent} event 
+   */
+  goToPatient(event: TableEvent) {
+    if (event.action.name &#x3D;&#x3D; ActionName.Navigate) {
+      let patientId &#x3D; event.data  // id is passed from emr-table
+
+      // allows patient page to show appropriate patient using patientId in URL
+      this.router.navigate([&#x27;/patient&#x27;, &quot;patients&quot;, patientId]);
+    }
+    else {
+      console.error(&quot;Error in navigating to patient: event is not category &#x27;Navigate&quot;)
+    }
+  }
+
+  /**
+   * Retrieve a user information from the firebase with the specified uid
+   * 
+   * @param {string} uid 
+   */
+  getCurrentUser(uid: string) {
+    this.userService.getUser(uid)
+      .subscribe(
+        (action) &#x3D;&gt; {
+          this.setCurrentUser(action)
+        },
+        (err) &#x3D;&gt; console.error(&quot;Error loading patient data!&quot;),
+      )
+  }
+
+  /**
+   * Set currentUser from the retrieved information. 
+   * currentUser data is used to get the linked patient documents.
+   * 
+   * @param action user documents from the firebase
+   */
+  setCurrentUser(action: any) {
+    // Put JSON data into JavaScript object
+    let obj &#x3D; { id: action.payload.id, ...action.payload.data() as object };
+    Object.assign(this.currentUser, obj)
+
+    // Get each patient that the user has
+    if (this.currentUser.patientIds.length &gt; 0) {
+      this.startLoading();
+      this.patients &#x3D; [];
+      this.getPatients();
+    }
+    else {
+      this.isLoading &#x3D; false;
+    }
+  }
+
+  /**
+   * Subscribe to the firebase observable that contains patient information 
+   * and add resulting data to the &quot;patients&quot; array 
+   */
+  getPatients() {
+    this.currentUser.patientIds.forEach((id) &#x3D;&gt; {
+      this.patientService.getPatient(id, &quot;patients&quot;)
+        .subscribe(
+          (action) &#x3D;&gt; {
+            let patient &#x3D; new Patient();
+            let obj &#x3D; { id: action.payload.id, ...action.payload.data() as object };
+            Object.assign(patient, obj)
+            this.patients.push(patient);
+            // console.log(&quot;patient: &quot;, patient);
+
+            if(this.patients.length &#x3D;&#x3D; this.currentUser.patientIds.length) {
+              this.stopLoading();
+            }
+          },
+          (err) &#x3D;&gt; console.error(&quot;Error loading patient data!&quot;),
+        )
+    })
+  }
+
+  // ----  operations for uploading History and Physical Form ----
+
+  createPatientHistory(patientHistoryList: string) {
+    console.log(patientHistoryList);
+    console.log(&quot;Create Patient History Test 1 - Load Data...Passed!&quot;);
+    // Ignore first row, since first row is column headers
+    let newPatientHistory &#x3D; patientHistoryList.split(&#x27;\r&#x27;).slice(1);
+    // element 0 is the MRN, and element 1 is the date of when the form was created
+    // start at element 0 and remove the MRN and Date from the remaining array
+    let mrn &#x3D; newPatientHistory.splice(0, 2)[0]
+      .split(&#x27;,&#x27;)
+      .filter(x &#x3D;&gt; x !&#x3D; &quot;&quot;)
+      .map(x &#x3D;&gt; x.trim())[1]; // the 0th element is key &quot;mrn&quot; and element 1 is the value to &quot;mrn&quot;
+
+    this.isLoading &#x3D; true;
+    console.log(&quot;Create Patient History Test 2 - Assign MRN and remove date...Passed!&quot;);
+
+    // now, newPatientHistory should only have keys starting from &quot;allergies&quot;
+    // get values from &quot;values&quot; column in .csv
+    let histAndPhysVal: string[] &#x3D; newPatientHistory.map(
+      (string) &#x3D;&gt; string.split(&quot;,&quot;)
+        .map(x &#x3D;&gt; x.trim())[1] // the value is element in position 1
+    );
+
+    let histAndPhysForm &#x3D; new HistoryAndPhysical();
+    console.log(&quot;Create Patient History Test 3 - created histAndPhysForm...Passed!&quot;);
+
+    // assign values from .csv to attributes in the histAndPhysForm Object
+    Object.keys(histAndPhysForm).forEach((key: string, index: number) &#x3D;&gt; {
+      histAndPhysForm[key] &#x3D; histAndPhysVal[index];
+    })
+    console.log(histAndPhysForm);
+    console.log(&quot;Create Patient History Test 4 - Mapped key-value pairs...Passed!&quot;);
+    console.log(mrn)
+    console.log(&quot;Create Patient History Test 5 - Retrieved MRN...Passed!&quot;)
+    // turns the histAndPhysForm object into something that Firebase can understand when pushing to firebase
+    let obj &#x3D; JSON.parse(JSON.stringify(Object.assign({}, histAndPhysForm)))
+    this.patientService.setPatient(mrn, { &quot;historyAndPhysical&quot;: obj }, &quot;patients&quot;); // upload to firebase
+    console.log(&quot;Create Patient History Test 6 - Pushing to firebase...Passed!&quot;);
+    alert(&quot;Your history and physical form has been uploaded!&quot;);
+    // Try to add data; if data is not valid, add to errors array
+    this.isLoading &#x3D; false;
+
+    // Display errors, if any
+    if (this.importErrors.length &gt; 0) {
+      let errorString &#x3D; this.importErrors.join(&quot;\n&quot;)
+      console.error(&quot;Could not import the following data:&quot;, errorString,
+        &quot;\nVerify that your file is correctly formatted and that no data is missing.&quot;)
+      // TODO: make this a dialog box
+    }
+  }
+
+  /**
+   * Open up the dialog for uploading history and physical form
+   */
+  openUploadPatientHistoryDialog() {
+    this.importErrors &#x3D; [];
+    const dialogRef &#x3D; this.dialog.open(FileUploadDialogComponent, {
+      width: &#x27;500px&#x27;,
+      data: { title: &quot;Import History and Physical&quot;, fileResult: this.importedPatientHistory }
+    })
+
+    // result is string, since fileReader returns string after parsing file
+    dialogRef.afterClosed().subscribe((result: string) &#x3D;&gt; {
+      this.createPatientHistory(result);
+    })
+  }
+
+  /**
+   * Open up the dialog for deleting patient template
+   */
+  openDeletePatientsDialog() {
+    // Open the dialog to select patients to delete
+    const deletePatientsDialogRef &#x3D; this.dialog.open(PatientListDialogComponent, {
+      width: &#x27;500px&#x27;,
+      data: {
+        title: &quot;Delete Patients&quot;, 
+        prompt: &quot;Select patients you wish to delete:&quot;,
+        buttonLabel: &quot;Delete Patients&quot;,
+        patients: this.patients,
+        type: &quot;student&quot;}
+    });
+
+    // If the user selected patients to delete, open a dialog to confirm deletion
+    deletePatientsDialogRef.afterClosed().subscribe((patientIds: string[]) &#x3D;&gt; {
+      if(patientIds &amp;&amp; patientIds.length &gt; 0) {
+        const confirmDeleteDialogRef &#x3D; this.dialog.open(ConfirmationDialogComponent, {
+          width: &#x27;400px&#x27;,
+          data: { 
+            title: &quot;Delete Patients&quot;, 
+            body: &quot;Are you sure you want to delete the following patients?&quot;,
+            list: patientIds
+          }
+        })
+
+        // If user confirms they want to delete patients, delete patients from database
+        //  and the user&#x27;s patientId array
+        confirmDeleteDialogRef.afterClosed().subscribe((deletePatients: boolean) &#x3D;&gt; {
+          if(deletePatients) {
+            patientIds.forEach((id) &#x3D;&gt; {
+              this.userService.deletePatientId(id);
+              this.patientService.deletePatient(id);
+            })
+          }
+        })
+      }
+    })
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+  &lt;!-- Loading indicator --&gt;
+  &lt;mat-progress-spinner *ngIf&#x3D;&quot;isLoading&quot; class&#x3D;&quot;loading-indicator&quot; [mode]&#x3D;&quot;mode&quot; [value]&#x3D;&quot;value&quot;&gt;
+  &lt;/mat-progress-spinner&gt;
+
+  &lt;div class&#x3D;&quot;patient-list-container&quot; *ngIf&#x3D;&quot;! isLoading&quot;&gt;
+    &lt;h1&gt;{{currentUser.firstName}}&#x27;s Patient List&lt;/h1&gt;
+    &lt;div class&#x3D;&quot;patient-list-header&quot;&gt;
+      &lt;div *ngIf&#x3D;&quot;isAdmin&quot;&gt;
+        &lt;button mat-raised-button [matMenuTriggerFor]&#x3D;&quot;menu&quot; aria-label&#x3D;&quot;Show actions&quot;&gt;
+          &lt;mat-icon&gt;add&lt;/mat-icon&gt;
+          &lt;span&gt;New Patient&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;mat-menu #menu&#x3D;&quot;matMenu&quot;&gt;
+          &lt;button mat-menu-item&gt;
+            &lt;mat-icon&gt; insert_drive_file&lt;/mat-icon&gt;
+            &lt;span&gt;Import Spreadsheet&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button mat-menu-item routerLink&#x3D;&quot;/create-patient&quot;&gt;
+            &lt;mat-icon&gt;edit&lt;/mat-icon&gt;
+            &lt;span&gt;Create Custom Patient&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/mat-menu&gt;
+        &lt;button mat-raised-button (click)&#x3D;&quot;openDeletePatientsDialog()&quot; aria-label&#x3D;&quot;Edit list of patients&quot; &gt;
+          Edit Patient List
+        &lt;/button&gt;
+        &lt;button mat-raised-button routerLink&#x3D;&quot;/medications&quot; aria-label&#x3D;&quot;View list of medications&quot;&gt;
+          Medication List
+        &lt;/button&gt;
+        &lt;button mat-raised-button (click)&#x3D;&quot;openUploadPatientHistoryDialog()&quot; aria-label&#x3D;&quot;Upload History and Physical&quot;&gt;
+          Upload History and Physical&lt;span class&#x3D;&quot;material-icons&quot;&gt;file_upload&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;table-container&quot;&gt;
+      &lt;app-emr-table *ngIf&#x3D;&quot;currentUser.patientIds.length &gt; 0; else noPatients&quot; [tableData]&#x3D;&quot;patients&quot;
+        [tableColumns]&#x3D;&quot;patientColumns&quot; [tableType]&#x3D;&quot;&#x27;patient-list&#x27;&quot; (rowAction)&#x3D;&quot;goToPatient($event)&quot;&gt;
+      &lt;/app-emr-table&gt;
+      &lt;ng-template #noPatients&gt;
+        &lt;h3&gt;You currently have no patients.&lt;/h3&gt;
+      &lt;/ng-template&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./patient-list.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.patient-list-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+.mat-raised-button {
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+.patient-list-header {
+  padding-top: 65px;
+  display: flex;
+  flex-direction: row;
+}
+
+table {
+  width: 75vw;
+}
+
+.mat-header-cell {
+  padding: 0 1rem 0 1rem;
+}
+
+.mat-row {
+  height: auto;
+}
+
+.mat-cell {
+  padding: 0 1rem 0 1rem;
+}
+
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="wrapper">  <!-- Loading indicator -->  <mat-progress-spinner *ngIf="isLoading" class="loading-indicator" [mode]="mode" [value]="value">  </mat-progress-spinner>  <div class="patient-list-container" *ngIf="! isLoading">    <h1>{{currentUser.firstName}}\'s Patient List</h1>    <div class="patient-list-header">      <div *ngIf="isAdmin">        <button mat-raised-button [matMenuTriggerFor]="menu" aria-label="Show actions">          <mat-icon>add</mat-icon>          <span>New Patient</span>        </button>        <mat-menu #menu="matMenu">          <button mat-menu-item>            <mat-icon> insert_drive_file</mat-icon>            <span>Import Spreadsheet</span>          </button>          <button mat-menu-item routerLink="/create-patient">            <mat-icon>edit</mat-icon>            <span>Create Custom Patient</span>          </button>        </mat-menu>        <button mat-raised-button (click)="openDeletePatientsDialog()" aria-label="Edit list of patients" >          Edit Patient List        </button>        <button mat-raised-button routerLink="/medications" aria-label="View list of medications">          Medication List        </button>        <button mat-raised-button (click)="openUploadPatientHistoryDialog()" aria-label="Upload History and Physical">          Upload History and Physical<span class="material-icons">file_upload</span>        </button>      </div>    </div>    <div class="table-container">      <app-emr-table *ngIf="currentUser.patientIds.length > 0; else noPatients" [tableData]="patients"        [tableColumns]="patientColumns" [tableType]="\'patient-list\'" (rowAction)="goToPatient($event)">      </app-emr-table>      <ng-template #noPatients>        <h3>You currently have no patients.</h3>      </ng-template>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRegistrationComponent', 'selector': 'app-user-registration'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+    var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
+    var ACTUAL_COMPONENT = {'name': 'PatientListComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PatientListComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
