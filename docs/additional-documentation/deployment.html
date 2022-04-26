@@ -51,7 +51,7 @@
 
 
 
-<h1 id="workflow">Workflow</h1>
+<h1 id="deployment">Deployment</h1>
 <h2 id="deploying-to-firebase-hosting">Deploying to Firebase Hosting</h2>
 <p>The Calvin EMR web application is hosted live on Firebase Hosting at <a href="https://calvin-emr.web.app">https://calvin-emr.web.app</a>. The app is configured with Firebase&#39;s GitHub Action feature for continuous deployment. The live site is built and deployed off of the main branch in our GitHub repository. Firebase also generates a live preview site for each pull request that is made. It is recommended to look at the pull request&#39;s preview before merging into the main branch, since the live preview shows what the actual site will look like after merging.</p>
 <p>After a branch is merged into main, Firebase automatically builds and deploys the updated application.</p>
@@ -61,30 +61,6 @@
 <p>To deploy the Cloud Functions, run the following command:</p>
 <div><pre class="line-numbers"><code class="language-none">firebase deploy --only functions</code></pre></div><p>This will run a linter on the files containing the function code to ensure the code is formatted correctly. This check may fail, so be sure to fix all errors that are displayed in the console before running the command again (luckily, the errors are pretty informational).</p>
 <p>After the code passes the formatting test, it will be packaged and deployed to Firebase. You can view the functions and the function logs under the <code>Functions</code> tab in the Firebase project.</p>
-<h2 id="generating-documentation">Generating Documentation</h2>
-<p>The documentation that you are currently looking at was generated using <a href="https://compodoc.app/">Compodoc</a>. All files are located in the <code>documentation</code> and <code>markdown</code> directories.</p>
-<h3 id="building-the-documentation-site">Building the Documentation Site</h3>
-<p>The documentation is compiled manually via npm scripts. The scripts are described below: </p>
-<ul>
-<li><p><code>npm run compodoc:build</code>: builds (or rebuilds) the static site that contains all documentation. Stores the site&#39;s files into a folder named <code>documentation</code>. Documentation is generated based on (1) JSDoc comments in the source code and (2) Markdown files in the <code>markdown</code> directory. See below for more information on both directories.</p>
-</li>
-<li><p><code>npm run compodoc:serve</code>: serves the generated documentation site on the local machine.</p>
-</li>
-<li><p><code>npm run compodoc:build-and-serve</code>: builds and serves the documentation site in sequence.</p>
-</li>
-</ul>
-<p><strong>Important: If you have changed and built the documentation in a separate branch off <code>main</code> and are looking to make a pull request, make sure to delete the <code>documentation</code> folder from your branch before creating a pull request.</strong> Otherwise, the pull request will generate several merge conflicts that take significant time to resolve. To prevent this from happening:</p>
-<ol>
-<li>Delete the <code>documentation</code> directory from your branch.</li>
-<li>Create and merge the pull request.</li>
-<li>Run <code>npm compodoc:build</code> to build your new documentation in the <code>main</code> branch.</li>
-</ol>
-<h3 id="documentation-directory"><code>documentation</code> Directory</h3>
-<p>The static site is served from this directory. This directory and its files are generated each time <code>npm run compodoc:build</code> and <code>npm run compodoc:build-and-serve</code> are run. The two commands rebuild the documentation site based on the JSDoc comments and tags in the src folder, as well as Markdown files specified in the <code>markdown</code> directory. As a result, <strong>do not place any additional files in this directory</strong>. They will be overwritten the next time the documentation is generated.</p>
-<p>If you need to extend the documentation, reference the <code>markdown</code> directory section below.</p>
-<h3 id="markdown-directory"><code>markdown</code> Directory</h3>
-<p>This is the directory to put all .md files that you wish to include under the <em>Additional Documentation</em> tab in the final static site. This directory contains the <em>summary.json</em> file, which specifies which Markdown files to compile and display in the final documentation. All of the .md files listed in <em>summary.json</em> should be placed in the <code>markdown</code> directory.</p>
-<p>You can read more about using the <em>Additional Documentation</em> tab <a href="https://compodoc.app/guides/tips-and-tricks.html#additional-documentation">here</a>.</p>
 
                    </div><div class="search-results">
     <div class="has-results">
@@ -112,7 +88,7 @@
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'additional-page';
-            var COMPODOC_CURRENT_PAGE_URL = 'workflow.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'deployment.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
