@@ -68,6 +68,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                         <a href="additional-documentation/cloud-functions.html" data-type="entity-link" data-context-id="additional">Cloud Functions</a>
                                     </li>
                                     <li class="link ">
+                                        <a href="additional-documentation/angular-cli.html" data-type="entity-link" data-context-id="additional">Angular CLI</a>
+                                    </li>
+                                    <li class="link ">
                                         <a href="additional-documentation/deployment.html" data-type="entity-link" data-context-id="additional">Deployment</a>
                                     </li>
                         </ul>
