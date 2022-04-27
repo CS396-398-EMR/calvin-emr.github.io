@@ -68,6 +68,14 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>A component to shorten the process of creating unordered lists.
+Generates an unordered list based on a passed array.</p>
+
+    </p>
 
 
     <p class="comment">
@@ -191,7 +199,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/shared/emr-list/emr-list.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/shared/emr-list/emr-list.component.ts:22</a></div>
                             </td>
                         </tr>
 
@@ -222,9 +230,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/shared/emr-list/emr-list.component.ts:11</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/shared/emr-list/emr-list.component.ts:22</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The text to display if the list is empty.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <table class="table table-sm table-bordered">
@@ -243,9 +257,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/shared/emr-list/emr-list.component.ts:10</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/shared/emr-list/emr-list.component.ts:17</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The array to render within the <ul> element (see template).</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -277,8 +297,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="15"
-                            class="link-to-prism">src/app/shared/emr-list/emr-list.component.ts:15</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/shared/emr-list/emr-list.component.ts:26</a></div>
                 </td>
             </tr>
 
@@ -316,9 +336,16 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/shared/emr-list/emr-list.component.ts:18</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/shared/emr-list/emr-list.component.ts:32</a></div>
                                 </td>
                             </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Returns whether the passed list is empty or not.</p>
+</div>
+
+                        </td>
+                    </tr>
 
             </tbody>
         </table>
@@ -329,6 +356,10 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
 
+/**
+ * A component to shorten the process of creating unordered lists.
+ * Generates an unordered list based on a passed array.
+ */
 @Component({
   selector: &#x27;emr-list&#x27;,
   templateUrl: &#x27;./emr-list.component.html&#x27;,
@@ -336,14 +367,24 @@
 })
 export class EmrListComponent implements OnInit {
 
-  @Input() list!: any[];            // list to render within &lt;ul&gt;
-  @Input() emptyText: string &#x3D; &quot;None&quot;;  // text to display if list has no items
+  /**
+   * The array to render within the &lt;ul&gt; element (see template).
+   */
+  @Input() list!: any[];
+
+  /**
+   * The text to display if the list is empty.
+   */
+  @Input() emptyText: string &#x3D; &quot;None&quot;;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  /**
+   * Returns whether the passed list is empty or not.
+   */
   get isEmpty() {
     return !(this.list &amp;&amp; this.list.length &gt; 0);
   }

@@ -68,6 +68,19 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Customizable input used throughout the app (but mostly for the Nursing Assessments tab).
+Input can be rendered as a text, numerical, select, or date input.
+This component makes it simple to implement an input paired with a &quot;Within Normal Limits&quot; checkbox,
+which when checked, disables the input and fills it with a provided default value.</p>
+<p>To see examples where this component is used, visit the any of the classes that extend the
+AssessmentForm class (e.g. Neurological, Gastrointestinal, Cardiovascular).</p>
+<p>Note: WNL = &quot;Within Normal Limits&quot;</p>
+
+    </p>
 
 
     <p class="comment">
@@ -236,7 +249,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:45</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:86</a></div>
                             </td>
                         </tr>
 
@@ -267,7 +280,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:33</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:57</a></div>
                             </td>
                         </tr>
                 <tr>
@@ -294,7 +307,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:34</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:58</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -320,12 +333,12 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:34</a></div>
                             </td>
                         </tr>
                 <tr>
                     <td class="col-md-4">
-                        <div class="io-description"><p>General Inputs</p>
+                        <div class="io-description"><p>Controls whether or not to display the &quot;WNL&quot; checkbox next to the input.</p>
 </div>
                     </td>
                 </tr>
@@ -347,9 +360,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:29</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:49</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Hint that appears under the input box.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <table class="table table-sm table-bordered">
@@ -373,9 +392,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:28</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:44</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Label displayed next to the input element that describes what the input is for.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <table class="table table-sm table-bordered">
@@ -394,9 +419,16 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:39</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:73</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The maximum value that can be entered in the input.
+Only used with the &quot;number&quot; type.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <table class="table table-sm table-bordered">
@@ -415,12 +447,13 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:38</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:67</a></div>
                             </td>
                         </tr>
                 <tr>
                     <td class="col-md-4">
-                        <div class="io-description"><p>Inputs for &quot;number&quot; type</p>
+                        <div class="io-description"><p>The minimum value that can be entered in the input.
+Only used with the &quot;number&quot; type.</p>
 </div>
                     </td>
                 </tr>
@@ -447,12 +480,13 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:42</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:81</a></div>
                             </td>
                         </tr>
                 <tr>
                     <td class="col-md-4">
-                        <div class="io-description"><p>Inputs for &quot;select&quot; type</p>
+                        <div class="io-description"><p>The options to display in the list the user can select from.
+Only used with the &quot;select&quot; type.</p>
 </div>
                     </td>
                 </tr>
@@ -474,9 +508,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:30</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:54</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Text that appears at the end of the mat-input.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <table class="table table-sm table-bordered">
@@ -500,9 +540,16 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:28</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The type of HTML input to display.</p>
+<p>Available options: &quot;text&quot;, &quot;number&quot;, &quot;select&quot;, &quot;date&quot;</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <table class="table table-sm table-bordered">
@@ -521,9 +568,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:39</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Controls the width of the mat-form-field element that is displayed.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <table class="table table-sm table-bordered">
@@ -547,7 +600,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:35</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:59</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -571,9 +624,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:45</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:86</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Emits when the &quot;WNL&quot; checkbox is changed.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -604,14 +663,18 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="82"
-                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:82</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="135"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:135</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Enables the FormControl and clears its value.
+Emits the value of the wnl property for the parent to handle the
+&quot;Set All WNL&quot; checkbox display.</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -634,57 +697,28 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>ngOnChanges(changes: <a href="https://angular.io/api/core/SimpleChange" target="_blank">SimpleChange</a>)</code>
+<code>ngOnChanges()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="52"
-                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:52</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:97</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Run when the &quot;Set All WNL&quot; checkbox has been set to true, so that
+the input&#39;s value can be set to the default value.</p>
+</div>
 
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>changes</td>
-                                    <td>
-                                                <code><a href="https://angular.io/api/core/SimpleChange" target="_blank" >SimpleChange</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                    </div>
-                    <div class="io-description">
-                        
                     </div>
                 </td>
             </tr>
@@ -710,8 +744,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="49"
-                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:49</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:90</a></div>
                 </td>
             </tr>
 
@@ -747,14 +781,18 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="89"
-                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:89</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:149</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Event handler that is called whenever the input has been changed,
+if the input is the &quot;select&quot; type. This is used to toggle the
+&quot;WNL&quot; checkbox whenever the default/WNL option has been selected.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -765,6 +803,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -779,6 +818,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The value that the select input has been changed to.</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -816,14 +859,18 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="74"
-                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:74</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:122</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Disables the FormControl and sets its value to be the default value.
+Emits the value of the wnl property for the parent to handle the
+&quot;Set All WNL&quot; checkbox display.</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -853,17 +900,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="65"
-                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:65</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:108</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>toggleWNL</p>
-<p>Toggles the wnl property. Enables/disables input and autofills/clears
-default value depending on value of WNL checkbox.</p>
+                    <div class="io-description"><p>Toggles the wnl property. Enables/disables input and autofills/clears
+the default value depending on the value of WNL checkbox.</p>
 </div>
 
                     <div class="io-description">
@@ -880,10 +926,21 @@ default value depending on value of WNL checkbox.</p>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output, SimpleChange } from &#x27;@angular/core&#x27;;
-import { FormControl, FormGroup } from &#x27;@angular/forms&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { FormControl } from &#x27;@angular/forms&#x27;;
 import { FormOption } from &#x27;src/app/type/form-option.type&#x27;;
 
+/**
+ * Customizable input used throughout the app (but mostly for the Nursing Assessments tab). 
+ * Input can be rendered as a text, numerical, select, or date input. 
+ * This component makes it simple to implement an input paired with a &quot;Within Normal Limits&quot; checkbox, 
+ * which when checked, disables the input and fills it with a provided default value.
+ * 
+ * To see examples where this component is used, visit the any of the classes that extend the
+ * AssessmentForm class (e.g. Neurological, Gastrointestinal, Cardiovascular).
+ * 
+ * Note: WNL &#x3D; &quot;Within Normal Limits&quot;
+ */
 @Component({
   selector: &#x27;emr-input&#x27;,
   templateUrl: &#x27;./emr-input.component.html&#x27;,
@@ -891,16 +948,38 @@ import { FormOption } from &#x27;src/app/type/form-option.type&#x27;;
 })
 export class EmrInputComponent implements OnInit {
 
-  // Type of input control to render
-  // Available options: &quot;text&quot;, &quot;number&quot;, &quot;select&quot;, &quot;date&quot;
+  /**
+   * The type of HTML input to display.
+   * 
+   * Available options: &quot;text&quot;, &quot;number&quot;, &quot;select&quot;, &quot;date&quot;
+   */
   @Input() type: string &#x3D; &quot;&quot;;
 
   /** General Inputs */
-  @Input() hasWNL: boolean &#x3D; false;  // Boolean to control whether or not to display &quot;WNL&quot; checkbox
-  @Input() width?: string;  // Controls the width of the mat-form-field that is displayed
-  @Input() label: string &#x3D; &quot;&quot;;  // Label for user to read what input is for
-  @Input() hint?: string; // Hint that appears under the input box
-  @Input() suffix?: string; // text that appears at the end of the mat-input
+  /**
+   * Controls whether or not to display the &quot;WNL&quot; checkbox next to the input.
+   */
+  @Input() hasWNL: boolean &#x3D; false;
+
+  /**
+   * Controls the width of the mat-form-field element that is displayed.
+   */
+  @Input() width?: string;
+
+  /**
+   * Label displayed next to the input element that describes what the input is for.
+   */
+  @Input() label: string &#x3D; &quot;&quot;;
+  
+  /**
+   * Hint that appears under the input box.
+   */
+  @Input() hint?: string;
+
+  /**
+   * Text that appears at the end of the mat-input.
+   */
+  @Input() suffix?: string;
 
   /** Form control inputs */
   @Input() control: FormControl &#x3D; new FormControl();  // Form control to get value for
@@ -908,13 +987,30 @@ export class EmrInputComponent implements OnInit {
   @Input() wnl: boolean &#x3D; false;  // Boolean that is used to toggle whether input is within normal limits (WNL).
 
   /** Inputs for &quot;number&quot; type */
+  
+  /**
+   * The minimum value that can be entered in the input.
+   * Only used with the &quot;number&quot; type.
+   */
   @Input() min?: number;
+
+  /**
+   * The maximum value that can be entered in the input.
+   * Only used with the &quot;number&quot; type.
+   */
   @Input() max?: number;
 
   /** Inputs for &quot;select&quot; type */
-  @Input() options: FormOption[] &#x3D; [];  // Option list for &quot;select&quot; type
 
-  // Event emitter that emits when the &quot;WNL&quot; checkbox is changed
+  /**
+   * The options to display in the list the user can select from.
+   * Only used with the &quot;select&quot; type.
+   */
+  @Input() options: FormOption[] &#x3D; [];
+
+  /**
+   * Emits when the &quot;WNL&quot; checkbox is changed.
+   */
   @Output() wnlChange &#x3D; new EventEmitter&lt;boolean&gt;();
 
   constructor() { }
@@ -922,7 +1018,11 @@ export class EmrInputComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  ngOnChanges(changes: SimpleChange): void {
+  /**
+   * Run when the &quot;Set All WNL&quot; checkbox has been set to true, so that
+   * the input&#x27;s value can be set to the default value.
+   */
+  ngOnChanges(): void {
     if(this.hasWNL) {
       this.toggleWNL();
     }
@@ -930,10 +1030,8 @@ export class EmrInputComponent implements OnInit {
 
 
   /**
-   * toggleWNL
-   * 
    * Toggles the wnl property. Enables/disables input and autofills/clears
-   * default value depending on value of WNL checkbox.
+   * the default value depending on the value of WNL checkbox.
    */
   toggleWNL() {
     if(this.wnl) {
@@ -944,6 +1042,11 @@ export class EmrInputComponent implements OnInit {
     }
   }
 
+  /**
+   * Disables the FormControl and sets its value to be the default value.
+   * Emits the value of the wnl property for the parent to handle the
+   * &quot;Set All WNL&quot; checkbox display.
+   */
   toDefaultValue() {
     // use {onlySelf: true} to restrict validity checking to the current control,
     // rather than the entire form
@@ -952,6 +1055,11 @@ export class EmrInputComponent implements OnInit {
     this.wnlChange.emit(this.wnl);
   }
 
+  /**
+   * Enables the FormControl and clears its value.
+   * Emits the value of the wnl property for the parent to handle the
+   * &quot;Set All WNL&quot; checkbox display.
+   */
   clearControl() {
     // Enable control and clear it of any value
     this.control?.enable({onlySelf: true});
@@ -959,6 +1067,13 @@ export class EmrInputComponent implements OnInit {
     this.wnlChange.emit(this.wnl);
   }
 
+  /**
+   * Event handler that is called whenever the input has been changed,
+   * if the input is the &quot;select&quot; type. This is used to toggle the
+   * &quot;WNL&quot; checkbox whenever the default/WNL option has been selected.
+   * 
+   * @param event The value that the select input has been changed to.
+   */
   selectionChanged(event: any) {
     if(event.value &#x3D;&#x3D; this.default) {
       this.wnl &#x3D; !this.wnl;

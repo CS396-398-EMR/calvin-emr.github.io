@@ -68,6 +68,20 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Component to help manage multi-select form inputs. It generates a list
+of checkboxes, with each checkbox associated with an option and a FormControl
+that takes a boolean value. The component is compatible with &quot;Set All WNL&quot; checkboxes,
+meaning that if the checkbox group is specified to have a &quot;WNL&quot; option, it will
+enable/disable the other checkboxes if the &quot;WNL option is checked.&quot;</p>
+<p>To see examples where this component is used, visit some of the classes that extend the
+AssessmentForm class (e.g. Neurological, Genitourinary, Musculoskeletal).</p>
+<p>Note: WNL = &quot;Within Normal Limits&quot;</p>
+
+    </p>
 
 
     <p class="comment">
@@ -212,7 +226,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:28</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:68</a></div>
                             </td>
                         </tr>
 
@@ -238,12 +252,13 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:42</a></div>
                             </td>
                         </tr>
                 <tr>
                     <td class="col-md-4">
-                        <div class="io-description"><p>Form control inputs</p>
+                        <div class="io-description"><p>The value that should automatically fill the form input when &quot;Within Normal Limits&quot; (WNL)
+is checked.</p>
 </div>
                     </td>
                 </tr>
@@ -270,12 +285,13 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:21</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:53</a></div>
                             </td>
                         </tr>
                 <tr>
                     <td class="col-md-4">
-                        <div class="io-description"><p>Form group inputs (to handle multiple checkboxes)</p>
+                        <div class="io-description"><p>The FormGroup to render as checkboxes. To use this properly, the FormGroup should
+contain one or more FormControls, each initialized to a boolean value (true or false).</p>
 </div>
                     </td>
                 </tr>
@@ -302,12 +318,12 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:29</a></div>
                             </td>
                         </tr>
                 <tr>
                     <td class="col-md-4">
-                        <div class="io-description"><p>General Inputs</p>
+                        <div class="io-description"><p>Controls whether or not to display the &quot;WNL&quot; checkbox.</p>
 </div>
                     </td>
                 </tr>
@@ -334,9 +350,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:34</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Label that describes to the user what the input is for.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <table class="table table-sm table-bordered">
@@ -360,12 +382,12 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:25</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:63</a></div>
                             </td>
                         </tr>
                 <tr>
                     <td class="col-md-4">
-                        <div class="io-description"><p>The options that will be displayed</p>
+                        <div class="io-description"><p>The options that will be displayed next to the checkboxes.</p>
 </div>
                     </td>
                 </tr>
@@ -392,9 +414,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:18</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:47</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Used to toggle whether the form control is within normal limits or not.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <table class="table table-sm table-bordered">
@@ -418,9 +446,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:22</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:58</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The label to display next to the checkbox representing the default option.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -442,9 +476,15 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:28</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:68</a></div>
                             </td>
                         </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Emits when the &quot;WNL&quot; checkbox is changed.</p>
+</div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -475,14 +515,18 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="41"
-                            class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:41</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:89</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Tells the FormControl to change based on whether the WNL property is set
+or not. This runs each time the &quot;Set All WNL&quot; box is checked, and re-configures
+the component according to the value of the wnl property.</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -512,14 +556,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="32"
-                            class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:32</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:75</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Sets the components wnl property to true if the &quot;wnl&quot; checkbox defaults to being checked.</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -549,17 +595,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="51"
-                            class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:51</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/shared/emr-checkbox-group/emr-checkbox-group.component.ts:97</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>toggleWNL</p>
-<p>Toggles the wnl property. Enables/disables input and autofills/clears
-default value depending on value of WNL checkbox.</p>
+                    <div class="io-description"><p>Toggles the wnl property. Enables/disables input and autofills/clears
+the default value depending on the value of the WNL checkbox.</p>
 </div>
 
                     <div class="io-description">
@@ -580,6 +625,18 @@ default value depending on value of WNL checkbox.</p>
 import { FormGroup } from &#x27;@angular/forms&#x27;;
 import { FormOption } from &#x27;src/app/type/form-option.type&#x27;;
 
+/**
+ * Component to help manage multi-select form inputs. It generates a list
+ * of checkboxes, with each checkbox associated with an option and a FormControl
+ * that takes a boolean value. The component is compatible with &quot;Set All WNL&quot; checkboxes,
+ * meaning that if the checkbox group is specified to have a &quot;WNL&quot; option, it will 
+ * enable/disable the other checkboxes if the &quot;WNL option is checked.&quot;
+ * 
+ * To see examples where this component is used, visit some of the classes that extend the
+ * AssessmentForm class (e.g. Neurological, Genitourinary, Musculoskeletal).
+ * 
+ * Note: WNL &#x3D; &quot;Within Normal Limits&quot;
+ */
 @Component({
   selector: &#x27;emr-checkbox-group&#x27;,
   templateUrl: &#x27;./emr-checkbox-group.component.html&#x27;,
@@ -587,26 +644,57 @@ import { FormOption } from &#x27;src/app/type/form-option.type&#x27;;
 })
 export class EmrCheckboxGroupComponent implements OnInit {
 
-  /** General Inputs */
-  @Input() hasWNL: boolean &#x3D; false;  // Boolean to control whether or not to display &quot;WNL&quot; checkbox
-  @Input() label: string &#x3D; &quot;&quot;;  // Label for user to read what input is for
+  // General Inputs
 
-  /** Form control inputs */
-  @Input() default: any;  // Value that should be entered when &quot;Within Normal Limits&quot; is checked
-  @Input() wnl: boolean &#x3D; false;  // Boolean that is used to toggle whether input is within normal limits (WNL).
+  /**
+   * Controls whether or not to display the &quot;WNL&quot; checkbox.
+   */
+  @Input() hasWNL: boolean &#x3D; false;
 
-  /** Form group inputs (to handle multiple checkboxes) */
+  /**
+   * Label that describes to the user what the input is for.
+   */
+  @Input() label: string &#x3D; &quot;&quot;;
+
+  // Form control inputs
+
+  /**
+   * The value that should automatically fill the form input when &quot;Within Normal Limits&quot; (WNL)
+   * is checked.
+   */
+  @Input() default: any;
+  
+  /**
+   * Used to toggle whether the form control is within normal limits or not.
+   */
+  @Input() wnl: boolean &#x3D; false;
+
+  /**
+   * The FormGroup to render as checkboxes. To use this properly, the FormGroup should
+   * contain one or more FormControls, each initialized to a boolean value (true or false).
+   */
   @Input() group: FormGroup &#x3D; new FormGroup({});
+
+  /**
+   * The label to display next to the checkbox representing the default option.
+   */
   @Input() wnlLabel: string &#x3D; &quot;&quot;; // label for the default option
 
-  /** The options that will be displayed */
+  /**
+   * The options that will be displayed next to the checkboxes.
+   */
   @Input() options: FormOption[] &#x3D; [];
 
-  // Event emitter that emits when the &quot;WNL&quot; checkbox is changed
+  /**
+   * Emits when the &quot;WNL&quot; checkbox is changed.
+   */
   @Output() wnlChange &#x3D; new EventEmitter&lt;boolean&gt;();
 
   constructor() { }
 
+  /**
+   * Sets the components wnl property to true if the &quot;wnl&quot; checkbox defaults to being checked.
+   */
   ngOnInit(): void {
     if(this.default &#x3D;&#x3D; &quot;true&quot;) {
       this.wnl &#x3D; true;
@@ -616,15 +704,18 @@ export class EmrCheckboxGroupComponent implements OnInit {
     }
   }
 
+  /**
+   * Tells the FormControl to change based on whether the WNL property is set
+   * or not. This runs each time the &quot;Set All WNL&quot; box is checked, and re-configures
+   * the component according to the value of the wnl property.
+   */
   ngOnChanges(): void {
     this.toggleWNL();
   }
 
   /**
-   * toggleWNL
-   * 
    * Toggles the wnl property. Enables/disables input and autofills/clears
-   * default value depending on value of WNL checkbox.
+   * the default value depending on the value of the WNL checkbox.
    */
   toggleWNL() {
     if(this.wnl) {
