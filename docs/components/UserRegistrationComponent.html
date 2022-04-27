@@ -1,0 +1,940 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>calvin-emr documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">calvin-emr documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  UserRegistrationComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/user-registration/user-registration.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-user-registration</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./user-registration.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./user-registration.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#confPassword" >confPassword</a>
+                            </li>
+                            <li>
+                                <a href="#hide" >hide</a>
+                            </li>
+                            <li>
+                                <a href="#usrEmail" >usrEmail</a>
+                            </li>
+                            <li>
+                                <a href="#usrPassword" >usrPassword</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#emailRegister" >emailRegister</a>
+                            </li>
+                            <li>
+                                <a href="#getEmailErrorMessage" >getEmailErrorMessage</a>
+                            </li>
+                            <li>
+                                <a href="#getPasswordConfirmErrorMessage" >getPasswordConfirmErrorMessage</a>
+                            </li>
+                            <li>
+                                <a href="#getPasswordErrorMessage" >getPasswordErrorMessage</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#register" >register</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(auth: <a href="../injectables/AuthService.html" target="_self">AuthService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>auth</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emailRegister"></a>
+                    <span class="name">
+                        <span ><b>emailRegister</b></span>
+                        <a href="#emailRegister"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>emailRegister(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, pw: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Registration using email and password
+(Fireauth provides other means of registration as well)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>E-mail</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>pw</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Password</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEmailErrorMessage"></a>
+                    <span class="name">
+                        <span ><b>getEmailErrorMessage</b></span>
+                        <a href="#getEmailErrorMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getEmailErrorMessage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:30</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns appropriate email authentication error message.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>&quot;&quot; | &quot;You must enter a value&quot; | &quot;Not a valid email&quot;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>error message string</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPasswordConfirmErrorMessage"></a>
+                    <span class="name">
+                        <span ><b>getPasswordConfirmErrorMessage</b></span>
+                        <a href="#getPasswordConfirmErrorMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPasswordConfirmErrorMessage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns appropriate password confirmation error message.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>&quot;&quot; | &quot;You must enter a value&quot; | &quot;Passwords does not match&quot;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>error message string</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPasswordErrorMessage"></a>
+                    <span class="name">
+                        <span ><b>getPasswordErrorMessage</b></span>
+                        <a href="#getPasswordErrorMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPasswordErrorMessage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns appropriate password authentication error message.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>&quot;&quot; | &quot;You must enter a value&quot; | &quot;Not a valid length&quot;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>error message string</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="register"></a>
+                    <span class="name">
+                        <span ><b>register</b></span>
+                        <a href="#register"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>register()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Register user with entered email and password authentication.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confPassword"></a>
+                    <span class="name">
+                        <span ><b>confPassword</b></span>
+                        <a href="#confPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new FormControl(&#x27;&#x27;, [Validators.required, Validators.min(6)])</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hide"></a>
+                    <span class="name">
+                        <span ><b>hide</b></span>
+                        <a href="#hide"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="usrEmail"></a>
+                    <span class="name">
+                        <span ><b>usrEmail</b></span>
+                        <a href="#usrEmail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new FormControl(&#x27;&#x27;, [Validators.required, Validators.email])</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="usrPassword"></a>
+                    <span class="name">
+                        <span ><b>usrPassword</b></span>
+                        <a href="#usrPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new FormControl(&#x27;&#x27;, [Validators.required, Validators.min(6)])</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/pages/user-registration/user-registration.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormControl, Validators } from &#x27;@angular/forms&#x27;;
+import { AuthService } from &#x27;src/app/services/auth.service&#x27;;
+
+import {
+  getAuth,
+} from &#x27;firebase/auth&#x27;
+
+@Component({
+  selector: &#x27;app-user-registration&#x27;,
+  templateUrl: &#x27;./user-registration.component.html&#x27;,
+  styleUrls: [&#x27;./user-registration.component.scss&#x27;]
+})
+export class UserRegistrationComponent implements OnInit {
+  usrEmail &#x3D; new FormControl(&#x27;&#x27;, [Validators.required, Validators.email]);
+  usrPassword &#x3D; new FormControl(&#x27;&#x27;, [Validators.required, Validators.min(6)]);
+  confPassword &#x3D; new FormControl(&#x27;&#x27;, [Validators.required, Validators.min(6)]);
+  hide &#x3D; true;
+
+  constructor(private auth: AuthService) { }
+
+  ngOnInit(): void {
+  }
+
+  /**
+   * Returns appropriate email authentication error message.
+   * 
+   * @returns error message string
+   */
+  getEmailErrorMessage() {
+    if (this.usrEmail.hasError(&#x27;required&#x27;)) {
+      return &#x27;You must enter a value&#x27;;
+    }
+    return this.usrEmail.hasError(&#x27;email&#x27;) ? &#x27;Not a valid email&#x27; : &#x27;&#x27;;
+  }
+
+  /**
+   * Returns appropriate password authentication error message.
+   * 
+   * @returns error message string
+   */
+  getPasswordErrorMessage() {
+    if (this.usrPassword.hasError(&#x27;required&#x27;)) {
+      return &#x27;You must enter a value&#x27;;
+    }
+    return this.usrPassword.hasError(&#x27;password&#x27;) ? &#x27;Not a valid length&#x27; : &#x27;&#x27;;
+  }
+
+  /**
+   * Returns appropriate password confirmation error message.
+   * 
+   * @returns error message string
+   */
+  getPasswordConfirmErrorMessage() {
+    if (this.usrPassword.hasError(&#x27;required&#x27;)) {
+      return &#x27;You must enter a value&#x27;;
+    }
+    return this.usrPassword.hasError(&#x27;password&#x27;) ? &#x27;Passwords does not match&#x27; : &#x27;&#x27;;
+  }
+
+  /**
+   * Register user with entered email and password authentication.
+   */
+  register(): void {
+    let usrEmail &#x3D; this.usrEmail.value;
+    let usrPassword &#x3D; this.usrPassword.value;
+
+    const auth &#x3D; getAuth();
+
+    // add if-else statement to check passwords
+    this.emailRegister(usrEmail, usrPassword);
+  }
+
+  /**
+   * Registration using email and password 
+   * (Fireauth provides other means of registration as well)
+   * 
+   * @param {string} email E-mail
+   * @param {string} pw    Password
+   */
+  emailRegister(email: string, pw: string): void {
+    this.auth.emailSignup(email, pw);
+    // this.auth.login(email, pw);
+  }
+}
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+  &lt;div id&#x3D;&quot;login-form&quot;&gt;
+    &lt;mat-card class&#x3D;&quot;mat-elevation-z4&quot;&gt;
+      &lt;!-- ask for email --&gt;
+      &lt;p class&#x3D;&quot;login-text&quot;&gt;&lt;strong&gt;Username&lt;/strong&gt;&lt;/p&gt;
+      &lt;mat-form-field appearance&#x3D;&quot;fill&quot;&gt;
+        &lt;mat-label&gt;Enter your email&lt;/mat-label&gt;
+        &lt;input matInput placeholder&#x3D;&quot;abc123@students.calvin.com&quot; [formControl]&#x3D;&quot;usrEmail&quot;&gt;
+        &lt;mat-error *ngIf&#x3D;&quot;usrEmail.invalid&quot;&gt;{{getEmailErrorMessage()}}&lt;/mat-error&gt;
+      &lt;/mat-form-field&gt;
+      &lt;!-- ask for password --&gt;
+      &lt;p class&#x3D;&quot;login-text&quot;&gt;&lt;strong&gt;Password&lt;/strong&gt;&lt;/p&gt;
+      &lt;mat-form-field appearance&#x3D;&quot;fill&quot;&gt;
+        &lt;mat-label&gt;Enter your password&lt;/mat-label&gt;
+        &lt;input matInput [type]&#x3D;&quot;hide ? &#x27;password&#x27; : &#x27;text&#x27;&quot; [formControl]&#x3D;&quot;usrPassword&quot;&gt;
+        &lt;mat-error *ngIf&#x3D;&quot;usrPassword.invalid&quot;&gt;{{getPasswordErrorMessage()}}&lt;/mat-error&gt;
+        &lt;button mat-icon-button matSuffix (click)&#x3D;&quot;hide &#x3D; !hide&quot; [attr.aria-label]&#x3D;&quot;&#x27;Hide password&#x27;&quot;
+          [attr.aria-pressed]&#x3D;&quot;hide&quot;&gt;
+          &lt;mat-icon&gt;{{hide ? &#x27;visibility_off&#x27; : &#x27;visibility&#x27;}}&lt;/mat-icon&gt;
+        &lt;/button&gt;
+      &lt;/mat-form-field&gt;
+      &lt;p class&#x3D;&quot;login-text&quot;&gt;&lt;strong&gt;Confirm Password&lt;/strong&gt;&lt;/p&gt;
+      &lt;mat-form-field appearance&#x3D;&quot;fill&quot;&gt;
+        &lt;mat-label&gt;Confirm your password&lt;/mat-label&gt;
+        &lt;input matInput [type]&#x3D;&quot;hide ? &#x27;password&#x27; : &#x27;text&#x27;&quot; [formControl]&#x3D;&quot;confPassword&quot;&gt;
+        &lt;mat-error *ngIf&#x3D;&quot;confPassword.invalid&quot;&gt;{{getPasswordConfirmErrorMessage()}}&lt;/mat-error&gt;
+        &lt;button mat-icon-button matSuffix (click)&#x3D;&quot;hide &#x3D; !hide&quot; [attr.aria-label]&#x3D;&quot;&#x27;Hide password&#x27;&quot;
+          [attr.aria-pressed]&#x3D;&quot;hide&quot;&gt;
+          &lt;mat-icon&gt;{{hide ? &#x27;visibility_off&#x27; : &#x27;visibility&#x27;}}&lt;/mat-icon&gt;
+        &lt;/button&gt;
+      &lt;/mat-form-field&gt;
+      &lt;button mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;register()&quot;&gt;Register&lt;/button&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./user-registration.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#login-form {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+mat-card {
+    padding: 8%;
+  }
+
+.login-text {
+    margin-bottom: 0px;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.mat-form-field button {
+    margin-bottom: 0px;
+}
+
+button {
+    padding: 0.5em;
+    width: 51%;
+    cursor: pointer;
+    margin-left: 23%;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    white-space: pre-wrap !important;
+  }
+
+input {
+    width: 100%;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="wrapper">  <div id="login-form">    <mat-card class="mat-elevation-z4">      <!-- ask for email -->      <p class="login-text"><strong>Username</strong></p>      <mat-form-field appearance="fill">        <mat-label>Enter your email</mat-label>        <input matInput placeholder="abc123@students.calvin.com" [formControl]="usrEmail">        <mat-error *ngIf="usrEmail.invalid">{{getEmailErrorMessage()}}</mat-error>      </mat-form-field>      <!-- ask for password -->      <p class="login-text"><strong>Password</strong></p>      <mat-form-field appearance="fill">        <mat-label>Enter your password</mat-label>        <input matInput [type]="hide ? \'password\' : \'text\'" [formControl]="usrPassword">        <mat-error *ngIf="usrPassword.invalid">{{getPasswordErrorMessage()}}</mat-error>        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="\'Hide password\'"          [attr.aria-pressed]="hide">          <mat-icon>{{hide ? \'visibility_off\' : \'visibility\'}}</mat-icon>        </button>      </mat-form-field>      <p class="login-text"><strong>Confirm Password</strong></p>      <mat-form-field appearance="fill">        <mat-label>Confirm your password</mat-label>        <input matInput [type]="hide ? \'password\' : \'text\'" [formControl]="confPassword">        <mat-error *ngIf="confPassword.invalid">{{getPasswordConfirmErrorMessage()}}</mat-error>        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="\'Hide password\'"          [attr.aria-pressed]="hide">          <mat-icon>{{hide ? \'visibility_off\' : \'visibility\'}}</mat-icon>        </button>      </mat-form-field>      <button mat-raised-button color="primary" (click)="register()">Register</button>    </mat-card>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRegistrationComponent', 'selector': 'app-user-registration'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+    var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
+    var ACTUAL_COMPONENT = {'name': 'UserRegistrationComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserRegistrationComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
