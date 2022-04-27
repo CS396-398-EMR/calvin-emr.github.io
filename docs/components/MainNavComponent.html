@@ -148,6 +148,20 @@
 
 
 
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#isAdmin" >isAdmin</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
         </tbody>
     </table>
 </section>
@@ -158,12 +172,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(auth: <a href="../injectables/AuthService.html" target="_self">AuthService</a>)</code>
+<code>constructor(auth: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/main-nav/main-nav.component.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/main-nav/main-nav.component.ts:10</a></div>
                             </td>
                         </tr>
 
@@ -185,6 +199,18 @@
                                                   
                                                         <td>
                                                                         <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -230,8 +256,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="16"
-                            class="link-to-prism">src/app/main-nav/main-nav.component.ts:16</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">src/app/main-nav/main-nav.component.ts:18</a></div>
                 </td>
             </tr>
 
@@ -267,8 +293,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="13"
-                            class="link-to-prism">src/app/main-nav/main-nav.component.ts:13</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="15"
+                            class="link-to-prism">src/app/main-nav/main-nav.component.ts:15</a></div>
                 </td>
             </tr>
 
@@ -286,12 +312,40 @@
     </table>
 </section>
 
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAdmin"></a>
+                        <span class="name"><b>isAdmin</b><a href="#isAdmin"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isAdmin()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/main-nav/main-nav.component.ts:22</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
 </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { AuthService } from &#x27;../services/auth.service&#x27;;
+import { UserService } from &#x27;../services/user.service&#x27;;
 
 @Component({
   selector: &#x27;app-main-nav&#x27;,
@@ -300,13 +354,18 @@ import { AuthService } from &#x27;../services/auth.service&#x27;;
 })
 export class MainNavComponent implements OnInit {
 
-  constructor(private auth: AuthService) { }
+  constructor(private auth: AuthService,
+    private userService: UserService) { }
 
   ngOnInit(): void {
   }
 
   logout() {
     this.auth.logout();
+  }
+
+  get isAdmin() {
+    return this.userService.isCurrentUserAdmin();
   }
 }
 </code></pre>
@@ -334,27 +393,11 @@ export class MainNavComponent implements OnInit {
           class&#x3D;&quot;logo&quot;&gt;&lt;/a&gt;
       &lt;div id&#x3D;&quot;nav-button-container&quot; class&#x3D;&quot;myNav&quot;&gt;
         &lt;a mat-button routerLink&#x3D;&quot;/patients&quot;&gt;Patients&lt;/a&gt;
-        &lt;a mat-button routerLink&#x3D;&quot;/users&quot;&gt;Users&lt;/a&gt;
+        &lt;a mat-button routerLink&#x3D;&quot;/users&quot; *ngIf&#x3D;&quot;isAdmin&quot;&gt;Users&lt;/a&gt;
         &lt;a mat-button routerLink&#x3D;&quot;/about-us&quot;&gt;About&lt;/a&gt;
         &lt;a mat-button routerLink&#x3D;&quot;/login&quot; (click)&#x3D;&quot;logout()&quot;&gt;Logout&lt;/a&gt;
       &lt;/div&gt;
     &lt;/mat-toolbar&gt;
-
-    &lt;!-- &lt;mat-menu #mywork&#x3D;&quot;matMenu&quot;&gt;
-      &lt;a mat-menu-item routerLink&#x3D;&quot;/datasets&quot; class&#x3D;&quot;hov-but&quot;&gt;My Datasets&lt;/a&gt;
-      &lt;a mat-menu-item routerLink&#x3D;&quot;/models&quot; class&#x3D;&quot;hov-but&quot;&gt;My Models&lt;/a&gt;
-      &lt;a mat-menu-item routerLink&#x3D;&quot;/fits&quot; class&#x3D;&quot;hov-but&quot;&gt;My Fits&lt;/a&gt;
-    &lt;/mat-menu&gt; --&gt;
-
-    &lt;!-- Menu if they&#x27;re not logged in --&gt;
-    &lt;!-- &lt;mat-menu #account&#x3D;&quot;matMenu&quot;&gt;
-    &lt;a mat-menu-item routerLink&#x3D;&quot;/login&quot; class&#x3D;&quot;hov-but&quot; *ngIf&#x3D;&quot;!loggedIn&quot;&gt;Login&lt;/a&gt;
-    &lt;a mat-menu-item routerLink&#x3D;&quot;/register&quot; class&#x3D;&quot;hov-but&quot; *ngIf&#x3D;&quot;!loggedIn&quot;&gt;Register&lt;/a&gt;
-    &lt;a mat-menu-item routerLink&#x3D;&quot;/account&quot; class&#x3D;&quot;hov-but&quot; *ngIf&#x3D;&quot;loggedIn &amp;&amp; !isGuest&quot;&gt;My Account&lt;/a&gt;
-    &lt;a mat-menu-item routerLink&#x3D;&quot;/login&quot; (click)&#x3D;&quot;logOut()&quot; class&#x3D;&quot;hov-but&quot; *ngIf&#x3D;&quot;loggedIn&quot;&gt;Log Out&lt;/a&gt;
-    &lt;/mat-menu&gt; --&gt;
-
-    &lt;!-- Add Content Here --&gt;
     &lt;router-outlet&gt;&lt;/router-outlet&gt;
   &lt;/mat-sidenav-content&gt;
 &lt;/mat-sidenav-container&gt;</code></pre>
@@ -504,7 +547,7 @@ export class MainNavComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!-- Nav bar is 64px tall --><mat-sidenav-container class="sidenav-container">  <mat-sidenav #drawer class="sidenav" fixedInViewport>    <mat-toolbar>Menu</mat-toolbar>    <mat-nav-list>      <a mat-list-item routerLink="/login" (click)="logout(); drawer.toggle()">Logout</a>      <a mat-list-item routerLink="/users" (click)="drawer.toggle()">Users</a>      <a mat-list-item routerLink="/patients" (click)="drawer.toggle()">Patients</a>      <a mat-list-item routerLink="/about-us" (click)="drawer.toggle()">About</a>    </mat-nav-list>  </mat-sidenav>  <mat-sidenav-content>    <mat-toolbar color="primary">      <button class="drawerbutton" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>      </button>      <a id=\'emr-nav-text\' routerLink="/patients"><img src=\'../assets/logos/calvin-university-full-color-inverse.png\'          class="logo"></a>      <div id="nav-button-container" class="myNav">        <a mat-button routerLink="/patients">Patients</a>        <a mat-button routerLink="/users">Users</a>        <a mat-button routerLink="/about-us">About</a>        <a mat-button routerLink="/login" (click)="logout()">Logout</a>      </div>    </mat-toolbar>    <!-- <mat-menu #mywork="matMenu">      <a mat-menu-item routerLink="/datasets" class="hov-but">My Datasets</a>      <a mat-menu-item routerLink="/models" class="hov-but">My Models</a>      <a mat-menu-item routerLink="/fits" class="hov-but">My Fits</a>    </mat-menu> -->    <!-- Menu if they\'re not logged in -->    <!-- <mat-menu #account="matMenu">    <a mat-menu-item routerLink="/login" class="hov-but" *ngIf="!loggedIn">Login</a>    <a mat-menu-item routerLink="/register" class="hov-but" *ngIf="!loggedIn">Register</a>    <a mat-menu-item routerLink="/account" class="hov-but" *ngIf="loggedIn && !isGuest">My Account</a>    <a mat-menu-item routerLink="/login" (click)="logOut()" class="hov-but" *ngIf="loggedIn">Log Out</a>    </mat-menu> -->    <!-- Add Content Here -->    <router-outlet></router-outlet>  </mat-sidenav-content></mat-sidenav-container></div>'
+        var COMPONENT_TEMPLATE = '<div><!-- Nav bar is 64px tall --><mat-sidenav-container class="sidenav-container">  <mat-sidenav #drawer class="sidenav" fixedInViewport>    <mat-toolbar>Menu</mat-toolbar>    <mat-nav-list>      <a mat-list-item routerLink="/login" (click)="logout(); drawer.toggle()">Logout</a>      <a mat-list-item routerLink="/users" (click)="drawer.toggle()">Users</a>      <a mat-list-item routerLink="/patients" (click)="drawer.toggle()">Patients</a>      <a mat-list-item routerLink="/about-us" (click)="drawer.toggle()">About</a>    </mat-nav-list>  </mat-sidenav>  <mat-sidenav-content>    <mat-toolbar color="primary">      <button class="drawerbutton" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>      </button>      <a id=\'emr-nav-text\' routerLink="/patients"><img src=\'../assets/logos/calvin-university-full-color-inverse.png\'          class="logo"></a>      <div id="nav-button-container" class="myNav">        <a mat-button routerLink="/patients">Patients</a>        <a mat-button routerLink="/users" *ngIf="isAdmin">Users</a>        <a mat-button routerLink="/about-us">About</a>        <a mat-button routerLink="/login" (click)="logout()">Logout</a>      </div>    </mat-toolbar>    <router-outlet></router-outlet>  </mat-sidenav-content></mat-sidenav-container></div>'
     var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRegistrationComponent', 'selector': 'app-user-registration'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
     var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
     var ACTUAL_COMPONENT = {'name': 'MainNavComponent'};

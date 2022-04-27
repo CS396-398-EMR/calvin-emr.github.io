@@ -88,11 +88,12 @@ import { LoginComponent } from &#x27;./pages/login/login.component&#x27;;
 import { UserProfileComponent } from &#x27;./pages/user-profile/user-profile.component&#x27;;
 
 // Import canActivate guards
-import { LoginGuard } from &#x27;./auth/guard/login.guard&#x27;;
-import { AuthGuard } from &#x27;./auth/guard/auth.guard&#x27;;
+import { LoginGuard } from &#x27;./guard/login.guard&#x27;;
+import { AuthGuard } from &#x27;./guard/auth.guard&#x27;;
 import { MedicationListComponent } from &#x27;./pages/medication-list/medication-list.component&#x27;;
 import { ChangePasswordComponent } from &#x27;./pages/change-password/change-password.component&#x27;;
 import { ForgotPasswordComponent } from &#x27;./pages/forgot-password/forgot-password.component&#x27;;
+import { AdminGuard } from &#x27;./guard/admin.guard&#x27;;
 
 // TODO: remove flag
 // let devMode &#x3D; false;
@@ -121,8 +122,8 @@ const appRoutes: Routes &#x3D; [
   { path: &#x27;patients&#x27;, component: PatientListComponent, canActivate: [AuthGuard] },
   { path: &#x27;users&#x27;, component: StudentListComponent, canActivate: [AuthGuard]},
   { path: &#x27;patient/:collection/:id&#x27;, component: PatientDashboardComponent, canActivate: [AuthGuard] },
-  { path: &#x27;create-patient&#x27;, component: CreatePatientComponent },
-  { path: &#x27;medications&#x27;, component: MedicationListComponent},
+  { path: &#x27;create-patient&#x27;, component: CreatePatientComponent, canActivate: [AdminGuard] },
+  { path: &#x27;medications&#x27;, component: MedicationListComponent, canActivate: [AdminGuard]},
   { path: &#x27;registration&#x27;, component: UserRegistrationComponent},
   { path: &#x27;profile&#x27;, component: UserProfileComponent},
   { path: &#x27;user-profile&#x27;, component: UserProfileComponent, canActivate: [AuthGuard] },

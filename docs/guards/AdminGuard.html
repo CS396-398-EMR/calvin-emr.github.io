@@ -42,7 +42,7 @@
 
 <ol class="breadcrumb">
     <li>Guards</li>
-    <li >AuthGuard</li>
+    <li >AdminGuard</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -60,7 +60,7 @@
             <h3>File</h3>
             </p>
             <p class="comment">
-                <code>src/app/guard/auth.guard.ts</code>
+                <code>src/app/guard/admin.guard.ts</code>
             </p>
 
 
@@ -82,11 +82,11 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#authService" >authService</a>
+                                <a href="#router" >router</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#router" >router</a>
+                                <a href="#userService" >userService</a>
                             </li>
                         </ul>
                     </td>
@@ -104,7 +104,7 @@
                                 <a href="#canActivate" >canActivate</a>
                             </li>
                             <li>
-                                <a href="#checkLogin" >checkLogin</a>
+                                <a href="#checkIsAdmin" >checkIsAdmin</a>
                             </li>
                         </ul>
                     </td>
@@ -124,12 +124,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+<code>constructor(userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/guard/auth.guard.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/guard/admin.guard.ts:9</a></div>
                             </td>
                         </tr>
 
@@ -147,10 +147,10 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>authService</td>
+                                                        <td>userService</td>
                                                   
                                                         <td>
-                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -197,15 +197,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>canActivate(next: <a href="https://angular.io/api/router/ActivatedRouteSnapshot" target="_blank">ActivatedRouteSnapshot</a>, state: <a href="https://angular.io/api/router/RouterStateSnapshot" target="_blank">RouterStateSnapshot</a>)</code>
+<code>canActivate(route: <a href="https://angular.io/api/router/ActivatedRouteSnapshot" target="_blank">ActivatedRouteSnapshot</a>, state: <a href="https://angular.io/api/router/RouterStateSnapshot" target="_blank">RouterStateSnapshot</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="15"
-                            class="link-to-prism">src/app/guard/auth.guard.ts:15</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="16"
+                            class="link-to-prism">src/app/guard/admin.guard.ts:16</a></div>
                 </td>
             </tr>
 
@@ -226,7 +226,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>next</td>
+                                    <td>route</td>
                                     <td>
                                                 <code><a href="https://angular.io/api/router/ActivatedRouteSnapshot" target="_blank" >ActivatedRouteSnapshot</a></code>
                                     </td>
@@ -255,7 +255,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>    <code> | UrlTree</code>
+                        <b>Returns : </b>    <code>Observable | Promise | boolean | UrlTree</code>
 
                     </div>
                     <div class="io-description">
@@ -269,24 +269,24 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="checkLogin"></a>
+                    <a name="checkIsAdmin"></a>
                     <span class="name">
-                        <span ><b>checkLogin</b></span>
-                        <a href="#checkLogin"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>checkIsAdmin</b></span>
+                        <a href="#checkIsAdmin"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>checkLogin(url: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+<code>checkIsAdmin()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="23"
-                            class="link-to-prism">src/app/guard/auth.guard.ts:23</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/guard/admin.guard.ts:22</a></div>
                 </td>
             </tr>
 
@@ -295,40 +295,8 @@
                 <td class="col-md-4">
 
                     <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>url</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                    </td>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>    <code> | UrlTree</code>
-
-                    </div>
-                    <div class="io-description">
-                        
                     </div>
                 </td>
             </tr>
@@ -340,35 +308,33 @@
 
         <div class="tab-pane fade  tab-source-code" id="c-source">
             <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
-import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree, Router } from &#x27;@angular/router&#x27;;
-import { AuthService } from &#x27;src/app/services/auth.service&#x27;;
+import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from &#x27;@angular/router&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { UserService } from &#x27;../services/user.service&#x27;;
 
 @Injectable({
   providedIn: &#x27;root&#x27;
 })
-export class AuthGuard implements CanActivate {
+export class AdminGuard implements CanActivate {
 
   constructor(
-    public authService: AuthService,
+    public userService: UserService,
     public router: Router
   ) { }
-  
-  canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): true | UrlTree {
-    const url: string &#x3D; state.url;
 
-    return this.checkLogin(url);
+  canActivate(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot): Observable&lt;boolean | UrlTree&gt; | Promise&lt;boolean | UrlTree&gt; | boolean | UrlTree {
+    return this.checkIsAdmin();
   }
 
-  checkLogin(url: string): true | UrlTree {
-    if (this.authService.isLoggedIn) { return true; }
+  checkIsAdmin() {
+    if (this.userService.getCurrentUserRole().toLocaleLowerCase() &#x3D;&#x3D; &quot;admin&quot;) {
+      return true;
+    }
 
-    // Store the attempted URL for redirecting
-    this.authService.redirectUrl &#x3D; url;
-
-    // Redirect to the login page
-    return this.router.parseUrl(&#x27;/login&#x27;);
+    // Redirect to the Patient Dashboard page
+    return this.router.parseUrl(&#x27;/patients&#x27;);
   }
 }
 </code></pre>
@@ -411,7 +377,7 @@ export class AuthGuard implements CanActivate {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'guard';
-            var COMPODOC_CURRENT_PAGE_URL = 'AuthGuard.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'AdminGuard.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

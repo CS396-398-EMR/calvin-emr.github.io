@@ -1160,8 +1160,9 @@ import { DxFileUploaderModule, DxSchedulerModule } from &#x27;devextreme-angular
 import { AuthService } from &#x27;./services/auth.service&#x27;;
 
 // Import canActivate guards
-import { AuthGuard } from &quot;./auth/guard/auth.guard&quot;;
-import { LoginGuard } from &#x27;./auth/guard/login.guard&#x27;;
+import { AuthGuard } from &#x27;./guard/auth.guard&#x27;;
+import { LoginGuard } from &#x27;./guard/login.guard&#x27;;
+import { AdminGuard } from &#x27;./guard/admin.guard&#x27;;
 
 // Firebase
 import { AngularFireModule, FirebaseApp } from &quot;@angular/fire/compat&quot;;
@@ -1342,6 +1343,7 @@ initializeApp(firebaseConfig);
     AuthService,
     AuthGuard,
     LoginGuard,
+    AdminGuard,
     PatientService,
     MedicationService,
     UserProfileComponent,
