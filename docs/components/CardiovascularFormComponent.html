@@ -1,0 +1,2224 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>calvin-emr documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">calvin-emr documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  CardiovascularFormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-cardiovascular-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./cardiovascular-form.component.scss,<br>../assessments-tab.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./cardiovascular-form.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#extremityOptions" >extremityOptions</a>
+                            </li>
+                            <li>
+                                <a href="#generalizedPerfusionIndex" >generalizedPerfusionIndex</a>
+                            </li>
+                            <li>
+                                <a href="#generalizedPerfusionOptions" >generalizedPerfusionOptions</a>
+                            </li>
+                            <li>
+                                <a href="#heartTonesIndex" >heartTonesIndex</a>
+                            </li>
+                            <li>
+                                <a href="#heartTonesOptions" >heartTonesOptions</a>
+                            </li>
+                            <li>
+                                <a href="#leftFootIndex" >leftFootIndex</a>
+                            </li>
+                            <li>
+                                <a href="#leftHandIndex" >leftHandIndex</a>
+                            </li>
+                            <li>
+                                <a href="#lleIndex" >lleIndex</a>
+                            </li>
+                            <li>
+                                <a href="#lueIndex" >lueIndex</a>
+                            </li>
+                            <li>
+                                <a href="#pittingEdemaOptions" >pittingEdemaOptions</a>
+                            </li>
+                            <li>
+                                <a href="#pulseOptions" >pulseOptions</a>
+                            </li>
+                            <li>
+                                <a href="#rhythmIndex" >rhythmIndex</a>
+                            </li>
+                            <li>
+                                <a href="#rhythmOptions" >rhythmOptions</a>
+                            </li>
+                            <li>
+                                <a href="#rightFootIndex" >rightFootIndex</a>
+                            </li>
+                            <li>
+                                <a href="#rightHandIndex" >rightHandIndex</a>
+                            </li>
+                            <li>
+                                <a href="#rleIndex" >rleIndex</a>
+                            </li>
+                            <li>
+                                <a href="#rueIndex" >rueIndex</a>
+                            </li>
+                            <li>
+                                <a href="#allWNL" >allWNL</a>
+                            </li>
+                            <li>
+                                <a href="#controlList" >controlList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#setAllWNL" >setAllWNL</a>
+                            </li>
+                            <li>
+                                <a href="#someWNL" >someWNL</a>
+                            </li>
+                            <li>
+                                <a href="#updateAllWNL" >updateAllWNL</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#formGroup" >formGroup</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#heartTonesDefault" >heartTonesDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#rhythmDefault" >rhythmDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#pulsePatternFormControl" >pulsePatternFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#heartTonesFormControl" >heartTonesFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#rhythmFormControl" >rhythmFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#otherRhythmFormControl" >otherRhythmFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#isOtherRhythm" >isOtherRhythm</a>
+                                </li>
+                                <li>
+                                    <a href="#pittingEdemaDefault" >pittingEdemaDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#jvdFormControl" >jvdFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#gnpeFormControl" >gnpeFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#rightHandFormControl" >rightHandFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#rightFootFormControl" >rightFootFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#leftFootFormControl" >leftFootFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#leftHandFormControl" >leftHandFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#generalizedPerfusionDefault" >generalizedPerfusionDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#pulseDefault" >pulseDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#generalizedPerfusionFormControl" >generalizedPerfusionFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#capRefillFormControl" >capRefillFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#rueFormControl" >rueFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#rleFormControl" >rleFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#lueFormControl" >lueFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#lleFormControl" >lleFormControl</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formGroup"></a>
+                        <b>formGroup</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4" colspan="2">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:25</a></code>
+</div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:30</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setAllWNL"></a>
+                    <span class="name">
+                        <span ><b>setAllWNL</b></span>
+                        <a href="#setAllWNL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setAllWNL(checked: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:74</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>setAllWNL</p>
+<p>Sets all &quot;wnl&quot; properties in the controlList to the value of the &quot;All WNL&quot; box</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>checked</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>boolean that represents whether the &quot;All WNL&quot; box is checked or not</p>
+<p>Sets all &quot;wnl&quot; properties in the controlList to the value of the &quot;All WNL&quot; box</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="someWNL"></a>
+                    <span class="name">
+                        <span ><b>someWNL</b></span>
+                        <a href="#someWNL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>someWNL()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:63</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>someWNL</p>
+<p>the controlList are all true)</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>boolean indicating whether or not the &quot;WNL&quot; options in
+the controlList are all true)</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateAllWNL"></a>
+                    <span class="name">
+                        <span ><b>updateAllWNL</b></span>
+                        <a href="#updateAllWNL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateAllWNL()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:53</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>updateAllWNL</p>
+<p>Sets allWNL to true if all wnl properties in the controlList are true; otherwise,
+allWNL is set to false.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extremityOptions"></a>
+                    <span class="name">
+                        <span ><b>extremityOptions</b></span>
+                        <a href="#extremityOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;RUE&quot;),
+    new FormOption(&quot;RLE&quot;),
+    new FormOption(&quot;LUE&quot;),
+    new FormOption(&quot;LLE&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="153" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:153</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generalizedPerfusionIndex"></a>
+                    <span class="name">
+                        <span ><b>generalizedPerfusionIndex</b></span>
+                        <a href="#generalizedPerfusionIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>6</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="139" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:139</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Other</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generalizedPerfusionOptions"></a>
+                    <span class="name">
+                        <span ><b>generalizedPerfusionOptions</b></span>
+                        <a href="#generalizedPerfusionOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;Cold&quot;),
+    new FormOption(&quot;Pale&quot;),
+    new FormOption(&quot;Cyanotic&quot;),
+    new FormOption(&quot;Palpitations&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:145</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="heartTonesIndex"></a>
+                    <span class="name">
+                        <span ><b>heartTonesIndex</b></span>
+                        <a href="#heartTonesIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Heart Tones</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="heartTonesOptions"></a>
+                    <span class="name">
+                        <span ><b>heartTonesOptions</b></span>
+                        <a href="#heartTonesOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;Murmur&quot;),
+    new FormOption(&quot;Gallup&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="leftFootIndex"></a>
+                    <span class="name">
+                        <span ><b>leftFootIndex</b></span>
+                        <a href="#leftFootIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>4</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:96</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="leftHandIndex"></a>
+                    <span class="name">
+                        <span ><b>leftHandIndex</b></span>
+                        <a href="#leftHandIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>5</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:97</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lleIndex"></a>
+                    <span class="name">
+                        <span ><b>lleIndex</b></span>
+                        <a href="#lleIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>10</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="143" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:143</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lueIndex"></a>
+                    <span class="name">
+                        <span ><b>lueIndex</b></span>
+                        <a href="#lueIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>9</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="142" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:142</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pittingEdemaOptions"></a>
+                    <span class="name">
+                        <span ><b>pittingEdemaOptions</b></span>
+                        <a href="#pittingEdemaOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;1+&quot;),
+    new FormOption(&quot;2+&quot;),
+    new FormOption(&quot;3+&quot;),
+    new FormOption(&quot;4+&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:99</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pulseOptions"></a>
+                    <span class="name">
+                        <span ><b>pulseOptions</b></span>
+                        <a href="#pulseOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;+3 strong&quot;),
+    new FormOption(&quot;+2 normal&quot;),
+    new FormOption(&quot;+1 weak, thready&quot;),
+    new FormOption(&quot;0 absent&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="160" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:160</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rhythmIndex"></a>
+                    <span class="name">
+                        <span ><b>rhythmIndex</b></span>
+                        <a href="#rhythmIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rhythmOptions"></a>
+                    <span class="name">
+                        <span ><b>rhythmOptions</b></span>
+                        <a href="#rhythmOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;Atrial Fibrillation&quot;),
+    new FormOption(&quot;PVC&#x27;s&quot;),
+    new FormOption(&quot;PAC&#x27;s&quot;),
+    new FormOption(&quot;SVT&quot;),
+    new FormOption(&quot;Atrial Flutter&quot;),
+    new FormOption(&quot;Other&quot;),
+    new FormOption(&quot;NSR&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rightFootIndex"></a>
+                    <span class="name">
+                        <span ><b>rightFootIndex</b></span>
+                        <a href="#rightFootIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>3</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:95</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rightHandIndex"></a>
+                    <span class="name">
+                        <span ><b>rightHandIndex</b></span>
+                        <a href="#rightHandIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>2</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:94</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Edema</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rleIndex"></a>
+                    <span class="name">
+                        <span ><b>rleIndex</b></span>
+                        <a href="#rleIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>8</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="141" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:141</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rueIndex"></a>
+                    <span class="name">
+                        <span ><b>rueIndex</b></span>
+                        <a href="#rueIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>7</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="140" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:140</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allWNL"></a>
+                    <span class="name">
+                        <span ><b>allWNL</b></span>
+                        <a href="#allWNL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:28</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="controlList"></a>
+                    <span class="name">
+                        <span ><b>controlList</b></span>
+                        <a href="#controlList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:40</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>controlList</p>
+<p>List to store data about each control in a sub-form</p>
+<p>control: a string naming the specific control
+default: the default value of the control should &quot;WNL&quot; be true; should match the
+ &#39;value&#39; property of the default FormOption object
+wnl: whether or not the control is &quot;within normal limits&quot;</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="heartTonesDefault"></a>
+                        <span class="name"><b>heartTonesDefault</b><a href="#heartTonesDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>heartTonesDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:62</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rhythmDefault"></a>
+                        <span class="name"><b>rhythmDefault</b><a href="#rhythmDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>rhythmDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:66</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pulsePatternFormControl"></a>
+                        <span class="name"><b>pulsePatternFormControl</b><a href="#pulsePatternFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>pulsePatternFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:70</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="heartTonesFormControl"></a>
+                        <span class="name"><b>heartTonesFormControl</b><a href="#heartTonesFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>heartTonesFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:74</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rhythmFormControl"></a>
+                        <span class="name"><b>rhythmFormControl</b><a href="#rhythmFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>rhythmFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:78</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="otherRhythmFormControl"></a>
+                        <span class="name"><b>otherRhythmFormControl</b><a href="#otherRhythmFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>otherRhythmFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:82</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isOtherRhythm"></a>
+                        <span class="name"><b>isOtherRhythm</b><a href="#isOtherRhythm"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isOtherRhythm()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:86</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pittingEdemaDefault"></a>
+                        <span class="name"><b>pittingEdemaDefault</b><a href="#pittingEdemaDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>pittingEdemaDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="107" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:107</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="jvdFormControl"></a>
+                        <span class="name"><b>jvdFormControl</b><a href="#jvdFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>jvdFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:111</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gnpeFormControl"></a>
+                        <span class="name"><b>gnpeFormControl</b><a href="#gnpeFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>gnpeFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="115" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:115</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rightHandFormControl"></a>
+                        <span class="name"><b>rightHandFormControl</b><a href="#rightHandFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>rightHandFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:119</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rightFootFormControl"></a>
+                        <span class="name"><b>rightFootFormControl</b><a href="#rightFootFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>rightFootFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="123" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:123</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="leftFootFormControl"></a>
+                        <span class="name"><b>leftFootFormControl</b><a href="#leftFootFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>leftFootFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:127</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="leftHandFormControl"></a>
+                        <span class="name"><b>leftHandFormControl</b><a href="#leftHandFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>leftHandFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:131</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="generalizedPerfusionDefault"></a>
+                        <span class="name"><b>generalizedPerfusionDefault</b><a href="#generalizedPerfusionDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>generalizedPerfusionDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="167" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:167</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pulseDefault"></a>
+                        <span class="name"><b>pulseDefault</b><a href="#pulseDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>pulseDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="171" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:171</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="generalizedPerfusionFormControl"></a>
+                        <span class="name"><b>generalizedPerfusionFormControl</b><a href="#generalizedPerfusionFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>generalizedPerfusionFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="175" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:175</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="capRefillFormControl"></a>
+                        <span class="name"><b>capRefillFormControl</b><a href="#capRefillFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>capRefillFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="179" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:179</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rueFormControl"></a>
+                        <span class="name"><b>rueFormControl</b><a href="#rueFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>rueFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="183" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:183</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rleFormControl"></a>
+                        <span class="name"><b>rleFormControl</b><a href="#rleFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>rleFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="187" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:187</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lueFormControl"></a>
+                        <span class="name"><b>lueFormControl</b><a href="#lueFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>lueFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="191" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:191</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lleFormControl"></a>
+                        <span class="name"><b>lleFormControl</b><a href="#lleFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>lleFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="195" class="link-to-prism">src/app/tabs/assessments-tab/cardiovascular-form/cardiovascular-form.component.ts:195</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormControl } from &#x27;@angular/forms&#x27;;
+import { AssessmentForm } from &#x27;src/app/shared/assessment-form.component&#x27;;
+import { FormOption } from &#x27;src/app/types/form-option.type&#x27;;
+
+@Component({
+  selector: &#x27;app-cardiovascular-form&#x27;,
+  templateUrl: &#x27;./cardiovascular-form.component.html&#x27;,
+  styleUrls: [&#x27;./cardiovascular-form.component.scss&#x27;, &#x27;../assessments-tab.component.scss&#x27;]
+})
+export class CardiovascularFormComponent extends AssessmentForm implements OnInit {
+
+  constructor() { 
+    super();
+    this.controlList &#x3D; [
+      {control: &quot;heartTones&quot;, default: &quot;WNL&quot; , wnl: false},
+      {control: &quot;rhythm&quot;, default: &quot;NSR&quot;, wnl: false},
+      {control: &quot;rightHand&quot;, default: &quot;WNL&quot;, wnl: false},
+      {control: &quot;rightFoot&quot;, default: &quot;WNL&quot;, wnl: false},
+      {control: &quot;leftFoot&quot;, default: &quot;WNL&quot;, wnl: false},
+      {control: &quot;leftHand&quot;, default: &quot;WNL&quot;, wnl: false},
+      {control: &quot;generalizedPerfusion&quot;, default: &quot;WNL&quot;, wnl: false},
+      {control: &quot;rue&quot;, default: &quot;+2 normal&quot;, wnl: false},
+      {control: &quot;rle&quot;, default: &quot;+2 normal&quot;, wnl: false},
+      {control: &quot;lue&quot;, default: &quot;+2 normal&quot;, wnl: false},
+      {control: &quot;lle&quot;, default: &quot;+2 normal&quot;, wnl: false},
+    ];
+  }
+
+  ngOnInit(): void {
+    // Clear the &quot;Other Rhythm&quot; control if the user switches from &quot;Other&quot; to a different option
+    this.rhythmFormControl.valueChanges.subscribe((value: string) &#x3D;&gt; {
+      if(value !&#x3D; &quot;Other&quot;) {
+        this.otherRhythmFormControl.setValue(&#x27;&#x27;);
+      }
+    })
+  }
+
+  /**
+   * Heart Tones
+   */
+
+  heartTonesIndex &#x3D; 0;
+  rhythmIndex &#x3D; 1;
+
+  heartTonesOptions &#x3D; [
+    new FormOption(&quot;Murmur&quot;),
+    new FormOption(&quot;Gallup&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]
+
+  rhythmOptions &#x3D; [
+    new FormOption(&quot;Atrial Fibrillation&quot;),
+    new FormOption(&quot;PVC&#x27;s&quot;),
+    new FormOption(&quot;PAC&#x27;s&quot;),
+    new FormOption(&quot;SVT&quot;),
+    new FormOption(&quot;Atrial Flutter&quot;),
+    new FormOption(&quot;Other&quot;),
+    new FormOption(&quot;NSR&quot;),
+  ]
+
+  get heartTonesDefault() {
+    return this.controlList[this.heartTonesIndex].default;
+  }
+
+  get rhythmDefault() {
+    return this.controlList[this.rhythmIndex].default;
+  }
+
+  get pulsePatternFormControl(): FormControl {
+    return this.formGroup.get(&quot;heartTones.pulsePattern&quot;) as FormControl;
+  }
+
+  get heartTonesFormControl(): FormControl {
+    return this.formGroup.get(&quot;heartTones.heartTones&quot;) as FormControl;
+  }
+
+  get rhythmFormControl(): FormControl {
+    return this.formGroup.get(&quot;heartTones.rhythm&quot;) as FormControl;
+  }
+
+  get otherRhythmFormControl(): FormControl {
+    return this.formGroup.get(&quot;heartTones.otherRhythm&quot;) as FormControl;
+  }
+
+  get isOtherRhythm() {
+    return this.rhythmFormControl.value &#x3D;&#x3D; &quot;Other&quot;;
+  }
+  
+  /**
+   * Edema
+   */
+
+  rightHandIndex &#x3D; 2;
+  rightFootIndex &#x3D; 3;
+  leftFootIndex &#x3D; 4;
+  leftHandIndex &#x3D; 5;
+
+  pittingEdemaOptions &#x3D; [
+    new FormOption(&quot;1+&quot;),
+    new FormOption(&quot;2+&quot;),
+    new FormOption(&quot;3+&quot;),
+    new FormOption(&quot;4+&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]
+
+  get pittingEdemaDefault() {
+    return this.controlList[this.rightHandIndex].default;
+  }
+
+  get jvdFormControl(): FormControl {
+    return this.formGroup.get(&quot;edema.jvd&quot;) as FormControl;
+  }
+
+  get gnpeFormControl(): FormControl {
+    return this.formGroup.get(&quot;edema.gnpe&quot;) as FormControl;
+  }
+
+  get rightHandFormControl(): FormControl {
+    return this.formGroup.get(&quot;edema.pittingEdema.rightHand&quot;) as FormControl;
+  }
+
+  get rightFootFormControl(): FormControl {
+    return this.formGroup.get(&quot;edema.pittingEdema.rightFoot&quot;) as FormControl;
+  }
+
+  get leftFootFormControl(): FormControl {
+    return this.formGroup.get(&quot;edema.pittingEdema.leftFoot&quot;) as FormControl;
+  }
+
+  get leftHandFormControl(): FormControl {
+    return this.formGroup.get(&quot;edema.pittingEdema.leftHand&quot;) as FormControl;
+  }
+
+  /**
+   * Other
+   */
+
+  generalizedPerfusionIndex &#x3D; 6;
+  rueIndex &#x3D; 7;
+  rleIndex &#x3D; 8;
+  lueIndex &#x3D; 9;
+  lleIndex &#x3D; 10;
+
+  generalizedPerfusionOptions &#x3D; [
+    new FormOption(&quot;Cold&quot;),
+    new FormOption(&quot;Pale&quot;),
+    new FormOption(&quot;Cyanotic&quot;),
+    new FormOption(&quot;Palpitations&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]
+
+  extremityOptions &#x3D; [
+    new FormOption(&quot;RUE&quot;),
+    new FormOption(&quot;RLE&quot;),
+    new FormOption(&quot;LUE&quot;),
+    new FormOption(&quot;LLE&quot;),
+  ]
+
+  pulseOptions &#x3D; [
+    new FormOption(&quot;+3 strong&quot;),
+    new FormOption(&quot;+2 normal&quot;),
+    new FormOption(&quot;+1 weak, thready&quot;),
+    new FormOption(&quot;0 absent&quot;),
+  ]
+
+  get generalizedPerfusionDefault() {
+    return this.controlList[this.generalizedPerfusionIndex].default
+  }
+
+  get pulseDefault() {
+    return this.controlList[this.rueIndex].default;
+  }
+
+  get generalizedPerfusionFormControl(): FormControl {
+    return this.formGroup.get(&quot;generalizedPerfusion&quot;) as FormControl;
+  }
+
+  get capRefillFormControl(): FormControl {
+    return this.formGroup.get(&quot;capRefill&quot;) as FormControl;
+  }
+
+  get rueFormControl(): FormControl {
+    return this.formGroup.get(&quot;pulses.rue&quot;) as FormControl;
+  }
+
+  get rleFormControl(): FormControl {
+    return this.formGroup.get(&quot;pulses.rle&quot;) as FormControl;
+  }
+
+  get lueFormControl(): FormControl {
+    return this.formGroup.get(&quot;pulses.lue&quot;) as FormControl;
+  }
+
+  get lleFormControl(): FormControl {
+    return this.formGroup.get(&quot;pulses.lle&quot;) as FormControl;
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wnl-header&quot;&gt;
+  &lt;p&gt;
+    WDL: Regular rate, rhythm, SI S2, no edema, extremities warm 
+    with capillary refill less than 3 seconds.  
+    Pulses strong. No chest pain or palpations.
+  &lt;/p&gt;
+
+  &lt;mat-checkbox
+    [checked]&#x3D;&quot;allWNL&quot;
+    [indeterminate]&#x3D;&quot;someWNL()&quot;
+    (change)&#x3D;&quot;setAllWNL($event.checked)&quot;&gt;
+    All Within Normal Limits
+  &lt;/mat-checkbox&gt;
+&lt;/div&gt;
+
+&lt;div [formGroup]&#x3D;&quot;formGroup&quot; class&#x3D;&quot;form-container&quot;&gt;
+  &lt;div class&#x3D;&quot;heartTones&quot;&gt;
+    &lt;h2&gt;Heart Tones&lt;/h2&gt;
+
+    &lt;assessment-row title&#x3D;&quot;Pulse Pattern&quot;&gt;
+      &lt;emr-checkbox [control]&#x3D;&quot;pulsePatternFormControl&quot; label&#x3D;&quot;Irregular&quot;&gt;&lt;/emr-checkbox&gt;
+    &lt;/assessment-row&gt;
+    &lt;assessment-row title&#x3D;&quot;Heart Tones&quot;&gt;      
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Heart Tones&quot; [control]&#x3D;&quot;heartTonesFormControl&quot; [options]&#x3D;&quot;heartTonesOptions&quot;
+        [default]&#x3D;&quot;heartTonesDefault&quot; [(wnl)]&#x3D;&quot;this.controlList[heartTonesIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+    &lt;/assessment-row&gt;
+    &lt;assessment-row title&#x3D;&quot;Rhythm&quot;&gt;      
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Rhythm&quot; [control]&#x3D;&quot;rhythmFormControl&quot; [options]&#x3D;&quot;rhythmOptions&quot;
+        [default]&#x3D;&quot;rhythmDefault&quot; [(wnl)]&#x3D;&quot;this.controlList[rhythmIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+      &lt;emr-input *ngIf&#x3D;&quot;isOtherRhythm&quot; type&#x3D;&quot;text&quot; label&#x3D;&quot;Other&quot; [control]&#x3D;&quot;otherRhythmFormControl&quot;&gt;
+      &lt;/emr-input&gt;
+    &lt;/assessment-row&gt;
+
+  &lt;/div&gt;
+  
+  &lt;div class&#x3D;&quot;Edema&quot;&gt;
+    &lt;h2&gt;Edema&lt;/h2&gt;
+    &lt;assessment-row title&#x3D;&quot;Presence of JVD&quot;&gt;
+      &lt;emr-checkbox [control]&#x3D;&quot;jvdFormControl&quot; label&#x3D;&quot;Yes&quot;&gt;&lt;/emr-checkbox&gt;
+    &lt;/assessment-row&gt;
+    &lt;assessment-row title&#x3D;&quot;Generalized Non-Pitting Edema&quot;&gt;
+      &lt;emr-checkbox [control]&#x3D;&quot;gnpeFormControl&quot; label&#x3D;&quot;Yes&quot;&gt;&lt;/emr-checkbox&gt;
+    &lt;/assessment-row&gt;
+
+    &lt;h3&gt;Pitting Edema&lt;/h3&gt;
+    &lt;div class&#x3D;&quot;pitting-edema&quot;&gt;
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Right Hand&quot; [control]&#x3D;&quot;rightHandFormControl&quot; 
+        [options]&#x3D;&quot;pittingEdemaOptions&quot; [default]&#x3D;&quot;pittingEdemaDefault&quot; 
+        [(wnl)]&#x3D;&quot;this.controlList[rightHandIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Left Hand&quot; [control]&#x3D;&quot;leftHandFormControl&quot; 
+        [options]&#x3D;&quot;pittingEdemaOptions&quot; [default]&#x3D;&quot;pittingEdemaDefault&quot; 
+        [(wnl)]&#x3D;&quot;this.controlList[leftHandIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Right Foot&quot; [control]&#x3D;&quot;rightFootFormControl&quot; 
+        [options]&#x3D;&quot;pittingEdemaOptions&quot; [default]&#x3D;&quot;pittingEdemaDefault&quot; 
+        [(wnl)]&#x3D;&quot;this.controlList[rightFootIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Left Foot&quot; [control]&#x3D;&quot;leftFootFormControl&quot; 
+        [options]&#x3D;&quot;pittingEdemaOptions&quot; [default]&#x3D;&quot;pittingEdemaDefault&quot; 
+        [(wnl)]&#x3D;&quot;this.controlList[leftFootIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;Other&quot;&gt;
+    &lt;assessment-row title&#x3D;&quot;Generalized Perfusion&quot;&gt;      
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Generalized Perfusion&quot; [control]&#x3D;&quot;generalizedPerfusionFormControl&quot; 
+        [options]&#x3D;&quot;generalizedPerfusionOptions&quot; [default]&#x3D;&quot;generalizedPerfusionDefault&quot; 
+        [(wnl)]&#x3D;&quot;this.controlList[generalizedPerfusionIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+    &lt;/assessment-row&gt;
+    &lt;assessment-row title&#x3D;&quot;Cap Refill&quot;&gt;
+      &lt;emr-checkbox [control]&#x3D;&quot;capRefillFormControl&quot; label&#x3D;&quot;&gt; 3 seconds&quot;&gt;&lt;/emr-checkbox&gt;
+    &lt;/assessment-row&gt;
+    
+    &lt;h2&gt;Pulses&lt;/h2&gt;
+    &lt;div class&#x3D;&quot;pulses&quot;&gt;
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;RUE&quot; [control]&#x3D;&quot;rueFormControl&quot; 
+        [options]&#x3D;&quot;pulseOptions&quot; [default]&#x3D;&quot;pulseDefault&quot; 
+        [(wnl)]&#x3D;&quot;this.controlList[rueIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;LUE&quot; [control]&#x3D;&quot;lueFormControl&quot; 
+        [options]&#x3D;&quot;pulseOptions&quot; [default]&#x3D;&quot;pulseDefault&quot; 
+        [(wnl)]&#x3D;&quot;this.controlList[lueIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;RLE&quot; [control]&#x3D;&quot;rleFormControl&quot; 
+        [options]&#x3D;&quot;pulseOptions&quot; [default]&#x3D;&quot;pulseDefault&quot; 
+        [(wnl)]&#x3D;&quot;this.controlList[rleIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+      &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;LLE&quot; [control]&#x3D;&quot;lleFormControl&quot; 
+        [options]&#x3D;&quot;pulseOptions&quot; [default]&#x3D;&quot;pulseDefault&quot; 
+        [(wnl)]&#x3D;&quot;this.controlList[lleIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+      &lt;/emr-input&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./cardiovascular-form.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.pitting-edema, .pulses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+
+  emr-input {
+    margin-right: 2rem;
+  }
+}</code></pre>
+                <p class="comment">
+                    <code>../assessments-tab.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.wnl-header {
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.assessment-date {
+  margin-top: 1rem;
+}
+
+.add-assessment-btn {
+  margin-top: 1rem;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="wnl-header">  <p>    WDL: Regular rate, rhythm, SI S2, no edema, extremities warm     with capillary refill less than 3 seconds.      Pulses strong. No chest pain or palpations.  </p>  <mat-checkbox    [checked]="allWNL"    [indeterminate]="someWNL()"    (change)="setAllWNL($event.checked)">    All Within Normal Limits  </mat-checkbox></div><div [formGroup]="formGroup" class="form-container">  <div class="heartTones">    <h2>Heart Tones</h2>    <assessment-row title="Pulse Pattern">      <emr-checkbox [control]="pulsePatternFormControl" label="Irregular"></emr-checkbox>    </assessment-row>    <assessment-row title="Heart Tones">            <emr-input type="select" [hasWNL]="true" label="Heart Tones" [control]="heartTonesFormControl" [options]="heartTonesOptions"        [default]="heartTonesDefault" [(wnl)]="this.controlList[heartTonesIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>    </assessment-row>    <assessment-row title="Rhythm">            <emr-input type="select" [hasWNL]="true" label="Rhythm" [control]="rhythmFormControl" [options]="rhythmOptions"        [default]="rhythmDefault" [(wnl)]="this.controlList[rhythmIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>      <emr-input *ngIf="isOtherRhythm" type="text" label="Other" [control]="otherRhythmFormControl">      </emr-input>    </assessment-row>  </div>    <div class="Edema">    <h2>Edema</h2>    <assessment-row title="Presence of JVD">      <emr-checkbox [control]="jvdFormControl" label="Yes"></emr-checkbox>    </assessment-row>    <assessment-row title="Generalized Non-Pitting Edema">      <emr-checkbox [control]="gnpeFormControl" label="Yes"></emr-checkbox>    </assessment-row>    <h3>Pitting Edema</h3>    <div class="pitting-edema">      <emr-input type="select" [hasWNL]="true" label="Right Hand" [control]="rightHandFormControl"         [options]="pittingEdemaOptions" [default]="pittingEdemaDefault"         [(wnl)]="this.controlList[rightHandIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>      <emr-input type="select" [hasWNL]="true" label="Left Hand" [control]="leftHandFormControl"         [options]="pittingEdemaOptions" [default]="pittingEdemaDefault"         [(wnl)]="this.controlList[leftHandIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>      <emr-input type="select" [hasWNL]="true" label="Right Foot" [control]="rightFootFormControl"         [options]="pittingEdemaOptions" [default]="pittingEdemaDefault"         [(wnl)]="this.controlList[rightFootIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>      <emr-input type="select" [hasWNL]="true" label="Left Foot" [control]="leftFootFormControl"         [options]="pittingEdemaOptions" [default]="pittingEdemaDefault"         [(wnl)]="this.controlList[leftFootIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>    </div>  </div>  <div class="Other">    <assessment-row title="Generalized Perfusion">            <emr-input type="select" [hasWNL]="true" label="Generalized Perfusion" [control]="generalizedPerfusionFormControl"         [options]="generalizedPerfusionOptions" [default]="generalizedPerfusionDefault"         [(wnl)]="this.controlList[generalizedPerfusionIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>    </assessment-row>    <assessment-row title="Cap Refill">      <emr-checkbox [control]="capRefillFormControl" label="> 3 seconds"></emr-checkbox>    </assessment-row>        <h2>Pulses</h2>    <div class="pulses">      <emr-input type="select" [hasWNL]="true" label="RUE" [control]="rueFormControl"         [options]="pulseOptions" [default]="pulseDefault"         [(wnl)]="this.controlList[rueIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>      <emr-input type="select" [hasWNL]="true" label="LUE" [control]="lueFormControl"         [options]="pulseOptions" [default]="pulseDefault"         [(wnl)]="this.controlList[lueIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>      <emr-input type="select" [hasWNL]="true" label="RLE" [control]="rleFormControl"         [options]="pulseOptions" [default]="pulseDefault"         [(wnl)]="this.controlList[rleIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>      <emr-input type="select" [hasWNL]="true" label="LLE" [control]="lleFormControl"         [options]="pulseOptions" [default]="pulseDefault"         [(wnl)]="this.controlList[lleIndex].wnl" (wnlChange)="updateAllWNL()">      </emr-input>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+    var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
+    var ACTUAL_COMPONENT = {'name': 'CardiovascularFormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CardiovascularFormComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

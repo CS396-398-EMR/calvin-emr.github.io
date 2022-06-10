@@ -1,0 +1,1063 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>calvin-emr documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">calvin-emr documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  AssessmentsHistoryTabComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-assessments-history-tab</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./assessments-history-tab.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./assessments-history-tab.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#displayedColumns" >displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#selectedRow" >selectedRow</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getAssessmentDateString" >getAssessmentDateString</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#selectRow" >selectRow</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#assessments" >assessments</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#hasAssessments" >hasAssessments</a>
+                                </li>
+                                <li>
+                                    <a href="#selectedAssessmentDateString" >selectedAssessmentDateString</a>
+                                </li>
+                                <li>
+                                    <a href="#cardiovascular" >cardiovascular</a>
+                                </li>
+                                <li>
+                                    <a href="#respiratory" >respiratory</a>
+                                </li>
+                                <li>
+                                    <a href="#neurological" >neurological</a>
+                                </li>
+                                <li>
+                                    <a href="#musculoskeletal" >musculoskeletal</a>
+                                </li>
+                                <li>
+                                    <a href="#gastrointestinal" >gastrointestinal</a>
+                                </li>
+                                <li>
+                                    <a href="#genitourinary" >genitourinary</a>
+                                </li>
+                                <li>
+                                    <a href="#psychosocial" >psychosocial</a>
+                                </li>
+                                <li>
+                                    <a href="#integumentary" >integumentary</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="assessments"></a>
+                        <b>assessments</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Assessment.html" target="_self" >Assessment[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:12</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAssessmentDateString"></a>
+                    <span class="name">
+                        <span ><b>getAssessmentDateString</b></span>
+                        <a href="#getAssessmentDateString"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAssessmentDateString(assessment: <a href="../classes/Assessment.html" target="_self">Assessment</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>assessment</td>
+                                    <td>
+                                                <code><a href="../classes/Assessment.html" target="_self" >Assessment</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectRow"></a>
+                    <span class="name">
+                        <span ><b>selectRow</b></span>
+                        <a href="#selectRow"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectRow(row: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayedColumns"></a>
+                    <span class="name">
+                        <span ><b>displayedColumns</b></span>
+                        <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&quot;date/time&quot;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedRow"></a>
+                    <span class="name">
+                        <span ><b>selectedRow</b></span>
+                        <a href="#selectedRow"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasAssessments"></a>
+                        <span class="name"><b>hasAssessments</b><a href="#hasAssessments"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hasAssessments()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:33</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedAssessmentDateString"></a>
+                        <span class="name"><b>selectedAssessmentDateString</b><a href="#selectedAssessmentDateString"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>selectedAssessmentDateString()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:37</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cardiovascular"></a>
+                        <span class="name"><b>cardiovascular</b><a href="#cardiovascular"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>cardiovascular()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:44</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="respiratory"></a>
+                        <span class="name"><b>respiratory</b><a href="#respiratory"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>respiratory()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:48</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="neurological"></a>
+                        <span class="name"><b>neurological</b><a href="#neurological"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>neurological()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:52</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="musculoskeletal"></a>
+                        <span class="name"><b>musculoskeletal</b><a href="#musculoskeletal"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>musculoskeletal()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:56</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gastrointestinal"></a>
+                        <span class="name"><b>gastrointestinal</b><a href="#gastrointestinal"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>gastrointestinal()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:60</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="genitourinary"></a>
+                        <span class="name"><b>genitourinary</b><a href="#genitourinary"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>genitourinary()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:64</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="psychosocial"></a>
+                        <span class="name"><b>psychosocial</b><a href="#psychosocial"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>psychosocial()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:68</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="integumentary"></a>
+                        <span class="name"><b>integumentary</b><a href="#integumentary"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>integumentary()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/tabs/assessments-history-tab/assessments-history-tab.component.ts:72</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
+import { hour24DateOptions } from &#x27;src/app/global&#x27;;
+import { Assessment } from &#x27;src/app/types/assessment.type&#x27;;
+
+@Component({
+  selector: &#x27;app-assessments-history-tab&#x27;,
+  templateUrl: &#x27;./assessments-history-tab.component.html&#x27;,
+  styleUrls: [&#x27;./assessments-history-tab.component.scss&#x27;]
+})
+export class AssessmentsHistoryTabComponent implements OnInit {
+
+  @Input() assessments: Assessment[] &#x3D; [];
+
+  displayedColumns &#x3D; [&quot;date/time&quot;]
+  selectedRow: number &#x3D; 0;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  selectRow(row: any, index: number): void {
+    this.selectedRow &#x3D; index
+  }
+
+  getAssessmentDateString(assessment: Assessment) {
+    return assessment.date
+      .toDate()
+      .toLocaleString([], hour24DateOptions)
+      .replace(&#x27;,&#x27;, &#x27; @&#x27;); 
+  }
+
+  get hasAssessments(): boolean {
+    return this.assessments.length &gt; 0;
+  }
+
+  get selectedAssessmentDateString(): string {
+    return this.assessments[this.selectedRow].date
+      .toDate()
+      .toLocaleString([], hour24DateOptions)
+      .replace(&#x27;,&#x27;, &#x27; at&#x27;);
+  }
+
+  get cardiovascular() {
+    return this.assessments[this.selectedRow].cardiovascular;
+  }
+
+  get respiratory() {
+    return this.assessments[this.selectedRow].respiratory;
+  }
+
+  get neurological() {
+    return this.assessments[this.selectedRow].neurological;
+  }
+
+  get musculoskeletal() {
+    return this.assessments[this.selectedRow].musculoskeletal;
+  }
+
+  get gastrointestinal() {
+    return this.assessments[this.selectedRow].gastrointestinal;
+  }
+
+  get genitourinary() {
+    return this.assessments[this.selectedRow].genitourinary;
+  }
+
+  get psychosocial() {
+    return this.assessments[this.selectedRow].psychosocial;
+  }
+
+  get integumentary() {
+    return this.assessments[this.selectedRow].integumentary;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;no-assessments&quot; *ngIf&#x3D;&quot;!hasAssessments&quot;&gt;
+  &lt;h3 class&#x3D;&quot;no-assessments-text&quot;&gt;No assessments have been added!&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;main-container&quot; *ngIf&#x3D;&quot;hasAssessments&quot;&gt;
+  &lt;div class&#x3D;&quot;time-bar&quot;&gt;
+    &lt;table mat-table [dataSource]&#x3D;&quot;assessments&quot; class&#x3D;&quot;mat-elevation-z2&quot;&gt;
+      &lt;ng-container matColumnDef&#x3D;&quot;date/time&quot;&gt;
+        &lt;mat-header-cell *matHeaderCellDef&gt; Date/Time &lt;/mat-header-cell&gt;
+        &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{getAssessmentDateString(element)}} &lt;/mat-cell&gt;
+      &lt;/ng-container&gt;
+      &lt;mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/mat-header-row&gt;
+      &lt;mat-row
+        *matRowDef&#x3D;&quot;let row; columns: displayedColumns; let i &#x3D; index&quot; 
+        (click)&#x3D;&quot;selectRow(row, i)&quot; 
+        [ngClass] &#x3D; &quot;{&#x27;assessment-selected&#x27;: i &#x3D;&#x3D;&#x3D; selectedRow}&quot;&gt;
+      &lt;/mat-row&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;assessment-info&quot;&gt;
+    &lt;mat-card class&#x3D;&quot;assessment-header&quot;&gt;
+      &lt;mat-card-content&gt;
+        &lt;h3&gt;Viewing Assessment from {{selectedAssessmentDateString}}&lt;/h3&gt;
+      &lt;/mat-card-content&gt;
+    &lt;/mat-card&gt;
+    &lt;mat-accordion&gt;
+      &lt;app-expansion-panel title&#x3D;&quot;Cardiovascular&quot;&gt;
+        &lt;app-cardiovascular-info [data]&#x3D;&quot;cardiovascular&quot;&gt;&lt;/app-cardiovascular-info&gt;
+      &lt;/app-expansion-panel&gt;
+    
+      &lt;app-expansion-panel title&#x3D;&quot;Respiratory&quot;&gt;
+        &lt;app-respiratory-info [data]&#x3D;&quot;respiratory&quot;&gt;&lt;/app-respiratory-info&gt;
+      &lt;/app-expansion-panel&gt;
+    
+      &lt;app-expansion-panel title&#x3D;&quot;Neurological&quot;&gt;
+        &lt;app-neurological-info [data]&#x3D;&quot;neurological&quot;&gt;&lt;/app-neurological-info&gt;
+      &lt;/app-expansion-panel&gt;
+    
+      &lt;app-expansion-panel title&#x3D;&quot;Musculoskeletal&quot;&gt;
+        &lt;app-musculoskeletal-info [data]&#x3D;&quot;musculoskeletal&quot;&gt;&lt;/app-musculoskeletal-info&gt;
+      &lt;/app-expansion-panel&gt;
+    
+      &lt;app-expansion-panel title&#x3D;&quot;Gastrointestinal&quot;&gt;
+        &lt;app-gastrointestinal-info [data]&#x3D;&quot;gastrointestinal&quot;&gt;&lt;/app-gastrointestinal-info&gt;
+      &lt;/app-expansion-panel&gt;
+    
+      &lt;app-expansion-panel title&#x3D;&quot;Genitourinary&quot;&gt;
+        &lt;app-genitourinary-info [data]&#x3D;&quot;genitourinary&quot;&gt;&lt;/app-genitourinary-info&gt;
+      &lt;/app-expansion-panel&gt;
+    
+      &lt;app-expansion-panel title&#x3D;&quot;Psychosocial&quot;&gt;
+        &lt;app-psychosocial-info [data]&#x3D;&quot;psychosocial&quot;&gt;&lt;/app-psychosocial-info&gt;
+      &lt;/app-expansion-panel&gt;
+    
+      &lt;app-expansion-panel title&#x3D;&quot;Integumentary&quot;&gt;
+        &lt;app-integumentary-info [data]&#x3D;&quot;integumentary&quot;&gt;&lt;/app-integumentary-info&gt;
+      &lt;/app-expansion-panel&gt;
+    &lt;/mat-accordion&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./assessments-history-tab.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.no-assessments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.time-bar {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+mat-row:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.assessment-selected {
+  background-color: #ddd;
+}
+
+.assessment-selected:hover {
+  background-color: #ccc;
+}
+
+.assessment-info {
+  flex: 4;
+}
+
+.assessment-header {
+  margin-bottom: 1rem;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="no-assessments" *ngIf="!hasAssessments">  <h3 class="no-assessments-text">No assessments have been added!</h3></div><div class="main-container" *ngIf="hasAssessments">  <div class="time-bar">    <table mat-table [dataSource]="assessments" class="mat-elevation-z2">      <ng-container matColumnDef="date/time">        <mat-header-cell *matHeaderCellDef> Date/Time </mat-header-cell>        <mat-cell *matCellDef="let element"> {{getAssessmentDateString(element)}} </mat-cell>      </ng-container>      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>      <mat-row        *matRowDef="let row; columns: displayedColumns; let i = index"         (click)="selectRow(row, i)"         [ngClass] = "{\'assessment-selected\': i === selectedRow}">      </mat-row>    </table>  </div>  <div class="assessment-info">    <mat-card class="assessment-header">      <mat-card-content>        <h3>Viewing Assessment from {{selectedAssessmentDateString}}</h3>      </mat-card-content>    </mat-card>    <mat-accordion>      <app-expansion-panel title="Cardiovascular">        <app-cardiovascular-info [data]="cardiovascular"></app-cardiovascular-info>      </app-expansion-panel>          <app-expansion-panel title="Respiratory">        <app-respiratory-info [data]="respiratory"></app-respiratory-info>      </app-expansion-panel>          <app-expansion-panel title="Neurological">        <app-neurological-info [data]="neurological"></app-neurological-info>      </app-expansion-panel>          <app-expansion-panel title="Musculoskeletal">        <app-musculoskeletal-info [data]="musculoskeletal"></app-musculoskeletal-info>      </app-expansion-panel>          <app-expansion-panel title="Gastrointestinal">        <app-gastrointestinal-info [data]="gastrointestinal"></app-gastrointestinal-info>      </app-expansion-panel>          <app-expansion-panel title="Genitourinary">        <app-genitourinary-info [data]="genitourinary"></app-genitourinary-info>      </app-expansion-panel>          <app-expansion-panel title="Psychosocial">        <app-psychosocial-info [data]="psychosocial"></app-psychosocial-info>      </app-expansion-panel>          <app-expansion-panel title="Integumentary">        <app-integumentary-info [data]="integumentary"></app-integumentary-info>      </app-expansion-panel>    </mat-accordion>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+    var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
+    var ACTUAL_COMPONENT = {'name': 'AssessmentsHistoryTabComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AssessmentsHistoryTabComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

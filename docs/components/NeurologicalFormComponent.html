@@ -1,0 +1,2199 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>calvin-emr documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">calvin-emr documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  NeurologicalFormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-neurological-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./neurological-form.component.scss,<br>../assessments-tab.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./neurological-form.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#extremityStrengthOptions" >extremityStrengthOptions</a>
+                            </li>
+                            <li>
+                                <a href="#handGripsIndex" >handGripsIndex</a>
+                            </li>
+                            <li>
+                                <a href="#leftPupillaryDilationIndex" >leftPupillaryDilationIndex</a>
+                            </li>
+                            <li>
+                                <a href="#lePushPullIndex" >lePushPullIndex</a>
+                            </li>
+                            <li>
+                                <a href="#lleIndex" >lleIndex</a>
+                            </li>
+                            <li>
+                                <a href="#locIndex" >locIndex</a>
+                            </li>
+                            <li>
+                                <a href="#locOptions" >locOptions</a>
+                            </li>
+                            <li>
+                                <a href="#lueIndex" >lueIndex</a>
+                            </li>
+                            <li>
+                                <a href="#orientationOptions" >orientationOptions</a>
+                            </li>
+                            <li>
+                                <a href="#pupillaryDilationOptions" >pupillaryDilationOptions</a>
+                            </li>
+                            <li>
+                                <a href="#pupillaryResponseIndex" >pupillaryResponseIndex</a>
+                            </li>
+                            <li>
+                                <a href="#pupillaryResponseOptions" >pupillaryResponseOptions</a>
+                            </li>
+                            <li>
+                                <a href="#rightPupillaryDilationIndex" >rightPupillaryDilationIndex</a>
+                            </li>
+                            <li>
+                                <a href="#rleIndex" >rleIndex</a>
+                            </li>
+                            <li>
+                                <a href="#rueIndex" >rueIndex</a>
+                            </li>
+                            <li>
+                                <a href="#sensationOptions" >sensationOptions</a>
+                            </li>
+                            <li>
+                                <a href="#tremorsIndex" >tremorsIndex</a>
+                            </li>
+                            <li>
+                                <a href="#tremorsOptions" >tremorsOptions</a>
+                            </li>
+                            <li>
+                                <a href="#allWNL" >allWNL</a>
+                            </li>
+                            <li>
+                                <a href="#controlList" >controlList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#setAllWNL" >setAllWNL</a>
+                            </li>
+                            <li>
+                                <a href="#someWNL" >someWNL</a>
+                            </li>
+                            <li>
+                                <a href="#updateAllWNL" >updateAllWNL</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#formGroup" >formGroup</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#locDefault" >locDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#handGripsDefault" >handGripsDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#lePushPullDefault" >lePushPullDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#pupillaryResponseDefault" >pupillaryResponseDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#locFormControl" >locFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#orientationFormGroup" >orientationFormGroup</a>
+                                </li>
+                                <li>
+                                    <a href="#extremityMovementFormControl" >extremityMovementFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#handGripsFormControl" >handGripsFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#lePushPullFormControl" >lePushPullFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#pupillaryResponseFormControl" >pupillaryResponseFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#pupillaryDilationDefault" >pupillaryDilationDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#leftPupillaryDilationFormControl" >leftPupillaryDilationFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#rightPupillaryDilationFormControl" >rightPupillaryDilationFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#gcssFormControl" >gcssFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#sensationDefault" >sensationDefault</a>
+                                </li>
+                                <li>
+                                    <a href="#rueFormControl" >rueFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#rleFormControl" >rleFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#lueFormControl" >lueFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#lleFormControl" >lleFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#tremorsFormGroup" >tremorsFormGroup</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formGroup"></a>
+                        <b>formGroup</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4" colspan="2">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:25</a></code>
+</div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:30</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setAllWNL"></a>
+                    <span class="name">
+                        <span ><b>setAllWNL</b></span>
+                        <a href="#setAllWNL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setAllWNL(checked: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:74</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>setAllWNL</p>
+<p>Sets all &quot;wnl&quot; properties in the controlList to the value of the &quot;All WNL&quot; box</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>checked</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>boolean that represents whether the &quot;All WNL&quot; box is checked or not</p>
+<p>Sets all &quot;wnl&quot; properties in the controlList to the value of the &quot;All WNL&quot; box</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="someWNL"></a>
+                    <span class="name">
+                        <span ><b>someWNL</b></span>
+                        <a href="#someWNL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>someWNL()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:63</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>someWNL</p>
+<p>the controlList are all true)</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>boolean indicating whether or not the &quot;WNL&quot; options in
+the controlList are all true)</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateAllWNL"></a>
+                    <span class="name">
+                        <span ><b>updateAllWNL</b></span>
+                        <a href="#updateAllWNL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateAllWNL()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:53</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>updateAllWNL</p>
+<p>Sets allWNL to true if all wnl properties in the controlList are true; otherwise,
+allWNL is set to false.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extremityStrengthOptions"></a>
+                    <span class="name">
+                        <span ><b>extremityStrengthOptions</b></span>
+                        <a href="#extremityStrengthOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;Moderate&quot;),
+    new FormOption(&quot;Weak&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handGripsIndex"></a>
+                    <span class="name">
+                        <span ><b>handGripsIndex</b></span>
+                        <a href="#handGripsIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="leftPupillaryDilationIndex"></a>
+                    <span class="name">
+                        <span ><b>leftPupillaryDilationIndex</b></span>
+                        <a href="#leftPupillaryDilationIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>4</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:108</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Pupillary Dilation</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lePushPullIndex"></a>
+                    <span class="name">
+                        <span ><b>lePushPullIndex</b></span>
+                        <a href="#lePushPullIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>2</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lleIndex"></a>
+                    <span class="name">
+                        <span ><b>lleIndex</b></span>
+                        <a href="#lleIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>8</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:146</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="locIndex"></a>
+                    <span class="name">
+                        <span ><b>locIndex</b></span>
+                        <a href="#locIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="locOptions"></a>
+                    <span class="name">
+                        <span ><b>locOptions</b></span>
+                        <a href="#locOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;Lethargic&quot;),
+    new FormOption(&quot;Somnolent&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lueIndex"></a>
+                    <span class="name">
+                        <span ><b>lueIndex</b></span>
+                        <a href="#lueIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>9</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="147" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:147</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orientationOptions"></a>
+                    <span class="name">
+                        <span ><b>orientationOptions</b></span>
+                        <a href="#orientationOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;NOT TO person&quot;, &quot;person&quot;),
+    new FormOption(&quot;NOT TO place&quot;, &quot;place&quot;),
+    new FormOption(&quot;NOT TO time&quot;, &quot;time&quot;),
+    new FormOption(&quot;NOT TO situation&quot;, &quot;situation&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pupillaryDilationOptions"></a>
+                    <span class="name">
+                        <span ><b>pupillaryDilationOptions</b></span>
+                        <a href="#pupillaryDilationOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;2mm&quot;),
+    new FormOption(&quot;4mm&quot;),
+    new FormOption(&quot;6mm&quot;),
+    new FormOption(&quot;8mm&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:111</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pupillaryResponseIndex"></a>
+                    <span class="name">
+                        <span ><b>pupillaryResponseIndex</b></span>
+                        <a href="#pupillaryResponseIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>3</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pupillaryResponseOptions"></a>
+                    <span class="name">
+                        <span ><b>pupillaryResponseOptions</b></span>
+                        <a href="#pupillaryResponseOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;Sluggish&quot;),
+    new FormOption(&quot;Absent&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rightPupillaryDilationIndex"></a>
+                    <span class="name">
+                        <span ><b>rightPupillaryDilationIndex</b></span>
+                        <a href="#rightPupillaryDilationIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>5</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:109</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rleIndex"></a>
+                    <span class="name">
+                        <span ><b>rleIndex</b></span>
+                        <a href="#rleIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>7</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:145</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rueIndex"></a>
+                    <span class="name">
+                        <span ><b>rueIndex</b></span>
+                        <a href="#rueIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>6</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:144</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sensation</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sensationOptions"></a>
+                    <span class="name">
+                        <span ><b>sensationOptions</b></span>
+                        <a href="#sensationOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;Numbness&quot;),
+    new FormOption(&quot;Tingling&quot;),
+    new FormOption(&quot;Full sensation&quot;)
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:149</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tremorsIndex"></a>
+                    <span class="name">
+                        <span ><b>tremorsIndex</b></span>
+                        <a href="#tremorsIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>10</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="180" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:180</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Tremors</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tremorsOptions"></a>
+                    <span class="name">
+                        <span ><b>tremorsOptions</b></span>
+                        <a href="#tremorsOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new FormOption(&quot;RUE&quot;, &quot;rue&quot;),
+    new FormOption(&quot;RLE&quot;, &quot;rle&quot;),
+    new FormOption(&quot;LLE&quot;, &quot;lle&quot;),
+    new FormOption(&quot;LUE&quot;, &quot;lue&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="182" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:182</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allWNL"></a>
+                    <span class="name">
+                        <span ><b>allWNL</b></span>
+                        <a href="#allWNL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:28</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="controlList"></a>
+                    <span class="name">
+                        <span ><b>controlList</b></span>
+                        <a href="#controlList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Assessment.html" target="_self" >AssessmentForm</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:40</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>controlList</p>
+<p>List to store data about each control in a sub-form</p>
+<p>control: a string naming the specific control
+default: the default value of the control should &quot;WNL&quot; be true; should match the
+ &#39;value&#39; property of the default FormOption object
+wnl: whether or not the control is &quot;within normal limits&quot;</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="locDefault"></a>
+                        <span class="name"><b>locDefault</b><a href="#locDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>locDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:64</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="handGripsDefault"></a>
+                        <span class="name"><b>handGripsDefault</b><a href="#handGripsDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>handGripsDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:68</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lePushPullDefault"></a>
+                        <span class="name"><b>lePushPullDefault</b><a href="#lePushPullDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>lePushPullDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:72</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pupillaryResponseDefault"></a>
+                        <span class="name"><b>pupillaryResponseDefault</b><a href="#pupillaryResponseDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>pupillaryResponseDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:76</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="locFormControl"></a>
+                        <span class="name"><b>locFormControl</b><a href="#locFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>locFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:80</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="orientationFormGroup"></a>
+                        <span class="name"><b>orientationFormGroup</b><a href="#orientationFormGroup"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>orientationFormGroup()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:84</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="extremityMovementFormControl"></a>
+                        <span class="name"><b>extremityMovementFormControl</b><a href="#extremityMovementFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>extremityMovementFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:88</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="handGripsFormControl"></a>
+                        <span class="name"><b>handGripsFormControl</b><a href="#handGripsFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>handGripsFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:92</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lePushPullFormControl"></a>
+                        <span class="name"><b>lePushPullFormControl</b><a href="#lePushPullFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>lePushPullFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:96</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pupillaryResponseFormControl"></a>
+                        <span class="name"><b>pupillaryResponseFormControl</b><a href="#pupillaryResponseFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>pupillaryResponseFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:100</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pupillaryDilationDefault"></a>
+                        <span class="name"><b>pupillaryDilationDefault</b><a href="#pupillaryDilationDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>pupillaryDilationDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="118" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:118</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="leftPupillaryDilationFormControl"></a>
+                        <span class="name"><b>leftPupillaryDilationFormControl</b><a href="#leftPupillaryDilationFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>leftPupillaryDilationFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="122" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:122</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rightPupillaryDilationFormControl"></a>
+                        <span class="name"><b>rightPupillaryDilationFormControl</b><a href="#rightPupillaryDilationFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>rightPupillaryDilationFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:126</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gcssFormControl"></a>
+                        <span class="name"><b>gcssFormControl</b><a href="#gcssFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>gcssFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:135</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Glasgow Coma Scale Score</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://angular.io/api/forms/FormControl" target="_blank" >FormControl</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sensationDefault"></a>
+                        <span class="name"><b>sensationDefault</b><a href="#sensationDefault"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>sensationDefault()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:155</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rueFormControl"></a>
+                        <span class="name"><b>rueFormControl</b><a href="#rueFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>rueFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:159</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rleFormControl"></a>
+                        <span class="name"><b>rleFormControl</b><a href="#rleFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>rleFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:163</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lueFormControl"></a>
+                        <span class="name"><b>lueFormControl</b><a href="#lueFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>lueFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="167" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:167</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lleFormControl"></a>
+                        <span class="name"><b>lleFormControl</b><a href="#lleFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>lleFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="171" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:171</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tremorsFormGroup"></a>
+                        <span class="name"><b>tremorsFormGroup</b><a href="#tremorsFormGroup"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>tremorsFormGroup()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="189" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:189</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormControl, FormGroup } from &#x27;@angular/forms&#x27;;
+import { AssessmentForm } from &#x27;src/app/shared/assessment-form.component&#x27;;
+import { FormOption } from &#x27;src/app/types/form-option.type&#x27;;
+
+@Component({
+  selector: &#x27;app-neurological-form&#x27;,
+  templateUrl: &#x27;./neurological-form.component.html&#x27;,
+  styleUrls: [&#x27;./neurological-form.component.scss&#x27;, &#x27;../assessments-tab.component.scss&#x27;]
+})
+export class NeurologicalFormComponent extends AssessmentForm implements OnInit {
+
+  constructor() { 
+    super(); 
+    this.controlList &#x3D; [
+      {control: &quot;loc&quot;, default: &quot;WNL&quot; , wnl: false},
+      {control: &quot;handGrips&quot;, default: &quot;WNL&quot; , wnl: false},
+      {control: &quot;lePushPull&quot;, default: &quot;WNL&quot; , wnl: false},
+      {control: &quot;pupillaryResponse&quot;, default: &quot;WNL&quot; , wnl: false},
+      {control: &quot;leftPupillaryDilation&quot;, default: &quot;WNL&quot; , wnl: false},
+      {control: &quot;rightPupillaryDilation&quot;, default: &quot;WNL&quot; , wnl: false},
+      {control: &quot;rue&quot;, default: &quot;Full sensation&quot; , wnl: false},
+      {control: &quot;rle&quot;, default: &quot;Full sensation&quot; , wnl: false},
+      {control: &quot;lle&quot;, default: &quot;Full sensation&quot; , wnl: false},
+      {control: &quot;lue&quot;, default: &quot;Full sensation&quot; , wnl: false},
+      {control: &quot;tremors&quot;, default: &quot;None&quot; , wnl: false},
+    ];
+  }
+
+  ngOnInit(): void {
+  }
+
+  locIndex &#x3D; 0;
+  handGripsIndex &#x3D; 1;
+  lePushPullIndex &#x3D; 2;
+  pupillaryResponseIndex &#x3D; 3;
+
+  locOptions &#x3D; [
+    new FormOption(&quot;Lethargic&quot;),
+    new FormOption(&quot;Somnolent&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]
+
+  orientationOptions &#x3D; [
+    new FormOption(&quot;NOT TO person&quot;, &quot;person&quot;),
+    new FormOption(&quot;NOT TO place&quot;, &quot;place&quot;),
+    new FormOption(&quot;NOT TO time&quot;, &quot;time&quot;),
+    new FormOption(&quot;NOT TO situation&quot;, &quot;situation&quot;),
+  ]
+
+  // Options for handGrips and lePushPull
+  extremityStrengthOptions &#x3D; [
+    new FormOption(&quot;Moderate&quot;),
+    new FormOption(&quot;Weak&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]
+
+  pupillaryResponseOptions &#x3D; [
+    new FormOption(&quot;Sluggish&quot;),
+    new FormOption(&quot;Absent&quot;),
+    new FormOption(&quot;WNL&quot;),
+  ]
+
+  get locDefault() {
+    return this.controlList[this.locIndex].default;
+  }
+
+  get handGripsDefault() {
+    return this.controlList[this.handGripsIndex].default;
+  }
+
+  get lePushPullDefault() {
+    return this.controlList[this.lePushPullIndex].default;
+  }
+
+  get pupillaryResponseDefault() {
+    return this.controlList[this.pupillaryResponseIndex].default;
+  }
+
+  get locFormControl(): FormControl {
+    return this.formGroup.controls.loc as FormControl;
+  }
+
+  get orientationFormGroup(): FormGroup {
+    return this.formGroup.controls.orientation as FormGroup;
+  }
+
+  get extremityMovementFormControl(): FormControl {
+    return this.formGroup.controls.extremityMovement as FormControl;
+  }
+
+  get handGripsFormControl(): FormControl {
+    return this.formGroup.controls.handGrips as FormControl;
+  }
+
+  get lePushPullFormControl(): FormControl {
+    return this.formGroup.controls.lePushPull as FormControl;
+  }
+
+  get pupillaryResponseFormControl(): FormControl {
+    return this.formGroup.controls.pupillaryResponse as FormControl;
+  }
+
+  /**
+   * Pupillary Dilation
+   */
+
+  leftPupillaryDilationIndex &#x3D; 4;
+  rightPupillaryDilationIndex &#x3D; 5;
+
+  pupillaryDilationOptions &#x3D; [
+    new FormOption(&quot;2mm&quot;),
+    new FormOption(&quot;4mm&quot;),
+    new FormOption(&quot;6mm&quot;),
+    new FormOption(&quot;8mm&quot;),
+  ]
+
+  get pupillaryDilationDefault() {
+    return this.controlList[this.leftPupillaryDilationIndex].default;
+  }
+
+  get leftPupillaryDilationFormControl(): FormControl {
+    return this.formGroup.get(&quot;pupillaryDilation.left&quot;) as FormControl;
+  }
+
+  get rightPupillaryDilationFormControl(): FormControl {
+    return this.formGroup.get(&quot;pupillaryDilation.right&quot;) as FormControl;
+  }
+
+
+  /**
+   * Glasgow Coma Scale Score
+   */
+
+   get gcssFormControl(): FormControl {
+    return this.formGroup.controls.gcss as FormControl;
+  }
+
+
+  /**
+   * Sensation
+   */
+
+  rueIndex &#x3D; 6;
+  rleIndex &#x3D; 7;
+  lleIndex &#x3D; 8;
+  lueIndex &#x3D; 9;
+
+  sensationOptions &#x3D; [
+    new FormOption(&quot;Numbness&quot;),
+    new FormOption(&quot;Tingling&quot;),
+    new FormOption(&quot;Full sensation&quot;)
+  ]
+
+  get sensationDefault() {
+    return this.controlList[this.rueIndex].default;
+  }
+
+  get rueFormControl(): FormControl {
+    return this.formGroup.get(&quot;sensation.rue&quot;) as FormControl;
+  }
+
+  get rleFormControl(): FormControl {
+    return this.formGroup.get(&quot;sensation.rle&quot;) as FormControl;
+  }
+
+  get lueFormControl(): FormControl {
+    return this.formGroup.get(&quot;sensation.lue&quot;) as FormControl;
+  }
+
+  get lleFormControl(): FormControl {
+    return this.formGroup.get(&quot;sensation.lle&quot;) as FormControl;
+  }
+
+
+  /**
+   * Tremors
+   */
+
+  tremorsIndex &#x3D; 10;
+
+  tremorsOptions &#x3D; [
+    new FormOption(&quot;RUE&quot;, &quot;rue&quot;),
+    new FormOption(&quot;RLE&quot;, &quot;rle&quot;),
+    new FormOption(&quot;LLE&quot;, &quot;lle&quot;),
+    new FormOption(&quot;LUE&quot;, &quot;lue&quot;),
+  ]
+
+  get tremorsFormGroup(): FormGroup {
+    return this.formGroup.controls.tremors as FormGroup;
+  }
+ 
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wnl-header&quot;&gt;
+  &lt;p&gt;
+    WNL: Alert and oriented to person, place time and situation.  Strong movement of all extremities.  PERRLA.  No tremors noted. 
+  &lt;/p&gt;
+  &lt;mat-checkbox
+    [checked]&#x3D;&quot;allWNL&quot;
+    [indeterminate]&#x3D;&quot;someWNL()&quot;
+    (change)&#x3D;&quot;setAllWNL($event.checked)&quot;&gt;
+    All Within Normal Limits
+  &lt;/mat-checkbox&gt;
+&lt;/div&gt;
+
+&lt;div [formGroup]&#x3D;&quot;formGroup&quot; class&#x3D;&quot;form-container&quot;&gt;
+  &lt;assessment-row title&#x3D;&quot;LOC&quot;&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;LOC&quot; [control]&#x3D;&quot;locFormControl&quot; [options]&#x3D;&quot;locOptions&quot;
+      [default]&#x3D;&quot;locDefault&quot; [(wnl)]&#x3D;&quot;this.controlList[locIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;/emr-input&gt;
+  &lt;/assessment-row&gt;
+  
+  &lt;assessment-row title&#x3D;&quot;Orientation&quot;&gt;
+    &lt;emr-checkbox-group [group]&#x3D;&quot;orientationFormGroup&quot; [options]&#x3D;&quot;orientationOptions&quot;&gt;
+    &lt;/emr-checkbox-group&gt;
+  &lt;/assessment-row&gt;
+
+  &lt;assessment-row title&#x3D;&quot;Extremity Movement&quot;&gt;
+    &lt;emr-input type&#x3D;&quot;text&quot; label&#x3D;&quot;Extremity Movement&quot; [control]&#x3D;&quot;extremityMovementFormControl&quot;&gt;
+    &lt;/emr-input&gt;
+  &lt;/assessment-row&gt;
+
+  &lt;assessment-row title&#x3D;&quot;Hand Grips&quot;&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Hand Grips&quot; [control]&#x3D;&quot;handGripsFormControl&quot; [options]&#x3D;&quot;extremityStrengthOptions&quot;
+      [default]&#x3D;&quot;handGripsDefault&quot; [(wnl)]&#x3D;&quot;this.controlList[handGripsIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;/emr-input&gt;
+  &lt;/assessment-row&gt;
+
+  &lt;assessment-row title&#x3D;&quot;LE Push/Pull&quot;&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;LE Push/Pull&quot; [control]&#x3D;&quot;lePushPullFormControl&quot; [options]&#x3D;&quot;extremityStrengthOptions&quot;
+      [default]&#x3D;&quot;lePushPullDefault&quot; [(wnl)]&#x3D;&quot;this.controlList[lePushPullIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;/emr-input&gt;
+  &lt;/assessment-row&gt;
+
+  &lt;assessment-row title&#x3D;&quot;Pupillary Response&quot;&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Pupillary Response&quot; [control]&#x3D;&quot;pupillaryResponseFormControl&quot; [options]&#x3D;&quot;pupillaryResponseOptions&quot;
+      [default]&#x3D;&quot;pupillaryResponseDefault&quot; [(wnl)]&#x3D;&quot;this.controlList[pupillaryResponseIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;/emr-input&gt;
+  &lt;/assessment-row&gt;
+
+  &lt;h2&gt;Pupillary Dilation&lt;/h2&gt;
+  &lt;div class&#x3D;&quot;sensation&quot;&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Left&quot; [control]&#x3D;&quot;leftPupillaryDilationFormControl&quot; 
+      [options]&#x3D;&quot;pupillaryDilationOptions&quot; [default]&#x3D;&quot;sensationDefault&quot; 
+      [(wnl)]&#x3D;&quot;this.controlList[leftPupillaryDilationIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;/emr-input&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Right&quot; [control]&#x3D;&quot;rightPupillaryDilationFormControl&quot; 
+      [options]&#x3D;&quot;pupillaryDilationOptions&quot; [default]&#x3D;&quot;pupillaryDilationDefault&quot; 
+      [(wnl)]&#x3D;&quot;this.controlList[rightPupillaryDilationIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;/emr-input&gt;
+  &lt;/div&gt;
+
+  &lt;assessment-row title&#x3D;&quot;Glascow Coma Scale Score&quot;&gt;
+    &lt;emr-input type&#x3D;&quot;text&quot; label&#x3D;&quot;Glascow Coma Scale Score&quot; [control]&#x3D;&quot;gcssFormControl&quot;&gt;
+    &lt;/emr-input&gt;
+  &lt;/assessment-row&gt;
+
+  &lt;h2&gt;Sensation&lt;/h2&gt;
+  &lt;div class&#x3D;&quot;sensation&quot;&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;RUE&quot; [control]&#x3D;&quot;rueFormControl&quot; 
+      [options]&#x3D;&quot;sensationOptions&quot; [default]&#x3D;&quot;sensationDefault&quot; 
+      [(wnl)]&#x3D;&quot;this.controlList[rueIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;/emr-input&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;LUE&quot; [control]&#x3D;&quot;lueFormControl&quot; 
+      [options]&#x3D;&quot;sensationOptions&quot; [default]&#x3D;&quot;sensationDefault&quot; 
+      [(wnl)]&#x3D;&quot;this.controlList[lueIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;/emr-input&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;RLE&quot; [control]&#x3D;&quot;rleFormControl&quot; 
+      [options]&#x3D;&quot;sensationOptions&quot; [default]&#x3D;&quot;sensationDefault&quot; 
+      [(wnl)]&#x3D;&quot;this.controlList[rleIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;/emr-input&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;LLE&quot; [control]&#x3D;&quot;lleFormControl&quot; 
+      [options]&#x3D;&quot;sensationOptions&quot; [default]&#x3D;&quot;sensationDefault&quot; 
+      [(wnl)]&#x3D;&quot;this.controlList[lleIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;/emr-input&gt;
+  &lt;/div&gt;
+
+  &lt;assessment-row title&#x3D;&quot;Tremors&quot;&gt;
+    &lt;emr-checkbox-group [group]&#x3D;&quot;tremorsFormGroup&quot; [options]&#x3D;&quot;tremorsOptions&quot;&gt;&lt;/emr-checkbox-group&gt;
+  &lt;/assessment-row&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./neurological-form.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.sensation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+
+  emr-input {
+    margin-right: 2rem;
+  }
+}</code></pre>
+                <p class="comment">
+                    <code>../assessments-tab.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.wnl-header {
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.assessment-date {
+  margin-top: 1rem;
+}
+
+.add-assessment-btn {
+  margin-top: 1rem;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="wnl-header">  <p>    WNL: Alert and oriented to person, place time and situation.  Strong movement of all extremities.  PERRLA.  No tremors noted.   </p>  <mat-checkbox    [checked]="allWNL"    [indeterminate]="someWNL()"    (change)="setAllWNL($event.checked)">    All Within Normal Limits  </mat-checkbox></div><div [formGroup]="formGroup" class="form-container">  <assessment-row title="LOC">    <emr-input type="select" [hasWNL]="true" label="LOC" [control]="locFormControl" [options]="locOptions"      [default]="locDefault" [(wnl)]="this.controlList[locIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </assessment-row>    <assessment-row title="Orientation">    <emr-checkbox-group [group]="orientationFormGroup" [options]="orientationOptions">    </emr-checkbox-group>  </assessment-row>  <assessment-row title="Extremity Movement">    <emr-input type="text" label="Extremity Movement" [control]="extremityMovementFormControl">    </emr-input>  </assessment-row>  <assessment-row title="Hand Grips">    <emr-input type="select" [hasWNL]="true" label="Hand Grips" [control]="handGripsFormControl" [options]="extremityStrengthOptions"      [default]="handGripsDefault" [(wnl)]="this.controlList[handGripsIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </assessment-row>  <assessment-row title="LE Push/Pull">    <emr-input type="select" [hasWNL]="true" label="LE Push/Pull" [control]="lePushPullFormControl" [options]="extremityStrengthOptions"      [default]="lePushPullDefault" [(wnl)]="this.controlList[lePushPullIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </assessment-row>  <assessment-row title="Pupillary Response">    <emr-input type="select" [hasWNL]="true" label="Pupillary Response" [control]="pupillaryResponseFormControl" [options]="pupillaryResponseOptions"      [default]="pupillaryResponseDefault" [(wnl)]="this.controlList[pupillaryResponseIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </assessment-row>  <h2>Pupillary Dilation</h2>  <div class="sensation">    <emr-input type="select" [hasWNL]="true" label="Left" [control]="leftPupillaryDilationFormControl"       [options]="pupillaryDilationOptions" [default]="sensationDefault"       [(wnl)]="this.controlList[leftPupillaryDilationIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>    <emr-input type="select" [hasWNL]="true" label="Right" [control]="rightPupillaryDilationFormControl"       [options]="pupillaryDilationOptions" [default]="pupillaryDilationDefault"       [(wnl)]="this.controlList[rightPupillaryDilationIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </div>  <assessment-row title="Glascow Coma Scale Score">    <emr-input type="text" label="Glascow Coma Scale Score" [control]="gcssFormControl">    </emr-input>  </assessment-row>  <h2>Sensation</h2>  <div class="sensation">    <emr-input type="select" [hasWNL]="true" label="RUE" [control]="rueFormControl"       [options]="sensationOptions" [default]="sensationDefault"       [(wnl)]="this.controlList[rueIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>    <emr-input type="select" [hasWNL]="true" label="LUE" [control]="lueFormControl"       [options]="sensationOptions" [default]="sensationDefault"       [(wnl)]="this.controlList[lueIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>    <emr-input type="select" [hasWNL]="true" label="RLE" [control]="rleFormControl"       [options]="sensationOptions" [default]="sensationDefault"       [(wnl)]="this.controlList[rleIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>    <emr-input type="select" [hasWNL]="true" label="LLE" [control]="lleFormControl"       [options]="sensationOptions" [default]="sensationDefault"       [(wnl)]="this.controlList[lleIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </div>  <assessment-row title="Tremors">    <emr-checkbox-group [group]="tremorsFormGroup" [options]="tremorsOptions"></emr-checkbox-group>  </assessment-row></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+    var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
+    var ACTUAL_COMPONENT = {'name': 'NeurologicalFormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NeurologicalFormComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

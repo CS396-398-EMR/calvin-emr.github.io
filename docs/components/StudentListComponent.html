@@ -1,0 +1,3215 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>calvin-emr documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">calvin-emr documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  StudentListComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/student-list/student-list.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-student-list</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./student-list.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./student-list.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#actions" >actions</a>
+                            </li>
+                            <li>
+                                <a href="#columns" >columns</a>
+                            </li>
+                            <li>
+                                <a href="#ids" >ids</a>
+                            </li>
+                            <li>
+                                <a href="#importedStudents" >importedStudents</a>
+                            </li>
+                            <li>
+                                <a href="#importErrors" >importErrors</a>
+                            </li>
+                            <li>
+                                <a href="#patients" >patients</a>
+                            </li>
+                            <li>
+                                <a href="#selectedPatient" >selectedPatient</a>
+                            </li>
+                            <li>
+                                <a href="#students" >students</a>
+                            </li>
+                            <li>
+                                <a href="#currentUser" >currentUser</a>
+                            </li>
+                            <li>
+                                <a href="#currentUserSub" >currentUserSub</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#mode" >mode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                            <li>
+                                <a href="#value" >value</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addStudent" >addStudent</a>
+                            </li>
+                            <li>
+                                <a href="#assignPatient" >assignPatient</a>
+                            </li>
+                            <li>
+                                <a href="#assignStudentPatientToUser" >assignStudentPatientToUser</a>
+                            </li>
+                            <li>
+                                <a href="#deletePatients" >deletePatients</a>
+                            </li>
+                            <li>
+                                <a href="#getActionName" >getActionName</a>
+                            </li>
+                            <li>
+                                <a href="#getPatients" >getPatients</a>
+                            </li>
+                            <li>
+                                <a href="#getStudents" >getStudents</a>
+                            </li>
+                            <li>
+                                <a href="#goToStudentPatient" >goToStudentPatient</a>
+                            </li>
+                            <li>
+                                <a href="#handleAction" >handleAction</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#objectDifference" >objectDifference</a>
+                            </li>
+                            <li>
+                                <a href="#objectSame" >objectSame</a>
+                            </li>
+                            <li>
+                                <a href="#openDialog" >openDialog</a>
+                            </li>
+                            <li>
+                                <a href="#openStudentDialog" >openStudentDialog</a>
+                            </li>
+                            <li>
+                                <a href="#openStudentPatientSelectDialog" >openStudentPatientSelectDialog</a>
+                            </li>
+                            <li>
+                                <a href="#openUploadStudentDialog" >openUploadStudentDialog</a>
+                            </li>
+                            <li>
+                                <a href="#runLoadingCheck" >runLoadingCheck</a>
+                            </li>
+                            <li>
+                                <a href="#studentChecked" >studentChecked</a>
+                            </li>
+                            <li>
+                                <a href="#studentCheckToggle" >studentCheckToggle</a>
+                            </li>
+                            <li>
+                                <a href="#updatePatient" >updatePatient</a>
+                            </li>
+                            <li>
+                                <a href="#startLoading" >startLoading</a>
+                            </li>
+                            <li>
+                                <a href="#stopLoading" >stopLoading</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#numStudents" >numStudents</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, patientService: <a href="../injectables/PatientService.html" target="_self">PatientService</a>, dialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/pages/student-list/student-list.component.ts:67</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>patientService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PatientService.html" target="_self" >PatientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addStudent"></a>
+                    <span class="name">
+                        <span ><b>addStudent</b></span>
+                        <a href="#addStudent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addStudent(res: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="264"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:264</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add student object to the &quot;students&quot; array</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>res</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>User firebase document containing user information</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="assignPatient"></a>
+                    <span class="name">
+                        <span ><b>assignPatient</b></span>
+                        <a href="#assignPatient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>assignPatient(patient: <a href="../classes/Patient.html" target="_self">Patient</a>, studentList: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="334"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:334</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Assign studentPatient associated with the selected patient template</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>patient</td>
+                                    <td>
+                                                <code><a href="../classes/Patient.html" target="_self" >Patient</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>studentList</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>list of selected students</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="assignStudentPatientToUser"></a>
+                    <span class="name">
+                        <span ><b>assignStudentPatientToUser</b></span>
+                        <a href="#assignStudentPatientToUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>assignStudentPatientToUser(studentId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="364"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:364</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>studentId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deletePatients"></a>
+                    <span class="name">
+                        <span ><b>deletePatients</b></span>
+                        <a href="#deletePatients"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deletePatients(patientUid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, studentList: string[], col: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="386"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:386</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete studentPatient associated with the selected patient template</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>patientUid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>identification number for the selected patient template</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>studentList</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>list of selected students</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>col</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>collection value for the firebase</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getActionName"></a>
+                    <span class="name">
+                        <span ><b>getActionName</b></span>
+                        <a href="#getActionName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getActionName(action: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="507"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:507</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>action</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPatients"></a>
+                    <span class="name">
+                        <span ><b>getPatients</b></span>
+                        <a href="#getPatients"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPatients()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="216"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:216</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> Get all &quot;patient&quot; documents linked to current user</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStudents"></a>
+                    <span class="name">
+                        <span ><b>getStudents</b></span>
+                        <a href="#getStudents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getStudents()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="240"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:240</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve QuerySnapshot from the firebase backend
+that meets the condition of role being a &quot;student&quot;
+from the &quot;users&quot; document</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToStudentPatient"></a>
+                    <span class="name">
+                        <span ><b>goToStudentPatient</b></span>
+                        <a href="#goToStudentPatient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToStudentPatient(event: <a href="../classes/TableEvent.html" target="_self">TableEvent</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="184"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:184</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Populate the array with the</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="../classes/TableEvent.html" target="_self" >TableEvent</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleAction"></a>
+                    <span class="name">
+                        <span ><b>handleAction</b></span>
+                        <a href="#handleAction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleAction(event?: <a href="../classes/TableEvent.html" target="_self">TableEvent</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Interprets the event passed by the user clicking a button in the table.
+Essentially, it calls a specific function based on the button pressed.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="../classes/TableEvent.html" target="_self" >TableEvent</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Specifies the action to carry out and the Medication object to act upon.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:89</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Unsubscribes from the currentUser$ Observable.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:82</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="objectDifference"></a>
+                    <span class="name">
+                        <span ><b>objectDifference</b></span>
+                        <a href="#objectDifference"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>objectDifference(origObj: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">Object</a>, newObj: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">Object</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="481"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:481</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Compare two objects and return the differences and common values
+Potentially used for the updating studentPatient object in firebase
+Code URL: <a href="https://newbedev.com/javascript-typescript-get-difference-between-two-objects-code-example">https://newbedev.com/javascript-typescript-get-difference-between-two-objects-code-example</a></p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>origObj</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank" >Object</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Object 1 for comparison</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>newObj</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank" >Object</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Object 2 for comparison</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>object type that contains difference or commonality of two objects</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="objectSame"></a>
+                    <span class="name">
+                        <span ><b>objectSame</b></span>
+                        <a href="#objectSame"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>objectSame(origObj: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">Object</a>, newObj: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">Object</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="494"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:494</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>origObj</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank" >Object</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>newObj</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank" >Object</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialog"></a>
+                    <span class="name">
+                        <span ><b>openDialog</b></span>
+                        <a href="#openDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialog(operation: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="274"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:274</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>operation</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openStudentDialog"></a>
+                    <span class="name">
+                        <span ><b>openStudentDialog</b></span>
+                        <a href="#openStudentDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openStudentDialog(event: <a href="../classes/TableEvent.html" target="_self">TableEvent</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Opens a StudentDialogComponent. Passes a TableEvent object as data to the dialog.
+The TableEvent object contains:
+   (1) a TableAction object, and
+   (2) an object containing a User object and an array of all existing student IDs.
+The array of IDs is used in the &quot;Add&quot; action to check an inputted user&#39;s ID
+against currently existing user IDs. This is to ensure the admin does not
+enter an aleady-existing user ID.
+After the dialog is closed, executes a REST operation on the current user
+based on what action was selected.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="../classes/TableEvent.html" target="_self" >TableEvent</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Specifies the action to carry out and the User object to act upon.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openStudentPatientSelectDialog"></a>
+                    <span class="name">
+                        <span ><b>openStudentPatientSelectDialog</b></span>
+                        <a href="#openStudentPatientSelectDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openStudentPatientSelectDialog(studentPatients: any[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="441"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:441</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open dialog box for selecting studentPatient. studentPatients data is
+transfered to the studentPatientSelectDialog component</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>studentPatients</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openUploadStudentDialog"></a>
+                    <span class="name">
+                        <span ><b>openUploadStudentDialog</b></span>
+                        <a href="#openUploadStudentDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openUploadStudentDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="451"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:451</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open dialog box for the importing students.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="runLoadingCheck"></a>
+                    <span class="name">
+                        <span ><b>runLoadingCheck</b></span>
+                        <a href="#runLoadingCheck"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>runLoadingCheck()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="516"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:516</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="studentChecked"></a>
+                    <span class="name">
+                        <span ><b>studentChecked</b></span>
+                        <a href="#studentChecked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>studentChecked(user: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="324"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:324</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function used for filter function. Returns true for users checked
+at the student list table and false for otherwise.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>boolean</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="studentCheckToggle"></a>
+                    <span class="name">
+                        <span ><b>studentCheckToggle</b></span>
+                        <a href="#studentCheckToggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>studentCheckToggle(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Flip &quot;checked&quot; boolean value of the student after clicking the checkbox</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updatePatient"></a>
+                    <span class="name">
+                        <span ><b>updatePatient</b></span>
+                        <a href="#updatePatient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updatePatient(patientUid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, data: <a href="../classes/Patient.html" target="_self">Patient</a>, studentList: string[], col: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="405"
+                            class="link-to-prism">src/app/pages/student-list/student-list.component.ts:405</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update studentPatient document in the firebase
+Currently work in progress (Need a way to only update the difference between
+the template patient data and studentPatient data)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>patientUid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>identification number for the selected patient template</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../classes/Patient.html" target="_self" >Patient</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>patient data for the selected patient template</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>studentList</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>list of selected students</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>col</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>collection value for the firebase</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startLoading"></a>
+                    <span class="name">
+                        <span ><b>startLoading</b></span>
+                        <a href="#startLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>startLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:64</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the isLoading property to true.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stopLoading"></a>
+                    <span class="name">
+                        <span ><b>stopLoading</b></span>
+                        <a href="#stopLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>stopLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:71</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the isLoading property to false.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="actions"></a>
+                    <span class="name">
+                        <span ><b>actions</b></span>
+                        <a href="#actions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/TableAction.html" target="_self" >TableAction[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new TableAction(managePatientsActionName, &quot;assignment_ind&quot;),
+    new TableAction(updateStudentInfoActionName, &quot;person&quot;),
+    new TableAction(removeStudentActionName, &quot;delete&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/pages/student-list/student-list.component.ts:59</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Actions to show up in the Medication table&#39;s row buttons.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="columns"></a>
+                    <span class="name">
+                        <span ><b>columns</b></span>
+                        <a href="#columns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/TableColumn.html" target="_self" >TableColumn[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new TableColumn(&quot;ID&quot;, &quot;id&quot;,
+      (element: User) &#x3D;&gt; element.getId()),
+    new TableColumn(&quot;First Name&quot;, &quot;firstName&quot;,
+      (element: User) &#x3D;&gt; element.firstName),
+      new TableColumn(&quot;Last Name&quot;, &quot;lastName&quot;,
+      (element: User) &#x3D;&gt; element.lastName),
+    new TableColumn(&quot;Email&quot;, &quot;email&quot;,
+      (element: User) &#x3D;&gt; element.email),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/pages/student-list/student-list.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Columns to display in the student table.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ids"></a>
+                    <span class="name">
+                        <span ><b>ids</b></span>
+                        <a href="#ids"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/pages/student-list/student-list.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List containing only the IDs for all existing students.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="importedStudents"></a>
+                    <span class="name">
+                        <span ><b>importedStudents</b></span>
+                        <a href="#importedStudents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/pages/student-list/student-list.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="importErrors"></a>
+                    <span class="name">
+                        <span ><b>importErrors</b></span>
+                        <a href="#importErrors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/pages/student-list/student-list.component.ts:67</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="patients"></a>
+                    <span class="name">
+                        <span ><b>patients</b></span>
+                        <a href="#patients"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Patient.html" target="_self" >Patient[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/pages/student-list/student-list.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedPatient"></a>
+                    <span class="name">
+                        <span ><b>selectedPatient</b></span>
+                        <a href="#selectedPatient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/pages/student-list/student-list.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="students"></a>
+                    <span class="name">
+                        <span ><b>students</b></span>
+                        <a href="#students"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >User[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/pages/student-list/student-list.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUser"></a>
+                    <span class="name">
+                        <span ><b>currentUser</b></span>
+                        <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >User</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new User()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:35</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUserSub"></a>
+                    <span class="name">
+                        <span ><b>currentUserSub</b></span>
+                        <a href="#currentUserSub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:36</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoading"></a>
+                    <span class="name">
+                        <span ><b>isLoading</b></span>
+                        <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:22</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Flag to indicate whether the page is loading or not.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mode"></a>
+                    <span class="name">
+                        <span ><b>mode</b></span>
+                        <a href="#mode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ProgressSpinnerMode</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;indeterminate&#x27;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:27</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The mode of the ProgressSpinner. Defaults to &#39;indeterminate&#39;.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:46</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description">The service used to retrieve user data.</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="value"></a>
+                    <span class="name">
+                        <span ><b>value</b></span>
+                        <a href="#value"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>50</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:33</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The value of the ProgressSpinner that indicates how far the page has loaded.
+Used only with the &#39;determinate&#39; mode.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="numStudents"></a>
+                        <span class="name"><b>numStudents</b><a href="#numStudents"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>numStudents()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="522" class="link-to-prism">src/app/pages/student-list/student-list.component.ts:522</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { User } from &#x27;../../types/user.type&#x27;;
+import { Patient } from &#x27;src/app/types/patient.type&#x27;;
+import { UserService } from &#x27;src/app/services/user.service&#x27;;
+import { PageComponent } from &#x27;src/app/shared/page.component&#x27;;
+import { PatientService } from &#x27;src/app/services/patient.service&#x27;;
+import { TableColumn } from &#x27;src/app/types/table-column.type&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
+import { PatientListDialogComponent } from &#x27;src/app/component/patient-list-dialog/patient-list-dialog.component&#x27;;
+import { ActionName, TableAction, TableEvent } from &#x27;src/app/types/table-action.enum&#x27;;
+import { FileUploadDialogComponent } from &#x27;src/app/shared/file-upload-dialog/file-upload-dialog.component&#x27;;
+import { StudentPatientSelectDialogComponent } from &#x27;src/app/component/student-patient-select-dialog/student-patient-select-dialog.component&#x27;;
+import { arrayUnion } from &#x27;firebase/firestore&#x27;;
+import { isEqual, transform, isArray, isObject, merge } from &#x27;lodash&#x27;;
+import { addStudentActionName, editActionName, managePatientsActionName, removeStudentActionName, studentRole, updateStudentInfoActionName, usersCollectionName } from &#x27;src/app/global&#x27;;
+import { StudentDialogComponent } from &#x27;src/app/shared/student-dialog/student-dialog.component&#x27;;
+
+@Component({
+  selector: &#x27;app-student-list&#x27;,
+  templateUrl: &#x27;./student-list.component.html&#x27;,
+  styleUrls: [&#x27;./student-list.component.scss&#x27;]
+})
+export class StudentListComponent extends PageComponent implements OnInit {
+
+  patients: Patient[] &#x3D; [];
+  students: User[] &#x3D; [];
+
+  /**
+   * List containing only the IDs for all existing students.
+   */
+   ids: string[] &#x3D; [];
+  
+  // Variable used for accepting return value from modal
+  selectedPatient: string &#x3D; &quot;&quot;;
+
+  /**
+   * Columns to display in the student table.
+   */
+  columns: TableColumn[] &#x3D; [
+    new TableColumn(&quot;ID&quot;, &quot;id&quot;,
+      (element: User) &#x3D;&gt; element.getId()),
+    new TableColumn(&quot;First Name&quot;, &quot;firstName&quot;,
+      (element: User) &#x3D;&gt; element.firstName),
+      new TableColumn(&quot;Last Name&quot;, &quot;lastName&quot;,
+      (element: User) &#x3D;&gt; element.lastName),
+    new TableColumn(&quot;Email&quot;, &quot;email&quot;,
+      (element: User) &#x3D;&gt; element.email),
+  ];
+
+  /**
+   * Actions to show up in the Medication table&#x27;s row buttons.
+   */
+   actions: TableAction[] &#x3D; [
+    new TableAction(managePatientsActionName, &quot;assignment_ind&quot;),
+    new TableAction(updateStudentInfoActionName, &quot;person&quot;),
+    new TableAction(removeStudentActionName, &quot;delete&quot;),
+  ]
+
+  // Used for importing users
+  importedStudents: string[] &#x3D; [];
+  importErrors: string[] &#x3D; [];
+
+  constructor(private router: Router,
+              userService: UserService, 
+              private patientService: PatientService,
+              private dialog: MatDialog) { 
+    super(userService);
+
+    // Get the user&#x27;s students each time the user&#x27;s data changes.
+    this.currentUserSub &#x3D; this.userService.currentUser$.subscribe(() &#x3D;&gt; {
+      this.startLoading();
+      this.getStudents();
+    })
+  }
+
+  ngOnInit(): void {
+    super.ngOnInit();
+  }
+
+  /**
+   * Unsubscribes from the currentUser$ Observable.
+   */
+  ngOnDestroy() {
+    super.ngOnDestroy();
+    this.currentUserSub.unsubscribe();
+  }
+
+  /**
+   * Interprets the event passed by the user clicking a button in the table.
+   * Essentially, it calls a specific function based on the button pressed.
+   * 
+   * @param event Specifies the action to carry out and the Medication object to act upon.
+   */
+   handleAction(event?: TableEvent) {
+    // If event was not specified, assume action is an &quot;Add Student&quot;
+    if (!event) {
+      // Create new TableEvent for &quot;Add Student&quot; operation
+      // Pass a new student and the list of student IDs for validation
+      event &#x3D; new TableEvent(
+        new TableAction(ActionName.Add, &quot;add&quot;),
+        { student: new User(), ids: this.ids }
+      )
+    }
+    // If the event is specified (edit or delete), don&#x27;t pass any IDs since
+    // they are not needed
+    else {
+      // Translate button labels into ActionName enumeration and update the action name 
+      //  in the TableEvent to pass to the dialog
+      const action &#x3D; this.getActionName(event.action.name);
+      event &#x3D; new TableEvent(
+        new TableAction(action, &quot;&quot;),
+        { student: event.data, ids: []}
+      )
+    }
+
+    this.openStudentDialog(event);
+  }
+
+  /**
+   * Opens a StudentDialogComponent. Passes a TableEvent object as data to the dialog.
+   * The TableEvent object contains:
+   *    (1) a TableAction object, and
+   *    (2) an object containing a User object and an array of all existing student IDs.
+   * The array of IDs is used in the &quot;Add&quot; action to check an inputted user&#x27;s ID
+   * against currently existing user IDs. This is to ensure the admin does not
+   * enter an aleady-existing user ID.
+   * After the dialog is closed, executes a REST operation on the current user
+   * based on what action was selected.
+   * 
+   * @param event Specifies the action to carry out and the User object to act upon.
+   */
+  openStudentDialog(event: TableEvent) {
+    const dialogRef &#x3D; this.dialog.open(StudentDialogComponent, {
+      data: event
+    })
+
+    // Execute REST operations based on action
+    dialogRef.afterClosed().subscribe((student: User) &#x3D;&gt; {
+      if(student) {
+        switch(event.action.name) {
+          case ActionName.Add: {
+            this.userService.createUser(student);
+            break;
+          }
+          case ActionName.Edit: {
+            this.userService.updateUser(student);
+            break;
+          }
+          case ActionName.Delete: {
+            this.userService.deleteUser(student.id);
+            break;
+          }
+          default: {
+            console.log(event.action.name, &quot;is not a valid action!&quot;)
+          }
+        }
+      }
+    })
+  }
+
+  /**
+   * Flip &quot;checked&quot; boolean value of the student after clicking the checkbox
+   * 
+   * @param event 
+   */
+  studentCheckToggle(event: any) {
+    // Get the index value of checked student row
+    // let index &#x3D; this.students.findIndex(obj &#x3D;&gt; obj.student.getId() &#x3D;&#x3D; event);
+    // flip checked boolean value of a index row
+    // this.students[index].checked &#x3D; this.students[index].checked? false : true;
+  }
+
+  /**
+   * Populate the array with the 
+   * 
+   * @param event 
+   */
+  goToStudentPatient(event: TableEvent) {
+    if(event.action.name &#x3D;&#x3D; ActionName.Navigate) {
+      let studentId &#x3D; event.data  // id is passed from emr-table
+      let tempData: any[] &#x3D; []    // temporarily store patient&#x27;s full name and uid to be passed down to the dialog
+
+      // Retrieve studentPatient document from firebase linked to the template patient uID
+      this.patientService.getStudentPatientbyId(studentId as any).then(
+        (res) &#x3D;&gt; {
+          res.forEach(doc &#x3D;&gt; 
+            {
+              tempData.push({
+                name: doc.get(&quot;firstName&quot;) + 
+                  &quot; &quot; + doc.get(&quot;middleName&quot;) + 
+                  &quot; &quot; + doc.get(&quot;lastName&quot;), 
+                uid: doc.id})
+            })
+          // Open dialog to allow admin to select from the list of patients assigned to student
+          this.openStudentPatientSelectDialog(tempData)
+        },
+        (err) &#x3D;&gt; {
+          console.log(err);
+        }
+      )
+    }
+    else{
+      console.error(&quot;Error in navigating to patient: event is not category &#x27;Navigate&quot;)
+    }
+  }
+
+  /**
+   *  Get all &quot;patient&quot; documents linked to current user
+   */
+  getPatients() {
+    this.currentUser.patientIds.forEach((id) &#x3D;&gt; {
+      this.patientService.getPatient(id, &quot;patients&quot;)
+        .subscribe(
+          (action) &#x3D;&gt; {
+            let patient &#x3D; new Patient();
+            let obj &#x3D; { id: action.payload.id, ...action.payload.data() as object };
+            Object.assign(patient, obj)
+            this.patients.push(patient);
+
+            if(this.patients.length &#x3D;&#x3D; this.currentUser.patientIds.length) {
+              this.stopLoading();
+            }
+          },
+          (err) &#x3D;&gt; console.error(&quot;Error loading patient data!&quot;),
+        )
+    })
+  }
+
+  /**
+   * Retrieve QuerySnapshot from the firebase backend
+   * that meets the condition of role being a &quot;student&quot;
+   * from the &quot;users&quot; document
+   */
+  getStudents(){
+    this.students &#x3D; [];
+    this.runLoadingCheck();
+    this.currentUser.studentIds?.forEach((id) &#x3D;&gt; {
+      this.userService.getStaticUser(id).then((res: User | null) &#x3D;&gt; {
+        if(res !&#x3D; null) {
+          this.students.push(res);
+        }
+      })
+      .catch(err &#x3D;&gt; {
+        console.error(&quot;Error in getting student:&quot;, id , err);
+        this.stopLoading();
+      })
+      .finally(() &#x3D;&gt; {
+        this.runLoadingCheck();
+      })
+    })
+  }
+
+  /**
+   * Add student object to the &quot;students&quot; array
+   * 
+   * @param res User firebase document containing user information
+   */
+  addStudent(res: any) {
+    let student &#x3D; new User();
+    Object.assign(student, res.data())
+
+    this.students.push(
+      new User(res.id, student.email, student.firstName, student.lastName, student.role)
+    )
+  }
+
+  // Open modal dialog
+  openDialog(operation: string): void {
+    const dialogRef &#x3D; this.dialog.open(PatientListDialogComponent, {
+      width: &#x27;500px&#x27;,
+      data: {
+        title: &quot;List of Patients&quot;,
+        prompt: &#x60;Which patients would you like to ${operation}?&#x60;,
+        buttonLabel: &#x60;${operation} Patients&#x60;,
+        patients: this.patients,
+        type: &quot;studentPatient&quot;
+      }
+    });
+
+    // Temporary studentList to perform action to selected users
+    let tempStudentList: string[] &#x3D; []
+    // this.students.filter(this.studentChecked).forEach(
+      // obj &#x3D;&gt; tempStudentList.push(obj.student.getId())
+    // )
+
+    // Ater dialog is closed, perform an appropriate action based on the operation
+    dialogRef.afterClosed().subscribe(results &#x3D;&gt; {
+      results.forEach(
+        (result: Patient) &#x3D;&gt; {
+          if(result){
+            switch(operation) {
+              case &quot;assign&quot;:
+                this.assignPatient(result, tempStudentList);
+                break
+              case &quot;delete&quot;:
+                this.deletePatients(result.getId(), tempStudentList, &quot;studentPatients&quot;)
+                break;
+              case &quot;update&quot;:
+                this.updatePatient(result.getId(), result, tempStudentList, &quot;studentPatients&quot;)
+                break;
+              default:
+                alert(&quot;Invalid operation&quot;)
+            }
+          }
+        }
+      )
+      console.log(&#x27;The dialog was closed&#x27;);
+    });
+  }
+
+  /**
+   * Function used for filter function. Returns true for users checked
+   * at the student list table and false for otherwise.
+   * 
+   * @param user
+   * @returns boolean
+   */
+  studentChecked(user: any) {
+    return user.checked
+  }
+
+  /**
+   * Assign studentPatient associated with the selected patient template
+   * 
+   * @param patientUid  identification number for the selected patient template
+   * @param studentList list of selected students
+   */
+  assignPatient(patient: Patient, studentList: string[]): void {
+    if(studentList.length &gt; 0){
+      studentList.forEach(student &#x3D;&gt; {
+        // Checks if student already had a patient assigned
+        this.patientService.patientDuplicateCheck(student, patient.getId(), &quot;studentPatients&quot;).then(
+          res &#x3D;&gt; {
+            // If not assigned
+            if(res.empty) {
+              // append student id value to the studentPatient to identify who is responsible for this student patient
+              patient.setStudentId(student)
+              this.patientService.createStudentPatient(patient)
+              this.assignStudentPatientToUser(student)
+            }
+            // If assigned 
+            else {
+              alert(&#x60;student ${student} already has patient ${patient.getId()} assigned&#x60;)
+            }
+          }
+        )
+      })
+    }
+    else {
+      alert(&quot;no student was selected&quot;)
+    }
+  }
+
+  /**
+   * @description Add studentPatient to the patient list array on the user when assigning a patient
+   * @param studentId 
+   */
+  assignStudentPatientToUser(studentId:string){
+    console.log(&quot;studentId: &quot;, studentId)
+    
+    this.patientService.getStudentPatientbyId(studentId).then(
+      res &#x3D;&gt; {
+        if(!res.empty){
+          res.forEach(docs &#x3D;&gt; {
+            // TODO: figure out how to use addPatientId() method to replace this function
+            this.userService.tempAddPatientId(docs.id, studentId);
+          })
+        }
+      }
+    )
+  }
+
+  /**
+   * Delete studentPatient associated with the selected patient template
+   * 
+   * @param patientUid  identification number for the selected patient template
+   * @param studentList list of selected students
+   * @param col         collection value for the firebase
+   */
+  deletePatients(patientUid: string, studentList: string[], col: string): void {
+    // Check if any student is selected
+    if(studentList.length) {
+      studentList.forEach(studentId &#x3D;&gt; this.patientService.deleteStudentPatient(studentId, patientUid, col))
+    } else{
+      alert(&quot;no student was selected&quot;)
+    }
+  }
+
+  /**
+   * Update studentPatient document in the firebase
+   * Currently work in progress (Need a way to only update the difference between
+   * the template patient data and studentPatient data)
+   * 
+   * @param patientUid  identification number for the selected patient template
+   * @param data        patient data for the selected patient template 
+   * @param studentList list of selected students
+   * @param col         collection value for the firebase
+   */
+  updatePatient(patientUid: string, data: Patient, studentList: string[], col: string){
+    let tempObj: Object &#x3D; {}
+
+    // Check if any student is selected
+    if(studentList.length) {
+      studentList.forEach(studId &#x3D;&gt; {
+        // Checks if student has a assigned studentPatient document
+        this.patientService.patientDuplicateCheck(studId, patientUid, col).then(
+          res &#x3D;&gt; {
+            // Student has a studentPatient document
+            if(!res.empty){
+              res.docs.forEach(doc &#x3D;&gt; {
+                tempObj &#x3D; merge(doc.data(), this.objectDifference(data, doc.data()))
+                console.log(tempObj);
+                // Update studentPatient document
+                // this.patientService.setPatient(doc.id, tempObj, &quot;studentPatients&quot;)
+              })
+            }
+            else {
+              alert(&quot;patient not available&quot;)
+            }
+          }
+        )
+      })
+    } else{
+      alert(&quot;no student was selected&quot;)
+    }
+
+    console.log(&quot;updatePatient work!&quot;)
+  }
+
+  /**
+   * Open dialog box for selecting studentPatient. studentPatients data is
+   * transfered to the studentPatientSelectDialog component
+   * @param studentPatients 
+   */
+  openStudentPatientSelectDialog(studentPatients: any[]): void {
+    const dialogRef &#x3D; this.dialog.open(StudentPatientSelectDialogComponent, {
+      width: &#x27;500px&#x27;,
+      data: studentPatients
+    });
+  }
+
+  /**
+   * Open dialog box for the importing students.
+   */
+  openUploadStudentDialog() {
+    this.importErrors &#x3D; [];
+    const dialogRef &#x3D; this.dialog.open(FileUploadDialogComponent, {
+      width: &#x27;500px&#x27;,
+      data: {
+        title: &quot;Import Students&quot;, 
+        type: User,
+        valid: (user: User) &#x3D;&gt; {return user.hasValidEmail},
+      }
+    })
+
+    // result is string, since fileReader returns string after parsing file
+    dialogRef.afterClosed().subscribe((result: User[] | null) &#x3D;&gt; {
+      if(result) {
+        // TODO: upload students to Firebase
+        this.students &#x3D; this.students.concat(result)
+      }
+    })
+  }
+
+  /**
+   * Compare two objects and return the differences and common values
+   * Potentially used for the updating studentPatient object in firebase
+   * Code URL: https://newbedev.com/javascript-typescript-get-difference-between-two-objects-code-example
+   * 
+   * @param origObj   Object 1 for comparison
+   * @param newObj    Object 2 for comparison
+   * @returns object type that contains difference or commonality of two objects
+   */
+
+  objectDifference(origObj:Object, newObj:Object) {
+    let changes &#x3D; (newObj:Object, origObj:Object) &#x3D;&gt; {
+      let arrayIndexCounter &#x3D; 0;
+      return transform(newObj, function(result: any, value, key) {
+        if (!isEqual(value, origObj[key])) {
+          let resultKey &#x3D; isArray(origObj) ? arrayIndexCounter++ : key
+          result[resultKey] &#x3D; (isObject(value) &amp;&amp; isObject(origObj[key])) ? changes(value, origObj[key]) : value
+        }
+      })
+    }
+    return changes(newObj, origObj)
+  }
+
+  objectSame(origObj:Object, newObj:Object) {
+    let changes &#x3D; (newObj:Object, origObj:Object) &#x3D;&gt; {
+      let arrayIndexCounter &#x3D; 0;
+      return transform(newObj, function(result: any, value, key) {
+        if (isEqual(value, origObj[key])) {
+          let resultKey &#x3D; isArray(origObj) ? arrayIndexCounter++ : key
+          result[resultKey] &#x3D; (isObject(value) &amp;&amp; isObject(origObj[key])) ? changes(value, origObj[key]) : value
+        }
+      })
+    }
+    return changes(newObj, origObj)
+  }
+
+  getActionName(action: string) {
+    switch(action) {
+      case addStudentActionName: return ActionName.Add;
+      case updateStudentInfoActionName: return ActionName.Edit;
+      case removeStudentActionName: return ActionName.Delete;
+      default: return &#x27;Error&#x27;;
+    }
+  }
+
+  runLoadingCheck() {
+    if(this.students.length &gt;&#x3D; this.numStudents) {
+      this.stopLoading(); 
+    }
+  }
+
+  get numStudents() {
+    let students &#x3D; this.currentUser.studentIds;
+    return students ? students.length : 0;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    &lt;!-- Loading indicator --&gt;
+    &lt;mat-progress-spinner *ngIf&#x3D;&quot;isLoading&quot; class&#x3D;&quot;loading-indicator&quot; [mode]&#x3D;&quot;mode&quot; [value]&#x3D;&quot;value&quot;&gt;
+    &lt;/mat-progress-spinner&gt;
+
+    &lt;div class&#x3D;&quot;student-list-container&quot; *ngIf&#x3D;&quot;! isLoading&quot;&gt;
+      &lt;h1&gt;{{currentUser.firstName}}&#x27;s Student List&lt;/h1&gt;
+      &lt;div class&#x3D;&quot;student-list-header&quot;&gt;
+        &lt;div *ngIf&#x3D;&quot;isAdmin&quot;&gt;
+          &lt;button mat-raised-button (click)&#x3D;&quot;openUploadStudentDialog()&quot;
+          aria-label&#x3D;&quot;Upload students&quot;&gt;
+          Upload students
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;table-container&quot;&gt;
+        &lt;app-emr-table *ngIf&#x3D;&quot;numStudents &gt; 0; else noStudents&quot; [tableData]&#x3D;&quot;students&quot;
+          [tableColumns]&#x3D;&quot;columns&quot; [tableActions]&#x3D;&quot;actions&quot;
+          (rowAction)&#x3D;&quot;handleAction($event)&quot;
+          [numbered]&#x3D;&quot;true&quot;
+        &gt;  
+        &lt;/app-emr-table&gt;
+        &lt;ng-template #noStudents&gt;
+          &lt;h3&gt;You currently have no students.&lt;/h3&gt;
+        &lt;/ng-template&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./student-list.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-list-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-raised-button {
+  margin: 10px;
+}
+.student-list-header {
+  padding-top: 65px;
+  display: flex;
+  flex-direction: row;
+}
+
+table {
+  width: 75vw;
+}
+
+.mat-header-cell {
+  padding: 0 1rem 0 1rem;
+}
+
+.mat-row {
+  height: auto;
+}
+
+.mat-cell {
+  padding: 0 1rem 0 1rem;
+}
+
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="wrapper">    <!-- Loading indicator -->    <mat-progress-spinner *ngIf="isLoading" class="loading-indicator" [mode]="mode" [value]="value">    </mat-progress-spinner>    <div class="student-list-container" *ngIf="! isLoading">      <h1>{{currentUser.firstName}}\'s Student List</h1>      <div class="student-list-header">        <div *ngIf="isAdmin">          <button mat-raised-button (click)="openUploadStudentDialog()"          aria-label="Upload students">          Upload students          </button>        </div>      </div>      <div class="table-container">        <app-emr-table *ngIf="numStudents > 0; else noStudents" [tableData]="students"          [tableColumns]="columns" [tableActions]="actions"          (rowAction)="handleAction($event)"          [numbered]="true"        >          </app-emr-table>        <ng-template #noStudents>          <h3>You currently have no students.</h3>        </ng-template>      </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+    var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
+    var ACTUAL_COMPONENT = {'name': 'StudentListComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'StudentListComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

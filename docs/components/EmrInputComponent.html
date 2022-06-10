@@ -1,0 +1,1455 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>calvin-emr documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">calvin-emr documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  EmrInputComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/emr-input/emr-input.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Customizable input used throughout the app (but mostly for the Nursing Assessments tab).
+Input can be rendered as a text, numerical, select, or date input.
+This component makes it simple to implement an input paired with a &quot;Within Normal Limits&quot; checkbox,
+which when checked, disables the input and fills it with a provided default value.</p>
+<p>To see examples where this component is used, visit the any of the classes that extend the
+AssessmentForm class (e.g. Neurological, Gastrointestinal, Cardiovascular).</p>
+<p>Note: WNL = &quot;Within Normal Limits&quot;</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>emr-input</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./emr-input.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./emr-input.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#clearControl" >clearControl</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnChanges" >ngOnChanges</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#selectionChanged" >selectionChanged</a>
+                            </li>
+                            <li>
+                                <a href="#toDefaultValue" >toDefaultValue</a>
+                            </li>
+                            <li>
+                                <a href="#toggleWNL" >toggleWNL</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#control" >control</a>
+                            </li>
+                            <li>
+                                <a href="#default" >default</a>
+                            </li>
+                            <li>
+                                <a href="#hasWNL" >hasWNL</a>
+                            </li>
+                            <li>
+                                <a href="#hint" >hint</a>
+                            </li>
+                            <li>
+                                <a href="#label" >label</a>
+                            </li>
+                            <li>
+                                <a href="#max" >max</a>
+                            </li>
+                            <li>
+                                <a href="#min" >min</a>
+                            </li>
+                            <li>
+                                <a href="#options" >options</a>
+                            </li>
+                            <li>
+                                <a href="#suffix" >suffix</a>
+                            </li>
+                            <li>
+                                <a href="#type" >type</a>
+                            </li>
+                            <li>
+                                <a href="#width" >width</a>
+                            </li>
+                            <li>
+                                <a href="#wnl" >wnl</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#wnlChange" >wnlChange</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#isTextType" >isTextType</a>
+                                </li>
+                                <li>
+                                    <a href="#isNumberType" >isNumberType</a>
+                                </li>
+                                <li>
+                                    <a href="#isSelectType" >isSelectType</a>
+                                </li>
+                                <li>
+                                    <a href="#isDateType" >isDateType</a>
+                                </li>
+                                <li>
+                                    <a href="#isDateTimeType" >isDateTimeType</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:100</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="control"></a>
+                        <b>control</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormControl" target="_blank" >FormControl</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new FormControl()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:62</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The FormControl to get/set the value for.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="default"></a>
+                        <b>default</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:68</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The value that should be automatically entered when the &quot;Within Normal Limits&quot; checkbox
+is checked.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasWNL"></a>
+                        <b>hasWNL</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:35</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Controls whether or not to display the &quot;WNL&quot; checkbox next to the input.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hint"></a>
+                        <b>hint</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:50</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Hint that appears under the input box.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="label"></a>
+                        <b>label</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;&quot;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:45</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Label displayed next to the input element that describes what the input is for.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="max"></a>
+                        <b>max</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:87</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The maximum value that can be entered in the input.
+Only used with the &quot;number&quot; type.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="min"></a>
+                        <b>min</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:81</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The minimum value that can be entered in the input.
+Only used with the &quot;number&quot; type.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="options"></a>
+                        <b>options</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/FormOption.html" target="_self" >FormOption[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:95</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The options to display in the list the user can select from.
+Only used with the &quot;select&quot; type.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="suffix"></a>
+                        <b>suffix</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:55</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Text that appears at the end of the mat-input.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="type"></a>
+                        <b>type</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;&quot;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:28</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The type of HTML input to display.</p>
+<p>Available options: &quot;text&quot;, &quot;number&quot;, &quot;select&quot;, &quot;date&quot;</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="width"></a>
+                        <b>width</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:40</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Controls the width of the mat-form-field element that is displayed.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="wnl"></a>
+                        <b>wnl</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:73</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Used to toggle whether the form control is within normal limits or not.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="wnlChange"></a>
+                        <b>wnlChange</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:100</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Emits when the &quot;WNL&quot; checkbox is changed.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearControl"></a>
+                    <span class="name">
+                        <span ><b>clearControl</b></span>
+                        <a href="#clearControl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearControl()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Enables the FormControl and clears its value.
+Emits the value of the wnl property for the parent to handle the
+&quot;Set All WNL&quot; checkbox display.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnChanges"></a>
+                    <span class="name">
+                        <span ><b>ngOnChanges</b></span>
+                        <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnChanges()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="111"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Run when the &quot;Set All WNL&quot; checkbox has been set to true, so that
+the input&#39;s value can be set to the default value.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectionChanged"></a>
+                    <span class="name">
+                        <span ><b>selectionChanged</b></span>
+                        <a href="#selectionChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectionChanged(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="162"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:162</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Event handler that is called whenever the input has been changed,
+if the input is the &quot;select&quot; type. This is used to toggle the
+&quot;WNL&quot; checkbox whenever the default/WNL option has been selected.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The value that the select input has been changed to.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toDefaultValue"></a>
+                    <span class="name">
+                        <span ><b>toDefaultValue</b></span>
+                        <a href="#toDefaultValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toDefaultValue()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="135"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:135</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Disables the FormControl and sets its value to be the default value.
+Emits the value of the wnl property for the parent to handle the
+&quot;Set All WNL&quot; checkbox display.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleWNL"></a>
+                    <span class="name">
+                        <span ><b>toggleWNL</b></span>
+                        <a href="#toggleWNL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleWNL()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Toggles the wnl property. Enables/disables input and autofills/clears
+the default value depending on the value of WNL checkbox.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isTextType"></a>
+                        <span class="name"><b>isTextType</b><a href="#isTextType"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isTextType()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="169" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:169</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isNumberType"></a>
+                        <span class="name"><b>isNumberType</b><a href="#isNumberType"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isNumberType()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="173" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:173</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isSelectType"></a>
+                        <span class="name"><b>isSelectType</b><a href="#isSelectType"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isSelectType()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="177" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:177</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isDateType"></a>
+                        <span class="name"><b>isDateType</b><a href="#isDateType"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isDateType()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="181" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:181</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isDateTimeType"></a>
+                        <span class="name"><b>isDateTimeType</b><a href="#isDateTimeType"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isDateTimeType()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="185" class="link-to-prism">src/app/shared/emr-input/emr-input.component.ts:185</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { FormControl } from &#x27;@angular/forms&#x27;;
+import { FormOption } from &#x27;src/app/types/form-option.type&#x27;;
+
+/**
+ * Customizable input used throughout the app (but mostly for the Nursing Assessments tab). 
+ * Input can be rendered as a text, numerical, select, or date input. 
+ * This component makes it simple to implement an input paired with a &quot;Within Normal Limits&quot; checkbox, 
+ * which when checked, disables the input and fills it with a provided default value.
+ * 
+ * To see examples where this component is used, visit the any of the classes that extend the
+ * AssessmentForm class (e.g. Neurological, Gastrointestinal, Cardiovascular).
+ * 
+ * Note: WNL &#x3D; &quot;Within Normal Limits&quot;
+ */
+@Component({
+  selector: &#x27;emr-input&#x27;,
+  templateUrl: &#x27;./emr-input.component.html&#x27;,
+  styleUrls: [&#x27;./emr-input.component.scss&#x27;]
+})
+export class EmrInputComponent implements OnInit {
+
+  /**
+   * The type of HTML input to display.
+   * 
+   * Available options: &quot;text&quot;, &quot;number&quot;, &quot;select&quot;, &quot;date&quot;
+   */
+  @Input() type: string &#x3D; &quot;&quot;;
+
+  /** General Inputs */
+
+  /**
+   * Controls whether or not to display the &quot;WNL&quot; checkbox next to the input.
+   */
+  @Input() hasWNL: boolean &#x3D; false;
+
+  /**
+   * Controls the width of the mat-form-field element that is displayed.
+   */
+  @Input() width?: string;
+
+  /**
+   * Label displayed next to the input element that describes what the input is for.
+   */
+  @Input() label: string &#x3D; &quot;&quot;;
+  
+  /**
+   * Hint that appears under the input box.
+   */
+  @Input() hint?: string;
+
+  /**
+   * Text that appears at the end of the mat-input.
+   */
+  @Input() suffix?: string;
+
+  /** Form control inputs */
+
+  /**
+   * The FormControl to get/set the value for.
+   */
+  @Input() control: FormControl &#x3D; new FormControl();
+
+  /**
+   * The value that should be automatically entered when the &quot;Within Normal Limits&quot; checkbox
+   * is checked.
+   */
+  @Input() default: any;
+
+  /**
+   * Used to toggle whether the form control is within normal limits or not.
+   */
+  @Input() wnl: boolean &#x3D; false;
+
+  /** Inputs for &quot;number&quot; type */
+  
+  /**
+   * The minimum value that can be entered in the input.
+   * Only used with the &quot;number&quot; type.
+   */
+  @Input() min?: number;
+
+  /**
+   * The maximum value that can be entered in the input.
+   * Only used with the &quot;number&quot; type.
+   */
+  @Input() max?: number;
+
+  /** Inputs for &quot;select&quot; type */
+
+  /**
+   * The options to display in the list the user can select from.
+   * Only used with the &quot;select&quot; type.
+   */
+  @Input() options: FormOption[] &#x3D; [];
+
+  /**
+   * Emits when the &quot;WNL&quot; checkbox is changed.
+   */
+  @Output() wnlChange &#x3D; new EventEmitter&lt;boolean&gt;();
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  /**
+   * Run when the &quot;Set All WNL&quot; checkbox has been set to true, so that
+   * the input&#x27;s value can be set to the default value.
+   */
+  ngOnChanges(): void {
+    if(this.hasWNL) {
+      this.toggleWNL();
+    }
+  }
+
+  /**
+   * Toggles the wnl property. Enables/disables input and autofills/clears
+   * the default value depending on the value of WNL checkbox.
+   */
+  toggleWNL() {
+    if(this.wnl) {
+      this.toDefaultValue();
+    }
+    else {
+      this.clearControl();
+    }
+  }
+
+  /**
+   * Disables the FormControl and sets its value to be the default value.
+   * Emits the value of the wnl property for the parent to handle the
+   * &quot;Set All WNL&quot; checkbox display.
+   */
+  toDefaultValue() {
+    // use {onlySelf: true} to restrict validity checking to the current control,
+    // rather than the entire form
+    this.control?.setValue(this.default, {onlySelf: true});
+    this.control?.disable({onlySelf: true});
+    this.wnlChange.emit(this.wnl);
+  }
+
+  /**
+   * Enables the FormControl and clears its value.
+   * Emits the value of the wnl property for the parent to handle the
+   * &quot;Set All WNL&quot; checkbox display.
+   */
+  clearControl() {
+    // Enable control and clear it of any value
+    this.control?.enable({onlySelf: true});
+    this.control?.setValue(&#x27;&#x27;, {onlySelf: true});
+    this.wnlChange.emit(this.wnl);
+  }
+
+  /**
+   * Event handler that is called whenever the input has been changed,
+   * if the input is the &quot;select&quot; type. This is used to toggle the
+   * &quot;WNL&quot; checkbox whenever the default/WNL option has been selected.
+   * 
+   * @param event The value that the select input has been changed to.
+   */
+  selectionChanged(event: any) {
+    if(event.value &#x3D;&#x3D; this.default) {
+      this.wnl &#x3D; !this.wnl;
+      this.toDefaultValue();
+    }
+  }
+
+  get isTextType() {
+    return this.type &#x3D;&#x3D; &#x27;text&#x27;;
+  }
+
+  get isNumberType() {
+    return this.type &#x3D;&#x3D; &#x27;number&#x27;;
+  }
+
+  get isSelectType() {
+    return this.type &#x3D;&#x3D; &#x27;select&#x27;;
+  }
+
+  get isDateType() {
+    return this.type &#x3D;&#x3D; &#x27;date&#x27;;
+  }
+
+  get isDateTimeType() {
+    return this.type &#x3D;&#x3D; &#x27;datetime-local&#x27;;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- 
+  If the sub-form component has a &quot;All Within Normal Limits&quot; checkbox, copy and
+  paste the below commented-out html at the top of the sub-form&#x27;s template.
+  (e.g. musculoskeletal-form, genitourinary-form, etc.)
+
+  This checkbox enables/disables all other &quot;WNL&quot; checkboxes within the sub-form.
+
+  &lt;mat-checkbox
+    [checked]&#x3D;&quot;allWNL&quot;
+    [indeterminate]&#x3D;&quot;someWNL()&quot;
+    (change)&#x3D;&quot;setAllWNL($event.checked)&quot;&gt;
+    All Within Normal Limits
+  &lt;/mat-checkbox&gt;
+ --&gt;
+
+&lt;div&gt;
+  &lt;mat-form-field *ngIf&#x3D;&quot;isTextType&quot; appearance&#x3D;&quot;fill&quot; [ngStyle]&#x3D;&quot;width ? {&#x27;width&#x27;: width} : {}&quot;&gt;
+    &lt;mat-label&gt;{{label}}&lt;/mat-label&gt;
+    &lt;input matInput [formControl]&#x3D;&quot;control&quot;&gt;
+    &lt;mat-hint *ngIf&#x3D;&quot;hint&quot;&gt;{{hint}}&lt;/mat-hint&gt;
+  &lt;/mat-form-field&gt;
+
+  &lt;mat-form-field *ngIf&#x3D;&quot;isNumberType&quot; appearance&#x3D;&quot;fill&quot;&gt;
+    &lt;mat-label&gt;{{label}}&lt;/mat-label&gt;
+    &lt;ng-container *ngIf&#x3D;&quot;min &amp;&amp; max; else noMinMax&quot;&gt;
+      &lt;input matInput type&#x3D;&quot;number&quot; [min]&#x3D;&quot;min&quot; [max]&#x3D;&quot;max&quot; [formControl]&#x3D;&quot;control&quot;&gt;
+    &lt;/ng-container&gt;
+    &lt;ng-template #noMinMax&gt;
+      &lt;input matInput type&#x3D;&quot;number&quot; [formControl]&#x3D;&quot;control&quot;&gt;
+    &lt;/ng-template&gt;
+    &lt;mat-hint *ngIf&#x3D;&quot;hint&quot;&gt;{{hint}}&lt;/mat-hint&gt;
+  &lt;/mat-form-field&gt;
+
+  &lt;mat-form-field *ngIf&#x3D;&quot;isSelectType&quot; appearance&#x3D;&quot;fill&quot; [ngStyle]&#x3D;&quot;width ? {&#x27;width&#x27;: width} : {}&quot;&gt;
+    &lt;mat-label&gt;{{label}}&lt;/mat-label&gt;
+    &lt;mat-select [formControl]&#x3D;&quot;control&quot; (selectionChange)&#x3D;&quot;selectionChanged($event)&quot;&gt;
+      &lt;mat-option *ngFor&#x3D;&quot;let option of options&quot; [value]&#x3D;&quot;option.key&quot;&gt;
+        {{option.viewValue}}
+      &lt;/mat-option&gt;
+    &lt;/mat-select&gt;
+    &lt;mat-hint *ngIf&#x3D;&quot;hint&quot;&gt;{{hint}}&lt;/mat-hint&gt;
+  &lt;/mat-form-field&gt;
+
+  &lt;mat-form-field *ngIf&#x3D;&quot;isDateType || isDateTimeType&quot; appearance&#x3D;&quot;fill&quot;&gt;
+    &lt;mat-label&gt;{{label}}&lt;/mat-label&gt;
+    &lt;input matInput [type]&#x3D;&quot;type&quot; [formControl]&#x3D;&quot;control&quot;&gt;
+    &lt;mat-hint *ngIf&#x3D;&quot;hint&quot;&gt;{{hint}}&lt;/mat-hint&gt;
+  &lt;/mat-form-field&gt;
+
+  &lt;mat-checkbox *ngIf&#x3D;&quot;hasWNL&quot; [(ngModel)]&#x3D;&quot;wnl&quot; (ngModelChange)&#x3D;&quot;toggleWNL()&quot;&gt;Within Normal Limits&lt;/mat-checkbox&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./emr-input.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">mat-form-field {
+  margin-right: 1rem;
+}
+
+// .checkbox-container {
+//   width: 50%;
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+
+//   p {
+//     flex: 1;
+//     margin-right: 1rem;
+//   }
+// }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!--   If the sub-form component has a "All Within Normal Limits" checkbox, copy and  paste the below commented-out html at the top of the sub-form\'s template.  (e.g. musculoskeletal-form, genitourinary-form, etc.)  This checkbox enables/disables all other "WNL" checkboxes within the sub-form.  <mat-checkbox    [checked]="allWNL"    [indeterminate]="someWNL()"    (change)="setAllWNL($event.checked)">    All Within Normal Limits  </mat-checkbox> --><div>  <mat-form-field *ngIf="isTextType" appearance="fill" [ngStyle]="width ? {\'width\': width} : {}">    <mat-label>{{label}}</mat-label>    <input matInput [formControl]="control">    <mat-hint *ngIf="hint">{{hint}}</mat-hint>  </mat-form-field>  <mat-form-field *ngIf="isNumberType" appearance="fill">    <mat-label>{{label}}</mat-label>    <ng-container *ngIf="min && max; else noMinMax">      <input matInput type="number" [min]="min" [max]="max" [formControl]="control">    </ng-container>    <ng-template #noMinMax>      <input matInput type="number" [formControl]="control">    </ng-template>    <mat-hint *ngIf="hint">{{hint}}</mat-hint>  </mat-form-field>  <mat-form-field *ngIf="isSelectType" appearance="fill" [ngStyle]="width ? {\'width\': width} : {}">    <mat-label>{{label}}</mat-label>    <mat-select [formControl]="control" (selectionChange)="selectionChanged($event)">      <mat-option *ngFor="let option of options" [value]="option.key">        {{option.viewValue}}      </mat-option>    </mat-select>    <mat-hint *ngIf="hint">{{hint}}</mat-hint>  </mat-form-field>  <mat-form-field *ngIf="isDateType || isDateTimeType" appearance="fill">    <mat-label>{{label}}</mat-label>    <input matInput [type]="type" [formControl]="control">    <mat-hint *ngIf="hint">{{hint}}</mat-hint>  </mat-form-field>  <mat-checkbox *ngIf="hasWNL" [(ngModel)]="wnl" (ngModelChange)="toggleWNL()">Within Normal Limits</mat-checkbox></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+    var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
+    var ACTUAL_COMPONENT = {'name': 'EmrInputComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EmrInputComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

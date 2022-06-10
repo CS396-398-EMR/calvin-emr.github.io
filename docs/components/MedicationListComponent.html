@@ -1,0 +1,2190 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>calvin-emr documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">calvin-emr documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  MedicationListComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/medication-list/medication-list.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>The page that fetches all medications from the backend and displays them in a table.
+The Medication List page also handles the creation of dialogs that are used to create,
+update, delete, and import medications.</p>
+
+    </p>
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-medication-list</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./medication-list.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./medication-list.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#action" >action</a>
+                            </li>
+                            <li>
+                                <a href="#actions" >actions</a>
+                            </li>
+                            <li>
+                                <a href="#columns" >columns</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog" >dialog</a>
+                            </li>
+                            <li>
+                                <a href="#ids" >ids</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#importedMeds" >importedMeds</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#importErrors" >importErrors</a>
+                            </li>
+                            <li>
+                                <a href="#medications" >medications</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#medicationsSub" >medicationsSub</a>
+                            </li>
+                            <li>
+                                <a href="#currentUser" >currentUser</a>
+                            </li>
+                            <li>
+                                <a href="#currentUserSub" >currentUserSub</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#mode" >mode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                            <li>
+                                <a href="#value" >value</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createMeds" >createMeds</a>
+                            </li>
+                            <li>
+                                <a href="#deleteAllMeds" >deleteAllMeds</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#downloadAllBarcodes" >downloadAllBarcodes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#downloadBarcode" >downloadBarcode</a>
+                            </li>
+                            <li>
+                                <a href="#generateHTMLCanvasElement" >generateHTMLCanvasElement</a>
+                            </li>
+                            <li>
+                                <a href="#getMedications" >getMedications</a>
+                            </li>
+                            <li>
+                                <a href="#handleAction" >handleAction</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openImportMedDialog" >openImportMedDialog</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#openMedDialog" >openMedDialog</a>
+                            </li>
+                            <li>
+                                <a href="#startLoading" >startLoading</a>
+                            </li>
+                            <li>
+                                <a href="#stopLoading" >stopLoading</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(medService: <a href="../injectables/MedicationService.html" target="_self">MedicationService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, dialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:85</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>medService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MedicationService.html" target="_self" >MedicationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createMeds"></a>
+                    <span class="name">
+                        <span ><b>createMeds</b></span>
+                        <a href="#createMeds"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createMeds(medListString: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="290"
+                            class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:290</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function that is called when the user imports medications via CSV.
+Cleans and creates new medications based on the data.
+Errors are put into the &quot;importErrors&quot; array.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>medListString</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>string of the list of medications imported from a CSV</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteAllMeds"></a>
+                    <span class="name">
+                        <span ><b>deleteAllMeds</b></span>
+                        <a href="#deleteAllMeds"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteAllMeds()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="323"
+                            class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:323</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Deletes all medications within the medication list from the backend.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="downloadAllBarcodes"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>downloadAllBarcodes</b></span>
+                        <a href="#downloadAllBarcodes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>downloadAllBarcodes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="183"
+                            class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:183</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Downloads all barcodes in the medication list into a PDF.
+Reference: <a href="https://github.com/parallax/jsPDF">https://github.com/parallax/jsPDF</a>.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="downloadBarcode"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>downloadBarcode</b></span>
+                        <a href="#downloadBarcode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>downloadBarcode(med: <a href="../classes/Medication.html" target="_self">Medication</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Saves a PNG of the specified medication&#39;s barcode to the user&#39;s Downloads folder.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>med</td>
+                                    <td>
+                                                <code><a href="../classes/Medication.html" target="_self" >Medication</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Medication to download barcode for</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateHTMLCanvasElement"></a>
+                    <span class="name">
+                        <span ><b>generateHTMLCanvasElement</b></span>
+                        <a href="#generateHTMLCanvasElement"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateHTMLCanvasElement(med: <a href="../classes/Medication.html" target="_self">Medication</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Creates a hidden HTMLCanvasElement that contains the barcode image.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>med</td>
+                                    <td>
+                                                <code><a href="../classes/Medication.html" target="_self" >Medication</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>HTMLCanvasElement</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>HTMLCanvasElement of the generated barcode</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMedications"></a>
+                    <span class="name">
+                        <span ><b>getMedications</b></span>
+                        <a href="#getMedications"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMedications()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets all objects from the &quot;medications&quot; collection in Firestore and converts
+them into Medication objects. Sorts the medications by name and assigns the
+&#39;ids&#39; property an array of medication ids (for use in the dialog form validation).</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleAction"></a>
+                    <span class="name">
+                        <span ><b>handleAction</b></span>
+                        <a href="#handleAction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleAction(event?: <a href="../classes/TableEvent.html" target="_self">TableEvent</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Interprets the event passed by the user clicking a button in the table.
+Essentially, it calls a specific function based on the button pressed.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="../classes/TableEvent.html" target="_self" >TableEvent</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Specifies the action to carry out and the Medication object to act upon.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:104</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Unsubscribe from all active subscriptions.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:96</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Calls function to load medications.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openImportMedDialog"></a>
+                    <span class="name">
+                        <span ><b>openImportMedDialog</b></span>
+                        <a href="#openImportMedDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openImportMedDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="269"
+                            class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:269</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Opens a FileUploadDialogComponent for the user to upload a CSV.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openMedDialog"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>openMedDialog</b></span>
+                        <a href="#openMedDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openMedDialog(event?: <a href="../classes/TableEvent.html" target="_self">TableEvent</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="220"
+                            class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:220</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Opens a MedDialogComponent. Passes a TableEvent object as data to the dialog.
+The TableEvent object contains:
+   (1) a TableAction object, and
+   (2) an object containing a Medication object and an array of all existing medication IDs.
+The array of IDs is used in the &quot;Add&quot; action to check an inputted medication ID
+against currently existing medication IDs. This is to ensure the admin does not
+enter an aleady-existing medication ID.
+After the dialog is closed, executes a REST operation on the current medication
+based on what action was selected.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="../classes/TableEvent.html" target="_self" >TableEvent</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Specifies the action to carry out and the Medication object to act upon.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startLoading"></a>
+                    <span class="name">
+                        <span ><b>startLoading</b></span>
+                        <a href="#startLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>startLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:64</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the isLoading property to true.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stopLoading"></a>
+                    <span class="name">
+                        <span ><b>stopLoading</b></span>
+                        <a href="#stopLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>stopLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:71</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the isLoading property to false.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="action"></a>
+                    <span class="name">
+                        <span ><b>action</b></span>
+                        <a href="#action"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>ActionName</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:64</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Local variable representation of ActionName enumeration.
+Allows us to use the enumeration in the template file.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="actions"></a>
+                    <span class="name">
+                        <span ><b>actions</b></span>
+                        <a href="#actions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/TableAction.html" target="_self" >TableAction[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new TableAction(downloadBarcodeActionName, &quot;get_app&quot;),
+    new TableAction(editActionName, &quot;edit&quot;),
+    new TableAction(deleteActionName, &quot;delete&quot;),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:81</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Actions to show up in the Medication table&#39;s row buttons.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="columns"></a>
+                    <span class="name">
+                        <span ><b>columns</b></span>
+                        <a href="#columns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/TableColumn.html" target="_self" >TableColumn[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    new TableColumn(&quot;Name&quot;, &quot;name&quot;,
+      (element: Medication) &#x3D;&gt; element.getName()),
+    new TableColumn(&quot;ID&quot;, &quot;id&quot;,
+      (element: Medication) &#x3D;&gt; element.getId()),
+    new TableColumn(&quot;Routes&quot;, &quot;routes&quot;,
+      (element: Medication) &#x3D;&gt; element.getRoutesAsCSV()),
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:69</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Columns to show up in the Medication table.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialog"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialog</b></span>
+                        <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatDialog</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:89</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ids"></a>
+                    <span class="name">
+                        <span ><b>ids</b></span>
+                        <a href="#ids"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List containing only the IDs for all medications.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="importedMeds"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>importedMeds</b></span>
+                        <a href="#importedMeds"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>String that stores the Medication information of a parsed CSV file.
+The string is parsed line-by-line to create put each medication&#39;s
+information in a Medication object.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="importErrors"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>importErrors</b></span>
+                        <a href="#importErrors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Columns to show up in the Medication table.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="medications"></a>
+                    <span class="name">
+                        <span ><b>medications</b></span>
+                        <a href="#medications"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Medication.html" target="_self" >Medication[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List containing all Medication objects.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="medicationsSub"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>medicationsSub</b></span>
+                        <a href="#medicationsSub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/pages/medication-list/medication-list.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Subscription to the MedicationsService.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUser"></a>
+                    <span class="name">
+                        <span ><b>currentUser</b></span>
+                        <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >User</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new User()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:35</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUserSub"></a>
+                    <span class="name">
+                        <span ><b>currentUserSub</b></span>
+                        <a href="#currentUserSub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:36</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoading"></a>
+                    <span class="name">
+                        <span ><b>isLoading</b></span>
+                        <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:22</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Flag to indicate whether the page is loading or not.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mode"></a>
+                    <span class="name">
+                        <span ><b>mode</b></span>
+                        <a href="#mode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ProgressSpinnerMode</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;indeterminate&#x27;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:27</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The mode of the ProgressSpinner. Defaults to &#39;indeterminate&#39;.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:46</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description">The service used to retrieve user data.</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="value"></a>
+                    <span class="name">
+                        <span ><b>value</b></span>
+                        <a href="#value"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>50</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/PageComponent.html" target="_self" >PageComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/PageComponent.html#source" target="_self" >PageComponent:33</a></code>
+</div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The value of the ProgressSpinner that indicates how far the page has loaded.
+Used only with the &#39;determinate&#39; mode.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { PageComponent } from &#x27;src/app/shared/page.component&#x27;;
+import { FileUploadDialogComponent } from &#x27;src/app/shared/file-upload-dialog/file-upload-dialog.component&#x27;;
+import { MedDialogComponent } from &#x27;src/app/shared/med-dialog/med-dialog.component&#x27;;
+import { Medication } from &#x27;src/app/types/medication.type&#x27;;
+import { ActionName, TableAction, TableEvent } from &#x27;src/app/types/table-action.enum&#x27;;
+import { TableColumn } from &#x27;src/app/types/table-column.type&#x27;;
+import { MedicationService } from &#x27;src/app/services/medication.service&#x27;;
+
+// To download barcodes
+import * as JsBarcode from &#x27;jsbarcode&#x27;;
+import { saveAs } from &#x27;file-saver&#x27;;
+import { jsPDF } from &#x27;jspdf&#x27;;
+import { UserService } from &#x27;src/app/services/user.service&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { LoginDialogComponent } from &#x27;src/app/shared/login-dialog/login-dialog.component&#x27;;
+import { barcodeDownloadError, barcodePDFName, barcodeSuffix, deleteActionName, downloadBarcodeActionName, editActionName } from &#x27;src/app/global&#x27;;
+
+
+/**
+ * The page that fetches all medications from the backend and displays them in a table.
+ * The Medication List page also handles the creation of dialogs that are used to create, 
+ * update, delete, and import medications. 
+ */
+@Component({
+  selector: &#x27;app-medication-list&#x27;,
+  templateUrl: &#x27;./medication-list.component.html&#x27;,
+  styleUrls: [&#x27;./medication-list.component.scss&#x27;]
+})
+export class MedicationListComponent extends PageComponent implements OnInit {
+
+  /**
+   * List containing all Medication objects.
+   */
+  medications: Medication[] &#x3D; [];
+
+  /**
+   * List containing only the IDs for all medications.
+   */
+  ids: string[] &#x3D; [];
+
+  /**
+   * Subscription to the MedicationsService.
+   */
+  medicationsSub?: Subscription;
+
+  /**
+   * String that stores the Medication information of a parsed CSV file.
+   * The string is parsed line-by-line to create put each medication&#x27;s
+   * information in a Medication object.
+   */
+  private importedMeds: string &#x3D; &quot;&quot;;
+
+  /**
+   * Columns to show up in the Medication table.
+   */
+  private importErrors: string[] &#x3D; [];
+
+  /**
+   * Local variable representation of ActionName enumeration.
+   * Allows us to use the enumeration in the template file.
+   * */ 
+  action &#x3D; ActionName;
+
+  /**
+   * Columns to show up in the Medication table.
+   */
+  columns: TableColumn[] &#x3D; [
+    new TableColumn(&quot;Name&quot;, &quot;name&quot;,
+      (element: Medication) &#x3D;&gt; element.getName()),
+    new TableColumn(&quot;ID&quot;, &quot;id&quot;,
+      (element: Medication) &#x3D;&gt; element.getId()),
+    new TableColumn(&quot;Routes&quot;, &quot;routes&quot;,
+      (element: Medication) &#x3D;&gt; element.getRoutesAsCSV()),
+  ];
+
+  /**
+   * Actions to show up in the Medication table&#x27;s row buttons.
+   */
+  actions: TableAction[] &#x3D; [
+    new TableAction(downloadBarcodeActionName, &quot;get_app&quot;),
+    new TableAction(editActionName, &quot;edit&quot;),
+    new TableAction(deleteActionName, &quot;delete&quot;),
+  ]
+
+  constructor(private medService: MedicationService,
+    userService: UserService,
+    public dialog: MatDialog) {
+    super(userService);
+  }
+
+  /**
+   * Calls function to load medications.
+   */
+  ngOnInit(): void {
+    super.ngOnInit();
+    this.getMedications();
+  }
+
+  /**
+   * Unsubscribe from all active subscriptions.
+   */
+  ngOnDestroy(): void {
+    this.medicationsSub?.unsubscribe();
+  }
+
+  /**
+   * Gets all objects from the &quot;medications&quot; collection in Firestore and converts
+   * them into Medication objects. Sorts the medications by name and assigns the
+   * &#x27;ids&#x27; property an array of medication ids (for use in the dialog form validation).
+   */
+  getMedications(): void {
+    this.medicationsSub &#x3D; this.medService.getMedications().subscribe(actionArray &#x3D;&gt; {
+      this.medications &#x3D; actionArray.map(item &#x3D;&gt; {
+        let med &#x3D; new Medication();
+        let obj &#x3D; { id: item.payload.doc.id, ...item.payload.doc.data() as object };
+        Object.assign(med, obj)
+        return med;
+      })
+      // Sort medications by name
+      this.medications.sort((a, b) &#x3D;&gt; a.name.localeCompare(b.name));
+
+      this.ids &#x3D; this.medications.map(med &#x3D;&gt; med.id);
+
+      this.stopLoading();
+    })
+  }
+
+  /**
+   * Interprets the event passed by the user clicking a button in the table.
+   * Essentially, it calls a specific function based on the button pressed.
+   * 
+   * @param event Specifies the action to carry out and the Medication object to act upon.
+   */
+  handleAction(event?: TableEvent) {
+    if(event?.action.name &#x3D;&#x3D; downloadBarcodeActionName) {
+      this.downloadBarcode(event.data as Medication);
+    }
+    else {
+      this.openMedDialog(event);
+    }
+  }
+
+  /**
+   * Creates a hidden HTMLCanvasElement that contains the barcode image.
+   * 
+   * @param med 
+   * @returns HTMLCanvasElement of the generated barcode
+   * 
+   */
+  generateHTMLCanvasElement(med: Medication): HTMLCanvasElement {
+    JsBarcode(&quot;#barcode&quot;, med.getId(), {
+      width: 1,
+      height: 40,
+    });
+
+    // Reference: https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob
+    return document.getElementById(&#x27;barcode&#x27;) as HTMLCanvasElement;
+  }
+
+  /**
+   * Saves a PNG of the specified medication&#x27;s barcode to the user&#x27;s Downloads folder.
+   * 
+   * @param med Medication to download barcode for
+   */
+  public downloadBarcode(med: Medication) {
+    let barcode &#x3D; this.generateHTMLCanvasElement(med);
+    barcode.toBlob((blob) &#x3D;&gt; {
+      if(blob) {
+        saveAs(blob, med.getId() + barcodeSuffix);
+      }
+      else {
+        console.log(barcodeDownloadError)
+      }
+    });
+  }
+
+  /**
+   * Downloads all barcodes in the medication list into a PDF.
+   * Reference: https://github.com/parallax/jsPDF.
+   */
+  public downloadAllBarcodes() {
+    const pdf &#x3D; new jsPDF();  // create PDF object
+    let pageHeight&#x3D; pdf.internal.pageSize.height; // get default page height (in mm)
+    let x &#x3D; 10;   // barcodes will all be 10mm to the right of the page
+    let y &#x3D; 10;   // starting point of page will be 10mm from the top edge
+    this.medications.forEach((med) &#x3D;&gt; {
+      let barcode &#x3D; this.generateHTMLCanvasElement(med);  // generate barcode for each medication
+      let w &#x3D; barcode.width / 4;                          // since barcodes tend to be large, scale by
+      let h &#x3D; barcode.height / 4;                         //  1/4 of original size
+
+      // Check if the barcode will go off the page; if so, add a new page
+      if (y + h &gt;&#x3D; pageHeight) {
+        pdf.addPage();
+        y &#x3D; 10 // Restart height position
+      }
+
+      pdf.addImage(barcode, &#x27;png&#x27;, x, y, w, h);
+      y +&#x3D; h + 10;  // will make the next barcode 10mm below the current one
+    })
+
+    // Save the PDF to the user&#x27;s downloads folder.
+    pdf.save(barcodePDFName);
+  }
+
+  /**
+   * Opens a MedDialogComponent. Passes a TableEvent object as data to the dialog.
+   * The TableEvent object contains:
+   *    (1) a TableAction object, and
+   *    (2) an object containing a Medication object and an array of all existing medication IDs.
+   * The array of IDs is used in the &quot;Add&quot; action to check an inputted medication ID
+   * against currently existing medication IDs. This is to ensure the admin does not
+   * enter an aleady-existing medication ID.
+   * After the dialog is closed, executes a REST operation on the current medication
+   * based on what action was selected.
+   * 
+   * @param event Specifies the action to carry out and the Medication object to act upon.
+   */
+  public openMedDialog(event?: TableEvent) {
+    // If event was not specified, assume action is an &quot;Add medication&quot;
+    if (!event) {
+      // Create new TableEvent for &quot;Add medication&quot; operation
+      // Pass a new medication and the list of IDs for validation
+      event &#x3D; new TableEvent(
+        new TableAction(&quot;Add&quot;, &quot;add&quot;),
+        { medication: new Medication(), ids: this.ids }
+      )
+    }
+    // If the event is specified (edit or delete), don&#x27;t pass any ids since
+    // they are not needed
+    else {
+      event.data &#x3D; { medication: event.data, ids: [] }
+    }
+
+    // Open dialog
+    const dialogRef &#x3D; this.dialog.open(MedDialogComponent, {
+      data: event,
+    });
+
+    // Execute REST operations based on action
+    dialogRef.afterClosed().subscribe((med: Medication) &#x3D;&gt; {
+      if(med) {
+        switch(event?.action.name) {
+          case ActionName.Add: {
+            this.medService.createMedication(med);
+            this.downloadBarcode(med);
+            break;
+          }
+          case ActionName.Edit: {
+            this.medService.updateMedication(med);
+            break;
+          }
+          case ActionName.Delete: {
+            this.medService.deleteMedication(med.getId())
+            break;
+          }
+          default: {
+            console.log(event?.action.name, &quot;is not a valid action!&quot;)
+          }
+        }
+      }
+    })
+  }
+
+  /**
+   * Opens a FileUploadDialogComponent for the user to upload a CSV.
+   */
+  openImportMedDialog() {
+    this.importErrors &#x3D; [];
+    const dialogRef &#x3D; this.dialog.open(FileUploadDialogComponent, {
+      height: &#x27;40%&#x27;,
+      width: &#x27;60%&#x27;,
+      data: { title: &quot;Import Medications&quot;, fileResult: this.importedMeds }
+    })
+
+    // result is string, since fileReader returns string after parsing file
+    dialogRef.afterClosed().subscribe((result: string) &#x3D;&gt; {
+      this.createMeds(result);
+    })
+  }
+
+  /**
+   * Function that is called when the user imports medications via CSV.
+   * Cleans and creates new medications based on the data.
+   * Errors are put into the &quot;importErrors&quot; array.
+   * 
+   * @param medListString string of the list of medications imported from a CSV
+   */
+  createMeds(medListString: string) {
+    // Ignore first row, since first row is column headers
+    let newMeds &#x3D; medListString.split(&#x27;\r&#x27;).slice(1);
+    this.isLoading &#x3D; true;
+    newMeds.forEach((medString) &#x3D;&gt; {
+      // Try to add data; if data is not valid, add to errors array
+      try {
+        let medParams &#x3D; medString.split(&#x27;,&#x27;).filter(x &#x3D;&gt; x !&#x3D; &quot;&quot;).map(x &#x3D;&gt; x.trim());
+        let routes &#x3D; medParams[1].split(&#x27;/&#x27;).sort((a, b) &#x3D;&gt; a.localeCompare(b))
+
+        // Parameter order: id, name, route
+        let med &#x3D; new Medication(medParams[2], medParams[0], routes)
+        this.medService.createMedication(med);
+      }
+      catch (e) {
+        this.importErrors.push(medString)
+      }
+    })
+
+    this.stopLoading();
+
+    // Display errors, if any
+    if (this.importErrors.length &gt; 0) {
+      let errorString &#x3D; this.importErrors.join(&quot;\n&quot;)
+      console.error(&quot;Could not import the following data:\n&quot;, errorString,
+        &quot;\nVerify that your file is correctly formatted and that no data is missing.&quot;)
+      // TODO: make this a dialog box
+    }
+  }
+
+  /**
+   * Deletes all medications within the medication list from the backend.
+   */
+  deleteAllMeds() {
+    const dialogRef &#x3D; this.dialog.open(LoginDialogComponent, {
+      data: { 
+        title: &quot;Delete All Medications&quot;, 
+        prompt: &quot;Are you sure you want to delete all medications? Enter your password to verify you would like to do so.&quot;,
+        verifyButtonLabel: &quot;Delete All Medications&quot;, 
+      }
+    })
+
+    // result is string, since fileReader returns string after parsing file
+    dialogRef.afterClosed().subscribe((deleteMeds: boolean) &#x3D;&gt; {
+      if (deleteMeds &amp;&amp; this.medications.length &gt; 0) {
+        console.log(&quot;Deleting meds!&quot;)
+        this.startLoading();
+        this.medications.forEach((med) &#x3D;&gt; {
+          this.medService.deleteMedication(med.id);
+        })
+        this.stopLoading();
+      }
+    })
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- Loading indicator --&gt;
+&lt;div class&#x3D;&quot;loading-wrapper&quot; *ngIf&#x3D;&quot;isLoading&quot;&gt;
+  &lt;mat-progress-spinner *ngIf&#x3D;&quot;isLoading&quot; class&#x3D;&quot;loading-indicator&quot; [mode]&#x3D;&quot;mode&quot; [value]&#x3D;&quot;value&quot;&gt;
+  &lt;/mat-progress-spinner&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;wrapper&quot; *ngIf&#x3D;&quot;! isLoading&quot;&gt;
+  &lt;div class&#x3D;&quot;med-list-container&quot;&gt;
+    &lt;div&gt;
+      &lt;canvas id&#x3D;&quot;barcode&quot;&gt;&lt;/canvas&gt;
+    &lt;/div&gt;
+    &lt;h1&gt;Medication List&lt;/h1&gt;
+    &lt;div class&#x3D;&quot;btn-container&quot;&gt;
+      &lt;button mat-raised-button (click)&#x3D;&quot;openMedDialog()&quot;&gt;
+        &lt;mat-icon&gt;add&lt;/mat-icon&gt;
+        &lt;span&gt;New Medication&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;button mat-raised-button (click)&#x3D;&quot;openImportMedDialog()&quot;&gt;
+        &lt;mat-icon&gt;upload&lt;/mat-icon&gt;
+        &lt;span&gt;Import Medications&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;button mat-raised-button (click)&#x3D;&quot;downloadAllBarcodes()&quot;&gt;
+        &lt;mat-icon&gt;get_app&lt;/mat-icon&gt;
+        &lt;span&gt;Download All Barcodes&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;button mat-raised-button (click)&#x3D;&quot;deleteAllMeds()&quot;&gt;
+        &lt;mat-icon&gt;delete_forever&lt;/mat-icon&gt;
+        &lt;span&gt;Delete All Medications&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;app-emr-table
+      *ngIf&#x3D;&quot;medications.length &gt; 0; else noMeds&quot;
+      [tableData]&#x3D;&quot;medications&quot;
+      [tableColumns]&#x3D;&quot;columns&quot;
+      [tableActions]&#x3D;&quot;actions&quot;
+      (rowAction)&#x3D;&quot;handleAction($event)&quot;
+      [numbered]&#x3D;&quot;true&quot;
+    &gt;
+    &lt;/app-emr-table&gt;
+    &lt;ng-template #noMeds&gt;
+      &lt;h3&gt;You currently have no medications.&lt;/h3&gt;
+    &lt;/ng-template&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./medication-list.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.wrapper {
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eee;
+  height: auto;
+}
+
+.med-list-container {
+  padding: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem 0 1rem 0;
+}
+
+button {
+  margin-right: 1rem;
+}
+
+#barcode {
+  display: none;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- Loading indicator --><div class="loading-wrapper" *ngIf="isLoading">  <mat-progress-spinner *ngIf="isLoading" class="loading-indicator" [mode]="mode" [value]="value">  </mat-progress-spinner></div><div class="wrapper" *ngIf="! isLoading">  <div class="med-list-container">    <div>      <canvas id="barcode"></canvas>    </div>    <h1>Medication List</h1>    <div class="btn-container">      <button mat-raised-button (click)="openMedDialog()">        <mat-icon>add</mat-icon>        <span>New Medication</span>      </button>      <button mat-raised-button (click)="openImportMedDialog()">        <mat-icon>upload</mat-icon>        <span>Import Medications</span>      </button>      <button mat-raised-button (click)="downloadAllBarcodes()">        <mat-icon>get_app</mat-icon>        <span>Download All Barcodes</span>      </button>      <button mat-raised-button (click)="deleteAllMeds()">        <mat-icon>delete_forever</mat-icon>        <span>Delete All Medications</span>      </button>    </div>    <app-emr-table      *ngIf="medications.length > 0; else noMeds"      [tableData]="medications"      [tableColumns]="columns"      [tableActions]="actions"      (rowAction)="handleAction($event)"      [numbered]="true"    >    </app-emr-table>    <ng-template #noMeds>      <h3>You currently have no medications.</h3>    </ng-template>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+    var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
+    var ACTUAL_COMPONENT = {'name': 'MedicationListComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MedicationListComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
