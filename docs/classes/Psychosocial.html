@@ -62,7 +62,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/types/assessment.type.ts</code>
+            <code>src/app/shared/models/assessment.model.ts</code>
         </p>
 
 
@@ -119,7 +119,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="610" class="link-to-prism">src/app/types/assessment.type.ts:610</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="674" class="link-to-prism">src/app/shared/models/assessment.model.ts:674</a></div>
                             </td>
                         </tr>
 
@@ -193,7 +193,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="605" class="link-to-prism">src/app/types/assessment.type.ts:605</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="669" class="link-to-prism">src/app/shared/models/assessment.model.ts:669</a></div>
                         </td>
                     </tr>
 
@@ -226,7 +226,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="610" class="link-to-prism">src/app/types/assessment.type.ts:610</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="674" class="link-to-prism">src/app/shared/models/assessment.model.ts:674</a></div>
                         </td>
                     </tr>
 
@@ -251,9 +251,10 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Timestamp } from &quot;firebase/firestore&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Timestamp } from &#x27;firebase/firestore&#x27;;
+import { HOUR24_DATE_CONFIG } from &#x27;src/app/global&#x27;;
 
-const noString &#x3D; &quot;N/A&quot;; // the default string to use if no value is provided for string variables
+const noString &#x3D; &#x27;N/A&#x27;; // the default string to use if no value is provided for string variables
 
 /**
  * Holds information about the patient&#x27;s cardiovascular assessment.
@@ -268,7 +269,7 @@ export class Cardiovascular {
 
   /**
    * The patient&#x27;s heart tones.
-   * 
+   *
    * Options: murmur or gallup.
    */
   heartTones: string;
@@ -276,7 +277,7 @@ export class Cardiovascular {
   /**
    * The patient&#x27;s heart rhythm. If the nurse selects &quot;other&quot;, they should be able to enter
    * a free form text input into the rhythm field.
-   * 
+   *
    * Options: atrial fibrillation, PVC&#x27;s, PAC&#x27;s, SVT, atrial flutter, or other - describe.
    */
   rhythm: string;
@@ -295,28 +296,28 @@ export class Cardiovascular {
 
   /**
    * The level of pitting edema in the patient&#x27;s right hand.
-   * 
+   *
    * Options: 1+, 2+, 3+, or 4+.
    */
   rightHand: string;
 
   /**
    * The level of pitting edema in the patient&#x27;s right foot.
-   * 
+   *
    * Options: 1+, 2+, 3+, or 4+.
    */
   rightFoot: string;
 
   /**
    * The level of pitting edema in the patient&#x27;s left foot.
-   * 
+   *
    * Options: 1+, 2+, 3+, or 4+.
    */
   leftFoot: string;
 
   /**
    * The level of pitting edema in the patient&#x27;s left hand.
-   * 
+   *
    * Options: 1+, 2+, 3+, or 4+.
    */
   leftHand: string;
@@ -325,7 +326,7 @@ export class Cardiovascular {
 
   /**
    * The patient&#x27;s generalized perfusion.
-   * 
+   *
    * Options: cold, pale, cyanotic, or palpitations.
    */
   generalizedPerfusion: string;
@@ -339,50 +340,64 @@ export class Cardiovascular {
 
   /**
    * The strength of the pulse in the right upper extremity.
-   * 
+   *
    * Options: +3 strong; +2 normal; +1 weak, thready; or +0 absent.
    */
   rue: string;
 
   /**
    * The strength of the pulse in the right lower extremity.
-   * 
+   *
    * Options: +3 strong; +2 normal; +1 weak, thready; or +0 absent.
    */
   rle: string;
 
   /**
    * The strength of the pulse in the left upper extremity.
-   * 
+   *
    * Options: +3 strong; +2 normal; +1 weak, thready; or +0 absent.
    */
   lue: string;
 
   /**
    * The strength of the pulse in the left lower extremity.
-   * 
+   *
    * Options: +3 strong; +2 normal; +1 weak, thready; or +0 absent.
    */
   lle: string;
 
-  constructor(pulsePattern?: boolean, heartTones?: string, rhythm?: string, jvd?: boolean, gnpe?: boolean,
-    rightHand?: string, rightFoot?: string, leftFoot?: string, leftHand?: string, generalizedPerfusion?: string,
-    capRefill?: boolean, rue?: string, rle?: string, lue?: string, lle?: string) {
-      this.pulsePattern &#x3D; (pulsePattern !&#x3D; null) ? pulsePattern : false;
-      this.heartTones &#x3D; heartTones ? heartTones : noString;
-      this.rhythm &#x3D; rhythm ? rhythm : noString;
-      this.jvd &#x3D; (jvd !&#x3D; null) ? jvd : false;
-      this.gnpe &#x3D; (gnpe !&#x3D; null) ? gnpe : false;
-      this.rightHand &#x3D; rightHand ? rightHand : noString;
-      this.rightFoot &#x3D; rightFoot ? rightFoot : noString;
-      this.leftFoot &#x3D; leftFoot ? leftFoot : noString;
-      this.leftHand &#x3D; leftHand ? leftHand : noString;
-      this.generalizedPerfusion &#x3D; generalizedPerfusion ? generalizedPerfusion : noString;
-      this.capRefill &#x3D; (capRefill !&#x3D; null) ? capRefill : false;
-      this.rue &#x3D; rue ? rue : noString;
-      this.rle &#x3D; rle ? rle : noString;
-      this.lue &#x3D; lue ? lue : noString;
-      this.lle &#x3D; lle ? lle : noString;   
+  constructor(
+    pulsePattern?: boolean,
+    heartTones?: string,
+    rhythm?: string,
+    jvd?: boolean,
+    gnpe?: boolean,
+    rightHand?: string,
+    rightFoot?: string,
+    leftFoot?: string,
+    leftHand?: string,
+    generalizedPerfusion?: string,
+    capRefill?: boolean,
+    rue?: string,
+    rle?: string,
+    lue?: string,
+    lle?: string
+  ) {
+    this.pulsePattern &#x3D; pulsePattern !&#x3D; null ? pulsePattern : false;
+    this.heartTones &#x3D; heartTones ? heartTones : noString;
+    this.rhythm &#x3D; rhythm ? rhythm : noString;
+    this.jvd &#x3D; jvd !&#x3D; null ? jvd : false;
+    this.gnpe &#x3D; gnpe !&#x3D; null ? gnpe : false;
+    this.rightHand &#x3D; rightHand ? rightHand : noString;
+    this.rightFoot &#x3D; rightFoot ? rightFoot : noString;
+    this.leftFoot &#x3D; leftFoot ? leftFoot : noString;
+    this.leftHand &#x3D; leftHand ? leftHand : noString;
+    this.generalizedPerfusion &#x3D; generalizedPerfusion ? generalizedPerfusion : noString;
+    this.capRefill &#x3D; capRefill !&#x3D; null ? capRefill : false;
+    this.rue &#x3D; rue ? rue : noString;
+    this.rle &#x3D; rle ? rle : noString;
+    this.lue &#x3D; lue ? lue : noString;
+    this.lle &#x3D; lle ? lle : noString;
   }
 }
 
@@ -397,7 +412,7 @@ export class Respiratory {
 
   /**
    * The quality of the patient&#x27;s respirations.
-   * 
+   *
    * Options: dyspnea, tachypnea, bradypnea, or apnea.
    */
   quality: string;
@@ -406,7 +421,7 @@ export class Respiratory {
 
   /**
    * The sound of the right upper lobe.
-   * 
+   *
    * Options: coarse rhonchi, crackles/rales, wheezes expiratory, wheezes inspiratory,
    * or other - describe.
    */
@@ -414,7 +429,7 @@ export class Respiratory {
 
   /**
    * The sound of the right lower lobe.
-   * 
+   *
    * Options: coarse rhonchi, crackles/rales, wheezes expiratory, wheezes inspiratory,
    * or other - describe.
    */
@@ -422,7 +437,7 @@ export class Respiratory {
 
   /**
    * The sound of the right middle lobe.
-   * 
+   *
    * Options: coarse rhonchi, crackles/rales, wheezes expiratory, wheezes inspiratory,
    * or other - describe.
    */
@@ -430,7 +445,7 @@ export class Respiratory {
 
   /**
    * The sound of the left upper lobe.
-   * 
+   *
    * Options: coarse rhonchi, crackles/rales, wheezes expiratory, wheezes inspiratory,
    * or other - describe.
    */
@@ -438,7 +453,7 @@ export class Respiratory {
 
   /**
    * The sound of the left lower lobe.
-   * 
+   *
    * Options: coarse rhonchi, crackles/rales, wheezes expiratory, wheezes inspiratory,
    * or other - describe.
    */
@@ -451,31 +466,41 @@ export class Respiratory {
 
   /**
    * The type of cough, if any. This should only have a value if the &quot;cough&quot; field is true.
-   * 
+   *
    * Options: productive, nonproductive, or dry.
    */
   coughDescription: string;
 
   /**
    * The characteristics of the product produced by the patient&#x27;s cough.
-   * 
-   * Options: scant, moderate, large, purulent, blood tinged, black, green, yellow, 
+   *
+   * Options: scant, moderate, large, purulent, blood tinged, black, green, yellow,
    * thick, thin, and tenacious.
    */
   productiveDescription: string[];
 
-  constructor(rhythm?: boolean, quality?: string, rul?: string, rll?: string, rml?: string, lul?: string, lll?: string,
-    cough?: boolean, coughDescription?: string, productiveDescription?: string[]) {
-      this.irregularRhythm &#x3D; rhythm ? rhythm : false;
-      this.quality &#x3D; quality ? quality : noString;
-      this.rul &#x3D; rul ? rul : noString;
-      this.rll &#x3D; rll ? rll : noString;
-      this.rml &#x3D; rml ? rml : noString;
-      this.lul &#x3D; lul ? lul : noString;
-      this.lll &#x3D; lll ? lll : noString;
-      this.cough &#x3D; cough ? cough : false;
-      this.coughDescription &#x3D; coughDescription ? coughDescription : noString;
-      this.productiveDescription &#x3D; productiveDescription ? productiveDescription : [];
+  constructor(
+    rhythm?: boolean,
+    quality?: string,
+    rul?: string,
+    rll?: string,
+    rml?: string,
+    lul?: string,
+    lll?: string,
+    cough?: boolean,
+    coughDescription?: string,
+    productiveDescription?: string[]
+  ) {
+    this.irregularRhythm &#x3D; rhythm ? rhythm : false;
+    this.quality &#x3D; quality ? quality : noString;
+    this.rul &#x3D; rul ? rul : noString;
+    this.rll &#x3D; rll ? rll : noString;
+    this.rml &#x3D; rml ? rml : noString;
+    this.lul &#x3D; lul ? lul : noString;
+    this.lll &#x3D; lll ? lll : noString;
+    this.cough &#x3D; cough ? cough : false;
+    this.coughDescription &#x3D; coughDescription ? coughDescription : noString;
+    this.productiveDescription &#x3D; productiveDescription ? productiveDescription : [];
   }
 }
 
@@ -485,14 +510,14 @@ export class Respiratory {
 export class Neurological {
   /**
    * The patient&#x27;s level of consciousness.
-   * 
+   *
    * Options: lethargic or somnolent.
    */
   loc: string;
 
   /**
    * The patient&#x27;s sense of orientation.
-   * 
+   *
    * Options: not to person, not to place, not to time, and not to situation.
    */
   orientation: string[];
@@ -504,39 +529,39 @@ export class Neurological {
 
   /**
    * The strength of the patient&#x27;s hand grips.
-   * 
+   *
    * Options: strong, moderate, or weak.
    */
   handGrips: string;
 
   /**
    * The strength of the patient&#x27;s lower extremity push/pull.
-   * 
+   *
    * Options: strong, moderate, or weak.
    */
   lePushPull: string;
 
   /**
    * Speed of the patient&#x27;s pupillary response.
-   * 
+   *
    * Options: sluggish or absent.
    */
   pupillaryResponse: string;
 
   /**
    * The amount of pupillary dilation the patient experiences in their left eye.
-   * 
+   *
    * Options: 2mm, 4mm, 6mm, or 8mm.
    */
   leftPupillaryDilation: string;
 
   /**
    * The amount of pupillary dilation the patient experiences in their left eye.
-   * 
+   *
    * Options: 2mm, 4mm, 6mm, or 8mm.
    */
   rightPupillaryDilation: string;
-  
+
   /**
    * The patient&#x27;s Glasgow Coma Scale score.
    */
@@ -546,42 +571,55 @@ export class Neurological {
 
   /**
    * Sensation in right upper extremity.
-   * 
+   *
    * Options: numbness or tingling.
    */
   rue: string;
 
   /**
    * Sensation in right lower extremity.
-   * 
+   *
    * Options: numbness or tingling.
    */
   rle: string;
 
   /**
    * Sensation in left lower extremity.
-   * 
+   *
    * Options: numbness or tingling.
    */
   lle: string;
 
   /**
    * Sensation in left upper extremity.
-   * 
+   *
    * Options: numbness or tingling.
    */
   lue: string;
 
   /**
    * Extremities where the patient experiences tremors.
-   * 
+   *
    * Options: RUE, RLE, LUE, and LLE.
    */
   tremors: string[];
 
-  constructor(loc?: string, orientation?: string[], extremityMovement?: string, handGrips?: string, lePushPull?: string,
-    pupillaryResponse?: string, leftPupillaryDilation?: string, rightPupillaryDilation?: string, gcss?: string,
-    rue?: string, rle?: string, lle?: string ,lue?: string, tremors?: string[]) {
+  constructor(
+    loc?: string,
+    orientation?: string[],
+    extremityMovement?: string,
+    handGrips?: string,
+    lePushPull?: string,
+    pupillaryResponse?: string,
+    leftPupillaryDilation?: string,
+    rightPupillaryDilation?: string,
+    gcss?: string,
+    rue?: string,
+    rle?: string,
+    lle?: string,
+    lue?: string,
+    tremors?: string[]
+  ) {
     this.loc &#x3D; loc ? loc : noString;
     this.orientation &#x3D; orientation ? orientation : [];
     this.extremityMovement &#x3D; extremityMovement ? extremityMovement : noString;
@@ -603,15 +641,14 @@ export class Neurological {
  * Holds information about the patient&#x27;s musculoskeletal assessment.
  */
 export class Musculoskeletal {
-
   // Fall Risk Assessment Tool
 
   /**
    * The patient&#x27;s age range.
-   * 
-   * Options: 
-   * &quot;60 - 69 years (1 point)&quot;, 
-   * &quot;70 -79 years (2 points)&quot;, 
+   *
+   * Options:
+   * &quot;60 - 69 years (1 point)&quot;,
+   * &quot;70 -79 years (2 points)&quot;,
    * or &quot;greater than or equal to 80 years (3 points)&quot;.
    */
   age: string;
@@ -624,20 +661,20 @@ export class Musculoskeletal {
 
   /**
    * AKA &quot;elimination, bowel and urine.&quot;
-   * 
-   * Options: 
-   * &quot;Incontinence (2 points)&quot;, 
-   * &quot;Urgency or frequency (2 points)&quot;, 
+   *
+   * Options:
+   * &quot;Incontinence (2 points)&quot;,
+   * &quot;Urgency or frequency (2 points)&quot;,
    * or &quot;Urgency/frequency and incontinence (4 points)&quot;.
    */
   ebu: string;
 
   /**
    * The number of high fall risk drugs the patient is currently on.
-   * 
-   * Options: 
-   * &quot;On 1 high fall risk drug (3 points)&quot;, 
-   * &quot;On 2 or more high fall risk drugs (5 points)&quot;, 
+   *
+   * Options:
+   * &quot;On 1 high fall risk drug (3 points)&quot;,
+   * &quot;On 2 or more high fall risk drugs (5 points)&quot;,
    * or &quot;Sedated procedure within past 24 hours (7 points)&quot;.
    */
   medications: string;
@@ -645,9 +682,9 @@ export class Musculoskeletal {
   /**
    * AKA &quot;patient care equipment.&quot; The number of pieces of equipment that tethers
    * the patient.
-   * 
+   *
    * Options:
-   * &quot;One present (1 point)&quot;, 
+   * &quot;One present (1 point)&quot;,
    * &quot;Two present (2 points)&quot;,
    * or &quot;3 or more present (3 points)&quot;.
    */
@@ -655,8 +692,8 @@ export class Musculoskeletal {
 
   /**
    * The patient&#x27;s fall risk score based on their mobility.
-   * 
-   * Options: 
+   *
+   * Options:
    * &quot;Requires assistance or supervision for mobility, transfer, or ambulation (2 points)&quot;,
    * &quot;Unsteady gait (2 points)&quot;, and
    * &quot;Visual or auditory impairment affecting mobility (2 points)&quot;.
@@ -665,9 +702,9 @@ export class Musculoskeletal {
 
   /**
    * The patient&#x27;s fall risk score based on their cognitive ability.
-   * 
-   * Options: 
-   * &quot;Altered awareness of immediate physical environment (1 point)&quot;, 
+   *
+   * Options:
+   * &quot;Altered awareness of immediate physical environment (1 point)&quot;,
    * &quot;Impulsive (2 points)&quot;, and
    * &quot;Lack of understanding of one&#x27;s physical and cognitive limitations (4 points)&quot;.
    */
@@ -680,22 +717,32 @@ export class Musculoskeletal {
 
   /**
    * The mobility/transfers the patient has.
-   * 
+   *
    * Options: standby assist, one assist, two assists, or max assist.
    */
   mobilityAndTransfers: string;
-  
+
   /**
    * The assistive devices a patient uses for mobility.
-   * 
+   *
    * Options: gait belt, walker, cane, and trapeze.
    */
   assistiveDevices: string[];
 
-  constructor(age?: string, fallHistory?: boolean, ebu?: string, medications?: string, pce?: string, 
-    mobilityFallRisk?: string[], cognition?: string[], fallScore?: number, mobilityAndTransfers?: string, devices?: string[]) {
+  constructor(
+    age?: string,
+    fallHistory?: boolean,
+    ebu?: string,
+    medications?: string,
+    pce?: string,
+    mobilityFallRisk?: string[],
+    cognition?: string[],
+    fallScore?: number,
+    mobilityAndTransfers?: string,
+    devices?: string[]
+  ) {
     this.age &#x3D; age ? age : noString;
-    this.fallHistory &#x3D; (fallHistory !&#x3D; null) ? fallHistory : false;
+    this.fallHistory &#x3D; fallHistory !&#x3D; null ? fallHistory : false;
     this.ebu &#x3D; ebu ? ebu : noString;
     this.medications &#x3D; medications ? medications : noString;
     this.pce &#x3D; pce ? pce : noString;
@@ -715,28 +762,28 @@ export class Gastrointestinal {
 
   /**
    * The bowel sounds occurring in the patient&#x27;s right upper quadrant.
-   * 
+   *
    * Options: hypoactive, hyperactive, or absent.
    */
   ruq: string;
 
   /**
    * The bowel sounds occurring in the patient&#x27;s right lower quadrant.
-   * 
+   *
    * Options: hypoactive, hyperactive, or absent.
    */
   rlq: string;
 
   /**
    * The bowel sounds occurring in the patient&#x27;s left upper quadrant.
-   * 
+   *
    * Options: hypoactive, hyperactive, or absent.
    */
   luq: string;
-  
+
   /**
    * The bowel sounds occurring in the patient&#x27;s left lower quadrant.
-   * 
+   *
    * Options: hypoactive, hyperactive, or absent.
    */
   llq: string;
@@ -753,7 +800,7 @@ export class Gastrointestinal {
 
   /**
    * The amount of the patient&#x27;s emesis (vomit).
-   * 
+   *
    * Options: small, medium, or large.
    */
   emesis: string;
@@ -772,29 +819,40 @@ export class Gastrointestinal {
 
   /**
    * The color of the patient&#x27;s stoma.
-   * 
+   *
    * Options: pink, beefy red, pale, or purple.
    */
   stomaSite: string;
 
   /**
    * Describes the patient&#x27;s output.
-   * 
+   *
    * Options: loose, watery, or formed.
    */
   output: string;
-  
-  constructor(ruq?: string, rlq?: string, luq?: string, llq?: string, date?: Timestamp, nausea?: boolean,
-              emesis?: string, incontinence?: boolean, hemorrhoids?: boolean, stomaSite?: string, output?: string) {
+
+  constructor(
+    ruq?: string,
+    rlq?: string,
+    luq?: string,
+    llq?: string,
+    date?: Timestamp,
+    nausea?: boolean,
+    emesis?: string,
+    incontinence?: boolean,
+    hemorrhoids?: boolean,
+    stomaSite?: string,
+    output?: string
+  ) {
     this.ruq &#x3D; ruq ? ruq : noString;
     this.rlq &#x3D; rlq ? rlq : noString;
     this.luq &#x3D; luq ? luq : noString;
     this.llq &#x3D; llq ? llq : noString;
     this.dateLastBM &#x3D; date ? date : null;
-    this.nausea &#x3D; (nausea !&#x3D; null) ? nausea : false;
+    this.nausea &#x3D; nausea !&#x3D; null ? nausea : false;
     this.emesis &#x3D; emesis ? emesis : noString;
-    this.incontinence &#x3D; (incontinence !&#x3D; null) ? incontinence : false;
-    this.hemorrhoids &#x3D; (hemorrhoids !&#x3D; null) ? hemorrhoids : false;
+    this.incontinence &#x3D; incontinence !&#x3D; null ? incontinence : false;
+    this.hemorrhoids &#x3D; hemorrhoids !&#x3D; null ? hemorrhoids : false;
     this.stomaSite &#x3D; stomaSite ? stomaSite : noString;
     this.output &#x3D; output ? output : noString;
   }
@@ -806,25 +864,25 @@ export class Gastrointestinal {
 export class Genitourinary {
   /**
    * The color of the patient&#x27;s urine.
-   * 
+   *
    * Options: yellow, dark yellow, or blood tinged.
    */
   urineColor: string;
 
   /**
    * The characteristics of the patient&#x27;s urine.
-   * 
+   *
    * Options: cloudy, sediment, and odor.
    */
   urineCharacteristics: string[];
 
   /**
    * The pattern of urination the patient exhibits.
-   * 
+   *
    * Options: frequency, nocturia, dysuria, incontinence, and retention.
    */
   urinaryPattern: string[];
-  
+
   // Foley
 
   /**
@@ -837,7 +895,13 @@ export class Genitourinary {
    */
   securement: string;
 
-  constructor(uColor?: string, uCharacteristics?: string[], uPattern?: string[], justification?: string, securement?: string) {
+  constructor(
+    uColor?: string,
+    uCharacteristics?: string[],
+    uPattern?: string[],
+    justification?: string,
+    securement?: string
+  ) {
     this.urineColor &#x3D; uColor ? uColor : noString;
     this.urineCharacteristics &#x3D; uCharacteristics ? uCharacteristics : [];
     this.urinaryPattern &#x3D; uPattern ? uPattern : [];
@@ -852,7 +916,7 @@ export class Genitourinary {
 export class Psychosocial {
   /**
    * The patient&#x27;s mood.
-   * 
+   *
    * Options: non-interactive, elated, tearful, withdrawn, and flat.
    */
   mood: string[];
@@ -874,7 +938,7 @@ export class Psychosocial {
 export class Integumentary {
   /**
    * The appearance of the patient&#x27;s skin.
-   * 
+   *
    * Options: diaphoresis, pallor, poor turgor, cool, modeling, and jaundice.
    */
   skinAppearance: string[];
@@ -888,14 +952,14 @@ export class Integumentary {
 
   /**
    * The staging of the wound.
-   * 
+   *
    * Options: stage one, stage two, stage three, stage four, or unstageable.
    */
   staging: string;
 
   /**
    * The methods to care for the wound.
-   * 
+   *
    * Options: ABD, gauze, wet to dry dressing change, pharmaceutical agent (see MAR),
    * steri strips, staples, well approximated, and dehiscence.
    */
@@ -911,7 +975,7 @@ export class Integumentary {
 
 /**
  * Holds information about the patient&#x27;s nursing assessment.
- * 
+ *
  * In the sub-assessment categories (cardiovascular, respiratory, etc.), there may be fields with multiple options available.
  * Some of these options are mutually exclusive; some can have multiple options selected. In the sub-assessment classes,
  * multiple-select fields are usually string[] types, and use the word &quot;and&quot; when listing the options in the documentation.
@@ -965,9 +1029,17 @@ export class Assessment {
    */
   integumentary: Integumentary;
 
-  constructor(date?: Timestamp, cardiovascular?: Cardiovascular, respiratory?: Respiratory, neurological?: Neurological,
-    musculoskeletal?: Musculoskeletal, gastrointestinal?: Gastrointestinal, genitourinary?: Genitourinary,
-    psychosocial?: Psychosocial, integumentary?: Integumentary) {
+  constructor(
+    date?: Timestamp,
+    cardiovascular?: Cardiovascular,
+    respiratory?: Respiratory,
+    neurological?: Neurological,
+    musculoskeletal?: Musculoskeletal,
+    gastrointestinal?: Gastrointestinal,
+    genitourinary?: Genitourinary,
+    psychosocial?: Psychosocial,
+    integumentary?: Integumentary
+  ) {
     this.date &#x3D; date ? date : Timestamp.now();
     this.cardiovascular &#x3D; cardiovascular ? cardiovascular : new Cardiovascular();
     this.respiratory &#x3D; respiratory ? respiratory : new Respiratory();
@@ -980,20 +1052,29 @@ export class Assessment {
   }
 
   /**
-   * Prepares the Assessment&#x27;s format for Firebase by converting the assessment to JSON, 
+   *
+   * @returns The assessment&#x27;s Timestamp as a date string, formatted as &quot;MM/DD/YYYY @ HH:MM&quot;
+   */
+  get dateString(): string {
+    return this.date.toDate().toLocaleString([], HOUR24_DATE_CONFIG).replace(&#x27;,&#x27;, &#x27; @&#x27;);
+  }
+
+  /**
+   * Prepares the Assessment&#x27;s format for Firebase by converting the assessment to JSON,
    * with the JSON object&#x27;s date being a Timestamp.
-   * 
+   *
    * @returns an Assessment represented as JSON.
    */
   toFirebase() {
-    let obj &#x3D; JSON.parse(JSON.stringify(Object.assign({}, this)))
+    let obj &#x3D; JSON.parse(JSON.stringify(Object.assign({}, this)));
     obj.date &#x3D; Timestamp.fromMillis(obj.date.seconds * 1000);
 
     // TODO: change date in gastrointestinal to Timestamp
 
     return obj;
   }
-}</code></pre>
+}
+</code></pre>
     </div>
 </div>
 

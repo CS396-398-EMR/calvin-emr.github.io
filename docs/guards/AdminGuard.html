@@ -60,7 +60,7 @@
             <h3>File</h3>
             </p>
             <p class="comment">
-                <code>src/app/guards/admin.guard.ts</code>
+                <code>src/app/shared/guards/admin.guard.ts</code>
             </p>
 
 
@@ -81,15 +81,15 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#authService" >authService</a>
+                            </li>
+                            <li>
                                 <a href="#currentUser$" >currentUser$</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
                                 <a href="#router" >router</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Public</span>
-                                <a href="#userService" >userService</a>
                             </li>
                         </ul>
                     </td>
@@ -124,12 +124,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+<code>constructor(authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/guards/admin.guard.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/shared/guards/admin.guard.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -147,10 +147,10 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>userService</td>
+                                                        <td>authService</td>
                                                   
                                                         <td>
-                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -204,8 +204,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="23"
-                            class="link-to-prism">src/app/guards/admin.guard.ts:23</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/shared/guards/admin.guard.ts:19</a></div>
                 </td>
             </tr>
 
@@ -274,40 +274,35 @@
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from &#x27;@angular/router&#x27;;
 import { Observable } from &#x27;rxjs&#x27;;
 import { map, take } from &#x27;rxjs/operators&#x27;;
-import { patientsPath } from &#x27;../global&#x27;;
-import { UserService } from &#x27;../services/user.service&#x27;;
-import { User } from &#x27;../types/user.type&#x27;;
+import { PATH_PATIENTS } from &#x27;../../global&#x27;;
+import { AuthService } from &#x27;../services/auth.service&#x27;;
+import { User } from &#x27;../models/user.model&#x27;;
 
 @Injectable({
-  providedIn: &#x27;root&#x27;
+  providedIn: &#x27;root&#x27;,
 })
 export class AdminGuard implements CanActivate {
-
   currentUser$: Observable&lt;User&gt;;
 
-  constructor(
-    public userService: UserService,
-    public router: Router
-  ) { 
-    this.currentUser$ &#x3D; userService.currentUser$;
+  constructor(public authService: AuthService, public router: Router) {
+    this.currentUser$ &#x3D; authService.currentUser$;
   }
 
   canActivate(
     route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable&lt;boolean | UrlTree&gt; | Promise&lt;boolean | UrlTree&gt; | boolean | UrlTree {
-
+    state: RouterStateSnapshot
+  ): Observable&lt;boolean | UrlTree&gt; | Promise&lt;boolean | UrlTree&gt; | boolean | UrlTree {
     return this.currentUser$.pipe(
       take(1),
       map((user: User) &#x3D;&gt; {
-        if(user.isAdmin) {
+        if (user.isAdmin) {
           return true;
-        }
-        else {
-          this.router.navigateByUrl(patientsPath);
+        } else {
+          this.router.navigateByUrl(PATH_PATIENTS);
           return false;
         }
-      }),
-    )
+      })
+    );
   }
 }
 </code></pre>

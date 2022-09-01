@@ -60,7 +60,7 @@
             <h3>File</h3>
             </p>
             <p class="comment">
-                <code>src/app/guards/login.guard.ts</code>
+                <code>src/app/shared/guards/login.guard.ts</code>
             </p>
 
 
@@ -129,7 +129,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/guards/login.guard.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/shared/guards/login.guard.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -204,8 +204,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="33"
-                            class="link-to-prism">src/app/guards/login.guard.ts:33</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/shared/guards/login.guard.ts:29</a></div>
                 </td>
             </tr>
 
@@ -281,20 +281,16 @@ to &#39;/patients&#39; so long as they are logged in.</p>
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree, Router } from &#x27;@angular/router&#x27;;
 import { Observable } from &#x27;rxjs&#x27;;
 import { map, take } from &#x27;rxjs/operators&#x27;;
-import { AuthService } from &#x27;src/app/services/auth.service&#x27;;
-import { patientsPath } from &#x27;../global&#x27;;
+import { AuthService } from &#x27;src/app/shared/services/auth.service&#x27;;
+import { PATH_PATIENTS } from &#x27;../../global&#x27;;
 
 @Injectable({
-  providedIn: &#x27;root&#x27;
+  providedIn: &#x27;root&#x27;,
 })
 export class LoginGuard implements CanActivate {
-
   loggedIn$: Observable&lt;boolean&gt;;
 
-  constructor(
-    public authService: AuthService,
-    public router: Router
-  ) { 
+  constructor(public authService: AuthService, public router: Router) {
     this.loggedIn$ &#x3D; authService.loggedIn$;
   }
 
@@ -304,31 +300,30 @@ export class LoginGuard implements CanActivate {
    * route can be accessed. If the user is logged in, they are redirected to the &#x27;/patients&#x27;
    * route. They are also unable to access the &#x27;/login&#x27; route, and will continue to be redirected
    * to &#x27;/patients&#x27; so long as they are logged in.
-   * 
-   * @param route 
-   * @param state 
+   *
+   * @param route
+   * @param state
    * @returns The loggedIn$ Observable from AuthService.
    */
   canActivate(
     route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable&lt;boolean | UrlTree&gt; | Promise&lt;boolean | UrlTree&gt; | boolean | UrlTree {
+    state: RouterStateSnapshot
+  ): Observable&lt;boolean | UrlTree&gt; | Promise&lt;boolean | UrlTree&gt; | boolean | UrlTree {
     const url: string &#x3D; state.url;
 
     return this.loggedIn$.pipe(
       take(1),
-      map(auth &#x3D;&gt; {
-        const authenticated &#x3D; !!auth
-        if(authenticated) {
-          this.router.navigateByUrl(patientsPath);
+      map((auth) &#x3D;&gt; {
+        const authenticated &#x3D; !!auth;
+        if (authenticated) {
+          this.router.navigateByUrl(PATH_PATIENTS);
           return false;
-        }
-        else {
+        } else {
           return true;
         }
-      }),
-    )
+      })
+    );
   }
-
 }
 </code></pre>
         </div>

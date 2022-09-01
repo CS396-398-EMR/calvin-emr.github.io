@@ -58,7 +58,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/services/user.service.ts</code>
+            <code>src/app/shared/services/user.service.ts</code>
         </p>
 
 
@@ -69,31 +69,6 @@
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Properties</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                    <span class="modifier">Private</span>
-                                <a href="#_currentUser" >_currentUser</a>
-                            </li>
-                            <li>
-                                <a href="#currentUser" >currentUser</a>
-                            </li>
-                            <li>
-                                <a href="#currentUser$" >currentUser$</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Optional</span>
-                                <a href="#currentUserSub" >currentUserSub</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -104,53 +79,34 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#addPatientId" >addPatientId</a>
+                                    <span class="modifier">Async</span>
+                                <a href="#addPatientIdToUser" >addPatientIdToUser</a>
                             </li>
                             <li>
                                 <a href="#cleanUserData" >cleanUserData</a>
                             </li>
                             <li>
-                                <a href="#createUser" >createUser</a>
+                                <a href="#createUserAccount" >createUserAccount</a>
                             </li>
                             <li>
-                                <a href="#deletePatientId" >deletePatientId</a>
+                                <a href="#createUserDocument" >createUserDocument</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deletePatientIdFromAllUsers" >deletePatientIdFromAllUsers</a>
                             </li>
                             <li>
                                 <a href="#deleteUser" >deleteUser</a>
-                            </li>
-                            <li>
-                                <a href="#emitUser" >emitUser</a>
                             </li>
                             <li>
                                 <a href="#extractUserData" >extractUserData</a>
                             </li>
                             <li>
                                     <span class="modifier">Async</span>
-                                <a href="#getAllUsers" >getAllUsers</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Async</span>
-                                <a href="#getStaticUser" >getStaticUser</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Async</span>
-                                <a href="#setPatient" >setPatient</a>
-                            </li>
-                            <li>
-                                <a href="#setUser" >setUser</a>
-                            </li>
-                            <li>
-                                <a href="#tempAddPatientId" >tempAddPatientId</a>
-                            </li>
-                            <li>
-                                <a href="#unsetUser" >unsetUser</a>
+                                <a href="#getAllStudents" >getAllStudents</a>
                             </li>
                             <li>
                                 <a href="#updateUser" >updateUser</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Private</span>
-                                <a href="#userCompare" >userCompare</a>
                             </li>
                         </ul>
                     </td>
@@ -160,23 +116,6 @@
 
 
 
-                    <tr>
-                        <td class="col-md-4">
-                            <h6><b>Accessors</b></h6>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <ul class="index-list">
-                                <li>
-                                    <a href="#hasUser" >hasUser</a>
-                                </li>
-                                <li>
-                                    <a href="#isCurrentUserAdmin" >isCurrentUserAdmin</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
         </tbody>
     </table>
 </section>
@@ -187,12 +126,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(db: AngularFirestore)</code>
+<code>constructor(db: AngularFirestore, authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/services/user.service.ts:24</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/shared/services/user.service.ts:17</a></div>
                             </td>
                         </tr>
 
@@ -231,6 +170,20 @@ information (e.g. first name, last name, email) has changed.</p>
 
                                                         </td>
                                                 </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -249,30 +202,34 @@ information (e.g. first name, last name, email) has changed.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="addPatientId"></a>
+                    <a name="addPatientIdToUser"></a>
                     <span class="name">
-                        <span ><b>addPatientId</b></span>
-                        <a href="#addPatientId"><span class="icon ion-ios-link"></span></a>
+                        <span class="modifier">Async</span>
+                        <span ><b>addPatientIdToUser</b></span>
+                        <a href="#addPatientIdToUser"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>addPatientId(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addPatientIdToUser(patientId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, userId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="76"
-                            class="link-to-prism">src/app/services/user.service.ts:76</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/shared/services/user.service.ts:35</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Adds the provided patient ID to the provided user&#39;s document.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -283,11 +240,12 @@ information (e.g. first name, last name, email) has changed.</p>
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>id</td>
+                                    <td>patientId</td>
                                     <td>
                                                 <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                     </td>
@@ -297,6 +255,26 @@ information (e.g. first name, last name, email) has changed.</p>
                                     </td>
 
 
+                                    <td>
+                                        <p>The patient ID to add to the patientIds array.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>userId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The ID of the user document to add the patient ID to.</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -304,11 +282,12 @@ information (e.g. first name, last name, email) has changed.</p>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>    <code>unknown</code>
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>Promise</p>
+
                     </div>
                 </td>
             </tr>
@@ -334,8 +313,8 @@ information (e.g. first name, last name, email) has changed.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="156"
-                            class="link-to-prism">src/app/services/user.service.ts:156</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="135"
+                            class="link-to-prism">src/app/shared/services/user.service.ts:135</a></div>
                 </td>
             </tr>
 
@@ -395,30 +374,32 @@ of the properties, and that there are no spaces in the ID.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="createUser"></a>
+                    <a name="createUserAccount"></a>
                     <span class="name">
-                        <span ><b>createUser</b></span>
-                        <a href="#createUser"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>createUserAccount</b></span>
+                        <a href="#createUserAccount"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>createUser(user: <a href="../classes/User.html" target="_self">User</a>)</code>
+<code>createUserAccount(user: <a href="../classes/User.html" target="_self">User</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="165"
-                            class="link-to-prism">src/app/services/user.service.ts:165</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/shared/services/user.service.ts:75</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Calls a Firebase cloud function to create a user auth account.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -455,7 +436,7 @@ of the properties, and that there are no spaces in the ID.</p>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
@@ -469,30 +450,32 @@ of the properties, and that there are no spaces in the ID.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="deletePatientId"></a>
+                    <a name="createUserDocument"></a>
                     <span class="name">
-                        <span ><b>deletePatientId</b></span>
-                        <a href="#deletePatientId"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>createUserDocument</b></span>
+                        <a href="#createUserDocument"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>deletePatientId(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+<code>createUserDocument(user: <a href="../classes/User.html" target="_self">User</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="83"
-                            class="link-to-prism">src/app/services/user.service.ts:83</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/app/shared/services/user.service.ts:85</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Creates a document for the provided user in Firestore.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -503,6 +486,86 @@ of the properties, and that there are no spaces in the ID.</p>
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The user to create a document for in Firestore.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deletePatientIdFromAllUsers"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deletePatientIdFromAllUsers</b></span>
+                        <a href="#deletePatientIdFromAllUsers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deletePatientIdFromAllUsers(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/shared/services/user.service.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Iterates through all user documents that contain the patient ID
+and deletes the patient ID from the document&#39;s &#39;patientIds&#39; field.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -517,6 +580,10 @@ of the properties, and that there are no spaces in the ID.</p>
                                     </td>
 
 
+                                    <td>
+                                        <p>The patient ID to remove from all user documents.</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -524,11 +591,12 @@ of the properties, and that there are no spaces in the ID.</p>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>    <code>unknown</code>
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>Promise</p>
+
                     </div>
                 </td>
             </tr>
@@ -554,8 +622,8 @@ of the properties, and that there are no spaces in the ID.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="195"
-                            class="link-to-prism">src/app/services/user.service.ts:195</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="107"
+                            class="link-to-prism">src/app/shared/services/user.service.ts:107</a></div>
                 </td>
             </tr>
 
@@ -598,50 +666,11 @@ of the properties, and that there are no spaces in the ID.</p>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
                         
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="emitUser"></a>
-                    <span class="name">
-                        <span ><b>emitUser</b></span>
-                        <a href="#emitUser"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>emitUser()</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="205"
-                            class="link-to-prism">src/app/services/user.service.ts:205</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Emit the current User object to all subscribers.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
                     </div>
                 </td>
             </tr>
@@ -667,14 +696,16 @@ of the properties, and that there are no spaces in the ID.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="141"
-                            class="link-to-prism">src/app/services/user.service.ts:141</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/app/shared/services/user.service.ts:120</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Removes the ID parameter from the User object to prepare it for Firestore.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -726,26 +757,26 @@ of the properties, and that there are no spaces in the ID.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="getAllUsers"></a>
+                    <a name="getAllStudents"></a>
                     <span class="name">
                         <span class="modifier">Async</span>
-                        <span ><b>getAllUsers</b></span>
-                        <a href="#getAllUsers"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>getAllStudents</b></span>
+                        <a href="#getAllStudents"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>getAllUsers()</code>
+                    <code>getAllStudents()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="117"
-                            class="link-to-prism">src/app/services/user.service.ts:117</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/shared/services/user.service.ts:64</a></div>
                 </td>
             </tr>
 
@@ -755,367 +786,6 @@ of the properties, and that there are no spaces in the ID.</p>
 
                     <div class="io-description">
                         <b>Returns : </b>    <code>unknown</code>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="getStaticUser"></a>
-                    <span class="name">
-                        <span class="modifier">Async</span>
-                        <span ><b>getStaticUser</b></span>
-                        <a href="#getStaticUser"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                    <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>getStaticUser(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="97"
-                            class="link-to-prism">src/app/services/user.service.ts:97</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Retrieves a user&#39;s data one time. This function allows us to get data without
-subscribing to a data source, allowing for less need to clean up subscriptions.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                    <td>Description</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>id</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>The ID of the user document to retrieve.</p>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="../classes/User.html" target="_self" >Promise&lt;User | null&gt;</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        <p>Promise to load Patient data.</p>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="setPatient"></a>
-                    <span class="name">
-                        <span class="modifier">Async</span>
-                        <span ><b>setPatient</b></span>
-                        <a href="#setPatient"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                    <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>setPatient(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="128"
-                            class="link-to-prism">src/app/services/user.service.ts:128</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>id</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>data</td>
-                                    <td>
-                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="setUser"></a>
-                    <span class="name">
-                        <span ><b>setUser</b></span>
-                        <a href="#setUser"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>setUser(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="51"
-                            class="link-to-prism">src/app/services/user.service.ts:51</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Called by AuthService when the user logs in (or if the user is already logged in).
-Emits the user to all subscribers (e.g. guards, main-nav component) for the subscribers
-to use.</p>
-<p>TODO: The subscription in this function will persist for the lifetime of the application.
-How can we unsubscribe from it?</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                    <td>Description</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>id</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>The ID of the user to get from the &quot;users&quot; Firestore collection.</p>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="tempAddPatientId"></a>
-                    <span class="name">
-                        <span ><b>tempAddPatientId</b></span>
-                        <a href="#tempAddPatientId"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>tempAddPatientId(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, userId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="69"
-                            class="link-to-prism">src/app/services/user.service.ts:69</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>id</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>userId</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="unsetUser"></a>
-                    <span class="name">
-                        <span ><b>unsetUser</b></span>
-                        <a href="#unsetUser"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>unsetUser()</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="64"
-                            class="link-to-prism">src/app/services/user.service.ts:64</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
                     </div>
                 </td>
@@ -1142,8 +812,8 @@ How can we unsubscribe from it?</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="179"
-                            class="link-to-prism">src/app/services/user.service.ts:179</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/app/shared/services/user.service.ts:98</a></div>
                 </td>
             </tr>
 
@@ -1189,7 +859,7 @@ in the backend.</p>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
@@ -1199,424 +869,132 @@ in the backend.</p>
             </tr>
         </tbody>
     </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="userCompare"></a>
-                    <span class="name">
-                        <span class="modifier">Private</span>
-                        <span ><b>userCompare</b></span>
-                        <a href="#userCompare"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                    <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>userCompare(a: <a href="../classes/User.html" target="_self">User</a>, b: <a href="../classes/User.html" target="_self">User</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="229"
-                            class="link-to-prism">src/app/services/user.service.ts:229</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Compares two User objects and determines if they are the same regarding certain
-properties.</p>
-<p>last name, and role.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                    <td>Description</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>a</td>
-                                    <td>
-                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>First User to compare properties of.</p>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>b</td>
-                                    <td>
-                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>Second User to compare properties of.</p>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        <p>If the two User objects are the same in ID, email, first name,
-last name, and role.</p>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-            <section>
-    
-    <h3 id="inputs">
-        Properties
-    </h3>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="_currentUser"></a>
-                    <span class="name">
-                            <span class="modifier">Private</span>
-                        <span ><b>_currentUser</b></span>
-                        <a href="#_currentUser"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >ReplaySubject&lt;User&gt;</a></code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/services/user.service.ts:22</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="currentUser"></a>
-                    <span class="name">
-                        <span ><b>currentUser</b></span>
-                        <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >User</a></code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>new User()</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/services/user.service.ts:20</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="currentUser$"></a>
-                    <span class="name">
-                        <span ><b>currentUser$</b></span>
-                        <a href="#currentUser$"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >Observable&lt;User&gt;</a></code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/services/user.service.ts:23</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="currentUserSub"></a>
-                    <span class="name">
-                            <span class="modifier">Optional</span>
-                        <span ><b>currentUserSub</b></span>
-                        <a href="#currentUserSub"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>    <code>Subscription</code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/services/user.service.ts:24</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
 </section>
 
-            <section>
-    <h3 id="accessors">
-        Accessors
-    </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="hasUser"></a>
-                        <span class="name"><b>hasUser</b><a href="#hasUser"><span class="icon ion-ios-link"></span></a></span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                        <span class="accessor"><b>get</b><code>hasUser()</code></span>
-                    </td>
-                </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="212" class="link-to-prism">src/app/services/user.service.ts:212</a></div>
-                                </td>
-                            </tr>
-                    <tr>
-                        <td class="col-md-4">
-
-                                <div>
-                                </div>
-                        </td>
-                    </tr>
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="isCurrentUserAdmin"></a>
-                        <span class="name"><b>isCurrentUserAdmin</b><a href="#isCurrentUserAdmin"><span class="icon ion-ios-link"></span></a></span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                        <span class="accessor"><b>get</b><code>isCurrentUserAdmin()</code></span>
-                    </td>
-                </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="216" class="link-to-prism">src/app/services/user.service.ts:216</a></div>
-                                </td>
-                            </tr>
-
-            </tbody>
-        </table>
-</section>
     </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import { AngularFirestore } from &#x27;@angular/fire/compat/firestore&#x27;;
-import { getFirestore, collection, query, where, getDocs, doc, updateDoc, arrayUnion } from &#x27;@angular/fire/firestore&#x27;
-import { User } from &#x27;../types/user.type&#x27;;
+import { getFirestore, collection, query, where, getDocs, arrayUnion } from &#x27;@angular/fire/firestore&#x27;;
+import { User } from &#x27;../models/user.model&#x27;;
 import firebase from &#x27;firebase/compat/app&#x27;;
 import &#x27;firebase/compat/firestore&#x27;;
 import &#x27;firebase/compat/auth&#x27;;
 import &#x27;firebase/compat/functions&#x27;;
-import { arrayRemove, getDoc } from &#x27;firebase/firestore&#x27;;
-import { adminRole, studentRole, usersCollectionName } from &#x27;../global&#x27;;
-import { BehaviorSubject, Observable, ReplaySubject, Subscription } from &#x27;rxjs&#x27;;
-import { distinctUntilChanged } from &#x27;rxjs/operators&#x27;;
-
+import { arrayRemove } from &#x27;firebase/firestore&#x27;;
+import { ROLE_STUDENT, COLLECTION_USERS } from &#x27;../../global&#x27;;
+import { AuthService } from &#x27;./auth.service&#x27;;
+import { from, Observable } from &#x27;rxjs&#x27;;
 
 @Injectable({
-  providedIn: &#x27;root&#x27;
+  providedIn: &#x27;root&#x27;,
 })
 export class UserService {
-
-  currentUser: User &#x3D; new User();
-
-  private _currentUser: ReplaySubject&lt;User&gt;;
-  currentUser$: Observable&lt;User&gt;;
-  currentUserSub?: Subscription;
-
   /**
    * Since _currentUser is a ReplaySubject, allow subscribers to cache the last
    * value emitted.
    * Set the currentUser$ Observable to only emit a new User if the current user&#x27;s
    * information (e.g. first name, last name, email) has changed.
-   * 
+   *
    * @param db The Firestore instance used to call REST operations.
    */
-  constructor(private db: AngularFirestore) { 
-    this._currentUser &#x3D; new ReplaySubject&lt;User&gt;(1);
-    this.currentUser$ &#x3D; this._currentUser.asObservable().pipe(
-      distinctUntilChanged(this.userCompare)
-    );
-  }
+  constructor(private db: AngularFirestore, private authService: AuthService) {}
 
   /**
-   * Called by AuthService when the user logs in (or if the user is already logged in).
-   * Emits the user to all subscribers (e.g. guards, main-nav component) for the subscribers
-   * to use.
-   * 
-   * TODO: The subscription in this function will persist for the lifetime of the application.
-   * How can we unsubscribe from it? 
-   * 
-   * @param id The ID of the user to get from the &quot;users&quot; Firestore collection.
+   * Adds the provided patient ID to the provided user&#x27;s document.
+   *
+   * @param patientId The patient ID to add to the patientIds array.
+   * @param userId The ID of the user document to add the patient ID to.
+   * @returns Promise
    */
-  setUser(id: string) {
-    this.currentUserSub &#x3D; this.db.collection(usersCollectionName).doc(id).snapshotChanges().subscribe(
-      (action) &#x3D;&gt; {
-        let obj &#x3D; { id: action.payload.id, ...action.payload.data() as object };
-        Object.assign(this.currentUser, obj)
-        this.emitUser();
-      },
-      (err) &#x3D;&gt; {
-        console.error(&quot;Error loading user&quot;, id, &quot;:&quot;, err);
-      }
-    )
-  }
-  
-  unsetUser() {
-    this.currentUserSub?.unsubscribe();
-  }
-
-  // Temporary function until Won-Seok understands how addPatientId() works
-  tempAddPatientId(id: string, userId: string){
-    const updateRef &#x3D; this.db.collection(usersCollectionName).doc(userId);
-    updateRef.update({
-      patientIds: arrayUnion(id)
+  async addPatientIdToUser(patientId: string, userId: string) {
+    const updateRef &#x3D; this.db.collection(COLLECTION_USERS).doc(userId);
+    return updateRef.update({
+      patientIds: arrayUnion(patientId),
     });
   }
 
-  addPatientId(id: string) {
-    const updateRef &#x3D; this.db.collection(usersCollectionName).doc(this.currentUser?.getId());
-    updateRef.update({
-      patientIds: arrayUnion(id)
-    });
-  }
-
-  deletePatientId(id: string) {
-    const updateRef &#x3D; this.db.collection(usersCollectionName).doc(this.currentUser?.getId());
-    updateRef.update({
-      patientIds: arrayRemove(id)
-    })
-  }
-
   /**
-   * Retrieves a user&#x27;s data one time. This function allows us to get data without
-   * subscribing to a data source, allowing for less need to clean up subscriptions.
-   * 
-   * @param id The ID of the user document to retrieve.
-   * @returns Promise to load Patient data.
+   * Iterates through all user documents that contain the patient ID
+   * and deletes the patient ID from the document&#x27;s &#x27;patientIds&#x27; field.
+   *
+   * @param id The patient ID to remove from all user documents.
+   * @returns Promise
    */
-   async getStaticUser(id: string): Promise&lt;User | null&gt; {
-    const db &#x3D; getFirestore();
-    const docRef &#x3D; doc(db, usersCollectionName, id);
-    const docSnap &#x3D; await getDoc(docRef);
-
-    if (docSnap.exists()) {
-      let user &#x3D; new User();
-      Object.assign(user, docSnap.data());
-
-      // Format user data
-      user.id &#x3D; docSnap.id;
-
-      return user;
-    } else {
-      return null;
-    }
+  async deletePatientIdFromAllUsers(id: string) {
+    return await this.db
+      .collection(COLLECTION_USERS)
+      .ref.where(&#x27;patientIds&#x27;, &#x27;array-contains&#x27;, id)
+      .get()
+      .then((snapshot) &#x3D;&gt; {
+        snapshot.docs.forEach((doc) &#x3D;&gt; {
+          doc.ref.update({
+            patientIds: arrayRemove(id),
+          });
+        });
+      });
   }
-
 
   // Returns query snapshot of all &quot;student&quot; role user in the database
-  async getAllUsers() {
+  async getAllStudents() {
     const db &#x3D; getFirestore();
-
-    // query(collectionReference, condition)
-    const q &#x3D; query(collection(db, usersCollectionName), where(&quot;role&quot;, &quot;&#x3D;&#x3D;&quot;, studentRole));
-
-    const querySnapshot &#x3D; await getDocs(q);
-
-    return querySnapshot
+    const q &#x3D; query(collection(db, COLLECTION_USERS), where(&#x27;role&#x27;, &#x27;&#x3D;&#x3D;&#x27;, ROLE_STUDENT));
+    return await getDocs(q);
   }
-
-  async setPatient(id: string, data: any){
-    const db &#x3D; getFirestore();
-    
-    const ref &#x3D; doc(db, usersCollectionName, id);
-
-    await updateDoc(ref, data);
-  }
-
 
   /**
+   * Calls a Firebase cloud function to create a user auth account.
+   *
+   * @param user The user to create in Firestore.
+   */
+  createUserAccount(user: User) {
+    const createUserAccount &#x3D; firebase.functions().httpsCallable(&#x27;createUserAccount&#x27;);
+    return from(createUserAccount({ user: user }));
+  }
+
+  /**
+   * Creates a document for the provided user in Firestore.
+   *
+   * @param user The user to create a document for in Firestore.
+   */
+  createUserDocument(user: User) {
+    this.cleanUserData(user);
+    let obj &#x3D; this.extractUserData(user);
+
+    return from(this.db.collection(COLLECTION_USERS).doc(user.id).set(obj));
+  }
+
+  /**
+   * Prepares the User object for Firestore before updating it
+   * in the backend.
+   *
+   * @param user The User object to update in Firestore.
+   */
+  updateUser(user: User) {
+    this.cleanUserData(user);
+    let obj &#x3D; this.extractUserData(user);
+    return this.db.collection(COLLECTION_USERS).doc(user.id).set(obj);
+  }
+
+  /**
+   * @param id The ID of the user to delete from Firestore.
+   */
+  deleteUser(id: string) {
+    const deleteUser &#x3D; firebase.functions().httpsCallable(&#x27;deleteUser&#x27;);
+    return deleteUser({
+      id: id,
+    });
+  }
+
+  /**
+   * Removes the ID parameter from the User object to prepare it for Firestore.
+   *
    * @param user The User object to remove the ID from.
    * @returns A copy of the User object with the ID parameter removed.
    */
-   extractUserData(user: User): object {
+  extractUserData(user: User): object {
     // Convert User object to a JSON object
     let obj &#x3D; JSON.parse(JSON.stringify(Object.assign({}, user)));
     // Do this since the ID will be the document name
@@ -1628,90 +1006,13 @@ export class UserService {
   /**
    * Cleans the User object by ensuring no whitespaces are on either end
    * of the properties, and that there are no spaces in the ID.
-   * 
+   *
    * @param user The User object to clean the data for.
    */
   cleanUserData(user: User) {
-    user.id &#x3D; user.id.replace(/\s/g, &quot;&quot;);
+    user.id &#x3D; user.id.replace(/\s/g, &#x27;&#x27;);
     user.firstName &#x3D; user.firstName.trim();
     user.lastName &#x3D; user.lastName.trim();
-  }
-
-  /**
-   * @param user The user to create in Firestore.
-   */
-  createUser(user: User) {
-    console.log(user)
-    const createUser &#x3D; firebase.functions().httpsCallable(&#x27;createUser&#x27;);
-    createUser({
-      user: user,
-    })
-  }
-
-  /**
-   * Prepares the User object for Firestore before updating it
-   * in the backend.
-   * 
-   * @param user The User object to update in Firestore.
-   */
-  updateUser(user: User) {
-    this.cleanUserData(user);
-    let obj &#x3D; this.extractUserData(user);
-
-    try {
-      this.db.collection(usersCollectionName)
-        .doc(user.id)
-        .set(obj);
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
-  /**
-   * @param id The ID of the user to delete from Firestore.
-   */
-  deleteUser(id: string) {
-    const deleteUser &#x3D; firebase.functions().httpsCallable(&#x27;deleteUser&#x27;);
-    deleteUser({
-      id: id,
-    })
-  }
-
-  /**
-   * Emit the current User object to all subscribers.
-   */
-  emitUser() {
-    this._currentUser.next(this.currentUser);
-  }
-
-  /**
-   * @returns Whether or not a user is signed in to the app.
-   */
-  get hasUser() {
-    return this.currentUser !&#x3D; null;
-  }
-
-  get isCurrentUserAdmin() {
-    return this.currentUser.role.toLocaleLowerCase() &#x3D;&#x3D; adminRole;
-  }
-
-  /**
-   * Compares two User objects and determines if they are the same regarding certain
-   * properties.
-   * 
-   * @param a First User to compare properties of.
-   * @param b Second User to compare properties of.
-   * @returns If the two User objects are the same in ID, email, first name,
-   * last name, and role.
-   */
-  private userCompare(a: User, b: User) {
-    const idCheck &#x3D; a.id &#x3D;&#x3D; b.id;
-    const emailCheck &#x3D; a.email &#x3D;&#x3D; b.email;
-    const firstNameCheck &#x3D; a.firstName &#x3D;&#x3D; b.firstName;
-    const lastNameCheck &#x3D; a.lastName &#x3D;&#x3D; b.lastName;
-    const roleCheck &#x3D; a.role &#x3D;&#x3D; b.role;
-
-    return idCheck &amp;&amp; emailCheck &amp;&amp; firstNameCheck &amp;&amp; lastNameCheck &amp;&amp; roleCheck;
   }
 }
 </code></pre>

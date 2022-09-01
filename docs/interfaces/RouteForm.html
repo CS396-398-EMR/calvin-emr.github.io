@@ -65,7 +65,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/shared/med-dialog/med-dialog.component.ts</code>
+            <code>src/app/medications/med-dialog/med-dialog.component.ts</code>
         </p>
 
 
@@ -177,13 +177,20 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Inject, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
-import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroupDirective, Validators } from &#x27;@angular/forms&#x27;;
-import { MatDialogRef, MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
-import { FormOption } from &#x27;src/app/types/form-option.type&#x27;;
-import { Medication } from &#x27;src/app/types/medication.type&#x27;;
-import { ActionName, TableEvent } from &#x27;src/app/types/table-action.enum&#x27;;
-import { uniqueEntryValidator } from &#x27;src/app/directives/unique-entry.directive&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { AbstractControl, UntypedFormArray, UntypedFormBuilder, UntypedFormControl, Validators } from &#x27;@angular/forms&#x27;;
+import { FormOption } from &#x27;src/app/shared/models/form-option.model&#x27;;
+import { Medication } from &#x27;src/app/shared/models/medication.model&#x27;;
+import { ActionName } from &#x27;src/app/shared/models/table-action.enum&#x27;;
+import { uniqueEntryValidator } from &#x27;src/app/shared/directives/unique-entry.directive&#x27;;
+import { EmrDialogComponent } from &#x27;src/app/shared/emr-dialog/emr-dialog.component&#x27;;
+import { DynamicDialogConfig, DynamicDialogRef } from &#x27;primeng/dynamicdialog&#x27;;
+
+export interface MedicationDialogData {
+  action: string;
+  medication: Medication;
+  ids: string[];
+}
 
 export interface RouteForm {
   routeName: string;
@@ -191,18 +198,25 @@ export interface RouteForm {
 }
 
 @Component({
-  selector: &#x27;app-med-dialog&#x27;,
+  selector: &#x27;emr-med-dialog&#x27;,
   templateUrl: &#x27;./med-dialog.component.html&#x27;,
-  styleUrls: [&#x27;./med-dialog.component.scss&#x27;]
+  styleUrls: [&#x27;./med-dialog.component.scss&#x27;],
 })
-export class MedDialogComponent implements OnInit {
-
-  @ViewChild(&#x27;documentEditForm&#x27;) documentEditForm!: FormGroupDirective; 
+export class MedicationDialogComponent implements OnInit {
+  /**
+   * The action which specifies what to display in the dialog.
+   */
+  action!: string;
 
   /**
    * List of medication ids passed from parent (medication-list) to validate id input.
    */
-  ids: string[] &#x3D; [];
+  ids!: string[];
+
+  /**
+   * Medication that is being added/edited/deleted.
+   */
+  med!: Medication;
 
   /**
    * Form group for the dialog&#x27;s form.
@@ -217,140 +231,107 @@ export class MedDialogComponent implements OnInit {
    * List of possible medication administration routes.
    */
   routes &#x3D; [
-    new FormOption(&quot;IM&quot;),
-    new FormOption(&quot;Inhalation&quot;),
-    new FormOption(&quot;IV&quot;),
-    new FormOption(&quot;NS&quot;),
-    new FormOption(&quot;Oral&quot;),
-    new FormOption(&quot;SL&quot;),
-    new FormOption(&quot;SQ&quot;),
-    new FormOption(&quot;Topical&quot;),
-    new FormOption(&quot;Rectal&quot;),
-    new FormOption(&quot;Other&quot;),
-  ]
-  
-  
-  /**
-   * Specifies the content to render within the dialog. Three types:
-   * Add, Edit, and Delete.
-   */
-  
-  type: string &#x3D; &quot;&quot;;
+    new FormOption(&#x27;IM&#x27;),
+    new FormOption(&#x27;Inhalation&#x27;),
+    new FormOption(&#x27;IV&#x27;),
+    new FormOption(&#x27;NS&#x27;),
+    new FormOption(&#x27;Oral&#x27;),
+    new FormOption(&#x27;SL&#x27;),
+    new FormOption(&#x27;SQ&#x27;),
+    new FormOption(&#x27;Topical&#x27;),
+    new FormOption(&#x27;Rectal&#x27;),
+    new FormOption(&#x27;Other&#x27;),
+  ];
 
   /**
-   * The title text to display at the top of the dialog box.
+   * Text to be displayed in the submit button.
    */
-  title: string &#x3D; &quot;&quot;;
-
-  /**
-   * The text label of the form&#x27;s submit button.
-   */
-  btnLabel: string &#x3D; &quot;&quot;;
-
-  /**
-   * Medication that is being added/edited/deleted.
-   */
-  med: Medication &#x3D; new Medication();
+  btnLabel: string &#x3D; &#x27;&#x27;;
 
   /**
    * Assigns the dialog&#x27;s properties values based on the action passed to it.
    */
-  constructor(
-    public dialogRef: MatDialogRef&lt;MedDialogComponent&gt;,
-    @Inject(MAT_DIALOG_DATA) public data: TableEvent,
-    private fb: FormBuilder
-  ) { 
-    // Split the passed data into the medication and the list of medication IDs
-    let obj &#x3D; data.data as {medication: Medication, ids: string[]}
-    Object.assign(this.med, obj.medication);
+  constructor(private fb: UntypedFormBuilder, public ref: DynamicDialogRef, public config: DynamicDialogConfig) {
+    this.action &#x3D; config.data.action;
+    this.med &#x3D; config.data.medication;
+    this.ids &#x3D; config.data.ids;
+  }
 
-    switch(data.action.name) {
-      case ActionName.Add: {
-        this.type &#x3D; ActionName.Add;
-        this.title &#x3D; &quot;New Medication&quot;;
-        this.btnLabel &#x3D; &quot;Add&quot;;
-        this.ids &#x3D; obj.ids;
-        this.addRoute();    // Add a route to routes FormArray
+  ngOnInit(): void {
+    switch (this.action) {
+      case ActionName.Create: {
+        this.btnLabel &#x3D; &#x27;Create&#x27;;
+        this.addRoute(); // Add a route to routes FormArray
 
         // Add validator to medication id to ensure it is unique
         this.idFormControl.addValidators([uniqueEntryValidator(this.ids)]);
         break;
       }
-      case ActionName.Edit: {
-        this.type &#x3D; ActionName.Edit;
-        this.title &#x3D; &quot;Edit Medication&quot;;
-        this.btnLabel &#x3D; &quot;Update&quot;;
+      case ActionName.Update: {
+        this.btnLabel &#x3D; &#x27;Update&#x27;;
         this.idFormControl.setValue(this.med.id);
         this.nameFormControl.setValue(this.med.name);
 
         // Set route controls
         this.med.getRoutes().forEach((route) &#x3D;&gt; {
           this.addRoute(route);
-        })
+        });
 
-        break;
-      }
-      case ActionName.Delete: {
-        this.type &#x3D; ActionName.Delete;
-        this.title &#x3D; &quot;Delete Medication&quot;;
-        this.btnLabel &#x3D; &quot;Delete&quot;;
         break;
       }
       default: {
-        this.title &#x3D; &quot;Error&quot;;
+        this.btnLabel &#x3D; &#x27;Error&#x27;;
       }
     }
   }
-
-  ngOnInit(): void { }
 
   /**
    * Generates a random ID for a new medication and fills the ID form
    * field with the value.
    */
   generateID() {
-    let id &#x3D; (&quot;D9&quot; + Date.now()).slice(0, 14);
+    let id &#x3D; (&#x27;D9&#x27; + Date.now()).slice(0, 14);
     this.form.controls.id.setValue(id);
   }
 
   /**
    * Adds a route FormControl to the routes FormArray. Default values are empty strings,
    * but if name is specified, the FormControls will be pre-filled based on the name.
-   * If name is &quot;Other - ...&quot;, with the &quot;...&quot; being a custom route string, then the 
+   * If name is &quot;Other - ...&quot;, with the &quot;...&quot; being a custom route string, then the
    * otherName FormControl will be set to whatever &quot;...&quot; is.
-   * 
+   *
    * @param name route name as string
    */
   addRoute(name?: string) {
     // Defaults for a route that has not been filled in
-    let rName &#x3D; &quot;&quot;;
-    let oName &#x3D; &quot;&quot;;
+    let rName &#x3D; &#x27;&#x27;;
+    let oName &#x3D; &#x27;&#x27;;
     let disabled &#x3D; true;
 
     // Get route name; if route name is &quot;Other&quot;, get other name as well
-    if(name) {
+    if (name) {
       let routeNames &#x3D; name.split(&#x27; - &#x27;);
       rName &#x3D; routeNames[0];
 
-      if(rName &#x3D;&#x3D; &quot;Other&quot;) {
-        if(routeNames.length &gt; 1) {
+      if (rName &#x3D;&#x3D; &#x27;Other&#x27;) {
+        if (routeNames.length &gt; 1) {
           oName &#x3D; routeNames[1];
         }
         disabled &#x3D; false;
-      } 
+      }
     }
 
     // Create form group to push to form array
-    const routeForm &#x3D; this.fb.group({ 
+    const routeForm &#x3D; this.fb.group({
       routeName: [rName],
-      otherName: [{value: oName, disabled: disabled}]
+      otherName: [{ value: oName, disabled: disabled }],
     });
     this.routesFormArray.push(routeForm);
   }
 
   /**
    * Deletes the FormControl at the specified index.
-   * 
+   *
    * @param routeIndex the index of the route FormControl in the FormArray
    */
   deleteRoute(routeIndex: number) {
@@ -359,14 +340,13 @@ export class MedDialogComponent implements OnInit {
 
   /**
    * Enables the secondary input if user selects &quot;Other&quot; as the route.
-   * 
+   *
    * @param fg FormGroup passed from template (assumed to be the FormGroups added to routes FormArray)
    */
   routeChanged(fg: AbstractControl) {
-    if(this.isOther(fg)) {
+    if (this.isOtherRoute(fg)) {
       fg.get(&#x27;otherName&#x27;)?.enable();
-    }
-    else {
+    } else {
       fg.get(&#x27;otherName&#x27;)?.disable();
       fg.get(&#x27;otherName&#x27;)?.setValue(&#x27;&#x27;);
     }
@@ -374,26 +354,12 @@ export class MedDialogComponent implements OnInit {
 
   /**
    * Checks if routeName contol is &quot;Other&quot;.
-   * 
+   *
    * @param fg FormGroup (assumed to be the FormGroups added to routes FormArray)
    * @returns boolean value
    */
-  isOther(fg: AbstractControl) {
-    return fg.get(&#x27;routeName&#x27;)?.value &#x3D;&#x3D; &quot;Other&quot;;
-  }
-
-  /**
-   * Sets values of medication to pass back to caller based on the type of dialog that is open.
-   */
-  onSubmit(): void {
-    // Set medication values based on form
-    if(this.type &#x3D;&#x3D; ActionName.Add || this.type &#x3D;&#x3D; ActionName.Edit) {
-      this.med.id &#x3D; this.form.get(&#x27;id&#x27;)?.value
-      this.med.name &#x3D; this.form.get(&#x27;name&#x27;)?.value
-      this.med.routes &#x3D; this.getRoutes();  
-    }
-
-    this.dialogRef.close(this.med);
+  isOtherRoute(fg: AbstractControl) {
+    return fg.get(&#x27;routeName&#x27;)?.value &#x3D;&#x3D;&#x3D; &#x27;Other&#x27;;
   }
 
   /**
@@ -401,51 +367,65 @@ export class MedDialogComponent implements OnInit {
    * transforms them into strings.
    * If the route name is &quot;Other&quot; and the other route name is &quot;...&quot;,
    * then they will be combined into one string: &quot;Other - ...&quot;
-   * 
+   *
    * @returns array of routes as strings
-   * 
+   *
    */
   getRoutes(): string[] {
-    let routeObjs &#x3D; this.form.get(&#x27;routes&#x27;)?.value
-    let routeStr &#x3D; &quot;&quot;;
-    let routes: string[] &#x3D; []
+    let routeObjs &#x3D; this.form.get(&#x27;routes&#x27;)?.value;
+    let routeStr &#x3D; &#x27;&#x27;;
+    let routes: string[] &#x3D; [];
 
-    routes &#x3D; routeObjs.map((obj: RouteForm) &#x3D;&gt; {
-      routeStr &#x3D; obj.routeName;
-      if(routeStr &#x3D;&#x3D; &quot;Other&quot;) {
-        routeStr +&#x3D; &quot; - &quot; + obj.otherName
-      }
-      return routeStr;
-    }).filter((routeStr: string) &#x3D;&gt; {
-      return routeStr !&#x3D; &quot;&quot;;
-    })
+    routes &#x3D; routeObjs
+      .map((obj: RouteForm) &#x3D;&gt; {
+        routeStr &#x3D; obj.routeName;
+        if (routeStr &#x3D;&#x3D; &#x27;Other&#x27;) {
+          routeStr +&#x3D; &#x27; - &#x27; + obj.otherName;
+        }
+        return routeStr;
+      })
+      .filter((routeStr: string) &#x3D;&gt; {
+        return routeStr !&#x3D; &#x27;&#x27;;
+      });
 
     return routes;
   }
 
-
   /**
-   * Sets the (nonempty) Medication object&#x27;s properties to the current values
-   * in the form group and passes the updated object to the MedicationService.
-   * The ID is not changed, since we want to update and not create a new object.
-   * Closes the dialog.
+   * Resets the dialog form.
    */
-  updateMedication(): void {
-    this.med.name &#x3D; this.form.get(&#x27;name&#x27;)?.value
-    this.med.routes &#x3D; this.getRoutes();
+  resetDialog() {
+    this.routesFormArray.clear();
+    this.form.reset();
   }
 
-  get isAddType(): boolean {
-    return this.type &#x3D;&#x3D; ActionName.Add;
+  onCancel(): void {
+    this.resetDialog();
+    this.ref.close();
+  }
+
+  /**
+   * Sets values of medication to pass back to caller based on the type of dialog that is open.
+   */
+  onSubmit(): void {
+    // Set medication values based on form
+    this.med.id &#x3D; this.form.get(&#x27;id&#x27;)?.value;
+    this.med.name &#x3D; this.form.get(&#x27;name&#x27;)?.value;
+    this.med.routes &#x3D; this.getRoutes();
+    this.resetDialog();
+    this.ref.close(this.med);
+  }
+
+  get isCreateType(): boolean {
+    return this.action &#x3D;&#x3D; ActionName.Create;
   }
 
   get isEditType(): boolean {
-    return this.type &#x3D;&#x3D; ActionName.Edit;
+    return this.action &#x3D;&#x3D; ActionName.Update;
   }
 
   get hasIdError(): boolean {
-    return this.idFormControl.invalid &amp;&amp; 
-          (this.idFormControl.dirty || this.idFormControl.touched);
+    return this.idFormControl.invalid &amp;&amp; (this.idFormControl.dirty || this.idFormControl.touched);
   }
 
   get hasIdRequiredError(): boolean {
@@ -461,19 +441,19 @@ export class MedDialogComponent implements OnInit {
   }
 
   get isSubmitDisabled(): boolean {
-    return !this.form.valid &amp;&amp; this.type !&#x3D; ActionName.Delete;
+    return !this.form.valid;
   }
 
-  get routesFormArray(): FormArray {
-    return this.form.controls[&quot;routes&quot;] as FormArray;
+  get routesFormArray(): UntypedFormArray {
+    return this.form.controls.routes as UntypedFormArray;
   }
 
-  get idFormControl(): FormControl {
-    return this.form.controls.id as FormControl;
+  get idFormControl(): UntypedFormControl {
+    return this.form.controls.id as UntypedFormControl;
   }
 
-  get nameFormControl(): FormControl {
-    return this.form.controls.name as FormControl;
+  get nameFormControl(): UntypedFormControl {
+    return this.form.controls.name as UntypedFormControl;
   }
 }
 </code></pre>

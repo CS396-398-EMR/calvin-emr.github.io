@@ -1,0 +1,1724 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>calvin-emr documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">calvin-emr documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  MedicationScheduleComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../components/AdministrationScheduleComponent.html" target="_self" >AdministrationScheduleComponent</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                            <code>DialogService</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-medication-schedule</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./medication-schedule.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./medication-schedule.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentDate" >currentDate</a>
+                            </li>
+                            <li>
+                                <a href="#currentView" >currentView</a>
+                            </li>
+                            <li>
+                                <a href="#displayedOrders" >displayedOrders</a>
+                            </li>
+                            <li>
+                                <a href="#endDateExpr" >endDateExpr</a>
+                            </li>
+                            <li>
+                                <a href="#endDayHour" >endDayHour</a>
+                            </li>
+                            <li>
+                                <a href="#scheduler" >scheduler</a>
+                            </li>
+                            <li>
+                                <a href="#shadeUntilCurrentTime" >shadeUntilCurrentTime</a>
+                            </li>
+                            <li>
+                                <a href="#showCurrentTimeIndicator" >showCurrentTimeIndicator</a>
+                            </li>
+                            <li>
+                                <a href="#startDateExpr" >startDateExpr</a>
+                            </li>
+                            <li>
+                                <a href="#startDayHour" >startDayHour</a>
+                            </li>
+                            <li>
+                                <a href="#textExpr" >textExpr</a>
+                            </li>
+                            <li>
+                                <a href="#timeCellTemplate" >timeCellTemplate</a>
+                            </li>
+                            <li>
+                                <a href="#views" >views</a>
+                            </li>
+                            <li>
+                                <a href="#orders" >orders</a>
+                            </li>
+                            <li>
+                                <a href="#patient" >patient</a>
+                            </li>
+                            <li>
+                                <a href="#patient$" >patient$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getBackgroundColor" >getBackgroundColor</a>
+                            </li>
+                            <li>
+                                <a href="#getDisplayedOrders" >getDisplayedOrders</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#overrideDefaultPopup" >overrideDefaultPopup</a>
+                            </li>
+                            <li>
+                                <a href="#refresh" >refresh</a>
+                            </li>
+                            <li>
+                                <a href="#renderAppointment" >renderAppointment</a>
+                            </li>
+                            <li>
+                                <a href="#openAdministerMedDialog" >openAdministerMedDialog</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(patientStore: <a href="../injectables/PatientDashboardStore.html" target="_self">PatientDashboardStore</a>, dialogService: DialogService, toastService: <a href="../injectables/ToastService.html" target="_self">ToastService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:97</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>patientStore</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PatientDashboardStore.html" target="_self" >PatientDashboardStore</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toastService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToastService.html" target="_self" >ToastService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBackgroundColor"></a>
+                    <span class="name">
+                        <span ><b>getBackgroundColor</b></span>
+                        <a href="#getBackgroundColor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBackgroundColor(order: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="201"
+                            class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:201</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>order</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Order object</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>&quot;#999999&quot; | &quot;#3F51B5&quot;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>hex code of &quot;administered&quot;/&quot;not administered&quot; color</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDisplayedOrders"></a>
+                    <span class="name">
+                        <span ><b>getDisplayedOrders</b></span>
+                        <a href="#getDisplayedOrders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDisplayedOrders()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Converts ProviderOrder objects into objects that can be passed into the dx-scheduler.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/MedicationScheduleOrder.html" target="_self" >MedicationScheduleOrder[]</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/AdministrationScheduleComponent.html" target="_self" >AdministrationScheduleComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/AdministrationScheduleComponent.html#source" target="_self" >AdministrationScheduleComponent:108</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="overrideDefaultPopup"></a>
+                    <span class="name">
+                        <span ><b>overrideDefaultPopup</b></span>
+                        <a href="#overrideDefaultPopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>overrideDefaultPopup(orderEvent: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Cancels the default dx-scheduler popup and instead opens the AdministerMedDialog component.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderEvent</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>object containing information about the appointment clicked on the dx-scheduler</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refresh"></a>
+                    <span class="name">
+                        <span ><b>refresh</b></span>
+                        <a href="#refresh"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>refresh()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Repaints the dx-scheduler so that the appointments render correctly.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="renderAppointment"></a>
+                    <span class="name">
+                        <span ><b>renderAppointment</b></span>
+                        <a href="#renderAppointment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>renderAppointment(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the background color of the current appointment, and formats the subject line to contain
+the medication name and time to administer.</p>
+<p> the Appointment object and the appointment styling.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>object containing information about the appointment that is being rendered, including
+the Appointment object and the appointment styling.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openAdministerMedDialog"></a>
+                    <span class="name">
+                        <span ><b>openAdministerMedDialog</b></span>
+                        <a href="#openAdministerMedDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openAdministerMedDialog(order: <a href="../classes/ProviderOrder.html" target="_self">ProviderOrder</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../components/AdministrationScheduleComponent.html" target="_self" >AdministrationScheduleComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../components/AdministrationScheduleComponent.html#source" target="_self" >AdministrationScheduleComponent:29</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>order</td>
+                                    <td>
+                                                <code><a href="../classes/ProviderOrder.html" target="_self" >ProviderOrder</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentDate"></a>
+                    <span class="name">
+                        <span ><b>currentDate</b></span>
+                        <a href="#currentDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string | number | Date</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Date()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:95</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentView"></a>
+                    <span class="name">
+                        <span ><b>currentView</b></span>
+                        <a href="#currentView"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;week&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:72</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The default view of the scheduler. Either &#39;day&#39; or &#39;week&#39;.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayedOrders"></a>
+                    <span class="name">
+                        <span ><b>displayedOrders</b></span>
+                        <a href="#displayedOrders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>object[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:97</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="endDateExpr"></a>
+                    <span class="name">
+                        <span ><b>endDateExpr</b></span>
+                        <a href="#endDateExpr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;endDate&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The Medication object property to use to define the end of an appointment.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="endDayHour"></a>
+                    <span class="name">
+                        <span ><b>endDayHour</b></span>
+                        <a href="#endDayHour"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>20</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The hour (out of 24) to end each day on.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scheduler"></a>
+                    <span class="name">
+                        <span ><b>scheduler</b></span>
+                        <a href="#scheduler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DxSchedulerComponent</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;scheduler&#x27;, {static: true})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shadeUntilCurrentTime"></a>
+                    <span class="name">
+                        <span ><b>shadeUntilCurrentTime</b></span>
+                        <a href="#shadeUntilCurrentTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:90</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Specifies that the scheduler will be shaded a darker gray at all times
+before the current day/time.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showCurrentTimeIndicator"></a>
+                    <span class="name">
+                        <span ><b>showCurrentTimeIndicator</b></span>
+                        <a href="#showCurrentTimeIndicator"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:84</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Specifies that the current day/time will be marked on the scheduler.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startDateExpr"></a>
+                    <span class="name">
+                        <span ><b>startDateExpr</b></span>
+                        <a href="#startDateExpr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;startDate&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The Medication object property to use to define the start of an appointment.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startDayHour"></a>
+                    <span class="name">
+                        <span ><b>startDayHour</b></span>
+                        <a href="#startDayHour"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>7</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:57</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The hour (out of 24) to start each day on.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="textExpr"></a>
+                    <span class="name">
+                        <span ><b>textExpr</b></span>
+                        <a href="#textExpr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;medName&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The Medication object property to use in each appointment&#39;s subject line.
+This line appears at the top of each appointment box.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="timeCellTemplate"></a>
+                    <span class="name">
+                        <span ><b>timeCellTemplate</b></span>
+                        <a href="#timeCellTemplate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>function (e: any) {
+    return new Date(e.date).toLocaleString([], HOUR24_TIME_CONFIG);
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:77</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The format of the time labels on the scheduler.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="views"></a>
+                    <span class="name">
+                        <span ><b>views</b></span>
+                        <a href="#views"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&#x27;day&#x27;, &#x27;week&#x27;, &#x27;month&#x27;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/patient-dashboard/mar/medication-schedule/medication-schedule.component.ts:67</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The different views that can be displayed on the scheduler.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orders"></a>
+                    <span class="name">
+                        <span ><b>orders</b></span>
+                        <a href="#orders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/ProviderOrder.html" target="_self" >ProviderOrder[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/AdministrationScheduleComponent.html" target="_self" >AdministrationScheduleComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/AdministrationScheduleComponent.html#source" target="_self" >AdministrationScheduleComponent:19</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="patient"></a>
+                    <span class="name">
+                        <span ><b>patient</b></span>
+                        <a href="#patient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Patient.html" target="_self" >Patient</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Patient()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/AdministrationScheduleComponent.html" target="_self" >AdministrationScheduleComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/AdministrationScheduleComponent.html#source" target="_self" >AdministrationScheduleComponent:18</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="patient$"></a>
+                    <span class="name">
+                        <span ><b>patient$</b></span>
+                        <a href="#patient$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Patient.html" target="_self" >Observable&lt;Patient&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.patientStore.patient$.pipe(takeUntil(this.patientStore.destroy$))</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../components/AdministrationScheduleComponent.html" target="_self" >AdministrationScheduleComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../components/AdministrationScheduleComponent.html#source" target="_self" >AdministrationScheduleComponent:17</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { ERROR, HOUR24_TIME_CONFIG } from &#x27;src/app/global&#x27;;
+import { DxSchedulerComponent } from &#x27;devextreme-angular&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { ProviderOrder } from &#x27;src/app/shared/models/provider-order.model&#x27;;
+import { PatientDashboardStore } from &#x27;src/app/patient-dashboard/state/patient-dashboard.store&#x27;;
+import { AdministrationScheduleComponent } from &#x27;../administration-schedule/administration-schedule.component&#x27;;
+import { ToastService } from &#x27;src/app/shared/services/toast.service&#x27;;
+
+export interface MedicationScheduleOrder {
+  id: string;
+  medId: string;
+
+  // Used to display info in the order tooltip
+  medName: string;
+  route: string;
+  quantityGiven: number;
+  quantity: number;
+
+  // Used by the dx-scheduler to render the order&#x27;s box
+  startDate: Date;
+  endDate: Date;
+
+  // Used to display the start and end times of the order within the order box
+  startTimeString: string;
+  endTimeString: string;
+}
+
+@Component({
+  selector: &#x27;app-medication-schedule&#x27;,
+  templateUrl: &#x27;./medication-schedule.component.html&#x27;,
+  styleUrls: [&#x27;./medication-schedule.component.scss&#x27;],
+  providers: [DialogService],
+})
+export class MedicationScheduleComponent extends AdministrationScheduleComponent implements OnInit {
+  @ViewChild(&#x27;scheduler&#x27;, { static: true }) scheduler!: DxSchedulerComponent;
+
+  /**
+   * The Medication object property to use in each appointment&#x27;s subject line.
+   * This line appears at the top of each appointment box.
+   */
+  textExpr: string &#x3D; &#x27;medName&#x27;;
+
+  /**
+   * The Medication object property to use to define the start of an appointment.
+   */
+  startDateExpr: string &#x3D; &#x27;startDate&#x27;;
+
+  /**
+   * The Medication object property to use to define the end of an appointment.
+   */
+  endDateExpr: string &#x3D; &#x27;endDate&#x27;;
+
+  /**
+   * The hour (out of 24) to start each day on.
+   */
+  startDayHour: number &#x3D; 7;
+
+  /**
+   * The hour (out of 24) to end each day on.
+   */
+  endDayHour: number &#x3D; 20;
+
+  /**
+   * The different views that can be displayed on the scheduler.
+   */
+  views: string[] &#x3D; [&#x27;day&#x27;, &#x27;week&#x27;, &#x27;month&#x27;];
+
+  /**
+   * The default view of the scheduler. Either &#x27;day&#x27; or &#x27;week&#x27;.
+   */
+  currentView: string &#x3D; &#x27;week&#x27;;
+
+  /**
+   * The format of the time labels on the scheduler.
+   */
+  timeCellTemplate &#x3D; function (e: any) {
+    return new Date(e.date).toLocaleString([], HOUR24_TIME_CONFIG);
+  };
+
+  /**
+   * Specifies that the current day/time will be marked on the scheduler.
+   */
+  showCurrentTimeIndicator: boolean &#x3D; true;
+
+  /**
+   * Specifies that the scheduler will be shaded a darker gray at all times
+   * before the current day/time.
+   */
+  shadeUntilCurrentTime: boolean &#x3D; true;
+
+  // currentDate is s|n|D because there will be compilation errors
+  // if it is only Date. No idea why; maybe TypeScript issue?
+  // @Input() currentDate: string | number | Date &#x3D; new Date();
+  currentDate: string | number | Date &#x3D; new Date();
+
+  displayedOrders: object[] &#x3D; [];
+
+  constructor(patientStore: PatientDashboardStore, dialogService: DialogService, private toastService: ToastService) {
+    super(patientStore, dialogService);
+
+    this.patient$.subscribe((patient) &#x3D;&gt; {
+      this.orders &#x3D; patient.providerOrders.filter((order) &#x3D;&gt; order.isScheduled);
+      this.displayedOrders &#x3D; this.getDisplayedOrders();
+    });
+  }
+
+  ngOnInit(): void {}
+
+  /**
+   * Converts ProviderOrder objects into objects that can be passed into the dx-scheduler.
+   */
+  getDisplayedOrders(): MedicationScheduleOrder[] {
+    return this.orders.map((order: ProviderOrder) &#x3D;&gt; {
+      return {
+        id: order.id,
+        medId: order.medId,
+        medName: order.medName,
+        route: order.route,
+        quantityGiven: order.quantityGiven,
+        quantity: order.quantity,
+        startDate: order.startDate?.toDate(),
+        endDate: order.endDate?.toDate(),
+        startTimeString: order.startTimeString,
+        endTimeString: order.endTimeString,
+      } as MedicationScheduleOrder;
+    });
+  }
+
+  /**
+   * Repaints the dx-scheduler so that the appointments render correctly.
+   */
+  refresh() {
+    this.scheduler.instance.repaint();
+  }
+
+  /**
+   * Sets the background color of the current appointment, and formats the subject line to contain
+   * the medication name and time to administer.
+   *
+   * @param event object containing information about the appointment that is being rendered, including
+   *  the Appointment object and the appointment styling.
+   */
+  renderAppointment(event: any) {
+    // Set background color of appointment
+    event.appointmentElement.style.backgroundColor &#x3D; this.getBackgroundColor(event.appointmentData);
+
+    // Specify that scheduler should show tooltip when user hovers over appointment
+    var el &#x3D; event.appointmentElement;
+    el.onmouseenter &#x3D; function () {
+      event.component.showAppointmentTooltip(
+        event.appointmentData,
+        event.appointmentElement,
+        event.targetedAppointmentData
+      );
+    };
+    el.onmouseleave &#x3D; function () {
+      event.component.hideAppointmentTooltip();
+    };
+  }
+
+  /**
+   * Cancels the default dx-scheduler popup and instead opens the AdministerMedDialog component.
+   *
+   * @param orderEvent object containing information about the appointment clicked on the dx-scheduler
+   */
+  overrideDefaultPopup(orderEvent: any) {
+    let displayedOrder &#x3D; orderEvent.appointmentData;
+
+    if (displayedOrder) {
+      // Cancel the default popup that dx-scheduler creates
+      orderEvent.cancel &#x3D; true;
+
+      // TODO: check with nursing profs if clickable after max qty administered
+      // if(!apt.administered) {
+      // let med &#x3D; new Order();
+      // Object.assign(med, apt)
+      // this.openVerifyDialog(aptEvent, this.patientName, this.patientId, med);
+      // }
+
+      // Retrieve the actual order from the orders array
+      let order &#x3D; this.orders.find((o: ProviderOrder) &#x3D;&gt; o.id &#x3D;&#x3D;&#x3D; displayedOrder.id);
+      if (order) {
+        // Open custom dialog regardless of whether med has/hasn&#x27;t been administered
+        this.openAdministerMedDialog(order);
+      } else {
+        this.toastService.clear();
+        this.toastService.addOne({
+          severity: ERROR,
+          summary: &#x27;Error&#x27;,
+          detail: &#x60;Unable to open order ${displayedOrder.id}!&#x60;,
+        });
+      }
+    }
+  }
+
+  /**
+   * @param order Order object
+   * @returns hex code of &quot;administered&quot;/&quot;not administered&quot; color
+   */
+  getBackgroundColor(order: any) {
+    if (order.quantityGiven &gt;&#x3D; order.quantity) {
+      return &#x27;#999999&#x27;;
+    }
+    return &#x27;#3F51B5&#x27;;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;dx-scheduler
+  #scheduler
+  id&#x3D;&quot;scheduler&quot;
+  [dataSource]&#x3D;&quot;displayedOrders&quot;
+  [startDateExpr]&#x3D;&quot;startDateExpr&quot;
+  [endDateExpr]&#x3D;&quot;endDateExpr&quot;
+  [startDayHour]&#x3D;&quot;startDayHour&quot;
+  [endDayHour]&#x3D;&quot;endDayHour&quot;
+  [views]&#x3D;&quot;views&quot;
+  [currentView]&#x3D;&quot;currentView&quot;
+  [timeCellTemplate]&#x3D;&quot;timeCellTemplate&quot;
+  appointmentTemplate&#x3D;&quot;appointmentTemplate&quot;
+  appointmentTooltipTemplate&#x3D;&quot;tooltipTemplate&quot;
+  [showCurrentTimeIndicator]&#x3D;&quot;showCurrentTimeIndicator&quot;
+  [shadeUntilCurrentTime]&#x3D;&quot;shadeUntilCurrentTime&quot;
+  (onAppointmentClick)&#x3D;&quot;overrideDefaultPopup($event)&quot;
+  (onAppointmentDblClick)&#x3D;&quot;overrideDefaultPopup($event)&quot;
+  (onAppointmentRendered)&#x3D;&quot;renderAppointment($event)&quot;
+&gt;
+  &lt;!-- Configuration goes here --&gt;
+  &lt;dxo-editing
+    #editingOptions
+    [allowAdding]&#x3D;&quot;false&quot;
+    [allowDeleting]&#x3D;&quot;false&quot;
+    [allowUpdating]&#x3D;&quot;false&quot;
+    [allowResizing]&#x3D;&quot;false&quot;
+    [allowDragging]&#x3D;&quot;false&quot;
+  &gt;&lt;/dxo-editing&gt;
+
+  &lt;!-- The template to use for the appointment boxes --&gt;
+  &lt;div *dxTemplate&#x3D;&quot;let model of &#x27;appointmentTemplate&#x27;&quot;&gt;
+    &lt;div class&#x3D;&quot;order-preview&quot;&gt;
+      &lt;div class&#x3D;&quot;medication-name&quot;&gt;
+        &lt;strong&gt;{{ model.appointmentData.medName }}&lt;/strong&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;time-range&quot;&gt;
+        {{ model.appointmentData.startTimeString }} - {{ model.appointmentData.endTimeString }}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- The template to use for the tooltip component --&gt;
+  &lt;div *dxTemplate&#x3D;&quot;let model of &#x27;tooltipTemplate&#x27;&quot;&gt;
+    &lt;div class&#x3D;&quot;order-preview&quot;&gt;
+      &lt;div class&#x3D;&quot;medication-name&quot;&gt;
+        &lt;strong&gt;{{ model.appointmentData.medName }}&lt;/strong&gt;
+      &lt;/div&gt;
+      &lt;div&gt;Route: {{ model.appointmentData.route }}&lt;/div&gt;
+      &lt;div class&#x3D;&quot;quantity-given&quot;&gt;
+        {{ model.appointmentData.quantityGiven }} / {{ model.appointmentData.quantity }} given
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;time-range&quot;&gt;
+        {{ model.appointmentData.startTimeString }} - {{ model.appointmentData.endTimeString }}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/dx-scheduler&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./medication-schedule.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><dx-scheduler  #scheduler  id="scheduler"  [dataSource]="displayedOrders"  [startDateExpr]="startDateExpr"  [endDateExpr]="endDateExpr"  [startDayHour]="startDayHour"  [endDayHour]="endDayHour"  [views]="views"  [currentView]="currentView"  [timeCellTemplate]="timeCellTemplate"  appointmentTemplate="appointmentTemplate"  appointmentTooltipTemplate="tooltipTemplate"  [showCurrentTimeIndicator]="showCurrentTimeIndicator"  [shadeUntilCurrentTime]="shadeUntilCurrentTime"  (onAppointmentClick)="overrideDefaultPopup($event)"  (onAppointmentDblClick)="overrideDefaultPopup($event)"  (onAppointmentRendered)="renderAppointment($event)">  <!-- Configuration goes here -->  <dxo-editing    #editingOptions    [allowAdding]="false"    [allowDeleting]="false"    [allowUpdating]="false"    [allowResizing]="false"    [allowDragging]="false"  ></dxo-editing>  <!-- The template to use for the appointment boxes -->  <div *dxTemplate="let model of \'appointmentTemplate\'">    <div class="order-preview">      <div class="medication-name">        <strong>{{ model.appointmentData.medName }}</strong>      </div>      <div class="time-range">        {{ model.appointmentData.startTimeString }} - {{ model.appointmentData.endTimeString }}      </div>    </div>  </div>  <!-- The template to use for the tooltip component -->  <div *dxTemplate="let model of \'tooltipTemplate\'">    <div class="order-preview">      <div class="medication-name">        <strong>{{ model.appointmentData.medName }}</strong>      </div>      <div>Route: {{ model.appointmentData.route }}</div>      <div class="quantity-given">        {{ model.appointmentData.quantityGiven }} / {{ model.appointmentData.quantity }} given      </div>      <div class="time-range">        {{ model.appointmentData.startTimeString }} - {{ model.appointmentData.endTimeString }}      </div>    </div>  </div></dx-scheduler></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AdministrationScheduleComponent', 'selector': 'app-administration-schedule'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'emr-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrDialogComponent', 'selector': 'emr-dialog'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'emr-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'HistoryAndPhysicalTabComponent', 'selector': 'app-history-and-physical-tab'},{'name': 'HtmlDialogComponent', 'selector': 'app-html-dialog'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedicationDialogComponent', 'selector': 'emr-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MedicationScheduleComponent', 'selector': 'app-medication-schedule'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteEditDialogComponent', 'selector': 'app-note-edit-dialog'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialogComponent', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientDashboardTabComponent', 'selector': 'app-base'},{'name': 'PatientFormComponent', 'selector': 'app-patient-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'PrnScheduleComponent', 'selector': 'app-prn-schedule'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+    var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
+    var ACTUAL_COMPONENT = {'name': 'MedicationScheduleComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MedicationScheduleComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

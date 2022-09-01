@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts</code>
+    <code>src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts</code>
 </p>
 
 
@@ -215,6 +215,9 @@
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
                             <li>
+                                <a href="#reset" >reset</a>
+                            </li>
+                            <li>
                                 <a href="#setAllWNL" >setAllWNL</a>
                             </li>
                             <li>
@@ -269,7 +272,7 @@
                                     <a href="#locFormControl" >locFormControl</a>
                                 </li>
                                 <li>
-                                    <a href="#orientationFormGroup" >orientationFormGroup</a>
+                                    <a href="#orientationFormControl" >orientationFormControl</a>
                                 </li>
                                 <li>
                                     <a href="#extremityMovementFormControl" >extremityMovementFormControl</a>
@@ -311,7 +314,7 @@
                                     <a href="#lleFormControl" >lleFormControl</a>
                                 </li>
                                 <li>
-                                    <a href="#tremorsFormGroup" >tremorsFormGroup</a>
+                                    <a href="#tremorsFormControl" >tremorsFormControl</a>
                                 </li>
                             </ul>
                         </td>
@@ -331,7 +334,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:19</a></div>
                             </td>
                         </tr>
 
@@ -351,7 +354,7 @@
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+                        <i>Type : </i>    <code>UntypedFormGroup</code>
 
                     </td>
                 </tr>
@@ -363,7 +366,7 @@
                             </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:25</a></code>
+                                    <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:19</a></code>
 </div>
                             </td>
                         </tr>
@@ -404,8 +407,45 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:30</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:25</a></code>
 </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reset"></a>
+                    <span class="name">
+                        <span ><b>reset</b></span>
+                        <a href="#reset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reset()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:27</a></div>
                 </td>
             </tr>
 
@@ -447,7 +487,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:74</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:67</a></code>
 </div>
                 </td>
             </tr>
@@ -531,7 +571,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:63</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:56</a></code>
 </div>
                 </td>
             </tr>
@@ -584,7 +624,7 @@ the controlList are all true)</p>
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:53</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:46</a></code>
 </div>
                 </td>
             </tr>
@@ -624,22 +664,12 @@ allWNL is set to false.</p>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[
-    new FormOption(&quot;Moderate&quot;),
-    new FormOption(&quot;Weak&quot;),
-    new FormOption(&quot;WNL&quot;),
-  ]</code>
+                        <i>Default value : </i><code>extremityStrengthOptions</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:52</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:52</a></div>
                         </td>
                     </tr>
 
@@ -670,7 +700,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:34</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:44</a></div>
                         </td>
                     </tr>
 
@@ -701,7 +731,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:108</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:99</a></div>
                         </td>
                     </tr>
 
@@ -738,7 +768,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:35</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:45</a></div>
                         </td>
                     </tr>
 
@@ -769,7 +799,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:146</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:130</a></div>
                         </td>
                     </tr>
 
@@ -800,7 +830,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:33</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:43</a></div>
                         </td>
                     </tr>
 
@@ -820,22 +850,12 @@ allWNL is set to false.</p>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[
-    new FormOption(&quot;Lethargic&quot;),
-    new FormOption(&quot;Somnolent&quot;),
-    new FormOption(&quot;WNL&quot;),
-  ]</code>
+                        <i>Default value : </i><code>locOptions</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:38</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:48</a></div>
                         </td>
                     </tr>
 
@@ -866,7 +886,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="147" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:147</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:131</a></div>
                         </td>
                     </tr>
 
@@ -886,23 +906,12 @@ allWNL is set to false.</p>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[
-    new FormOption(&quot;NOT TO person&quot;, &quot;person&quot;),
-    new FormOption(&quot;NOT TO place&quot;, &quot;place&quot;),
-    new FormOption(&quot;NOT TO time&quot;, &quot;time&quot;),
-    new FormOption(&quot;NOT TO situation&quot;, &quot;situation&quot;),
-  ]</code>
+                        <i>Default value : </i><code>orientationOptions</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:44</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:49</a></div>
                         </td>
                     </tr>
 
@@ -922,23 +931,12 @@ allWNL is set to false.</p>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[
-    new FormOption(&quot;2mm&quot;),
-    new FormOption(&quot;4mm&quot;),
-    new FormOption(&quot;6mm&quot;),
-    new FormOption(&quot;8mm&quot;),
-  ]</code>
+                        <i>Default value : </i><code>pupillaryDilationOptions</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:111</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:102</a></div>
                         </td>
                     </tr>
 
@@ -969,7 +967,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:36</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:46</a></div>
                         </td>
                     </tr>
 
@@ -989,22 +987,12 @@ allWNL is set to false.</p>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[
-    new FormOption(&quot;Sluggish&quot;),
-    new FormOption(&quot;Absent&quot;),
-    new FormOption(&quot;WNL&quot;),
-  ]</code>
+                        <i>Default value : </i><code>pupillaryResponseOptions</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:58</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:53</a></div>
                         </td>
                     </tr>
 
@@ -1035,7 +1023,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:109</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:100</a></div>
                         </td>
                     </tr>
 
@@ -1066,7 +1054,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:145</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:129</a></div>
                         </td>
                     </tr>
 
@@ -1097,7 +1085,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:144</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:128</a></div>
                         </td>
                     </tr>
 
@@ -1123,22 +1111,12 @@ allWNL is set to false.</p>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[
-    new FormOption(&quot;Numbness&quot;),
-    new FormOption(&quot;Tingling&quot;),
-    new FormOption(&quot;Full sensation&quot;)
-  ]</code>
+                        <i>Default value : </i><code>sensationOptions</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:149</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="133" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:133</a></div>
                         </td>
                     </tr>
 
@@ -1169,7 +1147,7 @@ allWNL is set to false.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="180" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:180</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:159</a></div>
                         </td>
                     </tr>
 
@@ -1195,23 +1173,12 @@ allWNL is set to false.</p>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[
-    new FormOption(&quot;RUE&quot;, &quot;rue&quot;),
-    new FormOption(&quot;RLE&quot;, &quot;rle&quot;),
-    new FormOption(&quot;LLE&quot;, &quot;lle&quot;),
-    new FormOption(&quot;LUE&quot;, &quot;lue&quot;),
-  ]</code>
+                        <i>Default value : </i><code>tremorsOptions</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="182" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:182</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="161" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:161</a></div>
                         </td>
                     </tr>
 
@@ -1248,7 +1215,7 @@ allWNL is set to false.</p>
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:28</a></code>
+                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:22</a></code>
 </div>
                         </td>
                     </tr>
@@ -1286,7 +1253,7 @@ allWNL is set to false.</p>
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:40</a></code>
+                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:34</a></code>
 </div>
                         </td>
                     </tr>
@@ -1327,7 +1294,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:64</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:55</a></div>
                                 </td>
                             </tr>
 
@@ -1349,7 +1316,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:68</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:59</a></div>
                                 </td>
                             </tr>
 
@@ -1371,7 +1338,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:72</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:63</a></div>
                                 </td>
                             </tr>
 
@@ -1393,7 +1360,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:76</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:67</a></div>
                                 </td>
                             </tr>
 
@@ -1415,7 +1382,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:80</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:71</a></div>
                                 </td>
                             </tr>
 
@@ -1425,19 +1392,19 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="orientationFormGroup"></a>
-                        <span class="name"><b>orientationFormGroup</b><a href="#orientationFormGroup"><span class="icon ion-ios-link"></span></a></span>
+                        <a name="orientationFormControl"></a>
+                        <span class="name"><b>orientationFormControl</b><a href="#orientationFormControl"><span class="icon ion-ios-link"></span></a></span>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>get</b><code>orientationFormGroup()</code></span>
+                        <span class="accessor"><b>get</b><code>orientationFormControl()</code></span>
                     </td>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:84</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:75</a></div>
                                 </td>
                             </tr>
 
@@ -1459,7 +1426,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:88</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:79</a></div>
                                 </td>
                             </tr>
 
@@ -1481,7 +1448,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:92</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:83</a></div>
                                 </td>
                             </tr>
 
@@ -1503,7 +1470,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:96</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:87</a></div>
                                 </td>
                             </tr>
 
@@ -1525,7 +1492,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:100</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:91</a></div>
                                 </td>
                             </tr>
 
@@ -1547,7 +1514,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="118" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:118</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="104" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:104</a></div>
                                 </td>
                             </tr>
 
@@ -1569,7 +1536,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="122" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:122</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:108</a></div>
                                 </td>
                             </tr>
 
@@ -1591,7 +1558,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:126</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:112</a></div>
                                 </td>
                             </tr>
 
@@ -1613,7 +1580,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:135</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:120</a></div>
                                 </td>
                             </tr>
                     <tr>
@@ -1622,7 +1589,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
 </div>
 
                                 <div class="io-description">
-                                    <b>Returns : </b>        <code><a href="https://angular.io/api/forms/FormControl" target="_blank" >FormControl</a></code>
+                                    <b>Returns : </b>    <code>UntypedFormControl</code>
 
                                 </div>
                         </td>
@@ -1646,7 +1613,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:155</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:135</a></div>
                                 </td>
                             </tr>
 
@@ -1668,7 +1635,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:159</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="139" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:139</a></div>
                                 </td>
                             </tr>
 
@@ -1690,7 +1657,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:163</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="143" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:143</a></div>
                                 </td>
                             </tr>
 
@@ -1712,7 +1679,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="167" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:167</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="147" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:147</a></div>
                                 </td>
                             </tr>
 
@@ -1734,7 +1701,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="171" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:171</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="151" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:151</a></div>
                                 </td>
                             </tr>
 
@@ -1744,19 +1711,19 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="tremorsFormGroup"></a>
-                        <span class="name"><b>tremorsFormGroup</b><a href="#tremorsFormGroup"><span class="icon ion-ios-link"></span></a></span>
+                        <a name="tremorsFormControl"></a>
+                        <span class="name"><b>tremorsFormControl</b><a href="#tremorsFormControl"><span class="icon ion-ios-link"></span></a></span>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>get</b><code>tremorsFormGroup()</code></span>
+                        <span class="accessor"><b>get</b><code>tremorsFormControl()</code></span>
                     </td>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="189" class="link-to-prism">src/app/tabs/assessments-tab/neurological-form/neurological-form.component.ts:189</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/app/patient-dashboard/assessments-tab/neurological-form/neurological-form.component.ts:163</a></div>
                                 </td>
                             </tr>
 
@@ -1768,35 +1735,45 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { FormControl, FormGroup } from &#x27;@angular/forms&#x27;;
+import { UntypedFormControl } from &#x27;@angular/forms&#x27;;
 import { AssessmentForm } from &#x27;src/app/shared/assessment-form.component&#x27;;
-import { FormOption } from &#x27;src/app/types/form-option.type&#x27;;
+import {
+  extremityStrengthOptions,
+  locOptions,
+  orientationOptions,
+  pupillaryDilationOptions,
+  pupillaryResponseOptions,
+  sensationOptions,
+  tremorsOptions,
+} from &#x27;./neurological-form.metadata&#x27;;
 
 @Component({
   selector: &#x27;app-neurological-form&#x27;,
   templateUrl: &#x27;./neurological-form.component.html&#x27;,
-  styleUrls: [&#x27;./neurological-form.component.scss&#x27;, &#x27;../assessments-tab.component.scss&#x27;]
+  styleUrls: [&#x27;./neurological-form.component.scss&#x27;, &#x27;../assessments-tab.component.scss&#x27;],
 })
 export class NeurologicalFormComponent extends AssessmentForm implements OnInit {
-
-  constructor() { 
-    super(); 
-    this.controlList &#x3D; [
-      {control: &quot;loc&quot;, default: &quot;WNL&quot; , wnl: false},
-      {control: &quot;handGrips&quot;, default: &quot;WNL&quot; , wnl: false},
-      {control: &quot;lePushPull&quot;, default: &quot;WNL&quot; , wnl: false},
-      {control: &quot;pupillaryResponse&quot;, default: &quot;WNL&quot; , wnl: false},
-      {control: &quot;leftPupillaryDilation&quot;, default: &quot;WNL&quot; , wnl: false},
-      {control: &quot;rightPupillaryDilation&quot;, default: &quot;WNL&quot; , wnl: false},
-      {control: &quot;rue&quot;, default: &quot;Full sensation&quot; , wnl: false},
-      {control: &quot;rle&quot;, default: &quot;Full sensation&quot; , wnl: false},
-      {control: &quot;lle&quot;, default: &quot;Full sensation&quot; , wnl: false},
-      {control: &quot;lue&quot;, default: &quot;Full sensation&quot; , wnl: false},
-      {control: &quot;tremors&quot;, default: &quot;None&quot; , wnl: false},
-    ];
+  constructor() {
+    super();
+    this.reset();
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  reset() {
+    this.controlList &#x3D; [
+      { control: &#x27;loc&#x27;, default: &#x27;WNL&#x27;, wnl: false },
+      { control: &#x27;handGrips&#x27;, default: &#x27;WNL&#x27;, wnl: false },
+      { control: &#x27;lePushPull&#x27;, default: &#x27;WNL&#x27;, wnl: false },
+      { control: &#x27;pupillaryResponse&#x27;, default: &#x27;WNL&#x27;, wnl: false },
+      { control: &#x27;leftPupillaryDilation&#x27;, default: &#x27;WNL&#x27;, wnl: false },
+      { control: &#x27;rightPupillaryDilation&#x27;, default: &#x27;WNL&#x27;, wnl: false },
+      { control: &#x27;rue&#x27;, default: &#x27;Full sensation&#x27;, wnl: false },
+      { control: &#x27;rle&#x27;, default: &#x27;Full sensation&#x27;, wnl: false },
+      { control: &#x27;lle&#x27;, default: &#x27;Full sensation&#x27;, wnl: false },
+      { control: &#x27;lue&#x27;, default: &#x27;Full sensation&#x27;, wnl: false },
+      { control: &#x27;tremors&#x27;, default: [], wnl: false },
+    ];
   }
 
   locIndex &#x3D; 0;
@@ -1804,31 +1781,12 @@ export class NeurologicalFormComponent extends AssessmentForm implements OnInit 
   lePushPullIndex &#x3D; 2;
   pupillaryResponseIndex &#x3D; 3;
 
-  locOptions &#x3D; [
-    new FormOption(&quot;Lethargic&quot;),
-    new FormOption(&quot;Somnolent&quot;),
-    new FormOption(&quot;WNL&quot;),
-  ]
-
-  orientationOptions &#x3D; [
-    new FormOption(&quot;NOT TO person&quot;, &quot;person&quot;),
-    new FormOption(&quot;NOT TO place&quot;, &quot;place&quot;),
-    new FormOption(&quot;NOT TO time&quot;, &quot;time&quot;),
-    new FormOption(&quot;NOT TO situation&quot;, &quot;situation&quot;),
-  ]
+  locOptions &#x3D; locOptions;
+  orientationOptions &#x3D; orientationOptions;
 
   // Options for handGrips and lePushPull
-  extremityStrengthOptions &#x3D; [
-    new FormOption(&quot;Moderate&quot;),
-    new FormOption(&quot;Weak&quot;),
-    new FormOption(&quot;WNL&quot;),
-  ]
-
-  pupillaryResponseOptions &#x3D; [
-    new FormOption(&quot;Sluggish&quot;),
-    new FormOption(&quot;Absent&quot;),
-    new FormOption(&quot;WNL&quot;),
-  ]
+  extremityStrengthOptions &#x3D; extremityStrengthOptions;
+  pupillaryResponseOptions &#x3D; pupillaryResponseOptions;
 
   get locDefault() {
     return this.controlList[this.locIndex].default;
@@ -1846,28 +1804,28 @@ export class NeurologicalFormComponent extends AssessmentForm implements OnInit 
     return this.controlList[this.pupillaryResponseIndex].default;
   }
 
-  get locFormControl(): FormControl {
-    return this.formGroup.controls.loc as FormControl;
+  get locFormControl(): UntypedFormControl {
+    return this.formGroup.controls.loc as UntypedFormControl;
   }
 
-  get orientationFormGroup(): FormGroup {
-    return this.formGroup.controls.orientation as FormGroup;
+  get orientationFormControl(): UntypedFormControl {
+    return this.formGroup.controls.orientation as UntypedFormControl;
   }
 
-  get extremityMovementFormControl(): FormControl {
-    return this.formGroup.controls.extremityMovement as FormControl;
+  get extremityMovementFormControl(): UntypedFormControl {
+    return this.formGroup.controls.extremityMovement as UntypedFormControl;
   }
 
-  get handGripsFormControl(): FormControl {
-    return this.formGroup.controls.handGrips as FormControl;
+  get handGripsFormControl(): UntypedFormControl {
+    return this.formGroup.controls.handGrips as UntypedFormControl;
   }
 
-  get lePushPullFormControl(): FormControl {
-    return this.formGroup.controls.lePushPull as FormControl;
+  get lePushPullFormControl(): UntypedFormControl {
+    return this.formGroup.controls.lePushPull as UntypedFormControl;
   }
 
-  get pupillaryResponseFormControl(): FormControl {
-    return this.formGroup.controls.pupillaryResponse as FormControl;
+  get pupillaryResponseFormControl(): UntypedFormControl {
+    return this.formGroup.controls.pupillaryResponse as UntypedFormControl;
   }
 
   /**
@@ -1877,34 +1835,27 @@ export class NeurologicalFormComponent extends AssessmentForm implements OnInit 
   leftPupillaryDilationIndex &#x3D; 4;
   rightPupillaryDilationIndex &#x3D; 5;
 
-  pupillaryDilationOptions &#x3D; [
-    new FormOption(&quot;2mm&quot;),
-    new FormOption(&quot;4mm&quot;),
-    new FormOption(&quot;6mm&quot;),
-    new FormOption(&quot;8mm&quot;),
-  ]
+  pupillaryDilationOptions &#x3D; pupillaryDilationOptions;
 
   get pupillaryDilationDefault() {
     return this.controlList[this.leftPupillaryDilationIndex].default;
   }
 
-  get leftPupillaryDilationFormControl(): FormControl {
-    return this.formGroup.get(&quot;pupillaryDilation.left&quot;) as FormControl;
+  get leftPupillaryDilationFormControl(): UntypedFormControl {
+    return this.formGroup.get(&#x27;pupillaryDilation.left&#x27;) as UntypedFormControl;
   }
 
-  get rightPupillaryDilationFormControl(): FormControl {
-    return this.formGroup.get(&quot;pupillaryDilation.right&quot;) as FormControl;
+  get rightPupillaryDilationFormControl(): UntypedFormControl {
+    return this.formGroup.get(&#x27;pupillaryDilation.right&#x27;) as UntypedFormControl;
   }
-
 
   /**
    * Glasgow Coma Scale Score
    */
 
-   get gcssFormControl(): FormControl {
-    return this.formGroup.controls.gcss as FormControl;
+  get gcssFormControl(): UntypedFormControl {
+    return this.formGroup.controls.gcss as UntypedFormControl;
   }
-
 
   /**
    * Sensation
@@ -1915,32 +1866,27 @@ export class NeurologicalFormComponent extends AssessmentForm implements OnInit 
   lleIndex &#x3D; 8;
   lueIndex &#x3D; 9;
 
-  sensationOptions &#x3D; [
-    new FormOption(&quot;Numbness&quot;),
-    new FormOption(&quot;Tingling&quot;),
-    new FormOption(&quot;Full sensation&quot;)
-  ]
+  sensationOptions &#x3D; sensationOptions;
 
   get sensationDefault() {
     return this.controlList[this.rueIndex].default;
   }
 
-  get rueFormControl(): FormControl {
-    return this.formGroup.get(&quot;sensation.rue&quot;) as FormControl;
+  get rueFormControl(): UntypedFormControl {
+    return this.formGroup.get(&#x27;sensation.rue&#x27;) as UntypedFormControl;
   }
 
-  get rleFormControl(): FormControl {
-    return this.formGroup.get(&quot;sensation.rle&quot;) as FormControl;
+  get rleFormControl(): UntypedFormControl {
+    return this.formGroup.get(&#x27;sensation.rle&#x27;) as UntypedFormControl;
   }
 
-  get lueFormControl(): FormControl {
-    return this.formGroup.get(&quot;sensation.lue&quot;) as FormControl;
+  get lueFormControl(): UntypedFormControl {
+    return this.formGroup.get(&#x27;sensation.lue&#x27;) as UntypedFormControl;
   }
 
-  get lleFormControl(): FormControl {
-    return this.formGroup.get(&quot;sensation.lle&quot;) as FormControl;
+  get lleFormControl(): UntypedFormControl {
+    return this.formGroup.get(&#x27;sensation.lle&#x27;) as UntypedFormControl;
   }
-
 
   /**
    * Tremors
@@ -1948,17 +1894,11 @@ export class NeurologicalFormComponent extends AssessmentForm implements OnInit 
 
   tremorsIndex &#x3D; 10;
 
-  tremorsOptions &#x3D; [
-    new FormOption(&quot;RUE&quot;, &quot;rue&quot;),
-    new FormOption(&quot;RLE&quot;, &quot;rle&quot;),
-    new FormOption(&quot;LLE&quot;, &quot;lle&quot;),
-    new FormOption(&quot;LUE&quot;, &quot;lue&quot;),
-  ]
+  tremorsOptions &#x3D; tremorsOptions;
 
-  get tremorsFormGroup(): FormGroup {
-    return this.formGroup.controls.tremors as FormGroup;
+  get tremorsFormControl(): UntypedFormControl {
+    return this.formGroup.controls.tremors as UntypedFormControl;
   }
- 
 }
 </code></pre>
     </div>
@@ -1966,90 +1906,161 @@ export class NeurologicalFormComponent extends AssessmentForm implements OnInit 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wnl-header&quot;&gt;
   &lt;p&gt;
-    WNL: Alert and oriented to person, place time and situation.  Strong movement of all extremities.  PERRLA.  No tremors noted. 
+    WNL: Alert and oriented to person, place time and situation. Strong movement of all extremities. PERRLA. No tremors
+    noted.
   &lt;/p&gt;
-  &lt;mat-checkbox
-    [checked]&#x3D;&quot;allWNL&quot;
-    [indeterminate]&#x3D;&quot;someWNL()&quot;
-    (change)&#x3D;&quot;setAllWNL($event.checked)&quot;&gt;
+  &lt;mat-checkbox [checked]&#x3D;&quot;allWNL&quot; [indeterminate]&#x3D;&quot;someWNL()&quot; (change)&#x3D;&quot;setAllWNL($event.checked)&quot;&gt;
     All Within Normal Limits
   &lt;/mat-checkbox&gt;
 &lt;/div&gt;
 
 &lt;div [formGroup]&#x3D;&quot;formGroup&quot; class&#x3D;&quot;form-container&quot;&gt;
   &lt;assessment-row title&#x3D;&quot;LOC&quot;&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;LOC&quot; [control]&#x3D;&quot;locFormControl&quot; [options]&#x3D;&quot;locOptions&quot;
-      [default]&#x3D;&quot;locDefault&quot; [(wnl)]&#x3D;&quot;this.controlList[locIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-input
+      type&#x3D;&quot;select&quot;
+      [hasWNL]&#x3D;&quot;true&quot;
+      [control]&#x3D;&quot;locFormControl&quot;
+      [options]&#x3D;&quot;locOptions&quot;
+      [default]&#x3D;&quot;locDefault&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[locIndex].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+    &gt;
     &lt;/emr-input&gt;
   &lt;/assessment-row&gt;
-  
+
   &lt;assessment-row title&#x3D;&quot;Orientation&quot;&gt;
-    &lt;emr-checkbox-group [group]&#x3D;&quot;orientationFormGroup&quot; [options]&#x3D;&quot;orientationOptions&quot;&gt;
-    &lt;/emr-checkbox-group&gt;
+    &lt;emr-checkbox-group [control]&#x3D;&quot;orientationFormControl&quot; [options]&#x3D;&quot;orientationOptions&quot;&gt; &lt;/emr-checkbox-group&gt;
   &lt;/assessment-row&gt;
 
   &lt;assessment-row title&#x3D;&quot;Extremity Movement&quot;&gt;
-    &lt;emr-input type&#x3D;&quot;text&quot; label&#x3D;&quot;Extremity Movement&quot; [control]&#x3D;&quot;extremityMovementFormControl&quot;&gt;
-    &lt;/emr-input&gt;
+    &lt;emr-input type&#x3D;&quot;text&quot; [control]&#x3D;&quot;extremityMovementFormControl&quot;&gt; &lt;/emr-input&gt;
   &lt;/assessment-row&gt;
 
   &lt;assessment-row title&#x3D;&quot;Hand Grips&quot;&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Hand Grips&quot; [control]&#x3D;&quot;handGripsFormControl&quot; [options]&#x3D;&quot;extremityStrengthOptions&quot;
-      [default]&#x3D;&quot;handGripsDefault&quot; [(wnl)]&#x3D;&quot;this.controlList[handGripsIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-input
+      type&#x3D;&quot;select&quot;
+      [hasWNL]&#x3D;&quot;true&quot;
+      [control]&#x3D;&quot;handGripsFormControl&quot;
+      [options]&#x3D;&quot;extremityStrengthOptions&quot;
+      [default]&#x3D;&quot;handGripsDefault&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[handGripsIndex].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+    &gt;
     &lt;/emr-input&gt;
   &lt;/assessment-row&gt;
 
   &lt;assessment-row title&#x3D;&quot;LE Push/Pull&quot;&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;LE Push/Pull&quot; [control]&#x3D;&quot;lePushPullFormControl&quot; [options]&#x3D;&quot;extremityStrengthOptions&quot;
-      [default]&#x3D;&quot;lePushPullDefault&quot; [(wnl)]&#x3D;&quot;this.controlList[lePushPullIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-input
+      type&#x3D;&quot;select&quot;
+      [hasWNL]&#x3D;&quot;true&quot;
+      [control]&#x3D;&quot;lePushPullFormControl&quot;
+      [options]&#x3D;&quot;extremityStrengthOptions&quot;
+      [default]&#x3D;&quot;lePushPullDefault&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[lePushPullIndex].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+    &gt;
     &lt;/emr-input&gt;
   &lt;/assessment-row&gt;
 
   &lt;assessment-row title&#x3D;&quot;Pupillary Response&quot;&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Pupillary Response&quot; [control]&#x3D;&quot;pupillaryResponseFormControl&quot; [options]&#x3D;&quot;pupillaryResponseOptions&quot;
-      [default]&#x3D;&quot;pupillaryResponseDefault&quot; [(wnl)]&#x3D;&quot;this.controlList[pupillaryResponseIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-input
+      type&#x3D;&quot;select&quot;
+      [hasWNL]&#x3D;&quot;true&quot;
+      [control]&#x3D;&quot;pupillaryResponseFormControl&quot;
+      [options]&#x3D;&quot;pupillaryResponseOptions&quot;
+      [default]&#x3D;&quot;pupillaryResponseDefault&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[pupillaryResponseIndex].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+    &gt;
     &lt;/emr-input&gt;
   &lt;/assessment-row&gt;
 
   &lt;h2&gt;Pupillary Dilation&lt;/h2&gt;
   &lt;div class&#x3D;&quot;sensation&quot;&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Left&quot; [control]&#x3D;&quot;leftPupillaryDilationFormControl&quot; 
-      [options]&#x3D;&quot;pupillaryDilationOptions&quot; [default]&#x3D;&quot;sensationDefault&quot; 
-      [(wnl)]&#x3D;&quot;this.controlList[leftPupillaryDilationIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-input
+      type&#x3D;&quot;select&quot;
+      [hasWNL]&#x3D;&quot;true&quot;
+      label&#x3D;&quot;Left&quot;
+      [control]&#x3D;&quot;leftPupillaryDilationFormControl&quot;
+      [options]&#x3D;&quot;pupillaryDilationOptions&quot;
+      [default]&#x3D;&quot;sensationDefault&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[leftPupillaryDilationIndex].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+      [bottomSpace]&#x3D;&quot;true&quot;
+    &gt;
     &lt;/emr-input&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;Right&quot; [control]&#x3D;&quot;rightPupillaryDilationFormControl&quot; 
-      [options]&#x3D;&quot;pupillaryDilationOptions&quot; [default]&#x3D;&quot;pupillaryDilationDefault&quot; 
-      [(wnl)]&#x3D;&quot;this.controlList[rightPupillaryDilationIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-input
+      type&#x3D;&quot;select&quot;
+      [hasWNL]&#x3D;&quot;true&quot;
+      label&#x3D;&quot;Right&quot;
+      [control]&#x3D;&quot;rightPupillaryDilationFormControl&quot;
+      [options]&#x3D;&quot;pupillaryDilationOptions&quot;
+      [default]&#x3D;&quot;pupillaryDilationDefault&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[rightPupillaryDilationIndex].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+      [bottomSpace]&#x3D;&quot;true&quot;
+    &gt;
     &lt;/emr-input&gt;
   &lt;/div&gt;
 
   &lt;assessment-row title&#x3D;&quot;Glascow Coma Scale Score&quot;&gt;
-    &lt;emr-input type&#x3D;&quot;text&quot; label&#x3D;&quot;Glascow Coma Scale Score&quot; [control]&#x3D;&quot;gcssFormControl&quot;&gt;
-    &lt;/emr-input&gt;
+    &lt;emr-input type&#x3D;&quot;text&quot; [control]&#x3D;&quot;gcssFormControl&quot;&gt; &lt;/emr-input&gt;
   &lt;/assessment-row&gt;
 
   &lt;h2&gt;Sensation&lt;/h2&gt;
   &lt;div class&#x3D;&quot;sensation&quot;&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;RUE&quot; [control]&#x3D;&quot;rueFormControl&quot; 
-      [options]&#x3D;&quot;sensationOptions&quot; [default]&#x3D;&quot;sensationDefault&quot; 
-      [(wnl)]&#x3D;&quot;this.controlList[rueIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-input
+      type&#x3D;&quot;select&quot;
+      [hasWNL]&#x3D;&quot;true&quot;
+      label&#x3D;&quot;RUE&quot;
+      [control]&#x3D;&quot;rueFormControl&quot;
+      [options]&#x3D;&quot;sensationOptions&quot;
+      [default]&#x3D;&quot;sensationDefault&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[rueIndex].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+      [bottomSpace]&#x3D;&quot;true&quot;
+    &gt;
     &lt;/emr-input&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;LUE&quot; [control]&#x3D;&quot;lueFormControl&quot; 
-      [options]&#x3D;&quot;sensationOptions&quot; [default]&#x3D;&quot;sensationDefault&quot; 
-      [(wnl)]&#x3D;&quot;this.controlList[lueIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-input
+      type&#x3D;&quot;select&quot;
+      [hasWNL]&#x3D;&quot;true&quot;
+      label&#x3D;&quot;LUE&quot;
+      [control]&#x3D;&quot;lueFormControl&quot;
+      [options]&#x3D;&quot;sensationOptions&quot;
+      [default]&#x3D;&quot;sensationDefault&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[lueIndex].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+      [bottomSpace]&#x3D;&quot;true&quot;
+    &gt;
     &lt;/emr-input&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;RLE&quot; [control]&#x3D;&quot;rleFormControl&quot; 
-      [options]&#x3D;&quot;sensationOptions&quot; [default]&#x3D;&quot;sensationDefault&quot; 
-      [(wnl)]&#x3D;&quot;this.controlList[rleIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-input
+      type&#x3D;&quot;select&quot;
+      [hasWNL]&#x3D;&quot;true&quot;
+      label&#x3D;&quot;RLE&quot;
+      [control]&#x3D;&quot;rleFormControl&quot;
+      [options]&#x3D;&quot;sensationOptions&quot;
+      [default]&#x3D;&quot;sensationDefault&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[rleIndex].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+      [bottomSpace]&#x3D;&quot;true&quot;
+    &gt;
     &lt;/emr-input&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; [hasWNL]&#x3D;&quot;true&quot; label&#x3D;&quot;LLE&quot; [control]&#x3D;&quot;lleFormControl&quot; 
-      [options]&#x3D;&quot;sensationOptions&quot; [default]&#x3D;&quot;sensationDefault&quot; 
-      [(wnl)]&#x3D;&quot;this.controlList[lleIndex].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-input
+      type&#x3D;&quot;select&quot;
+      [hasWNL]&#x3D;&quot;true&quot;
+      label&#x3D;&quot;LLE&quot;
+      [control]&#x3D;&quot;lleFormControl&quot;
+      [options]&#x3D;&quot;sensationOptions&quot;
+      [default]&#x3D;&quot;sensationDefault&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[lleIndex].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+      [bottomSpace]&#x3D;&quot;true&quot;
+    &gt;
     &lt;/emr-input&gt;
   &lt;/div&gt;
 
   &lt;assessment-row title&#x3D;&quot;Tremors&quot;&gt;
-    &lt;emr-checkbox-group [group]&#x3D;&quot;tremorsFormGroup&quot; [options]&#x3D;&quot;tremorsOptions&quot;&gt;&lt;/emr-checkbox-group&gt;
+    &lt;emr-checkbox-group [control]&#x3D;&quot;tremorsFormControl&quot; [options]&#x3D;&quot;tremorsOptions&quot;&gt;&lt;/emr-checkbox-group&gt;
   &lt;/assessment-row&gt;
 &lt;/div&gt;
 </code></pre>
@@ -2087,7 +2098,8 @@ export class NeurologicalFormComponent extends AssessmentForm implements OnInit 
 
 .add-assessment-btn {
   margin-top: 1rem;
-}</code></pre>
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -2115,8 +2127,8 @@ export class NeurologicalFormComponent extends AssessmentForm implements OnInit 
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="wnl-header">  <p>    WNL: Alert and oriented to person, place time and situation.  Strong movement of all extremities.  PERRLA.  No tremors noted.   </p>  <mat-checkbox    [checked]="allWNL"    [indeterminate]="someWNL()"    (change)="setAllWNL($event.checked)">    All Within Normal Limits  </mat-checkbox></div><div [formGroup]="formGroup" class="form-container">  <assessment-row title="LOC">    <emr-input type="select" [hasWNL]="true" label="LOC" [control]="locFormControl" [options]="locOptions"      [default]="locDefault" [(wnl)]="this.controlList[locIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </assessment-row>    <assessment-row title="Orientation">    <emr-checkbox-group [group]="orientationFormGroup" [options]="orientationOptions">    </emr-checkbox-group>  </assessment-row>  <assessment-row title="Extremity Movement">    <emr-input type="text" label="Extremity Movement" [control]="extremityMovementFormControl">    </emr-input>  </assessment-row>  <assessment-row title="Hand Grips">    <emr-input type="select" [hasWNL]="true" label="Hand Grips" [control]="handGripsFormControl" [options]="extremityStrengthOptions"      [default]="handGripsDefault" [(wnl)]="this.controlList[handGripsIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </assessment-row>  <assessment-row title="LE Push/Pull">    <emr-input type="select" [hasWNL]="true" label="LE Push/Pull" [control]="lePushPullFormControl" [options]="extremityStrengthOptions"      [default]="lePushPullDefault" [(wnl)]="this.controlList[lePushPullIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </assessment-row>  <assessment-row title="Pupillary Response">    <emr-input type="select" [hasWNL]="true" label="Pupillary Response" [control]="pupillaryResponseFormControl" [options]="pupillaryResponseOptions"      [default]="pupillaryResponseDefault" [(wnl)]="this.controlList[pupillaryResponseIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </assessment-row>  <h2>Pupillary Dilation</h2>  <div class="sensation">    <emr-input type="select" [hasWNL]="true" label="Left" [control]="leftPupillaryDilationFormControl"       [options]="pupillaryDilationOptions" [default]="sensationDefault"       [(wnl)]="this.controlList[leftPupillaryDilationIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>    <emr-input type="select" [hasWNL]="true" label="Right" [control]="rightPupillaryDilationFormControl"       [options]="pupillaryDilationOptions" [default]="pupillaryDilationDefault"       [(wnl)]="this.controlList[rightPupillaryDilationIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </div>  <assessment-row title="Glascow Coma Scale Score">    <emr-input type="text" label="Glascow Coma Scale Score" [control]="gcssFormControl">    </emr-input>  </assessment-row>  <h2>Sensation</h2>  <div class="sensation">    <emr-input type="select" [hasWNL]="true" label="RUE" [control]="rueFormControl"       [options]="sensationOptions" [default]="sensationDefault"       [(wnl)]="this.controlList[rueIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>    <emr-input type="select" [hasWNL]="true" label="LUE" [control]="lueFormControl"       [options]="sensationOptions" [default]="sensationDefault"       [(wnl)]="this.controlList[lueIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>    <emr-input type="select" [hasWNL]="true" label="RLE" [control]="rleFormControl"       [options]="sensationOptions" [default]="sensationDefault"       [(wnl)]="this.controlList[rleIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>    <emr-input type="select" [hasWNL]="true" label="LLE" [control]="lleFormControl"       [options]="sensationOptions" [default]="sensationDefault"       [(wnl)]="this.controlList[lleIndex].wnl" (wnlChange)="updateAllWNL()">    </emr-input>  </div>  <assessment-row title="Tremors">    <emr-checkbox-group [group]="tremorsFormGroup" [options]="tremorsOptions"></emr-checkbox-group>  </assessment-row></div></div>'
-    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+        var COMPONENT_TEMPLATE = '<div><div class="wnl-header">  <p>    WNL: Alert and oriented to person, place time and situation. Strong movement of all extremities. PERRLA. No tremors    noted.  </p>  <mat-checkbox [checked]="allWNL" [indeterminate]="someWNL()" (change)="setAllWNL($event.checked)">    All Within Normal Limits  </mat-checkbox></div><div [formGroup]="formGroup" class="form-container">  <assessment-row title="LOC">    <emr-input      type="select"      [hasWNL]="true"      [control]="locFormControl"      [options]="locOptions"      [default]="locDefault"      [(wnl)]="this.controlList[locIndex].wnl"      (wnlChange)="updateAllWNL()"    >    </emr-input>  </assessment-row>  <assessment-row title="Orientation">    <emr-checkbox-group [control]="orientationFormControl" [options]="orientationOptions"> </emr-checkbox-group>  </assessment-row>  <assessment-row title="Extremity Movement">    <emr-input type="text" [control]="extremityMovementFormControl"> </emr-input>  </assessment-row>  <assessment-row title="Hand Grips">    <emr-input      type="select"      [hasWNL]="true"      [control]="handGripsFormControl"      [options]="extremityStrengthOptions"      [default]="handGripsDefault"      [(wnl)]="this.controlList[handGripsIndex].wnl"      (wnlChange)="updateAllWNL()"    >    </emr-input>  </assessment-row>  <assessment-row title="LE Push/Pull">    <emr-input      type="select"      [hasWNL]="true"      [control]="lePushPullFormControl"      [options]="extremityStrengthOptions"      [default]="lePushPullDefault"      [(wnl)]="this.controlList[lePushPullIndex].wnl"      (wnlChange)="updateAllWNL()"    >    </emr-input>  </assessment-row>  <assessment-row title="Pupillary Response">    <emr-input      type="select"      [hasWNL]="true"      [control]="pupillaryResponseFormControl"      [options]="pupillaryResponseOptions"      [default]="pupillaryResponseDefault"      [(wnl)]="this.controlList[pupillaryResponseIndex].wnl"      (wnlChange)="updateAllWNL()"    >    </emr-input>  </assessment-row>  <h2>Pupillary Dilation</h2>  <div class="sensation">    <emr-input      type="select"      [hasWNL]="true"      label="Left"      [control]="leftPupillaryDilationFormControl"      [options]="pupillaryDilationOptions"      [default]="sensationDefault"      [(wnl)]="this.controlList[leftPupillaryDilationIndex].wnl"      (wnlChange)="updateAllWNL()"      [bottomSpace]="true"    >    </emr-input>    <emr-input      type="select"      [hasWNL]="true"      label="Right"      [control]="rightPupillaryDilationFormControl"      [options]="pupillaryDilationOptions"      [default]="pupillaryDilationDefault"      [(wnl)]="this.controlList[rightPupillaryDilationIndex].wnl"      (wnlChange)="updateAllWNL()"      [bottomSpace]="true"    >    </emr-input>  </div>  <assessment-row title="Glascow Coma Scale Score">    <emr-input type="text" [control]="gcssFormControl"> </emr-input>  </assessment-row>  <h2>Sensation</h2>  <div class="sensation">    <emr-input      type="select"      [hasWNL]="true"      label="RUE"      [control]="rueFormControl"      [options]="sensationOptions"      [default]="sensationDefault"      [(wnl)]="this.controlList[rueIndex].wnl"      (wnlChange)="updateAllWNL()"      [bottomSpace]="true"    >    </emr-input>    <emr-input      type="select"      [hasWNL]="true"      label="LUE"      [control]="lueFormControl"      [options]="sensationOptions"      [default]="sensationDefault"      [(wnl)]="this.controlList[lueIndex].wnl"      (wnlChange)="updateAllWNL()"      [bottomSpace]="true"    >    </emr-input>    <emr-input      type="select"      [hasWNL]="true"      label="RLE"      [control]="rleFormControl"      [options]="sensationOptions"      [default]="sensationDefault"      [(wnl)]="this.controlList[rleIndex].wnl"      (wnlChange)="updateAllWNL()"      [bottomSpace]="true"    >    </emr-input>    <emr-input      type="select"      [hasWNL]="true"      label="LLE"      [control]="lleFormControl"      [options]="sensationOptions"      [default]="sensationDefault"      [(wnl)]="this.controlList[lleIndex].wnl"      (wnlChange)="updateAllWNL()"      [bottomSpace]="true"    >    </emr-input>  </div>  <assessment-row title="Tremors">    <emr-checkbox-group [control]="tremorsFormControl" [options]="tremorsOptions"></emr-checkbox-group>  </assessment-row></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AdministrationScheduleComponent', 'selector': 'app-administration-schedule'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'emr-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrDialogComponent', 'selector': 'emr-dialog'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'emr-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'HistoryAndPhysicalTabComponent', 'selector': 'app-history-and-physical-tab'},{'name': 'HtmlDialogComponent', 'selector': 'app-html-dialog'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedicationDialogComponent', 'selector': 'emr-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MedicationScheduleComponent', 'selector': 'app-medication-schedule'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteEditDialogComponent', 'selector': 'app-note-edit-dialog'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialogComponent', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientDashboardTabComponent', 'selector': 'app-base'},{'name': 'PatientFormComponent', 'selector': 'app-patient-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'PrnScheduleComponent', 'selector': 'app-prn-schedule'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
     var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
     var ACTUAL_COMPONENT = {'name': 'NeurologicalFormComponent'};
 </script>

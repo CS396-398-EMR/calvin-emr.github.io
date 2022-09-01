@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/tabs/assessments-tab/integumentary-form/integumentary-form.component.ts</code>
+    <code>src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts</code>
 </p>
 
 
@@ -170,6 +170,9 @@
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
                             <li>
+                                <a href="#reset" >reset</a>
+                            </li>
+                            <li>
                                 <a href="#setAllWNL" >setAllWNL</a>
                             </li>
                             <li>
@@ -212,7 +215,7 @@
                                     <a href="#skinAppearanceDefault" >skinAppearanceDefault</a>
                                 </li>
                                 <li>
-                                    <a href="#skinAppearanceFormGroup" >skinAppearanceFormGroup</a>
+                                    <a href="#skinAppearanceFormControl" >skinAppearanceFormControl</a>
                                 </li>
                                 <li>
                                     <a href="#locationFormControl" >locationFormControl</a>
@@ -221,7 +224,7 @@
                                     <a href="#stagingFormControl" >stagingFormControl</a>
                                 </li>
                                 <li>
-                                    <a href="#careFormGroup" >careFormGroup</a>
+                                    <a href="#careFormControl" >careFormControl</a>
                                 </li>
                             </ul>
                         </td>
@@ -241,7 +244,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/tabs/assessments-tab/integumentary-form/integumentary-form.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts:11</a></div>
                             </td>
                         </tr>
 
@@ -261,7 +264,7 @@
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+                        <i>Type : </i>    <code>UntypedFormGroup</code>
 
                     </td>
                 </tr>
@@ -273,7 +276,7 @@
                             </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:25</a></code>
+                                    <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:19</a></code>
 </div>
                             </td>
                         </tr>
@@ -314,8 +317,45 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:20</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:17</a></code>
 </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reset"></a>
+                    <span class="name">
+                        <span ><b>reset</b></span>
+                        <a href="#reset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reset()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts:19</a></div>
                 </td>
             </tr>
 
@@ -357,7 +397,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:74</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:67</a></code>
 </div>
                 </td>
             </tr>
@@ -441,7 +481,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:63</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:56</a></code>
 </div>
                 </td>
             </tr>
@@ -494,7 +534,7 @@ the controlList are all true)</p>
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:53</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:46</a></code>
 </div>
                 </td>
             </tr>
@@ -534,27 +574,12 @@ allWNL is set to false.</p>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[
-    new FormOption(&quot;ABD&quot;, &quot;abd&quot;),
-    new FormOption(&quot;Gauze&quot;, &quot;gauze&quot;),
-    new FormOption(&quot;Wet to dry dressing change&quot;, &quot;dressingChange&quot;),
-    new FormOption(&quot;Pharmaceutical agent (See MAR)&quot;, &quot;pharmAgent&quot;),
-    new FormOption(&quot;Steri strips&quot;, &quot;steriStrips&quot;),
-    new FormOption(&quot;Staples&quot;, &quot;staples&quot;),
-    new FormOption(&quot;Well Approximated&quot;, &quot;wellApproximated&quot;),
-    new FormOption(&quot;Dehiscence&quot;, &quot;dehiscence&quot;),
-  ]</code>
+                        <i>Default value : </i><code>careOptions</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/tabs/assessments-tab/integumentary-form/integumentary-form.component.ts:40</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts:25</a></div>
                         </td>
                     </tr>
 
@@ -574,25 +599,12 @@ allWNL is set to false.</p>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[
-    new FormOption(&quot;Diaphoresis&quot;, &quot;diaphoresis&quot;),
-    new FormOption(&quot;Pallor&quot;, &quot;pallor&quot;),
-    new FormOption(&quot;Poor turgor&quot;, &quot;poorTurgor&quot;),
-    new FormOption(&quot;Cool&quot;, &quot;cool&quot;),
-    new FormOption(&quot;Modeling&quot;, &quot;modeling&quot;),
-    new FormOption(&quot;Jaundice&quot;, &quot;jaundice&quot;),
-  ]</code>
+                        <i>Default value : </i><code>skinAppearanceOptions</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/tabs/assessments-tab/integumentary-form/integumentary-form.component.ts:23</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts:23</a></div>
                         </td>
                     </tr>
 
@@ -612,24 +624,12 @@ allWNL is set to false.</p>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[
-    new FormOption(&quot;Stage One&quot;, &quot;stageOne&quot;),
-    new FormOption(&quot;Stage Two&quot;, &quot;stageTwo&quot;),
-    new FormOption(&quot;Stage Three&quot;, &quot;stageThree&quot;),
-    new FormOption(&quot;Stage Four&quot;, &quot;stageFour&quot;),
-    new FormOption(&quot;Unstageable&quot;, &quot;unstageable&quot;),
-  ]</code>
+                        <i>Default value : </i><code>stagingOptions</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/tabs/assessments-tab/integumentary-form/integumentary-form.component.ts:32</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts:24</a></div>
                         </td>
                     </tr>
 
@@ -666,7 +666,7 @@ allWNL is set to false.</p>
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:28</a></code>
+                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:22</a></code>
 </div>
                         </td>
                     </tr>
@@ -704,7 +704,7 @@ allWNL is set to false.</p>
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:40</a></code>
+                                <div class="io-line">Defined in         <code><a href="../classes/Assessment.html#source" target="_self" >AssessmentForm:34</a></code>
 </div>
                         </td>
                     </tr>
@@ -745,7 +745,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/tabs/assessments-tab/integumentary-form/integumentary-form.component.ts:51</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts:27</a></div>
                                 </td>
                             </tr>
 
@@ -755,19 +755,19 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="skinAppearanceFormGroup"></a>
-                        <span class="name"><b>skinAppearanceFormGroup</b><a href="#skinAppearanceFormGroup"><span class="icon ion-ios-link"></span></a></span>
+                        <a name="skinAppearanceFormControl"></a>
+                        <span class="name"><b>skinAppearanceFormControl</b><a href="#skinAppearanceFormControl"><span class="icon ion-ios-link"></span></a></span>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>get</b><code>skinAppearanceFormGroup()</code></span>
+                        <span class="accessor"><b>get</b><code>skinAppearanceFormControl()</code></span>
                     </td>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/tabs/assessments-tab/integumentary-form/integumentary-form.component.ts:55</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts:31</a></div>
                                 </td>
                             </tr>
 
@@ -789,7 +789,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/tabs/assessments-tab/integumentary-form/integumentary-form.component.ts:59</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts:35</a></div>
                                 </td>
                             </tr>
 
@@ -811,7 +811,7 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/tabs/assessments-tab/integumentary-form/integumentary-form.component.ts:63</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts:39</a></div>
                                 </td>
                             </tr>
 
@@ -821,19 +821,19 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="careFormGroup"></a>
-                        <span class="name"><b>careFormGroup</b><a href="#careFormGroup"><span class="icon ion-ios-link"></span></a></span>
+                        <a name="careFormControl"></a>
+                        <span class="name"><b>careFormControl</b><a href="#careFormControl"><span class="icon ion-ios-link"></span></a></span>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>get</b><code>careFormGroup()</code></span>
+                        <span class="accessor"><b>get</b><code>careFormControl()</code></span>
                     </td>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/tabs/assessments-tab/integumentary-form/integumentary-form.component.ts:67</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/patient-dashboard/assessments-tab/integumentary-form/integumentary-form.component.ts:43</a></div>
                                 </td>
                             </tr>
 
@@ -845,113 +845,89 @@ wnl: whether or not the control is &quot;within normal limits&quot;</p>
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { FormControl, FormGroup } from &#x27;@angular/forms&#x27;;
+import { UntypedFormControl } from &#x27;@angular/forms&#x27;;
 import { AssessmentForm } from &#x27;src/app/shared/assessment-form.component&#x27;;
-import { FormOption } from &#x27;src/app/types/form-option.type&#x27;;
+import { careOptions, skinAppearanceOptions, stagingOptions } from &#x27;./integumentary-form.metadata&#x27;;
 
 @Component({
   selector: &#x27;app-integumentary-form&#x27;,
   templateUrl: &#x27;./integumentary-form.component.html&#x27;,
-  styleUrls: [&#x27;./integumentary-form.component.scss&#x27;, &#x27;../assessments-tab.component.scss&#x27;]
+  styleUrls: [&#x27;./integumentary-form.component.scss&#x27;, &#x27;../assessments-tab.component.scss&#x27;],
 })
 export class IntegumentaryFormComponent extends AssessmentForm implements OnInit {
-
   constructor() {
     super();
-    this.controlList &#x3D; [
-      {control: &quot;skinAppearance&quot;, default: false,  wnl: false},
-    ];
+    this.reset();
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  reset() {
+    this.controlList &#x3D; [{ control: &#x27;skinAppearance&#x27;, default: [], wnl: false }];
   }
 
-  skinAppearanceOptions &#x3D; [
-    new FormOption(&quot;Diaphoresis&quot;, &quot;diaphoresis&quot;),
-    new FormOption(&quot;Pallor&quot;, &quot;pallor&quot;),
-    new FormOption(&quot;Poor turgor&quot;, &quot;poorTurgor&quot;),
-    new FormOption(&quot;Cool&quot;, &quot;cool&quot;),
-    new FormOption(&quot;Modeling&quot;, &quot;modeling&quot;),
-    new FormOption(&quot;Jaundice&quot;, &quot;jaundice&quot;),
-  ];
-
-  stagingOptions &#x3D; [
-    new FormOption(&quot;Stage One&quot;, &quot;stageOne&quot;),
-    new FormOption(&quot;Stage Two&quot;, &quot;stageTwo&quot;),
-    new FormOption(&quot;Stage Three&quot;, &quot;stageThree&quot;),
-    new FormOption(&quot;Stage Four&quot;, &quot;stageFour&quot;),
-    new FormOption(&quot;Unstageable&quot;, &quot;unstageable&quot;),
-  ];
-
-  careOptions &#x3D; [
-    new FormOption(&quot;ABD&quot;, &quot;abd&quot;),
-    new FormOption(&quot;Gauze&quot;, &quot;gauze&quot;),
-    new FormOption(&quot;Wet to dry dressing change&quot;, &quot;dressingChange&quot;),
-    new FormOption(&quot;Pharmaceutical agent (See MAR)&quot;, &quot;pharmAgent&quot;),
-    new FormOption(&quot;Steri strips&quot;, &quot;steriStrips&quot;),
-    new FormOption(&quot;Staples&quot;, &quot;staples&quot;),
-    new FormOption(&quot;Well Approximated&quot;, &quot;wellApproximated&quot;),
-    new FormOption(&quot;Dehiscence&quot;, &quot;dehiscence&quot;),
-  ];
+  skinAppearanceOptions &#x3D; skinAppearanceOptions;
+  stagingOptions &#x3D; stagingOptions;
+  careOptions &#x3D; careOptions;
 
   get skinAppearanceDefault() {
     return this.controlList[0].default;
   }
 
-  get skinAppearanceFormGroup(): FormGroup {
-    return this.formGroup.controls.skinAppearance as FormGroup;
+  get skinAppearanceFormControl(): UntypedFormControl {
+    return this.formGroup.controls.skinAppearance as UntypedFormControl;
   }
 
-  get locationFormControl(): FormControl {
-    return this.formGroup.get(&#x27;wounds.location&#x27;) as FormControl;
+  get locationFormControl(): UntypedFormControl {
+    return this.formGroup.get(&#x27;wounds.location&#x27;) as UntypedFormControl;
   }
 
-  get stagingFormControl(): FormControl {
-    return this.formGroup.get(&#x27;wounds.staging&#x27;) as FormControl;
+  get stagingFormControl(): UntypedFormControl {
+    return this.formGroup.get(&#x27;wounds.staging&#x27;) as UntypedFormControl;
   }
 
-  get careFormGroup(): FormGroup {
-    return this.formGroup.get(&#x27;wounds.care&#x27;) as FormGroup;
+  get careFormControl(): UntypedFormControl {
+    return this.formGroup.get(&#x27;wounds.care&#x27;) as UntypedFormControl;
   }
-
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wnl-header&quot;&gt;
-  &lt;p&gt;
-    WNL: Skin warm, clean, dry and intact. Pink mucus membranes.
-  &lt;/p&gt;
-  &lt;mat-checkbox
-    [checked]&#x3D;&quot;allWNL&quot;
-    [indeterminate]&#x3D;&quot;someWNL()&quot;
-    (change)&#x3D;&quot;setAllWNL($event.checked)&quot;&gt;
+  &lt;p&gt;WNL: Skin warm, clean, dry and intact. Pink mucus membranes.&lt;/p&gt;
+  &lt;mat-checkbox [checked]&#x3D;&quot;allWNL&quot; [indeterminate]&#x3D;&quot;someWNL()&quot; (change)&#x3D;&quot;setAllWNL($event.checked)&quot;&gt;
     All Within Normal Limits
   &lt;/mat-checkbox&gt;
 &lt;/div&gt;
 
 &lt;div [formGroup]&#x3D;&quot;formGroup&quot; class&#x3D;&quot;form-container&quot;&gt;
   &lt;assessment-row title&#x3D;&quot;Skin Appearance&quot;&gt;
-    &lt;emr-checkbox-group [hasWNL]&#x3D;&quot;true&quot; [group]&#x3D;&quot;skinAppearanceFormGroup&quot; [options]&#x3D;&quot;skinAppearanceOptions&quot;
-      [default]&#x3D;&quot;skinAppearanceDefault&quot; wnlLabel&#x3D;&quot;WNL&quot; [(wnl)]&#x3D;&quot;this.controlList[0].wnl&quot; (wnlChange)&#x3D;&quot;updateAllWNL()&quot;&gt;
+    &lt;emr-checkbox-group
+      [hasWNL]&#x3D;&quot;true&quot;
+      [control]&#x3D;&quot;skinAppearanceFormControl&quot;
+      [options]&#x3D;&quot;skinAppearanceOptions&quot;
+      [default]&#x3D;&quot;skinAppearanceDefault&quot;
+      wnlLabel&#x3D;&quot;WNL&quot;
+      [(wnl)]&#x3D;&quot;this.controlList[0].wnl&quot;
+      (wnlChange)&#x3D;&quot;updateAllWNL()&quot;
+    &gt;
     &lt;/emr-checkbox-group&gt;
   &lt;/assessment-row&gt;
 
   &lt;h2&gt;Wounds&lt;/h2&gt;
 
   &lt;assessment-row title&#x3D;&quot;Location&quot;&gt;
-    &lt;emr-input type&#x3D;&quot;text&quot; width&#x3D;&quot;50%&quot; label&#x3D;&quot;Location&quot; [control]&#x3D;&quot;locationFormControl&quot;&gt;&lt;/emr-input&gt;
+    &lt;emr-input type&#x3D;&quot;text&quot; width&#x3D;&quot;50%&quot; [control]&#x3D;&quot;locationFormControl&quot;&gt;&lt;/emr-input&gt;
   &lt;/assessment-row&gt;
 
   &lt;assessment-row title&#x3D;&quot;Staging&quot;&gt;
-    &lt;emr-input type&#x3D;&quot;select&quot; label&#x3D;&quot;Staging&quot; [control]&#x3D;&quot;stagingFormControl&quot; [options]&#x3D;&quot;stagingOptions&quot;&gt;&lt;/emr-input&gt;
+    &lt;emr-input type&#x3D;&quot;select&quot; [control]&#x3D;&quot;stagingFormControl&quot; [options]&#x3D;&quot;stagingOptions&quot;&gt;&lt;/emr-input&gt;
   &lt;/assessment-row&gt;
 
   &lt;assessment-row title&#x3D;&quot;Wound Care&quot;&gt;
-    &lt;emr-checkbox-group [group]&#x3D;&quot;careFormGroup&quot; [options]&#x3D;&quot;careOptions&quot;&gt;&lt;/emr-checkbox-group&gt;
+    &lt;emr-checkbox-group [control]&#x3D;&quot;careFormControl&quot; [options]&#x3D;&quot;careOptions&quot;&gt;&lt;/emr-checkbox-group&gt;
   &lt;/assessment-row&gt;
-
 &lt;/div&gt;
 </code></pre>
     </div>
@@ -979,7 +955,8 @@ export class IntegumentaryFormComponent extends AssessmentForm implements OnInit
 
 .add-assessment-btn {
   margin-top: 1rem;
-}</code></pre>
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -1007,8 +984,8 @@ export class IntegumentaryFormComponent extends AssessmentForm implements OnInit
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="wnl-header">  <p>    WNL: Skin warm, clean, dry and intact. Pink mucus membranes.  </p>  <mat-checkbox    [checked]="allWNL"    [indeterminate]="someWNL()"    (change)="setAllWNL($event.checked)">    All Within Normal Limits  </mat-checkbox></div><div [formGroup]="formGroup" class="form-container">  <assessment-row title="Skin Appearance">    <emr-checkbox-group [hasWNL]="true" [group]="skinAppearanceFormGroup" [options]="skinAppearanceOptions"      [default]="skinAppearanceDefault" wnlLabel="WNL" [(wnl)]="this.controlList[0].wnl" (wnlChange)="updateAllWNL()">    </emr-checkbox-group>  </assessment-row>  <h2>Wounds</h2>  <assessment-row title="Location">    <emr-input type="text" width="50%" label="Location" [control]="locationFormControl"></emr-input>  </assessment-row>  <assessment-row title="Staging">    <emr-input type="select" label="Staging" [control]="stagingFormControl" [options]="stagingOptions"></emr-input>  </assessment-row>  <assessment-row title="Wound Care">    <emr-checkbox-group [group]="careFormGroup" [options]="careOptions"></emr-checkbox-group>  </assessment-row></div></div>'
-    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+        var COMPONENT_TEMPLATE = '<div><div class="wnl-header">  <p>WNL: Skin warm, clean, dry and intact. Pink mucus membranes.</p>  <mat-checkbox [checked]="allWNL" [indeterminate]="someWNL()" (change)="setAllWNL($event.checked)">    All Within Normal Limits  </mat-checkbox></div><div [formGroup]="formGroup" class="form-container">  <assessment-row title="Skin Appearance">    <emr-checkbox-group      [hasWNL]="true"      [control]="skinAppearanceFormControl"      [options]="skinAppearanceOptions"      [default]="skinAppearanceDefault"      wnlLabel="WNL"      [(wnl)]="this.controlList[0].wnl"      (wnlChange)="updateAllWNL()"    >    </emr-checkbox-group>  </assessment-row>  <h2>Wounds</h2>  <assessment-row title="Location">    <emr-input type="text" width="50%" [control]="locationFormControl"></emr-input>  </assessment-row>  <assessment-row title="Staging">    <emr-input type="select" [control]="stagingFormControl" [options]="stagingOptions"></emr-input>  </assessment-row>  <assessment-row title="Wound Care">    <emr-checkbox-group [control]="careFormControl" [options]="careOptions"></emr-checkbox-group>  </assessment-row></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AdministrationScheduleComponent', 'selector': 'app-administration-schedule'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'emr-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrDialogComponent', 'selector': 'emr-dialog'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'emr-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'HistoryAndPhysicalTabComponent', 'selector': 'app-history-and-physical-tab'},{'name': 'HtmlDialogComponent', 'selector': 'app-html-dialog'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedicationDialogComponent', 'selector': 'emr-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MedicationScheduleComponent', 'selector': 'app-medication-schedule'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteEditDialogComponent', 'selector': 'app-note-edit-dialog'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialogComponent', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientDashboardTabComponent', 'selector': 'app-base'},{'name': 'PatientFormComponent', 'selector': 'app-patient-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'PrnScheduleComponent', 'selector': 'app-prn-schedule'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
     var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
     var ACTUAL_COMPONENT = {'name': 'IntegumentaryFormComponent'};
 </script>

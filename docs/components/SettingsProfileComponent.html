@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/pages/settings-profile/settings-profile.component.ts</code>
+    <code>src/app/settings/settings-profile/settings-profile.component.ts</code>
 </p>
 
 
@@ -150,13 +150,7 @@
                                 <a href="#currentUserSub" >currentUserSub</a>
                             </li>
                             <li>
-                                <a href="#generalPath" >generalPath</a>
-                            </li>
-                            <li>
-                                <a href="#helpPath" >helpPath</a>
-                            </li>
-                            <li>
-                                <a href="#profilePath" >profilePath</a>
+                                <a href="#menuItems" >menuItems</a>
                             </li>
                         </ul>
                     </td>
@@ -194,12 +188,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(userService: <a href="../injectables/UserService.html" target="_self">UserService</a>)</code>
+<code>constructor(authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/pages/settings-profile/settings-profile.component.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/settings/settings-profile/settings-profile.component.ts:10</a></div>
                             </td>
                         </tr>
 
@@ -217,10 +211,10 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>userService</td>
+                                                        <td>authService</td>
                                                   
                                                         <td>
-                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -272,7 +266,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:16</a></code>
+                        <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:15</a></code>
 </div>
                 </td>
             </tr>
@@ -315,7 +309,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:32</a></code>
+                        <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:40</a></code>
 </div>
                 </td>
             </tr>
@@ -351,7 +345,7 @@
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>&#x27;/&#x27; + changePasswordPath</code>
+                        <i>Default value : </i><code>&#x27;/&#x27; + PATH_CHANGE_PASSWORD</code>
                     </td>
                 </tr>
                         <tr>
@@ -362,7 +356,7 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:18</a></code>
+                                <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:20</a></code>
 </div>
                         </td>
                     </tr>
@@ -396,7 +390,7 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:21</a></code>
+                                <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:23</a></code>
 </div>
                         </td>
                     </tr>
@@ -429,7 +423,7 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:20</a></code>
+                                <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:22</a></code>
 </div>
                         </td>
                     </tr>
@@ -441,16 +435,27 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="generalPath"></a>
+                    <a name="menuItems"></a>
                     <span class="name">
-                        <span ><b>generalPath</b></span>
-                        <a href="#generalPath"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>menuItems</b></span>
+                        <a href="#menuItems"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>settingsGeneralPath</code>
+                        <i>Type : </i>    <code>MenuItem[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    { label: &#x27;My Profile&#x27;, icon: &#x27;pi pi-fw pi-user&#x27;, routerLink: PATH_SETTINGS_PROFILE },
+    { label: &#x27;General&#x27;, icon: &#x27;pi pi-fw pi-cog&#x27;, routerLink: PATH_SETTINGS_GENERAL },
+    { separator: true },
+    { label: &#x27;Help&#x27;, icon: &#x27;pi pi-fw pi-question-circle&#x27;, routerLink: PATH_SETTINGS_HELP },
+  ]</code>
                     </td>
                 </tr>
                         <tr>
@@ -461,71 +466,7 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:16</a></code>
-</div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="helpPath"></a>
-                    <span class="name">
-                        <span ><b>helpPath</b></span>
-                        <a href="#helpPath"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>settingsHelpPath</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Inherited from         <code><a href="../components/SettingsComponent.html" target="_self" >SettingsComponent</a></code>
-</div>
-                            </td>
-                        </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:17</a></code>
-</div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="profilePath"></a>
-                    <span class="name">
-                        <span ><b>profilePath</b></span>
-                        <a href="#profilePath"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>settingsProfilePath</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Inherited from         <code><a href="../components/SettingsComponent.html" target="_self" >SettingsComponent</a></code>
-</div>
-                            </td>
-                        </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:15</a></code>
+                                <div class="io-line">Defined in         <code><a href="../components/SettingsComponent.html#source" target="_self" >SettingsComponent:25</a></code>
 </div>
                         </td>
                     </tr>
@@ -540,38 +481,36 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { UserService } from &#x27;src/app/services/user.service&#x27;;
+import { AuthService } from &#x27;src/app/shared/services/auth.service&#x27;;
 import { SettingsComponent } from &#x27;../settings/settings.component&#x27;;
 
 @Component({
   selector: &#x27;app-settings-profile&#x27;,
   templateUrl: &#x27;./settings-profile.component.html&#x27;,
-  styleUrls: [&#x27;./settings-profile.component.scss&#x27;]
+  styleUrls: [&#x27;./settings-profile.component.scss&#x27;],
 })
 export class SettingsProfileComponent extends SettingsComponent implements OnInit {
-
-  constructor(userService: UserService) {
-    super(userService);
+  constructor(authService: AuthService) {
+    super(authService);
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div&gt;
-  &lt;h2&gt;First Name: &lt;span class&#x3D;&quot;data-text&quot;&gt;{{currentUser?.firstName}}&lt;/span&gt;&lt;/h2&gt;
-  &lt;h2&gt;Last Name: &lt;span class&#x3D;&quot;data-text&quot;&gt;{{currentUser?.lastName}}&lt;/span&gt;&lt;/h2&gt;
-  &lt;h2&gt;ID: &lt;span class&#x3D;&quot;data-text&quot;&gt;{{currentUser?.id}}&lt;/span&gt;&lt;/h2&gt;
-  &lt;h2&gt;Email: &lt;span class&#x3D;&quot;data-text&quot;&gt;{{currentUser?.email}}&lt;/span&gt;&lt;/h2&gt;
-  &lt;h2&gt;Role: &lt;span class&#x3D;&quot;data-text&quot;&gt;{{currentUser?.role}}&lt;/span&gt;&lt;/h2&gt;
-&lt;/div&gt; 
-&lt;div&gt;
-  &lt;button mat-stroked-button color&#x3D;&quot;primary&quot; [routerLink]&#x3D;&quot;changePasswordPath&quot;&gt;Change Password&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+        <pre class="line-numbers"><code class="language-html">&lt;p-panel header&#x3D;&quot;My Profile&quot;&gt;
+  &lt;h3&gt;First Name: &lt;span class&#x3D;&quot;data-text&quot;&gt;{{currentUser?.firstName}}&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3&gt;Last Name: &lt;span class&#x3D;&quot;data-text&quot;&gt;{{currentUser?.lastName}}&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3&gt;ID: &lt;span class&#x3D;&quot;data-text&quot;&gt;{{currentUser?.id}}&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3&gt;Email: &lt;span class&#x3D;&quot;data-text&quot;&gt;{{currentUser?.email}}&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3&gt;Role: &lt;span class&#x3D;&quot;data-text&quot;&gt;{{currentUser?.role}}&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;div&gt;
+    &lt;button pButton type&#x3D;&quot;button&quot; label&#x3D;&quot;Change Password&quot; class&#x3D;&quot;p-button-outlined&quot; [routerLink]&#x3D;&quot;changePasswordPath&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/p-panel&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -608,8 +547,8 @@ export class SettingsProfileComponent extends SettingsComponent implements OnIni
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div>  <h2>First Name: <span class="data-text">{{currentUser?.firstName}}</span></h2>  <h2>Last Name: <span class="data-text">{{currentUser?.lastName}}</span></h2>  <h2>ID: <span class="data-text">{{currentUser?.id}}</span></h2>  <h2>Email: <span class="data-text">{{currentUser?.email}}</span></h2>  <h2>Role: <span class="data-text">{{currentUser?.role}}</span></h2></div> <div>  <button mat-stroked-button color="primary" [routerLink]="changePasswordPath">Change Password</button></div></div>'
-    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+        var COMPONENT_TEMPLATE = '<div><p-panel header="My Profile">  <h3>First Name: <span class="data-text">{{currentUser?.firstName}}</span></h3>  <h3>Last Name: <span class="data-text">{{currentUser?.lastName}}</span></h3>  <h3>ID: <span class="data-text">{{currentUser?.id}}</span></h3>  <h3>Email: <span class="data-text">{{currentUser?.email}}</span></h3>  <h3>Role: <span class="data-text">{{currentUser?.role}}</span></h3>  <div>    <button pButton type="button" label="Change Password" class="p-button-outlined" [routerLink]="changePasswordPath"></button>  </div></p-panel></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AdministrationScheduleComponent', 'selector': 'app-administration-schedule'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'emr-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrDialogComponent', 'selector': 'emr-dialog'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'emr-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'HistoryAndPhysicalTabComponent', 'selector': 'app-history-and-physical-tab'},{'name': 'HtmlDialogComponent', 'selector': 'app-html-dialog'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedicationDialogComponent', 'selector': 'emr-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MedicationScheduleComponent', 'selector': 'app-medication-schedule'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteEditDialogComponent', 'selector': 'app-note-edit-dialog'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialogComponent', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientDashboardTabComponent', 'selector': 'app-base'},{'name': 'PatientFormComponent', 'selector': 'app-patient-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'PrnScheduleComponent', 'selector': 'app-prn-schedule'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
     var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
     var ACTUAL_COMPONENT = {'name': 'SettingsProfileComponent'};
 </script>

@@ -58,7 +58,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/services/medication.service.ts</code>
+            <code>src/app/shared/services/medication.service.ts</code>
         </p>
 
 
@@ -82,22 +82,19 @@
                                 <a href="#cleanMedData" >cleanMedData</a>
                             </li>
                             <li>
-                                <a href="#createMedication" >createMedication</a>
-                            </li>
-                            <li>
                                 <a href="#deleteMedication" >deleteMedication</a>
                             </li>
                             <li>
                                 <a href="#extractMedData" >extractMedData</a>
                             </li>
                             <li>
+                                <a href="#getAllMedications" >getAllMedications</a>
+                            </li>
+                            <li>
                                 <a href="#getMedication" >getMedication</a>
                             </li>
                             <li>
-                                <a href="#getMedications" >getMedications</a>
-                            </li>
-                            <li>
-                                <a href="#updateMedication" >updateMedication</a>
+                                <a href="#upsertMedication" >upsertMedication</a>
                             </li>
                         </ul>
                     </td>
@@ -122,7 +119,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/services/medication.service.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/shared/services/medication.service.ts:9</a></div>
                             </td>
                         </tr>
 
@@ -185,8 +182,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="33"
-                            class="link-to-prism">src/app/services/medication.service.ts:33</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/shared/services/medication.service.ts:76</a></div>
                 </td>
             </tr>
 
@@ -246,83 +243,6 @@ of the properties, and that there are no spaces in the ID.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="createMedication"></a>
-                    <span class="name">
-                        <span ><b>createMedication</b></span>
-                        <a href="#createMedication"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>createMedication(med: <a href="../classes/Medication.html" target="_self">Medication</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="63"
-                            class="link-to-prism">src/app/services/medication.service.ts:63</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Prepares the Medication object for Firestore before creating it
-in the backend.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                    <td>Description</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>med</td>
-                                    <td>
-                                                <code><a href="../classes/Medication.html" target="_self" >Medication</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>Medication to create in Firestore.</p>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
                     <a name="deleteMedication"></a>
                     <span class="name">
                         <span ><b>deleteMedication</b></span>
@@ -339,8 +259,8 @@ in the backend.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="100"
-                            class="link-to-prism">src/app/services/medication.service.ts:100</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/shared/services/medication.service.ts:52</a></div>
                 </td>
             </tr>
 
@@ -383,11 +303,12 @@ in the backend.</p>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>A Promise</p>
+
                     </div>
                 </td>
             </tr>
@@ -413,8 +334,8 @@ in the backend.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="18"
-                            class="link-to-prism">src/app/services/medication.service.ts:18</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/shared/services/medication.service.ts:61</a></div>
                 </td>
             </tr>
 
@@ -472,6 +393,51 @@ in the backend.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="getAllMedications"></a>
+                    <span class="name">
+                        <span ><b>getAllMedications</b></span>
+                        <a href="#getAllMedications"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllMedications()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/shared/services/medication.service.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets all medications from the &quot;Medications&quot; Firestore collection.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>A snapshot of the entire Medications collection.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="getMedication"></a>
                     <span class="name">
                         <span ><b>getMedication</b></span>
@@ -488,8 +454,8 @@ in the backend.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="45"
-                            class="link-to-prism">src/app/services/medication.service.ts:45</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">src/app/shared/services/medication.service.ts:18</a></div>
                 </td>
             </tr>
 
@@ -549,74 +515,31 @@ in the backend.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="getMedications"></a>
+                    <a name="upsertMedication"></a>
                     <span class="name">
-                        <span ><b>getMedications</b></span>
-                        <a href="#getMedications"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>upsertMedication</b></span>
+                        <a href="#upsertMedication"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>getMedications()</code>
+<code>upsertMedication(med: <a href="../classes/Medication.html" target="_self">Medication</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="53"
-                            class="link-to-prism">src/app/services/medication.service.ts:53</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/shared/services/medication.service.ts:38</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        <p>A snapshot of the entire Medications collection.</p>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="updateMedication"></a>
-                    <span class="name">
-                        <span ><b>updateMedication</b></span>
-                        <a href="#updateMedication"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>updateMedication(med: <a href="../classes/Medication.html" target="_self">Medication</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="83"
-                            class="link-to-prism">src/app/services/medication.service.ts:83</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Prepares the Medication object for Firestore before updating it
+                    <div class="io-description"><p>Prepares the Medication object for Firestore before creating/updating it
 in the backend.</p>
 </div>
 
@@ -645,7 +568,7 @@ in the backend.</p>
 
 
                                     <td>
-                                        <p>The Medication object to update in Firestore.</p>
+                                        <p>The Medication object to create in Firestore.</p>
 
                                     </td>
                                 </tr>
@@ -655,11 +578,12 @@ in the backend.</p>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>A Promise</p>
+
                     </div>
                 </td>
             </tr>
@@ -673,18 +597,61 @@ in the backend.</p>
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import { AngularFirestore } from &#x27;@angular/fire/compat/firestore&#x27;;
-import { medicationsCollectionName } from &#x27;../global&#x27;;
-import { Medication } from &#x27;../types/medication.type&#x27;;
+import { COLLECTION_MEDICATIONS } from &#x27;../../global&#x27;;
+import { Medication } from &#x27;../models/medication.model&#x27;;
 
 @Injectable({
-  providedIn: &#x27;root&#x27;
+  providedIn: &#x27;root&#x27;,
 })
 export class MedicationService {
-
-  constructor(private db: AngularFirestore) { }
+  constructor(private db: AngularFirestore) {}
 
   /**
-   * 
+   * Gets a medication snapshot for a single med.
+   *
+   * @param id The id of the medication to get.
+   * @returns A snapshot of the medication.
+   */
+  getMedication(id: string) {
+    return this.db.collection(COLLECTION_MEDICATIONS).doc(id).snapshotChanges();
+  }
+
+  /**
+   * Gets all medications from the &quot;Medications&quot; Firestore collection.
+   *
+   * @returns A snapshot of the entire Medications collection.
+   */
+  getAllMedications() {
+    return this.db.collection(COLLECTION_MEDICATIONS).snapshotChanges();
+  }
+
+  /**
+   * Prepares the Medication object for Firestore before creating/updating it
+   * in the backend.
+   *
+   * @param med The Medication object to create in Firestore.
+   * @returns A Promise
+   */
+  upsertMedication(med: Medication) {
+    this.cleanMedData(med);
+    const obj &#x3D; this.extractMedData(med);
+
+    // Use &quot;set&quot; method, since we separate the ID from the data; ID
+    // is used as the document ID
+    return this.db.collection(COLLECTION_MEDICATIONS).doc(med.id).set(obj);
+  }
+
+  /**
+   *
+   * @param id The ID of the medication to delete from Firestore.
+   * @returns A Promise
+   */
+  deleteMedication(id: string) {
+    return this.db.collection(COLLECTION_MEDICATIONS).doc(id).delete();
+  }
+
+  /**
+   *
    * @param med The Medication object to remove the ID from.
    * @returns A copy of the Medication object with the ID parameter removed.
    */
@@ -700,84 +667,13 @@ export class MedicationService {
   /**
    * Cleans the Medication object by ensuring no whitespaces are on either end
    * of the properties, and that there are no spaces in the ID.
-   * 
+   *
    * @param med The Medication object to clean the data for.
    */
   cleanMedData(med: Medication) {
-    med.id &#x3D; med.id.replace(/\s/g, &quot;&quot;);
+    med.id &#x3D; med.id.replace(/\s/g, &#x27;&#x27;);
     med.name &#x3D; med.name.trim();
     med.routes.forEach((route) &#x3D;&gt; route.trim());
-  }
-
-  /**
-   * Gets a medication snapshot for a single med.
-   * 
-   * @param id The id of the medication to get.
-   * @returns A snapshot of the medication.
-   */
-  getMedication(id: string) {
-    return this.db.collection(medicationsCollectionName).doc(id).get()
-  }
-
-  /**
-   * 
-   * @returns A snapshot of the entire Medications collection.
-   */
-  getMedications() {
-    return this.db.collection(medicationsCollectionName).snapshotChanges()
-  }
-
-  /**
-   * Prepares the Medication object for Firestore before creating it
-   * in the backend.
-   * 
-   * @param med Medication to create in Firestore.
-   */
-  createMedication(med: Medication) {
-    this.cleanMedData(med);
-    let obj &#x3D; this.extractMedData(med);
-
-    // Use &quot;set&quot; method, since we separate the ID from the data; ID
-    // is used as the document ID
-    this.db.collection(medicationsCollectionName)
-      .doc(med.id)
-      .set(obj)
-      .catch(e &#x3D;&gt; {
-          console.log(e);
-      });
-  }
-
-  /**
-   * Prepares the Medication object for Firestore before updating it
-   * in the backend.
-   * 
-   * @param med The Medication object to update in Firestore.
-   */
-  updateMedication(med: Medication) {
-    this.cleanMedData(med);
-    let obj &#x3D; this.extractMedData(med);
-
-    try {
-      this.db.collection(medicationsCollectionName)
-        .doc(med.id)
-        .set(obj);
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
-  /**
-   * 
-   * @param id The ID of the medication to delete from Firestore.
-   */
-  deleteMedication(id: string) {
-    try {
-      this.db.collection(medicationsCollectionName)
-        .doc(id)
-        .delete();
-    } catch (e) {
-      console.log(e);
-    }
   }
 }
 </code></pre>

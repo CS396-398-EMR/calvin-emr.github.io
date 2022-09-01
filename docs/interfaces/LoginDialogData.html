@@ -96,12 +96,6 @@
                                         </a>
                                 </li>
                                 <li>
-                                        <a href="#title" 
->
-                                            title
-                                        </a>
-                                </li>
-                                <li>
                                         <a href="#verifyButtonLabel" 
 >
                                             verifyButtonLabel
@@ -188,39 +182,6 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <a name="title"></a>
-                                        <span class="name "><b>title</b>
-                                            <a href="#title">
-                                                <span class="icon ion-ios-link"></span>
-                                            </a>
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>title:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                                        </td>
-                                    </tr>
-
-
-
-
-
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
                                         <a name="verifyButtonLabel"></a>
                                         <span class="name "><b>verifyButtonLabel</b>
                                             <a href="#verifyButtonLabel">
@@ -255,15 +216,21 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Inject, OnInit } from &#x27;@angular/core&#x27;;
-import { FormControl, Validators } from &#x27;@angular/forms&#x27;;
-import { MatDialogRef, MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { UntypedFormControl, Validators } from &#x27;@angular/forms&#x27;;
 import { EmailAuthProvider, getAuth, reauthenticateWithCredential } from &#x27;firebase/auth&#x27;;
+import { DynamicDialogConfig, DynamicDialogRef } from &#x27;primeng/dynamicdialog&#x27;;
 import { Subscription } from &#x27;rxjs&#x27;;
-import { cancelButtonLabel, invalidPasswordError, notLoggedInError, returnKeyCode, verifyButtonLabel, verifyPrompt, verifyTitle } from &#x27;src/app/global&#x27;;
+import {
+  BUTTON_LABEL_CANCEL,
+  ERROR_INVALID_PASSWORD,
+  ERROR_NOT_LOGGED_IN,
+  KEY_CODE_RETURN,
+  BUTTON_LABEL_VERIFY,
+} from &#x27;src/app/global&#x27;;
+import { verifyPrompt } from &#x27;../shared.global&#x27;;
 
 export interface LoginDialogData {
-  title: string;
   prompt: string;
   cancelButtonLabel: string;
   verifyButtonLabel: string;
@@ -272,17 +239,15 @@ export interface LoginDialogData {
 @Component({
   selector: &#x27;app-login-dialog&#x27;,
   templateUrl: &#x27;./login-dialog.component.html&#x27;,
-  styleUrls: [&#x27;./login-dialog.component.scss&#x27;]
+  styleUrls: [&#x27;./login-dialog.component.scss&#x27;],
 })
 export class LoginDialogComponent implements OnInit {
-
-  title: string &#x3D; verifyTitle;
   prompt: string &#x3D; verifyPrompt;
-  cancelButtonLabel: string &#x3D; cancelButtonLabel;
-  verifyButtonLabel: string &#x3D; verifyButtonLabel;
+  cancelButtonLabel: string &#x3D; BUTTON_LABEL_CANCEL;
+  verifyButtonLabel: string &#x3D; BUTTON_LABEL_VERIFY;
 
   label: string &#x3D; &#x27;Enter your current password&#x27;;
-  password: FormControl &#x3D; new FormControl(&#x27;&#x27;, [Validators.required]);
+  password: UntypedFormControl &#x3D; new UntypedFormControl(&#x27;&#x27;, [Validators.required]);
   passwordSub: Subscription;
   error: string &#x3D; &#x27;&#x27;;
 
@@ -290,54 +255,53 @@ export class LoginDialogComponent implements OnInit {
    * Change the dialog&#x27;s labels based on data passed in from the caller, if any.
    * Subscribe to the password valueChanges to clear any errors when the user
    * begins typing in the password form field.
-   * 
+   *
    * @param dialogRef The reference to this dialog.
-   * @param data The data injected into this dialog.
+   * @param config The configuration (including data) injected into this dialog.
    */
-  constructor(public dialogRef: MatDialogRef&lt;LoginDialogComponent&gt;,
-    @Inject(MAT_DIALOG_DATA) public data: LoginDialogData) {
-      if(data) {
-        if(data.title) this.title &#x3D; data.title;
-        if(data.prompt) this.prompt &#x3D; data.prompt;
-        if(data.cancelButtonLabel) this.cancelButtonLabel &#x3D; data.cancelButtonLabel;
-        if(data.verifyButtonLabel) this.verifyButtonLabel &#x3D; data.verifyButtonLabel;
-      }
-      this.passwordSub &#x3D; this.password.valueChanges.subscribe(() &#x3D;&gt; {
-        this.error &#x3D; &#x27;&#x27;;
-      })
+  constructor(public dialogRef: DynamicDialogRef, public config: DynamicDialogConfig) {
+    if (config.data) {
+      if (config.data.prompt) this.prompt &#x3D; config.data.prompt;
+      if (config.data.cancelButtonLabel) this.cancelButtonLabel &#x3D; config.data.cancelButtonLabel;
+      if (config.data.verifyButtonLabel) this.verifyButtonLabel &#x3D; config.data.verifyButtonLabel;
+    }
+    this.passwordSub &#x3D; this.password.valueChanges.subscribe(() &#x3D;&gt; {
+      this.error &#x3D; &#x27;&#x27;;
+    });
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   /**
    * Calls the onVerify function when the &quot;Enter/Return&quot; key is pressed.
-   * 
+   *
    * @param event Object passed by (keyup) property of input tag.
    */
-   handleKeyUp(event: any) {
-    if(event.keyCode &#x3D;&#x3D; returnKeyCode) {
+  handleKeyUp(event: any) {
+    if (event.keyCode &#x3D;&#x3D; KEY_CODE_RETURN) {
       this.onVerify();
     }
   }
 
   /**
-   * 
+   *
    */
   onVerify(): void {
     const auth &#x3D; getAuth();
     const user &#x3D; auth.currentUser;
     const email &#x3D; user?.email;
 
-    if(user &amp;&amp; email) {
-      const credential &#x3D; EmailAuthProvider.credential(email, this.password.value)
-      reauthenticateWithCredential(user, credential).then(() &#x3D;&gt; {
-        this.dialogRef.close(true)
-      }).catch(() &#x3D;&gt; {
-        this.error &#x3D; invalidPasswordError;
-      })
-    }
-    else {
-      this.error &#x3D; notLoggedInError;
+    if (user &amp;&amp; email) {
+      const credential &#x3D; EmailAuthProvider.credential(email, this.password.value);
+      reauthenticateWithCredential(user, credential)
+        .then(() &#x3D;&gt; {
+          this.dialogRef.close(true);
+        })
+        .catch(() &#x3D;&gt; {
+          this.error &#x3D; ERROR_INVALID_PASSWORD;
+        });
+    } else {
+      this.error &#x3D; ERROR_NOT_LOGGED_IN;
     }
   }
 
@@ -352,7 +316,6 @@ export class LoginDialogComponent implements OnInit {
   get hasError(): boolean {
     return this.error !&#x3D; null &amp;&amp; this.error !&#x3D; &#x27;&#x27;;
   }
-
 }
 </code></pre>
     </div>

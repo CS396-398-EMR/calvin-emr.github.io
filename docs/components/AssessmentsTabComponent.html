@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/tabs/assessments-tab/assessments-tab.component.ts</code>
+    <code>src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts</code>
 </p>
 
 
@@ -73,7 +73,7 @@
         <h3>Extends</h3>
     </p>
     <p class="comment">
-                <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
+                <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
     </p>
 
     <p class="comment">
@@ -140,16 +140,40 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#assessments" >assessments</a>
+                            </li>
+                            <li>
+                                <a href="#cardiovascularForm" >cardiovascularForm</a>
+                            </li>
+                            <li>
                                 <a href="#form" >form</a>
+                            </li>
+                            <li>
+                                <a href="#gastrointestinalForm" >gastrointestinalForm</a>
+                            </li>
+                            <li>
+                                <a href="#genitourinaryForm" >genitourinaryForm</a>
+                            </li>
+                            <li>
+                                <a href="#integumentaryForm" >integumentaryForm</a>
+                            </li>
+                            <li>
+                                <a href="#musculoskeletalForm" >musculoskeletalForm</a>
+                            </li>
+                            <li>
+                                <a href="#neurologicalForm" >neurologicalForm</a>
+                            </li>
+                            <li>
+                                <a href="#psychosocialForm" >psychosocialForm</a>
+                            </li>
+                            <li>
+                                <a href="#respiratoryForm" >respiratoryForm</a>
                             </li>
                             <li>
                                 <a href="#isLoading" >isLoading</a>
                             </li>
                             <li>
-                                <a href="#mode" >mode</a>
-                            </li>
-                            <li>
-                                <a href="#value" >value</a>
+                                <a href="#patient$" >patient$</a>
                             </li>
                         </ul>
                     </td>
@@ -170,10 +194,7 @@
                                 <a href="#onSubmit" >onSubmit</a>
                             </li>
                             <li>
-                                <a href="#getDateString" >getDateString</a>
-                            </li>
-                            <li>
-                                <a href="#getTimeString" >getTimeString</a>
+                                <a href="#resetAllForms" >resetAllForms</a>
                             </li>
                             <li>
                                 <a href="#startLoading" >startLoading</a>
@@ -182,44 +203,13 @@
                                 <a href="#stopLoading" >stopLoading</a>
                             </li>
                             <li>
-                                <a href="#toggleDelete" >toggleDelete</a>
-                            </li>
-                            <li>
-                                <a href="#updatePatient" >updatePatient</a>
+                                <a href="#updatePatientField" >updatePatientField</a>
                             </li>
                         </ul>
                     </td>
                 </tr>
 
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Inputs</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <a href="#assessments" >assessments</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
 
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Outputs</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <a href="#updatePatientEvent" >updatePatientEvent</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
 
 
 
@@ -231,9 +221,6 @@
                     <tr>
                         <td class="col-md-4">
                             <ul class="index-list">
-                                <li>
-                                    <a href="#isAdmin" >isAdmin</a>
-                                </li>
                                 <li>
                                     <a href="#dateFormControl" >dateFormControl</a>
                                 </li>
@@ -277,12 +264,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>)</code>
+<code>constructor(patientStore: <a href="../injectables/PatientDashboardStore.html" target="_self">PatientDashboardStore</a>, authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, fb: UntypedFormBuilder, ref: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="252" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:252</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="202" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:202</a></div>
                             </td>
                         </tr>
 
@@ -300,10 +287,10 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>fb</td>
+                                                        <td>patientStore</td>
                                                   
                                                         <td>
-                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                                        <code><a href="../injectables/PatientDashboardStore.html" target="_self" >PatientDashboardStore</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -312,10 +299,34 @@
                                                     
                                                 </tr>
                                                 <tr>
-                                                        <td>userService</td>
+                                                        <td>authService</td>
                                                   
                                                         <td>
-                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                    <code>UntypedFormBuilder</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ref</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -332,66 +343,8 @@
         </table>
 </section>
 
-    <section>
-    <h3 id="inputs">Inputs</h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="assessments"></a>
-                        <b>assessments</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="../classes/Assessment.html" target="_self" >Assessment[]</a></code>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[]</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:33</a></div>
-                            </td>
-                        </tr>
-            </tbody>
-        </table>
-</section>
-    <section>
-    <h3 id="outputs">Outputs</h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="updatePatientEvent"></a>
-                        <b>updatePatientEvent</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
 
-                    </td>
-                </tr>
-                            <tr>
-                                <td class="col-md-4" colspan="2">
-                                    <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
-</div>
-                                </td>
-                            </tr>
-                        <tr>
-                            <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:34</a></code>
-</div>
-                            </td>
-                        </tr>
-            </tbody>
-        </table>
-</section>
 
 
     <section>
@@ -419,13 +372,13 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
+                    <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
 </div>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:258</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:216</a></code>
 </div>
                 </td>
             </tr>
@@ -462,8 +415,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="261"
-                            class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:261</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="218"
+                            class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:218</a></div>
                 </td>
             </tr>
 
@@ -483,158 +436,35 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="getDateString"></a>
+                    <a name="resetAllForms"></a>
                     <span class="name">
-                        <span ><b>getDateString</b></span>
-                        <a href="#getDateString"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>resetAllForms</b></span>
+                        <a href="#resetAllForms"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>getDateString(date: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank">Date</a>)</code>
+<code>resetAllForms()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
+                    <div class="io-line">Defined in <a href="" data-line="236"
+                            class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:236</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets all sub-forms back to initial state (namely the WNL values).</p>
 </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:54</a></code>
-</div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
 
                     <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                    <td>Description</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>date</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>The date to get the modified locale string for.</p>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        <p>A date as string, formatted as &#39;DD/MM/YYYY @ HH:MM&#39; (24-hour time).</p>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="getTimeString"></a>
-                    <span class="name">
-                        <span ><b>getTimeString</b></span>
-                        <a href="#getTimeString"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>getTimeString(date: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank">Date</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
-</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:63</a></code>
-</div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                    <td>Description</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>date</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>The date to get the modified locale string for.</p>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        <p>A time as string, formatted as &#39;HH:MM&#39; (24-hour time).</p>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
                     </div>
                 </td>
@@ -661,13 +491,13 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
+                    <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
 </div>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:41</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:34</a></code>
 </div>
                 </td>
             </tr>
@@ -704,13 +534,13 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
+                    <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
 </div>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:45</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:38</a></code>
 </div>
                 </td>
             </tr>
@@ -731,113 +561,29 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="toggleDelete"></a>
+                    <a name="updatePatientField"></a>
                     <span class="name">
-                        <span ><b>toggleDelete</b></span>
-                        <a href="#toggleDelete"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>updatePatientField</b></span>
+                        <a href="#updatePatientField"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>toggleDelete(obj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+<code>updatePatientField(field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
+                    <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
 </div>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:74</a></code>
-</div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>toggleDelete</p>
-<p>Toggles the &#39;deleted&#39; property between true and false.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                    <td>Description</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>obj</td>
-                                    <td>
-                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>an object containing the property &#39;deleted&#39; (which must be a boolean value)</p>
-<p>Toggles the &#39;deleted&#39; property between true and false.</p>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="updatePatient"></a>
-                    <span class="name">
-                        <span ><b>updatePatient</b></span>
-                        <a href="#updatePatient"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>updatePatient(field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, data: any[], fn?: () => void)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
-</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:95</a></code>
+                        <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:42</a></code>
 </div>
                 </td>
             </tr>
@@ -845,14 +591,6 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>updatePatient</p>
-<p>Emit the update to the parent component (the PatientDashboard component),
-indicating that we update the [field] field of current patient</p>
-<p>Assumes that data is in an array object.
-Assumes that each data element contains a date property.</p>
-<p>Children of the Tab component should override this function if
-objects do not have a &quot;date&quot; property</p>
-</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -881,23 +619,11 @@ objects do not have a &quot;date&quot; property</p>
                                 <tr>
                                     <td>data</td>
                                     <td>
-                                            <code>any[]</code>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
                                     </td>
 
                                     <td>
                                         No
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>fn</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
-                                    </td>
-
-                                    <td>
-                                        Yes
                                     </td>
 
 
@@ -928,6 +654,72 @@ objects do not have a &quot;date&quot; property</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="assessments"></a>
+                    <span class="name">
+                        <span ><b>assessments</b></span>
+                        <a href="#assessments"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Assessment.html" target="_self" >Assessment[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cardiovascularForm"></a>
+                    <span class="name">
+                        <span ><b>cardiovascularForm</b></span>
+                        <a href="#cardiovascularForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Cardiovascular.html" target="_self" >CardiovascularFormComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;cardiovascularForm&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="195" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:195</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="form"></a>
                     <span class="name">
                         <span ><b>form</b></span>
@@ -947,26 +739,26 @@ objects do not have a &quot;date&quot; property</p>
         pulsePattern: false, // is pulse pattern irregular?
         heartTones: [&#x27;&#x27;], // murmur, gallup
         rhythm: [&#x27;&#x27;], // NSR, atrial fibrillation, PVC&#x27;s, PAC&#x27;s, SVT, Atrial flutter, other
-        otherRhythm: [&#x27;&#x27;],  // for nurse to fill out if rhythm is &quot;Other&quot;
+        otherRhythm: [&#x27;&#x27;], // for nurse to fill out if rhythm is &quot;Other&quot;
       }),
       edema: this.fb.group({
-        jvd: false,  // presence of JVD
+        jvd: false, // presence of JVD
         gnpe: false, // generalized non-pitting edema
         pittingEdema: this.fb.group({
           rightHand: [&#x27;&#x27;],
           rightFoot: [&#x27;&#x27;],
           leftFoot: [&#x27;&#x27;],
           leftHand: [&#x27;&#x27;],
-        })
+        }),
       }),
       generalizedPerfusion: [&#x27;&#x27;], // cold, pale, cyanotic, palpitations
       capRefill: false, // is cap refill &gt; 3 seconds?
       pulses: this.fb.group({
-        rue: [&#x27;&#x27;],  // +3 strong, +2 normal, +1 weak, thready, 0 absent
+        rue: [&#x27;&#x27;], // +3 strong, +2 normal, +1 weak, thready, 0 absent
         rle: [&#x27;&#x27;],
         lue: [&#x27;&#x27;],
         lle: [&#x27;&#x27;],
-      })
+      }),
     }),
 
     // Respiratory
@@ -976,7 +768,7 @@ objects do not have a &quot;date&quot; property</p>
         quality: [&#x27;&#x27;],
       }),
       lungSounds: this.fb.group({
-        rul: [&#x27;&#x27;],  // wnl, coarse rhonchi, crackles/rales, wheezes expiratory, wheezes inspiratory, other
+        rul: [&#x27;&#x27;], // wnl, coarse rhonchi, crackles/rales, wheezes expiratory, wheezes inspiratory, other
         otherRul: [&#x27;&#x27;], // for nurse to fill out if lung sound is &quot;Other&quot;
         rll: [&#x27;&#x27;],
         otherRll: [&#x27;&#x27;],
@@ -988,52 +780,30 @@ objects do not have a &quot;date&quot; property</p>
         otherLll: [&#x27;&#x27;],
       }),
       cough: false,
-      coughDescription: [&#x27;&#x27;],  // productive, nonproductive, dry
-      productiveDescription: this.fb.group({
-        scant: false,
-        moderate: false,
-        large: false,
-        purulent: false,
-        bloodTinged: false,
-        black: false,
-        green: false,
-        yellow: false,
-        thick: false,
-        thin: false,
-        tenacious: false,
-      }),
+      coughDescription: [&#x27;&#x27;], // productive, nonproductive, dry
+      productiveDescription: [[]],
     }),
 
     // Neurological
     neurological: this.fb.group({
-      loc: [&#x27;&#x27;],  // lethargic, somnolent
-      orientation: this.fb.group({  // Not to person/place/time/situation
-        person: false,
-        place: false,
-        time: false,
-        situation: false,
-      }),
+      loc: [&#x27;&#x27;], // lethargic, somnolent
+      orientation: [[]],
       extremityMovement: [&#x27;&#x27;],
-      handGrips: [&#x27;&#x27;],  // moderate, weak
+      handGrips: [&#x27;&#x27;], // moderate, weak
       lePushPull: [&#x27;&#x27;], // moderate, weak
-      pupillaryResponse: [&#x27;&#x27;],  // sluggish, absent
+      pupillaryResponse: [&#x27;&#x27;], // sluggish, absent
       pupillaryDilation: this.fb.group({
-        left: [&#x27;&#x27;],  // 2mm, 4mm, 6mm, 8mm
+        left: [&#x27;&#x27;], // 2mm, 4mm, 6mm, 8mm
         right: [&#x27;&#x27;],
       }),
-      gcss: [&#x27;&#x27;],  // AKA Glasgow Coma Scale score
+      gcss: [&#x27;&#x27;], // AKA Glasgow Coma Scale score
       sensation: this.fb.group({
-        rue: [&#x27;&#x27;],  // numbness, tingling, full sensation
+        rue: [&#x27;&#x27;], // numbness, tingling, full sensation
         rle: [&#x27;&#x27;],
         lle: [&#x27;&#x27;],
         lue: [&#x27;&#x27;],
       }),
-      tremors: this.fb.group({  // RUE, RLE, LLE, LUE
-        rue: false,
-        rle: false,
-        lle: false,
-        lue: false
-      }),
+      tremors: [[]],
     }),
 
     // Musculoskeletal
@@ -1046,26 +816,13 @@ objects do not have a &quot;date&quot; property</p>
         ebu: [&#x27;&#x27;],
         medications: [&#x27;&#x27;],
         // pce &#x3D; patient care equipment
-        pce: [&#x27;&#x27;],  // one present, two present, or 3 or more present
-        mobility: this.fb.group({
-          assistance: false,  // &quot;requires assistance...&quot;
-          gait: false,  // &quot;unsteady gait&quot;
-          impairment: false,  // &quot;visual or auditory impairment affecting mobility&quot;
-        }),
-        cognition: this.fb.group({
-          awareness: false, // &quot;altered awareness of immediate physical environment&quot;
-          impulsive: false, // &quot;impulsive&quot;
-          understanding: false, // &quot;lack of understanding of one&#x27;s physical and cognitive limitations&quot;
-        }),
+        pce: [&#x27;&#x27;], // one present, two present, or 3 or more present
+        mobility: [[]],
+        cognition: [[]],
       }),
       fallScore: [&#x27;&#x27;],
       mobilityAndTransfers: [&#x27;&#x27;],
-      assistiveDevices: this.fb.group({
-        gaitBelt: false,
-        walker: false,
-        cane: false,
-        trapeze: false
-      })
+      assistiveDevices: [[]],
     }),
 
     // Gastrointestinal
@@ -1077,82 +834,48 @@ objects do not have a &quot;date&quot; property</p>
         llq: [&#x27;&#x27;],
       }),
       dateLastBM: [&#x27;&#x27;],
-      nausea: false,  // yes (true), no (false)
-      emesis: [&#x27;&#x27;],  // small, medium, large
+      nausea: false, // yes (true), no (false)
+      emesis: [&#x27;&#x27;], // small, medium, large
       incontinence: false,
       ostomy: this.fb.group({
-        stomaSite: [&#x27;&#x27;],  // pink, beefy red, pale, purple
-        output: [&#x27;&#x27;],  // loose, watery, formed
+        stomaSite: [&#x27;&#x27;], // pink, beefy red, pale, purple
+        output: [&#x27;&#x27;], // loose, watery, formed
       }),
       hemorrhoids: false, // present (true), absent (false)
     }),
-    
+
     // Genitourinary
     genitourinary: this.fb.group({
       urineColor: [&#x27;&#x27;],
-      urineCharacteristics: this.fb.group({
-        cloudy: false,
-        sediment: false,
-        odor: false
-      }),
-      urinaryPattern: this.fb.group({
-        frequency: false,
-        nocturia: false,
-        dysuria: false,
-        incontinence: false,
-        retention: false,
-      }),
+      urineCharacteristics: [[]],
+      urinaryPattern: [[]],
       foley: this.fb.group({
         justification: [&#x27;&#x27;],
         securement: [&#x27;&#x27;],
-      })
+      }),
     }),
 
     // Psychosocial
     psychosocial: this.fb.group({
-      mood: this.fb.group({
-        nonInteractive: false,
-        elated: false,
-        tearful: false,
-        anxious: false,
-        agitated: false,
-        withdrawn: false,
-        flat: false,
-      }),
-      suicidal: false, 
+      mood: [[]],
+      suicidal: false,
     }),
 
     // Integumentary (wounds)
     integumentary: this.fb.group({
-      skinAppearance: this.fb.group({
-        diaphoresis: false,
-        pallor: false,
-        poorTurgor: false,
-        cool: false,
-        modeling: false,
-        jaundice: false,
-      }),
+      skinAppearance: [[]],
       wounds: this.fb.group({
         location: [&#x27;&#x27;],
         staging: [&#x27;&#x27;],
-        care: this.fb.group({
-          abd: false,
-          gauze: false,
-          dressingChange: false,
-          pharmAgent: false,
-          steriStrips: false,
-          staples: false,
-          wellApproximated: false,
-          dehiscence: false,
-        }),
-      })
+        care: [[]],
+      }),
     }),
   })</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:42</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:51</a></div>
                         </td>
                     </tr>
 
@@ -1165,6 +888,251 @@ objects do not have a &quot;date&quot; property</p>
 </div>
                 </td>
             </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="gastrointestinalForm"></a>
+                    <span class="name">
+                        <span ><b>gastrointestinalForm</b></span>
+                        <a href="#gastrointestinalForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Gastrointestinal.html" target="_self" >GastrointestinalFormComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;gastrointestinalForm&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="199" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:199</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="genitourinaryForm"></a>
+                    <span class="name">
+                        <span ><b>genitourinaryForm</b></span>
+                        <a href="#genitourinaryForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Genitourinary.html" target="_self" >GenitourinaryFormComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;genitourinaryForm&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="200" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:200</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="integumentaryForm"></a>
+                    <span class="name">
+                        <span ><b>integumentaryForm</b></span>
+                        <a href="#integumentaryForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Integumentary.html" target="_self" >IntegumentaryFormComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;integumentaryForm&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="202" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:202</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="musculoskeletalForm"></a>
+                    <span class="name">
+                        <span ><b>musculoskeletalForm</b></span>
+                        <a href="#musculoskeletalForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Musculoskeletal.html" target="_self" >MusculoskeletalFormComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;musculoskeletalForm&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:198</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="neurologicalForm"></a>
+                    <span class="name">
+                        <span ><b>neurologicalForm</b></span>
+                        <a href="#neurologicalForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Neurological.html" target="_self" >NeurologicalFormComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;neurologicalForm&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="197" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:197</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="psychosocialForm"></a>
+                    <span class="name">
+                        <span ><b>psychosocialForm</b></span>
+                        <a href="#psychosocialForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Psychosocial.html" target="_self" >PsychosocialFormComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;psychosocialForm&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="201" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:201</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="respiratoryForm"></a>
+                    <span class="name">
+                        <span ><b>respiratoryForm</b></span>
+                        <a href="#respiratoryForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Respiratory.html" target="_self" >RespiratoryFormComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;respiratoryForm&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="196" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:196</a></div>
+                        </td>
+                    </tr>
+
 
         </tbody>
     </table>
@@ -1186,13 +1154,13 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
+                                <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
 </div>
                             </td>
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:29</a></code>
+                                <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:24</a></code>
 </div>
                         </td>
                     </tr>
@@ -1204,71 +1172,28 @@ objects do not have a &quot;date&quot; property</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="mode"></a>
+                    <a name="patient$"></a>
                     <span class="name">
-                        <span ><b>mode</b></span>
-                        <a href="#mode"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>patient$</b></span>
+                        <a href="#patient$"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>ProgressSpinnerMode</code>
+                        <i>Type : </i>        <code><a href="../classes/Patient.html" target="_self" >Observable&lt;Patient&gt;</a></code>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>&#x27;indeterminate&#x27;</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
+                                <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
 </div>
                             </td>
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:30</a></code>
-</div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="value"></a>
-                    <span class="name">
-                        <span ><b>value</b></span>
-                        <a href="#value"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>50</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Inherited from         <code><a href="../components/TabComponent.html" target="_self" >TabComponent</a></code>
-</div>
-                            </td>
-                        </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/TabComponent.html#source" target="_self" >TabComponent:31</a></code>
+                                <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:26</a></code>
 </div>
                         </td>
                     </tr>
@@ -1286,39 +1211,6 @@ objects do not have a &quot;date&quot; property</p>
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="isAdmin"></a>
-                        <span class="name"><b>isAdmin</b><a href="#isAdmin"><span class="icon ion-ios-link"></span></a></span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                        <span class="accessor"><b>get</b><code>isAdmin()</code></span>
-                    </td>
-                </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="277" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:277</a></div>
-                                </td>
-                            </tr>
-                    <tr>
-                        <td class="col-md-4">
-
-                                <div>
-                                </div>
-                                <div class="io-description">
-                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-
-                                </div>
-                        </td>
-                    </tr>
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
                         <a name="dateFormControl"></a>
                         <span class="name"><b>dateFormControl</b><a href="#dateFormControl"><span class="icon ion-ios-link"></span></a></span>
                     </td>
@@ -1331,7 +1223,7 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="281" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:281</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="251" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:251</a></div>
                                 </td>
                             </tr>
 
@@ -1353,7 +1245,7 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="285" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:285</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="255" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:255</a></div>
                                 </td>
                             </tr>
 
@@ -1375,7 +1267,7 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="289" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:289</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="259" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:259</a></div>
                                 </td>
                             </tr>
 
@@ -1397,7 +1289,7 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="293" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:293</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="263" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:263</a></div>
                                 </td>
                             </tr>
 
@@ -1419,7 +1311,7 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="297" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:297</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="267" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:267</a></div>
                                 </td>
                             </tr>
 
@@ -1441,7 +1333,7 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="301" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:301</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="271" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:271</a></div>
                                 </td>
                             </tr>
 
@@ -1463,7 +1355,7 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="305" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:305</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="275" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:275</a></div>
                                 </td>
                             </tr>
 
@@ -1485,7 +1377,7 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="309" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:309</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="279" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:279</a></div>
                                 </td>
                             </tr>
 
@@ -1507,7 +1399,7 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="313" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:313</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="283" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:283</a></div>
                                 </td>
                             </tr>
 
@@ -1529,7 +1421,7 @@ objects do not have a &quot;date&quot; property</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="317" class="link-to-prism">src/app/tabs/assessments-tab/assessments-tab.component.ts:317</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="287" class="link-to-prism">src/app/patient-dashboard/assessments-tab/assessments-tab.component.ts:287</a></div>
                                 </td>
                             </tr>
 
@@ -1540,32 +1432,42 @@ objects do not have a &quot;date&quot; property</p>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
-import { FormBuilder, FormControl, FormGroup } from &#x27;@angular/forms&#x27;;
-import { nursingAssessmentsField } from &#x27;src/app/global&#x27;;
-import { UserService } from &#x27;src/app/services/user.service&#x27;;
-import { TabComponent } from &#x27;src/app/shared/tab.component&#x27;;
-import { Assessment } from &#x27;src/app/types/assessment.type&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ChangeDetectorRef, Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from &#x27;@angular/forms&#x27;;
+import { NURSING_ASSESSMENTS_FIELD } from &#x27;src/app/global&#x27;;
+import { AuthService } from &#x27;src/app/shared/services/auth.service&#x27;;
+import { PatientDashboardTabComponent } from &#x27;src/app/patient-dashboard/dashboard-tab/dashboard-tab.component&#x27;;
+import { Assessment } from &#x27;src/app/shared/models/assessment.model&#x27;;
 import { formToAssessment } from &#x27;./assessment-converter.helper&#x27;;
+import { PatientDashboardStore } from &#x27;src/app/patient-dashboard/state/patient-dashboard.store&#x27;;
+import { Patient } from &#x27;src/app/shared/models/patient.model&#x27;;
+import { CardiovascularFormComponent } from &#x27;./cardiovascular-form/cardiovascular-form.component&#x27;;
+import { RespiratoryFormComponent } from &#x27;./respiratory-form/respiratory-form.component&#x27;;
+import { NeurologicalFormComponent } from &#x27;./neurological-form/neurological-form.component&#x27;;
+import { MusculoskeletalFormComponent } from &#x27;./musculoskeletal-form/musculoskeletal-form.component&#x27;;
+import { GastrointestinalFormComponent } from &#x27;./gastrointestinal-form/gastrointestinal-form.component&#x27;;
+import { GenitourinaryFormComponent } from &#x27;./genitourinary-form/genitourinary-form.component&#x27;;
+import { PsychosocialFormComponent } from &#x27;./psychosocial-form/psychosocial-form.component&#x27;;
+import { IntegumentaryFormComponent } from &#x27;./integumentary-form/integumentary-form.component&#x27;;
+import { initialFormState } from &#x27;./assessments-tab.metadata&#x27;;
 
 export interface FormControlData {
-  control: FormControl, 
-  default: string, 
-  wnl: any
+  control: UntypedFormControl;
+  default: string;
+  wnl: any;
 }
 
 @Component({
   selector: &#x27;app-assessments-tab&#x27;,
   templateUrl: &#x27;./assessments-tab.component.html&#x27;,
-  styleUrls: [&#x27;./assessments-tab.component.scss&#x27;]
+  styleUrls: [&#x27;./assessments-tab.component.scss&#x27;],
 })
-export class AssessmentsTabComponent extends TabComponent implements OnInit {
-
-  @Input() assessments: Assessment[] &#x3D; [];
+export class AssessmentsTabComponent extends PatientDashboardTabComponent implements OnInit {
+  assessments: Assessment[] &#x3D; [];
 
   /**
    * Overarching nursing assessment form
-   * 
+   *
    * Notes:
    *  o emr-checkbox-group elements should not include a &quot;WNL&quot; option; the &quot;WNL&quot; option will be
    *    implemented on its own in the component.
@@ -1580,26 +1482,26 @@ export class AssessmentsTabComponent extends TabComponent implements OnInit {
         pulsePattern: false, // is pulse pattern irregular?
         heartTones: [&#x27;&#x27;], // murmur, gallup
         rhythm: [&#x27;&#x27;], // NSR, atrial fibrillation, PVC&#x27;s, PAC&#x27;s, SVT, Atrial flutter, other
-        otherRhythm: [&#x27;&#x27;],  // for nurse to fill out if rhythm is &quot;Other&quot;
+        otherRhythm: [&#x27;&#x27;], // for nurse to fill out if rhythm is &quot;Other&quot;
       }),
       edema: this.fb.group({
-        jvd: false,  // presence of JVD
+        jvd: false, // presence of JVD
         gnpe: false, // generalized non-pitting edema
         pittingEdema: this.fb.group({
           rightHand: [&#x27;&#x27;],
           rightFoot: [&#x27;&#x27;],
           leftFoot: [&#x27;&#x27;],
           leftHand: [&#x27;&#x27;],
-        })
+        }),
       }),
       generalizedPerfusion: [&#x27;&#x27;], // cold, pale, cyanotic, palpitations
       capRefill: false, // is cap refill &gt; 3 seconds?
       pulses: this.fb.group({
-        rue: [&#x27;&#x27;],  // +3 strong, +2 normal, +1 weak, thready, 0 absent
+        rue: [&#x27;&#x27;], // +3 strong, +2 normal, +1 weak, thready, 0 absent
         rle: [&#x27;&#x27;],
         lue: [&#x27;&#x27;],
         lle: [&#x27;&#x27;],
-      })
+      }),
     }),
 
     // Respiratory
@@ -1609,7 +1511,7 @@ export class AssessmentsTabComponent extends TabComponent implements OnInit {
         quality: [&#x27;&#x27;],
       }),
       lungSounds: this.fb.group({
-        rul: [&#x27;&#x27;],  // wnl, coarse rhonchi, crackles/rales, wheezes expiratory, wheezes inspiratory, other
+        rul: [&#x27;&#x27;], // wnl, coarse rhonchi, crackles/rales, wheezes expiratory, wheezes inspiratory, other
         otherRul: [&#x27;&#x27;], // for nurse to fill out if lung sound is &quot;Other&quot;
         rll: [&#x27;&#x27;],
         otherRll: [&#x27;&#x27;],
@@ -1621,52 +1523,30 @@ export class AssessmentsTabComponent extends TabComponent implements OnInit {
         otherLll: [&#x27;&#x27;],
       }),
       cough: false,
-      coughDescription: [&#x27;&#x27;],  // productive, nonproductive, dry
-      productiveDescription: this.fb.group({
-        scant: false,
-        moderate: false,
-        large: false,
-        purulent: false,
-        bloodTinged: false,
-        black: false,
-        green: false,
-        yellow: false,
-        thick: false,
-        thin: false,
-        tenacious: false,
-      }),
+      coughDescription: [&#x27;&#x27;], // productive, nonproductive, dry
+      productiveDescription: [[]],
     }),
 
     // Neurological
     neurological: this.fb.group({
-      loc: [&#x27;&#x27;],  // lethargic, somnolent
-      orientation: this.fb.group({  // Not to person/place/time/situation
-        person: false,
-        place: false,
-        time: false,
-        situation: false,
-      }),
+      loc: [&#x27;&#x27;], // lethargic, somnolent
+      orientation: [[]],
       extremityMovement: [&#x27;&#x27;],
-      handGrips: [&#x27;&#x27;],  // moderate, weak
+      handGrips: [&#x27;&#x27;], // moderate, weak
       lePushPull: [&#x27;&#x27;], // moderate, weak
-      pupillaryResponse: [&#x27;&#x27;],  // sluggish, absent
+      pupillaryResponse: [&#x27;&#x27;], // sluggish, absent
       pupillaryDilation: this.fb.group({
-        left: [&#x27;&#x27;],  // 2mm, 4mm, 6mm, 8mm
+        left: [&#x27;&#x27;], // 2mm, 4mm, 6mm, 8mm
         right: [&#x27;&#x27;],
       }),
-      gcss: [&#x27;&#x27;],  // AKA Glasgow Coma Scale score
+      gcss: [&#x27;&#x27;], // AKA Glasgow Coma Scale score
       sensation: this.fb.group({
-        rue: [&#x27;&#x27;],  // numbness, tingling, full sensation
+        rue: [&#x27;&#x27;], // numbness, tingling, full sensation
         rle: [&#x27;&#x27;],
         lle: [&#x27;&#x27;],
         lue: [&#x27;&#x27;],
       }),
-      tremors: this.fb.group({  // RUE, RLE, LLE, LUE
-        rue: false,
-        rle: false,
-        lle: false,
-        lue: false
-      }),
+      tremors: [[]],
     }),
 
     // Musculoskeletal
@@ -1679,26 +1559,13 @@ export class AssessmentsTabComponent extends TabComponent implements OnInit {
         ebu: [&#x27;&#x27;],
         medications: [&#x27;&#x27;],
         // pce &#x3D; patient care equipment
-        pce: [&#x27;&#x27;],  // one present, two present, or 3 or more present
-        mobility: this.fb.group({
-          assistance: false,  // &quot;requires assistance...&quot;
-          gait: false,  // &quot;unsteady gait&quot;
-          impairment: false,  // &quot;visual or auditory impairment affecting mobility&quot;
-        }),
-        cognition: this.fb.group({
-          awareness: false, // &quot;altered awareness of immediate physical environment&quot;
-          impulsive: false, // &quot;impulsive&quot;
-          understanding: false, // &quot;lack of understanding of one&#x27;s physical and cognitive limitations&quot;
-        }),
+        pce: [&#x27;&#x27;], // one present, two present, or 3 or more present
+        mobility: [[]],
+        cognition: [[]],
       }),
       fallScore: [&#x27;&#x27;],
       mobilityAndTransfers: [&#x27;&#x27;],
-      assistiveDevices: this.fb.group({
-        gaitBelt: false,
-        walker: false,
-        cane: false,
-        trapeze: false
-      })
+      assistiveDevices: [[]],
     }),
 
     // Gastrointestinal
@@ -1710,192 +1577,189 @@ export class AssessmentsTabComponent extends TabComponent implements OnInit {
         llq: [&#x27;&#x27;],
       }),
       dateLastBM: [&#x27;&#x27;],
-      nausea: false,  // yes (true), no (false)
-      emesis: [&#x27;&#x27;],  // small, medium, large
+      nausea: false, // yes (true), no (false)
+      emesis: [&#x27;&#x27;], // small, medium, large
       incontinence: false,
       ostomy: this.fb.group({
-        stomaSite: [&#x27;&#x27;],  // pink, beefy red, pale, purple
-        output: [&#x27;&#x27;],  // loose, watery, formed
+        stomaSite: [&#x27;&#x27;], // pink, beefy red, pale, purple
+        output: [&#x27;&#x27;], // loose, watery, formed
       }),
       hemorrhoids: false, // present (true), absent (false)
     }),
-    
+
     // Genitourinary
     genitourinary: this.fb.group({
       urineColor: [&#x27;&#x27;],
-      urineCharacteristics: this.fb.group({
-        cloudy: false,
-        sediment: false,
-        odor: false
-      }),
-      urinaryPattern: this.fb.group({
-        frequency: false,
-        nocturia: false,
-        dysuria: false,
-        incontinence: false,
-        retention: false,
-      }),
+      urineCharacteristics: [[]],
+      urinaryPattern: [[]],
       foley: this.fb.group({
         justification: [&#x27;&#x27;],
         securement: [&#x27;&#x27;],
-      })
+      }),
     }),
 
     // Psychosocial
     psychosocial: this.fb.group({
-      mood: this.fb.group({
-        nonInteractive: false,
-        elated: false,
-        tearful: false,
-        anxious: false,
-        agitated: false,
-        withdrawn: false,
-        flat: false,
-      }),
-      suicidal: false, 
+      mood: [[]],
+      suicidal: false,
     }),
 
     // Integumentary (wounds)
     integumentary: this.fb.group({
-      skinAppearance: this.fb.group({
-        diaphoresis: false,
-        pallor: false,
-        poorTurgor: false,
-        cool: false,
-        modeling: false,
-        jaundice: false,
-      }),
+      skinAppearance: [[]],
       wounds: this.fb.group({
         location: [&#x27;&#x27;],
         staging: [&#x27;&#x27;],
-        care: this.fb.group({
-          abd: false,
-          gauze: false,
-          dressingChange: false,
-          pharmAgent: false,
-          steriStrips: false,
-          staples: false,
-          wellApproximated: false,
-          dehiscence: false,
-        }),
-      })
+        care: [[]],
+      }),
     }),
-  })
+  });
 
-  constructor(private fb: FormBuilder, private userService: UserService) { 
-    super();
+  // ViewChildren necessary to reset each form
+  @ViewChild(&#x27;cardiovascularForm&#x27;) cardiovascularForm!: CardiovascularFormComponent;
+  @ViewChild(&#x27;respiratoryForm&#x27;) respiratoryForm!: RespiratoryFormComponent;
+  @ViewChild(&#x27;neurologicalForm&#x27;) neurologicalForm!: NeurologicalFormComponent;
+  @ViewChild(&#x27;musculoskeletalForm&#x27;) musculoskeletalForm!: MusculoskeletalFormComponent;
+  @ViewChild(&#x27;gastrointestinalForm&#x27;) gastrointestinalForm!: GastrointestinalFormComponent;
+  @ViewChild(&#x27;genitourinaryForm&#x27;) genitourinaryForm!: GenitourinaryFormComponent;
+  @ViewChild(&#x27;psychosocialForm&#x27;) psychosocialForm!: PsychosocialFormComponent;
+  @ViewChild(&#x27;integumentaryForm&#x27;) integumentaryForm!: IntegumentaryFormComponent;
+
+  constructor(
+    patientStore: PatientDashboardStore,
+    authService: AuthService,
+    private fb: UntypedFormBuilder,
+    private ref: ChangeDetectorRef
+  ) {
+    super(patientStore, authService);
+    this.patient$.subscribe((patient: Patient) &#x3D;&gt; {
+      this.assessments &#x3D; patient.assessments;
+    });
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onSubmit(): void {
+    // Enable the form to get values of previously-disabled controls
     this.form.enable();
 
-    let assessment &#x3D; formToAssessment(this.form)
+    // Update assessments field in current patient
+    let assessment &#x3D; formToAssessment(this.form);
     this.assessments.push(assessment);
-  
     this.assessments &#x3D; ([] as any[]).concat(this.assessments);
-    this.updatePatient(nursingAssessmentsField, this.assessments)
+    this.updatePatientField(NURSING_ASSESSMENTS_FIELD, this.assessments);
 
-    this.form.reset();
-    alert(&quot;Assessment submitted!&quot;)
+    // Reset
+    this.resetAllForms();
+    this.form.reset(initialFormState);
   }
 
   /**
-   * @returns Whether or not current user has admin role.
+   * Sets all sub-forms back to initial state (namely the WNL values).
    */
-  get isAdmin(): boolean {
-    return this.userService.isCurrentUserAdmin;
+  resetAllForms() {
+    this.cardiovascularForm.reset();
+    this.respiratoryForm.reset();
+    this.neurologicalForm.reset();
+    this.musculoskeletalForm.reset();
+    this.gastrointestinalForm.reset();
+    this.genitourinaryForm.reset();
+    this.psychosocialForm.reset();
+    this.integumentaryForm.reset();
+
+    // Eliminates the &quot;Changed After Checked&quot; error since we could be
+    //  changing the WNL checkboxes from &#x27;true&#x27; to &#x27;false&#x27;
+    this.ref.detectChanges();
   }
 
-  get dateFormControl(): FormControl {
-    return this.form.controls.date as FormControl;
+  get dateFormControl(): UntypedFormControl {
+    return this.form.controls.date as UntypedFormControl;
   }
 
-  get cardiovascularFormGroup(): FormGroup {
-    return this.form.controls.cardiovascular as FormGroup;
+  get cardiovascularFormGroup(): UntypedFormGroup {
+    return this.form.controls.cardiovascular as UntypedFormGroup;
   }
 
-  get respiratoryFormGroup(): FormGroup {
-    return this.form.controls.respiratory as FormGroup;
+  get respiratoryFormGroup(): UntypedFormGroup {
+    return this.form.controls.respiratory as UntypedFormGroup;
   }
 
-  get neurologicalFormGroup(): FormGroup {
-    return this.form.controls.neurological as FormGroup;
+  get neurologicalFormGroup(): UntypedFormGroup {
+    return this.form.controls.neurological as UntypedFormGroup;
   }
 
-  get musculoskeletalFormGroup(): FormGroup {
-    return this.form.controls.musculoskeletal as FormGroup;
+  get musculoskeletalFormGroup(): UntypedFormGroup {
+    return this.form.controls.musculoskeletal as UntypedFormGroup;
   }
 
-  get gastrointestinalFormGroup(): FormGroup {
-    return this.form.controls.gastrointestinal as FormGroup;
-  }
-  
-  get genitourinaryFormGroup(): FormGroup {
-    return this.form.controls.genitourinary as FormGroup;
+  get gastrointestinalFormGroup(): UntypedFormGroup {
+    return this.form.controls.gastrointestinal as UntypedFormGroup;
   }
 
-  get psychosocialFormGroup(): FormGroup {
-    return this.form.controls.psychosocial as FormGroup;
+  get genitourinaryFormGroup(): UntypedFormGroup {
+    return this.form.controls.genitourinary as UntypedFormGroup;
   }
 
-  get integumentaryFormGroup(): FormGroup {
-    return this.form.controls.integumentary as FormGroup;
+  get psychosocialFormGroup(): UntypedFormGroup {
+    return this.form.controls.psychosocial as UntypedFormGroup;
   }
 
-  get drainsAndTubesFormGroup(): FormGroup {
-    return this.form.controls.drainsAndTubes as FormGroup;
+  get integumentaryFormGroup(): UntypedFormGroup {
+    return this.form.controls.integumentary as UntypedFormGroup;
   }
 
+  get drainsAndTubesFormGroup(): UntypedFormGroup {
+    return this.form.controls.drainsAndTubes as UntypedFormGroup;
+  }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;mat-accordion&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;p-accordion&gt;
   &lt;app-expansion-panel title&#x3D;&quot;Cardiovascular&quot;&gt;
-    &lt;app-cardiovascular-form [formGroup]&#x3D;&quot;cardiovascularFormGroup&quot;&gt;&lt;/app-cardiovascular-form&gt;
+    &lt;app-cardiovascular-form #cardiovascularForm [formGroup]&#x3D;&quot;cardiovascularFormGroup&quot;&gt;&lt;/app-cardiovascular-form&gt;
   &lt;/app-expansion-panel&gt;
 
   &lt;app-expansion-panel title&#x3D;&quot;Respiratory&quot;&gt;
-    &lt;app-respiratory-form [formGroup]&#x3D;&quot;respiratoryFormGroup&quot;&gt;&lt;/app-respiratory-form&gt;
+    &lt;app-respiratory-form #respiratoryForm [formGroup]&#x3D;&quot;respiratoryFormGroup&quot;&gt;&lt;/app-respiratory-form&gt;
   &lt;/app-expansion-panel&gt;
 
   &lt;app-expansion-panel title&#x3D;&quot;Neurological&quot;&gt;
-    &lt;app-neurological-form [formGroup]&#x3D;&quot;neurologicalFormGroup&quot;&gt;&lt;/app-neurological-form&gt;
+    &lt;app-neurological-form #neurologicalForm [formGroup]&#x3D;&quot;neurologicalFormGroup&quot;&gt;&lt;/app-neurological-form&gt;
   &lt;/app-expansion-panel&gt;
 
   &lt;app-expansion-panel title&#x3D;&quot;Musculoskeletal&quot;&gt;
-    &lt;app-musculoskeletal-form [formGroup]&#x3D;&quot;musculoskeletalFormGroup&quot;&gt;&lt;/app-musculoskeletal-form&gt;
+    &lt;app-musculoskeletal-form #musculoskeletalForm [formGroup]&#x3D;&quot;musculoskeletalFormGroup&quot;&gt;&lt;/app-musculoskeletal-form&gt;
   &lt;/app-expansion-panel&gt;
 
   &lt;app-expansion-panel title&#x3D;&quot;Gastrointestinal&quot;&gt;
-    &lt;app-gastrointestinal-form [formGroup]&#x3D;&quot;gastrointestinalFormGroup&quot;&gt;&lt;/app-gastrointestinal-form&gt;
+    &lt;app-gastrointestinal-form
+      #gastrointestinalForm
+      [formGroup]&#x3D;&quot;gastrointestinalFormGroup&quot;
+    &gt;&lt;/app-gastrointestinal-form&gt;
   &lt;/app-expansion-panel&gt;
 
   &lt;app-expansion-panel title&#x3D;&quot;Genitourinary&quot;&gt;
-    &lt;app-genitourinary-form [formGroup]&#x3D;&quot;genitourinaryFormGroup&quot;&gt;&lt;/app-genitourinary-form&gt;
+    &lt;app-genitourinary-form #genitourinaryForm [formGroup]&#x3D;&quot;genitourinaryFormGroup&quot;&gt;&lt;/app-genitourinary-form&gt;
   &lt;/app-expansion-panel&gt;
 
   &lt;app-expansion-panel title&#x3D;&quot;Psychosocial&quot;&gt;
-    &lt;app-psychosocial-form [formGroup]&#x3D;&quot;psychosocialFormGroup&quot;&gt;&lt;/app-psychosocial-form&gt;
+    &lt;app-psychosocial-form #psychosocialForm [formGroup]&#x3D;&quot;psychosocialFormGroup&quot;&gt;&lt;/app-psychosocial-form&gt;
   &lt;/app-expansion-panel&gt;
 
   &lt;app-expansion-panel title&#x3D;&quot;Integumentary&quot;&gt;
-    &lt;app-integumentary-form [formGroup]&#x3D;&quot;integumentaryFormGroup&quot;&gt;&lt;/app-integumentary-form&gt;
+    &lt;app-integumentary-form #integumentaryForm [formGroup]&#x3D;&quot;integumentaryFormGroup&quot;&gt;&lt;/app-integumentary-form&gt;
   &lt;/app-expansion-panel&gt;
 
-  &lt;mat-card *ngIf&#x3D;&quot;isAdmin&quot; class&#x3D;&quot;assessment-date&quot;&gt;
-    &lt;mat-card-content&gt;
-      &lt;h3&gt;Date and Time of Assessment&lt;/h3&gt;
-      &lt;emr-input type&#x3D;&quot;datetime-local&quot; label&#x3D;&quot;Assessment Date&quot; [control]&#x3D;&quot;dateFormControl&quot;&gt;&lt;/emr-input&gt;
-    &lt;/mat-card-content&gt;
-  &lt;/mat-card&gt;
+  &lt;div *ngIf&#x3D;&quot;isAdmin&quot; class&#x3D;&quot;assessment-date&quot;&gt;
+    &lt;h3&gt;Date and Time of Assessment&lt;/h3&gt;
+    &lt;emr-input type&#x3D;&quot;date&quot; [control]&#x3D;&quot;dateFormControl&quot; placeholder&#x3D;&quot;Assessment Date/Time&quot;&gt;&lt;/emr-input&gt;
+  &lt;/div&gt;
 
-  &lt;button mat-raised-button class&#x3D;&quot;add-assessment-btn&quot; color&#x3D;&quot;accent&quot; (click)&#x3D;&quot;onSubmit()&quot;&gt;Add Assessment&lt;/button&gt;
-&lt;/mat-accordion&gt;</code></pre>
+  &lt;button pButton class&#x3D;&quot;add-assessment-btn&quot; color&#x3D;&quot;accent&quot; (click)&#x3D;&quot;onSubmit()&quot;&gt;Add Assessment&lt;/button&gt;
+&lt;/p-accordion&gt;
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -1917,7 +1781,8 @@ export class AssessmentsTabComponent extends TabComponent implements OnInit {
 
 .add-assessment-btn {
   margin-top: 1rem;
-}</code></pre>
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -1945,8 +1810,8 @@ export class AssessmentsTabComponent extends TabComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-accordion>  <app-expansion-panel title="Cardiovascular">    <app-cardiovascular-form [formGroup]="cardiovascularFormGroup"></app-cardiovascular-form>  </app-expansion-panel>  <app-expansion-panel title="Respiratory">    <app-respiratory-form [formGroup]="respiratoryFormGroup"></app-respiratory-form>  </app-expansion-panel>  <app-expansion-panel title="Neurological">    <app-neurological-form [formGroup]="neurologicalFormGroup"></app-neurological-form>  </app-expansion-panel>  <app-expansion-panel title="Musculoskeletal">    <app-musculoskeletal-form [formGroup]="musculoskeletalFormGroup"></app-musculoskeletal-form>  </app-expansion-panel>  <app-expansion-panel title="Gastrointestinal">    <app-gastrointestinal-form [formGroup]="gastrointestinalFormGroup"></app-gastrointestinal-form>  </app-expansion-panel>  <app-expansion-panel title="Genitourinary">    <app-genitourinary-form [formGroup]="genitourinaryFormGroup"></app-genitourinary-form>  </app-expansion-panel>  <app-expansion-panel title="Psychosocial">    <app-psychosocial-form [formGroup]="psychosocialFormGroup"></app-psychosocial-form>  </app-expansion-panel>  <app-expansion-panel title="Integumentary">    <app-integumentary-form [formGroup]="integumentaryFormGroup"></app-integumentary-form>  </app-expansion-panel>  <mat-card *ngIf="isAdmin" class="assessment-date">    <mat-card-content>      <h3>Date and Time of Assessment</h3>      <emr-input type="datetime-local" label="Assessment Date" [control]="dateFormControl"></emr-input>    </mat-card-content>  </mat-card>  <button mat-raised-button class="add-assessment-btn" color="accent" (click)="onSubmit()">Add Assessment</button></mat-accordion></div>'
-    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+        var COMPONENT_TEMPLATE = '<div><p-accordion>  <app-expansion-panel title="Cardiovascular">    <app-cardiovascular-form #cardiovascularForm [formGroup]="cardiovascularFormGroup"></app-cardiovascular-form>  </app-expansion-panel>  <app-expansion-panel title="Respiratory">    <app-respiratory-form #respiratoryForm [formGroup]="respiratoryFormGroup"></app-respiratory-form>  </app-expansion-panel>  <app-expansion-panel title="Neurological">    <app-neurological-form #neurologicalForm [formGroup]="neurologicalFormGroup"></app-neurological-form>  </app-expansion-panel>  <app-expansion-panel title="Musculoskeletal">    <app-musculoskeletal-form #musculoskeletalForm [formGroup]="musculoskeletalFormGroup"></app-musculoskeletal-form>  </app-expansion-panel>  <app-expansion-panel title="Gastrointestinal">    <app-gastrointestinal-form      #gastrointestinalForm      [formGroup]="gastrointestinalFormGroup"    ></app-gastrointestinal-form>  </app-expansion-panel>  <app-expansion-panel title="Genitourinary">    <app-genitourinary-form #genitourinaryForm [formGroup]="genitourinaryFormGroup"></app-genitourinary-form>  </app-expansion-panel>  <app-expansion-panel title="Psychosocial">    <app-psychosocial-form #psychosocialForm [formGroup]="psychosocialFormGroup"></app-psychosocial-form>  </app-expansion-panel>  <app-expansion-panel title="Integumentary">    <app-integumentary-form #integumentaryForm [formGroup]="integumentaryFormGroup"></app-integumentary-form>  </app-expansion-panel>  <div *ngIf="isAdmin" class="assessment-date">    <h3>Date and Time of Assessment</h3>    <emr-input type="date" [control]="dateFormControl" placeholder="Assessment Date/Time"></emr-input>  </div>  <button pButton class="add-assessment-btn" color="accent" (click)="onSubmit()">Add Assessment</button></p-accordion></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AdministrationScheduleComponent', 'selector': 'app-administration-schedule'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'emr-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrDialogComponent', 'selector': 'emr-dialog'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'emr-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'HistoryAndPhysicalTabComponent', 'selector': 'app-history-and-physical-tab'},{'name': 'HtmlDialogComponent', 'selector': 'app-html-dialog'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedicationDialogComponent', 'selector': 'emr-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MedicationScheduleComponent', 'selector': 'app-medication-schedule'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteEditDialogComponent', 'selector': 'app-note-edit-dialog'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialogComponent', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientDashboardTabComponent', 'selector': 'app-base'},{'name': 'PatientFormComponent', 'selector': 'app-patient-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'PrnScheduleComponent', 'selector': 'app-prn-schedule'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
     var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
     var ACTUAL_COMPONENT = {'name': 'AssessmentsTabComponent'};
 </script>

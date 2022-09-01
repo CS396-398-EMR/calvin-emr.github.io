@@ -58,7 +58,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/services/about.service.ts</code>
+            <code>src/app/shared/services/about.service.ts</code>
         </p>
 
 
@@ -114,7 +114,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/services/about.service.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/shared/services/about.service.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -149,8 +149,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="25"
-                            class="link-to-prism">src/app/services/about.service.ts:25</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/shared/services/about.service.ts:24</a></div>
                 </td>
             </tr>
 
@@ -196,7 +196,7 @@ subscribing to a data source, allowing for less need to clean up subscriptions.<
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="../classes/DeveloperProfile.html" target="_self" >Promise&lt;DeveloperProfile | null&gt;</a></code>
+                        <b>Returns : </b>        <code><a href="../classes/Developer.html" target="_self" >Promise&lt;Developer | null&gt;</a></code>
 
                     </div>
                     <div class="io-description">
@@ -229,8 +229,8 @@ subscribing to a data source, allowing for less need to clean up subscriptions.<
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="48"
-                            class="link-to-prism">src/app/services/about.service.ts:48</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/shared/services/about.service.ts:45</a></div>
                 </td>
             </tr>
 
@@ -244,7 +244,7 @@ subscribing to a data source, allowing for less need to clean up subscriptions.<
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="../classes/DeveloperProfile.html" target="_self" >Promise&lt;DeveloperProfile[]&gt;</a></code>
+                        <b>Returns : </b>        <code><a href="../classes/Developer.html" target="_self" >Promise&lt;Developer[]&gt;</a></code>
 
                     </div>
                     <div class="io-description">
@@ -271,15 +271,15 @@ subscribing to a data source, allowing for less need to clean up subscriptions.<
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>setURL(dev: <a href="../classes/DeveloperProfile.html" target="_self">DeveloperProfile</a>)</code>
+                    <code>setURL(dev: <a href="../classes/Developer.html" target="_self">Developer</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="77"
-                            class="link-to-prism">src/app/services/about.service.ts:77</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/shared/services/about.service.ts:72</a></div>
                 </td>
             </tr>
 
@@ -308,7 +308,7 @@ DeveloperProfile object&#39;s URL before completing.</p>
                                 <tr>
                                     <td>dev</td>
                                     <td>
-                                                <code><a href="../classes/DeveloperProfile.html" target="_self" >DeveloperProfile</a></code>
+                                                <code><a href="../classes/Developer.html" target="_self" >Developer</a></code>
                                     </td>
 
                                     <td>
@@ -346,63 +346,58 @@ DeveloperProfile object&#39;s URL before completing.</p>
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import { collection, doc, getDoc, getDocs, getFirestore } from &#x27;firebase/firestore&#x27;;
 import { getDownloadURL, getStorage, ref } from &#x27;firebase/storage&#x27;;
-import { aboutUsPicturesPath, developersCollectionName, profilePicLoadingError } from &#x27;../global&#x27;;
-import { DeveloperProfile } from &#x27;../types/dev-profile.type&#x27;;
+import { aboutUsPicturesPath, COLLECTION_DEVELOPERS, ERROR_PROFILE_PIC_LOADING } from &#x27;../../global&#x27;;
+import { Developer } from &#x27;../models/developer.model&#x27;;
 
 @Injectable({
-  providedIn: &#x27;root&#x27;
+  providedIn: &#x27;root&#x27;,
 })
 export class AboutService {
-
-  constructor() { }
+  constructor() {}
 
   /**
    * Retrieves a developer&#x27;s data one time. This function allows us to get data without
    * subscribing to a data source, allowing for less need to clean up subscriptions.
-   * 
+   *
    * @param id The ID of the developer document to retrieve.
    * @returns Promise to load developer data.
    */
-  async getDeveloper(id: string): Promise&lt;DeveloperProfile | null&gt; {
+  async getDeveloper(id: string): Promise&lt;Developer | null&gt; {
     // Set up and execute query
     const db &#x3D; getFirestore();
-    const docRef &#x3D; doc(db, developersCollectionName, id);
+    const docRef &#x3D; doc(db, COLLECTION_DEVELOPERS, id);
     const docSnap &#x3D; await getDoc(docRef);
 
     // Return result of query
-    if(docSnap.exists()) {
-      let dev &#x3D; new DeveloperProfile();
-      Object.assign(dev, docSnap.data());
+    if (docSnap.exists()) {
+      let dev &#x3D; new Developer(docSnap.data());
       return dev;
-    }
-    else {
+    } else {
       return null;
     }
   }
-  
+
   /**
    * Retrieves all developer data one time. This function allows us to get data without
    * subscribing to a data source, allowing for less need to clean up subscriptions.
-   * 
+   *
    * @returns Promise to load all developer data.
    */
-  async getDevelopers(): Promise&lt;DeveloperProfile[]&gt; {
+  async getDevelopers(): Promise&lt;Developer[]&gt; {
     // Set up query
     const db &#x3D; getFirestore();
-    const collRef &#x3D; collection(db, developersCollectionName);
+    const collRef &#x3D; collection(db, COLLECTION_DEVELOPERS);
     const collSnap &#x3D; await getDocs(collRef);
 
     // Map each document to a DeveloperProfile object, and return the array
     let devs &#x3D; collSnap.docs.map((doc) &#x3D;&gt; {
-      let dev &#x3D; new DeveloperProfile();
-      let obj &#x3D; { id: doc.id, ...doc.data() as object };
-      Object.assign(dev, obj)
+      let dev &#x3D; new Developer(doc.data());
 
       // Get image URL for dev profile
       this.setURL(dev);
 
       return dev;
-    })
+    });
 
     return devs;
   }
@@ -410,22 +405,22 @@ export class AboutService {
   /**
    * Sets the imageURL property on the DeveloperProfile object passed to
    * the function. This function is specified to be async because it needs
-   * to wait for the getDownloadURL Promise to set the passed 
+   * to wait for the getDownloadURL Promise to set the passed
    * DeveloperProfile object&#x27;s URL before completing.
-   * 
+   *
    * @param dev The DeveloperProfile to get the image URL for.
    */
-  private async setURL(dev: DeveloperProfile) {
+  private async setURL(dev: Developer) {
     const storage &#x3D; getStorage();
 
     // Retrieve url from the specified path
     await getDownloadURL(ref(storage, &#x60;${aboutUsPicturesPath}/${dev.imageName}&#x60;))
       // If file exists set imageURL to returned url
       .then((url) &#x3D;&gt; {
-        dev.imageURL &#x3D; url;
+        dev.imageUrl &#x3D; url;
       })
       .catch((error) &#x3D;&gt; {
-        console.error(profilePicLoadingError, error);
+        console.error(ERROR_PROFILE_PIC_LOADING, error);
       });
   }
 }

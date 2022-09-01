@@ -44,7 +44,7 @@
 
 <ol class="breadcrumb">
   <li>Classes</li>
-  <li >DeveloperProfile</li>
+  <li >Developer</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -62,7 +62,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/types/dev-profile.type.ts</code>
+            <code>src/app/shared/models/developer.model.ts</code>
         </p>
 
 
@@ -92,10 +92,10 @@ information from Firestore.</p>
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#degreeFirst" >degreeFirst</a>
+                                <a href="#contactLink" >contactLink</a>
                             </li>
                             <li>
-                                <a href="#degreeSecond" >degreeSecond</a>
+                                <a href="#degreeInfo" >degreeInfo</a>
                             </li>
                             <li>
                                 <a href="#firstName" >firstName</a>
@@ -104,36 +104,38 @@ information from Firestore.</p>
                                 <a href="#graduation" >graduation</a>
                             </li>
                             <li>
+                                <a href="#hasLinkedIn" >hasLinkedIn</a>
+                            </li>
+                            <li>
                                 <a href="#hobby" >hobby</a>
                             </li>
                             <li>
                                 <a href="#imageName" >imageName</a>
                             </li>
                             <li>
-                                <a href="#imageURL" >imageURL</a>
-                            </li>
-                            <li>
-                                <a href="#isStudent" >isStudent</a>
+                                <a href="#imageUrl" >imageUrl</a>
                             </li>
                             <li>
                                 <a href="#lastName" >lastName</a>
-                            </li>
-                            <li>
-                                <a href="#linkedIn" >linkedIn</a>
-                            </li>
-                            <li>
-                                <a href="#majorFirst" >majorFirst</a>
-                            </li>
-                            <li>
-                                <a href="#majorSecond" >majorSecond</a>
-                            </li>
-                            <li>
-                                <a href="#minors" >minors</a>
                             </li>
                         </ul>
                     </td>
                 </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getDegreeInfoArray" >getDegreeInfoArray</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
 
 
 
@@ -149,15 +151,45 @@ information from Firestore.</p>
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(devDTO: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/types/dev-profile.type.ts:74</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/shared/models/developer.model.ts:54</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>devDTO</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -171,10 +203,10 @@ information from Firestore.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="degreeFirst"></a>
+                    <a name="contactLink"></a>
                     <span class="name">
-                        <span ><b>degreeFirst</b></span>
-                        <a href="#degreeFirst"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>contactLink</b></span>
+                        <a href="#contactLink"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -186,13 +218,13 @@ information from Firestore.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/types/dev-profile.type.ts:39</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/shared/models/developer.model.ts:49</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>The developer&#39;s first degree.</p>
+                    <div class="io-description"><p>The URL of the developer&#39;s social media/contact information page.</p>
 </div>
                 </td>
             </tr>
@@ -203,28 +235,28 @@ information from Firestore.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="degreeSecond"></a>
+                    <a name="degreeInfo"></a>
                     <span class="name">
-                        <span ><b>degreeSecond</b></span>
-                        <a href="#degreeSecond"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>degreeInfo</b></span>
+                        <a href="#degreeInfo"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                        <i>Type : </i>        <code><a href="../interfaces/DegreeInfo.html" target="_self" >DegreeInfo[]</a></code>
 
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/types/dev-profile.type.ts:44</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/shared/models/developer.model.ts:34</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>The developer&#39;s second degree, if any.</p>
+                    <div class="io-description"><p>Array that stores all of the developer&#39;s degree information.</p>
 </div>
                 </td>
             </tr>
@@ -250,7 +282,7 @@ information from Firestore.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/types/dev-profile.type.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/shared/models/developer.model.ts:12</a></div>
                         </td>
                     </tr>
 
@@ -282,13 +314,45 @@ information from Firestore.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/types/dev-profile.type.ts:64</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/shared/models/developer.model.ts:39</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
                     <div class="io-description"><p>The developer&#39;s graduation date.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasLinkedIn"></a>
+                    <span class="name">
+                        <span ><b>hasLinkedIn</b></span>
+                        <a href="#hasLinkedIn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/shared/models/developer.model.ts:44</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Whether the developer has a LinkedIn account or not.</p>
 </div>
                 </td>
             </tr>
@@ -314,7 +378,7 @@ information from Firestore.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/types/dev-profile.type.ts:74</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/shared/models/developer.model.ts:54</a></div>
                         </td>
                     </tr>
 
@@ -346,7 +410,7 @@ information from Firestore.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/types/dev-profile.type.ts:28</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/shared/models/developer.model.ts:23</a></div>
                         </td>
                     </tr>
 
@@ -364,10 +428,10 @@ This is used to get the image URL when the &quot;About Us&quot; page loads.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="imageURL"></a>
+                    <a name="imageUrl"></a>
                     <span class="name">
-                        <span ><b>imageURL</b></span>
-                        <a href="#imageURL"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>imageUrl</b></span>
+                        <a href="#imageUrl"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -379,7 +443,7 @@ This is used to get the image URL when the &quot;About Us&quot; page loads.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/types/dev-profile.type.ts:34</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/shared/models/developer.model.ts:29</a></div>
                         </td>
                     </tr>
 
@@ -387,38 +451,6 @@ This is used to get the image URL when the &quot;About Us&quot; page loads.</p>
                 <td class="col-md-4">
                     <div class="io-description"><p>The URL of the developer&#39;s image stored in Firebase Storage.
 This is set during the loading of the &quot;About Us&quot; page.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="isStudent"></a>
-                    <span class="name">
-                        <span ><b>isStudent</b></span>
-                        <a href="#isStudent"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/types/dev-profile.type.ts:12</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Whether the developer is a student or not.</p>
 </div>
                 </td>
             </tr>
@@ -444,7 +476,7 @@ This is set during the loading of the &quot;About Us&quot; page.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/types/dev-profile.type.ts:22</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/shared/models/developer.model.ts:17</a></div>
                         </td>
                     </tr>
 
@@ -457,137 +489,51 @@ This is set during the loading of the &quot;About Us&quot; page.</p>
 
         </tbody>
     </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="linkedIn"></a>
+                    <a name="getDegreeInfoArray"></a>
                     <span class="name">
-                        <span ><b>linkedIn</b></span>
-                        <a href="#linkedIn"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>getDegreeInfoArray</b></span>
+                        <a href="#getDegreeInfoArray"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/types/dev-profile.type.ts:69</a></div>
-                        </td>
-                    </tr>
-
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>The URL of the developer&#39;s LinkedIn page.</p>
-</div>
+<code>getDegreeInfoArray()</code>
                 </td>
             </tr>
 
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="majorFirst"></a>
-                    <span class="name">
-                        <span ><b>majorFirst</b></span>
-                        <a href="#majorFirst"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/types/dev-profile.type.ts:49</a></div>
-                        </td>
-                    </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>The developer&#39;s primary academic major.</p>
-</div>
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/shared/models/developer.model.ts:68</a></div>
                 </td>
             </tr>
 
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="majorSecond"></a>
-                    <span class="name">
-                        <span ><b>majorSecond</b></span>
-                        <a href="#majorSecond"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/types/dev-profile.type.ts:54</a></div>
-                        </td>
-                    </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>The developer&#39;s secondary academic major, if any.</p>
-</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>string[]</code>
+
+                    </div>
                 </td>
             </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="minors"></a>
-                    <span class="name">
-                        <span ><b>minors</b></span>
-                        <a href="#minors"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/types/dev-profile.type.ts:59</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>A description of the developer&#39;s academic minors, if any.</p>
-</div>
-                </td>
-            </tr>
-
         </tbody>
     </table>
 </section>
-
-
 
 
 
@@ -600,16 +546,11 @@ This is set during the loading of the &quot;About Us&quot; page.</p>
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Timestamp } from &#x27;firebase/firestore&#x27;;
 
 /**
- * Used to represent a developer on the Calvin EMR Development Team. 
+ * Used to represent a developer on the Calvin EMR Development Team.
  * Mostly used to render the About page dynamically by pulling developer
  * information from Firestore.
  */
-export class DeveloperProfile {
-  /**
-   * Whether the developer is a student or not.
-   */
-  isStudent: boolean;
-
+export class Developer {
   /**
    * The developer&#x27;s first name.
    */
@@ -630,68 +571,61 @@ export class DeveloperProfile {
    * The URL of the developer&#x27;s image stored in Firebase Storage.
    * This is set during the loading of the &quot;About Us&quot; page.
    */
-  imageURL: string;
+  imageUrl: string;
 
   /**
-   * The developer&#x27;s first degree.
+   * Array that stores all of the developer&#x27;s degree information.
    */
-  degreeFirst: string;
+  degreeInfo: DegreeInfo[];
 
-  /**
-   * The developer&#x27;s second degree, if any.
-   */
-  degreeSecond: string;
-
-  /**
-   * The developer&#x27;s primary academic major.
-   */
-  majorFirst: string;
-
-  /**
-   * The developer&#x27;s secondary academic major, if any.
-   */
-  majorSecond: string;
-  
-  /**
-   * A description of the developer&#x27;s academic minors, if any.
-   */
-  minors: string;
-  
   /**
    * The developer&#x27;s graduation date.
    */
   graduation: Timestamp;
 
   /**
-   * The URL of the developer&#x27;s LinkedIn page.
+   * Whether the developer has a LinkedIn account or not.
    */
-  linkedIn: string;
+  hasLinkedIn: boolean;
+
+  /**
+   * The URL of the developer&#x27;s social media/contact information page.
+   */
+  contactLink: string;
 
   /**
    * A description of the developer&#x27;s hobbies.
    */
   hobby: string;
-  
-  constructor(){
-      this.isStudent &#x3D; true;
-      this.firstName &#x3D; &quot;&quot;;
-      this.lastName &#x3D; &quot;&quot;;
 
-      this.imageName &#x3D; &quot;&quot;;
-      this.imageURL &#x3D; &quot;&quot;;
-
-      this.degreeFirst &#x3D; &quot;&quot;;
-      this.degreeSecond &#x3D; &quot;&quot;;
-      this.majorFirst &#x3D; &quot;&quot;;
-      this.majorSecond &#x3D; &quot;&quot;;
-      this.minors &#x3D; &quot;&quot;;
-      
-      this.graduation &#x3D; Timestamp.fromDate(new Date());
-      this.linkedIn &#x3D; &quot;&quot;;
-
-      this.hobby &#x3D; &quot;&quot;;
+  constructor(devDTO: any) {
+    this.firstName &#x3D; devDTO.firstName;
+    this.lastName &#x3D; devDTO.lastName;
+    this.imageName &#x3D; devDTO.imageName;
+    this.imageUrl &#x3D; devDTO.imageUrl;
+    this.degreeInfo &#x3D; devDTO.degreeInfo;
+    this.graduation &#x3D; devDTO.graduation;
+    this.hasLinkedIn &#x3D; devDTO.hasLinkedIn;
+    this.contactLink &#x3D; devDTO.contactLink;
+    this.hobby &#x3D; devDTO.hobby;
   }
-}</code></pre>
+
+  getDegreeInfoArray(): string[] {
+    let separator &#x3D; &#x27;&#x27;;
+    return this.degreeInfo.map((info: DegreeInfo) &#x3D;&gt; {
+      if (info.label.toLocaleLowerCase() &#x3D;&#x3D;&#x3D; &#x27;minor&#x27;) {
+        separator &#x3D; &#x27;in&#x27;;
+      }
+      return &#x60;${info.label} ${separator} ${info.content}&#x60;;
+    });
+  }
+}
+
+export interface DegreeInfo {
+  label: string;
+  content: string;
+}
+</code></pre>
     </div>
 </div>
 
@@ -729,7 +663,7 @@ export class DeveloperProfile {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
-            var COMPODOC_CURRENT_PAGE_URL = 'DeveloperProfile.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'Developer.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

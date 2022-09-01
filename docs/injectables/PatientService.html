@@ -58,7 +58,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/services/patient.service.ts</code>
+            <code>src/app/shared/services/patient.service.ts</code>
         </p>
 
 
@@ -78,9 +78,6 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
-                            <li>
-                                <a href="#createPatient" >createPatient</a>
-                            </li>
                             <li>
                                 <a href="#createStudentPatient" >createStudentPatient</a>
                             </li>
@@ -114,7 +111,7 @@
                                 <a href="#setPatient" >setPatient</a>
                             </li>
                             <li>
-                                <a href="#updateField" >updateField</a>
+                                <a href="#upsertPatient" >upsertPatient</a>
                             </li>
                         </ul>
                     </td>
@@ -139,7 +136,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/services/patient.service.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/shared/services/patient.service.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -186,115 +183,6 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="createPatient"></a>
-                    <span class="name">
-                        <span ><b>createPatient</b></span>
-                        <a href="#createPatient"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>createPatient(patient: <a href="../classes/Patient.html" target="_self">Patient</a>, img?: File, fn?: () => void)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="70"
-                            class="link-to-prism">src/app/services/patient.service.ts:70</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Create patient document based on the provided patient argument and image file.
-Use callback function to do a task after patient is created.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                    <td>Description</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>patient</td>
-                                    <td>
-                                                <code><a href="../classes/Patient.html" target="_self" >Patient</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>Patient object that contains all the necessary data</p>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>img</td>
-                                    <td>
-                                            <code>File</code>
-                                    </td>
-
-                                    <td>
-                                        Yes
-                                    </td>
-
-
-                                    <td>
-                                        <p>Image of the patient (optional)</p>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>fn</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
-                                    </td>
-
-                                    <td>
-                                        Yes
-                                    </td>
-
-
-                                    <td>
-                                        <p>callback function (optional)</p>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
                     <a name="createStudentPatient"></a>
                     <span class="name">
                         <span ><b>createStudentPatient</b></span>
@@ -311,8 +199,8 @@ Use callback function to do a task after patient is created.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="117"
-                            class="link-to-prism">src/app/services/patient.service.ts:117</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/shared/services/patient.service.ts:121</a></div>
                 </td>
             </tr>
 
@@ -389,8 +277,8 @@ Use callback function to do a task after patient is created.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="103"
-                            class="link-to-prism">src/app/services/patient.service.ts:103</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/shared/services/patient.service.ts:112</a></div>
                 </td>
             </tr>
 
@@ -435,7 +323,7 @@ Use callback function to do a task after patient is created.</p>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                        <b>Returns : </b>    <code>unknown</code>
 
                     </div>
                     <div class="io-description">
@@ -465,8 +353,8 @@ Use callback function to do a task after patient is created.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="212"
-                            class="link-to-prism">src/app/services/patient.service.ts:212</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/app/shared/services/patient.service.ts:209</a></div>
                 </td>
             </tr>
 
@@ -569,8 +457,8 @@ Use callback function to do a task after patient is created.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="58"
-                            class="link-to-prism">src/app/services/patient.service.ts:58</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/shared/services/patient.service.ts:55</a></div>
                 </td>
             </tr>
 
@@ -607,7 +495,7 @@ Use callback function to do a task after patient is created.</p>
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="51"
-                            class="link-to-prism">src/app/services/patient.service.ts:51</a></div>
+                            class="link-to-prism">src/app/shared/services/patient.service.ts:51</a></div>
                 </td>
             </tr>
 
@@ -702,7 +590,7 @@ Use callback function to do a task after patient is created.</p>
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="24"
-                            class="link-to-prism">src/app/services/patient.service.ts:24</a></div>
+                            class="link-to-prism">src/app/shared/services/patient.service.ts:24</a></div>
                 </td>
             </tr>
 
@@ -797,8 +685,8 @@ subscribing to a data source, allowing for less need to clean up subscriptions.<
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="193"
-                            class="link-to-prism">src/app/services/patient.service.ts:193</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="190"
+                            class="link-to-prism">src/app/shared/services/patient.service.ts:190</a></div>
                 </td>
             </tr>
 
@@ -876,8 +764,8 @@ subscribing to a data source, allowing for less need to clean up subscriptions.<
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="175"
-                            class="link-to-prism">src/app/services/patient.service.ts:175</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/app/shared/services/patient.service.ts:172</a></div>
                 </td>
             </tr>
 
@@ -913,8 +801,6 @@ document that fits condition</p>
 
 
                                     <td>
-                                        <p>string constraint value for thet &quot;studentId&quot; field</p>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -929,8 +815,6 @@ document that fits condition</p>
 
 
                                     <td>
-                                        <p>string constraint value for thet &quot;id&quot; field (patientId)</p>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -945,7 +829,7 @@ document that fits condition</p>
 
 
                                     <td>
-                                        <p>Collection name</p>
+                                        <p>Collection name to perform update</p>
 
                                     </td>
                                 </tr>
@@ -987,8 +871,8 @@ document that fits condition</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="139"
-                            class="link-to-prism">src/app/services/patient.service.ts:139</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/app/shared/services/patient.service.ts:103</a></div>
                 </td>
             </tr>
 
@@ -1065,7 +949,7 @@ document that fits condition</p>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                        <b>Returns : </b>    <code>unknown</code>
 
                     </div>
                     <div class="io-description">
@@ -1079,32 +963,32 @@ document that fits condition</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="updateField"></a>
+                    <a name="upsertPatient"></a>
                     <span class="name">
-                        <span ><b>updateField</b></span>
-                        <a href="#updateField"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>upsertPatient</b></span>
+                        <a href="#upsertPatient"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>updateField(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, col: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+<code>upsertPatient(patient: <a href="../classes/Patient.html" target="_self">Patient</a>, collection: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, img?: File)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="159"
-                            class="link-to-prism">src/app/services/patient.service.ts:159</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/shared/services/patient.service.ts:66</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Update the specific field value of the firebase document. Only different value
-will be added at the end of the field</p>
+                    <div class="io-description"><p>Create patient document based on the provided patient argument and image file.
+Use callback function to do a task after patient is created.</p>
 </div>
 
                     <div class="io-description">
@@ -1121,7 +1005,23 @@ will be added at the end of the field</p>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>id</td>
+                                    <td>patient</td>
+                                    <td>
+                                                <code><a href="../classes/Patient.html" target="_self" >Patient</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Patient object that contains all the necessary data</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>collection</td>
                                     <td>
                                                 <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                     </td>
@@ -1132,55 +1032,21 @@ will be added at the end of the field</p>
 
 
                                     <td>
-                                        <p>Patient unique document id value</p>
-
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>field</td>
+                                    <td>img</td>
                                     <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                            <code>File</code>
                                     </td>
 
                                     <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>Key name of the field that will be updated</p>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>data</td>
-                                    <td>
-                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
+                                        Yes
                                     </td>
 
 
                                     <td>
-                                        <p>Data used to update the document</p>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>col</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>Collection name to perform update</p>
+                                        <p>Image of the patient (optional)</p>
 
                                     </td>
                                 </tr>
@@ -1190,7 +1056,7 @@ will be added at the end of the field</p>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
@@ -1208,23 +1074,23 @@ will be added at the end of the field</p>
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import { AngularFirestore } from &#x27;@angular/fire/compat/firestore&#x27;;
-import { getFirestore, collection, query, where, getDocs, doc } from &#x27;@angular/fire/firestore&#x27;
-import { Patient } from &#x27;../types/patient.type&#x27;;
-import { getStorage, ref, uploadBytes } from &quot;firebase/storage&quot;;
+import { getFirestore, collection, query, where, getDocs, doc } from &#x27;@angular/fire/firestore&#x27;;
+import { Patient } from &#x27;../models/patient.model&#x27;;
+import { getStorage, ref, uploadBytes } from &#x27;firebase/storage&#x27;;
 import { arrayUnion, deleteDoc, getDoc } from &#x27;firebase/firestore&#x27;;
-import { patientsCollectionName, studentPatientsCollectionName } from &#x27;../global&#x27;;
+import { COLLECTION_PATIENTS, COLLECTION_STUDENT_PATIENTS } from &#x27;../../global&#x27;;
+import { from } from &#x27;rxjs&#x27;;
 
 @Injectable({
-  providedIn: &#x27;root&#x27;
+  providedIn: &#x27;root&#x27;,
 })
 export class PatientService {
-
-  constructor(private db: AngularFirestore) { }
+  constructor(private db: AngularFirestore) {}
 
   /**
    * Retrieves a patient&#x27;s data one time. This function allows us to get data without
    * subscribing to a data source, allowing for less need to clean up subscriptions.
-   * 
+   *
    * @param id The ID of the patient document to retrieve.
    * @param col The name of the Firestore collection to retrieve the document from.
    * @returns Promise to load Patient data.
@@ -1232,7 +1098,7 @@ export class PatientService {
   async getStaticPatient(id: string, col: string): Promise&lt;Patient | null&gt; {
     const db &#x3D; getFirestore();
 
-    const docRef &#x3D; doc(db, patientsCollectionName, id);
+    const docRef &#x3D; doc(db, COLLECTION_PATIENTS, id);
     const docSnap &#x3D; await getDoc(docRef);
 
     if (docSnap.exists()) {
@@ -1251,34 +1117,30 @@ export class PatientService {
 
   /**
    * Get patient data that matches document id and collection name from firebase.
-   * 
+   *
    * @param id  Patient unique document id value
    * @param col Collection name (&quot;patients&quot; || &quot;studentPatients&quot;)
    * @returns   Observable&lt;Action&lt;DocumentSnapshot&lt;unknown&gt;&gt;&gt;
    */
   getPatient(id: string, col: string) {
-    return this.db
-      .collection(col)
-      .doc(id)
-      .snapshotChanges();
+    return this.db.collection(col).doc(id).snapshotChanges();
   }
 
   getAllMRNs() {
-    return this.db.collection(patientsCollectionName).snapshotChanges();
+    return this.db.collection(COLLECTION_PATIENTS).snapshotChanges();
   }
 
   /**
    * Create patient document based on the provided patient argument and image file.
    * Use callback function to do a task after patient is created.
-   * 
+   *
    * @param patient Patient object that contains all the necessary data
    * @param img     Image of the patient (optional)
-   * @param fn      callback function (optional)
    */
-  createPatient(patient: Patient, img?: File, fn?: () &#x3D;&gt; void) {
+  upsertPatient(patient: Patient, collection: string, img?: File) {
     // Convert Patient object to a JSON object
     let obj &#x3D; patient.toFirebase();
-    if(img) {
+    if (img) {
       patient.setProfilePicName(img.name);
       const storage &#x3D; getStorage();
       const storageRef &#x3D; ref(storage, patient.getProfilePicURL());
@@ -1288,113 +1150,114 @@ export class PatientService {
           console.log(&#x27;Image uploaded successfully!&#x27;);
         })
         .catch((error) &#x3D;&gt; {
-          console.error(&quot;Error uploading image:&quot;, error);
+          console.error(&#x27;Error uploading image:&#x27;, error);
         });
     }
 
     // Use &quot;set&quot; method, since we separate the ID from the data; ID
     // is used as the document ID
-    this.db.collection(patientsCollectionName)
-      .doc(patient.getId())
-      .set(obj)
-      .then(fn)
-      .catch(e &#x3D;&gt; {
-        console.log(e);
-    });
+    return from(
+      this.db
+        .collection(collection)
+        .doc(patient.getId())
+        .set(obj)
+        .catch((e) &#x3D;&gt; {
+          console.error(e);
+        })
+    );
+  }
+
+  /**
+   * Update the specified document with the provided data (Document will be entirely updated)
+   *
+   * @param id    Patient unique document id value
+   * @param data  Data used to update the document
+   * @param col   Collection name to perform update
+   */
+  async setPatient(id: string, data: any, col: string) {
+    return await this.db.collection(col).doc(id).update(data);
   }
 
   /**
    *  Delete patient document that matches document id from patients collection
-   * 
-   * @param id  Patient unique document id value 
+   *
+   * @param id  Patient unique document id value
    */
   async deletePatient(id: string) {
-    this.db.collection(patientsCollectionName)
-      .doc(id)
-      .delete()
-      .catch((err) &#x3D;&gt; {
-        console.log(&quot;Error deleting patient:&quot;, err);
-      })
+    return await this.db.collection(COLLECTION_PATIENTS).doc(id).delete();
   }
 
   /**
    * Create studentPatient document based on the provided patient argument and image file.
-   * 
+   *
    * @param patient Patient object that contains all the necessary data
    */
   createStudentPatient(patient: Patient) {
     // Convert Patient object to a JSON object
     let obj &#x3D; patient.toFirebase();
 
-    // Use &quot;add&quot; method to create unique ID as 
+    // Use &quot;add&quot; method to create unique ID as
     // patient ID cannot be used for the document ID
-    this.db.collection(studentPatientsCollectionName).add(obj)
-    .then(res &#x3D;&gt; {
+    this.db
+      .collection(COLLECTION_STUDENT_PATIENTS)
+      .add(obj)
+      .then((res) &#x3D;&gt; {
         console.log(res);
-    })
-    .catch(e &#x3D;&gt; {
+      })
+      .catch((e) &#x3D;&gt; {
         console.log(e);
-    })
+      });
   }
 
-  /**
-   * Update the specified document with the provided data (Document will be entirely updated)
-   * 
-   * @param id    Patient unique document id value
-   * @param data  Data used to update the document
-   * @param col   Collection name to perform update
-   */
-  async setPatient(id: string, data: any, col: string) {
-    try {
-      const res &#x3D; await this.db
-        .collection(col)
-        .doc(id)
-        .update(data);
-    } catch (e) {
-      console.log(e);
-    }
-  }
+  // updateField(field: string, data: any, id: string, col: string) {
+  //   const updateRef &#x3D; this.db.collection(col).doc(id);
+  //   return from(
+  //     updateRef.update({
+  //       [field]: data,
+  //     })
+  //   );
+  // }
 
   /**
    * Update the specific field value of the firebase document. Only different value
    * will be added at the end of the field
-   * 
+   *
    * @param id    Patient unique document id value
    * @param field Key name of the field that will be updated
    * @param data  Data used to update the document
    * @param col   Collection name to perform update
    */
-  updateField(id: string, field: string, data: any, col: string) {
-    const updateRef &#x3D; this.db.collection(col).doc(id);
-    updateRef.update({
-      [field]: arrayUnion(data)
-    })
-  }
+  // updateField(id: string, field: string, data: any, col: string) {
+  //   const updateRef &#x3D; this.db.collection(col).doc(id);
+  //   updateRef.update({
+  //     [field]: arrayUnion(data),
+  //   });
+  // }
 
   /**
-   *  Check both student id and patient id and returns querySnapshot of 
+   *  Check both student id and patient id and returns querySnapshot of
    * document that fits condition
-   * 
+   *
    * @param {string} sId   string constraint value for thet &quot;studentId&quot; field
    * @param {string} pId   string constraint value for thet &quot;id&quot; field (patientId)
-   * @param col Collection name 
-   * @returns 
+   * @param col Collection name
+   * @returns
    */
-  async patientDuplicateCheck(sId: string, pId:string, col: string) {
+  async patientDuplicateCheck(sId: string, pId: string, col: string) {
     const db &#x3D; getFirestore();
 
     // query(collectionReference, condition)
     // Goes through studentpatients collection and find a patient assigned to a specific user
-    const q &#x3D; query(collection(db, col), where(&quot;studentId&quot;, &quot;&#x3D;&#x3D;&quot;, sId), where(&quot;id&quot;, &quot;&#x3D;&#x3D;&quot;, pId));
+    const q &#x3D; query(collection(db, col), where(&#x27;studentId&#x27;, &#x27;&#x3D;&#x3D;&#x27;, sId), where(&#x27;id&#x27;, &#x27;&#x3D;&#x3D;&#x27;, pId));
 
     const querySnapshot &#x3D; await getDocs(q);
 
-    return querySnapshot
+    return querySnapshot;
   }
 
   /**
    * Check studentId with the provided id and return querySnapshot of document that fits the condition
-   * 
+   *
    * @param {string} id   string constraint value for thet &quot;studentId&quot; field
    * @returns QuerySnapshot of DocumentData
    */
@@ -1403,16 +1266,16 @@ export class PatientService {
 
     // query(collectionReference, condition)
     // Goes through studentpatients collection and find a patient assigned to a specific user
-    const q &#x3D; query(collection(db, studentPatientsCollectionName), where(&quot;studentId&quot;, &quot;&#x3D;&#x3D;&quot;, id));
+    const q &#x3D; query(collection(db, COLLECTION_STUDENT_PATIENTS), where(&#x27;studentId&#x27;, &#x27;&#x3D;&#x3D;&#x27;, id));
 
     const querySnapshot &#x3D; await getDocs(q);
 
-    return querySnapshot
+    return querySnapshot;
   }
 
   /**
    * @param {string} studentList
-   * @param {string} patientId 
+   * @param {string} patientId
    * @param {string} col
    *
    * : Delete patients/studentPatients document based on student id and patient id
@@ -1421,27 +1284,24 @@ export class PatientService {
     const db &#x3D; getFirestore();
     let counter &#x3D; 0;
     let deleted &#x3D; true;
-    
+
     // Retrieve document(s) that matches provided arguments
-    this.patientDuplicateCheck(studentId, patientuid, col).then(
-      patientuid &#x3D;&gt; {
-        console.log(&quot;size: &quot;, patientuid.size)
-        counter++;
-        if(!patientuid.empty){
-          // Delete all matching document(s)
-          patientuid.forEach(document &#x3D;&gt; deleteDoc(doc(db, col, document.id)));
-        }
-        // When delete failed at any point
-        else if(counter &gt;&#x3D; (patientuid.size - 1) &amp;&amp; !deleted) {
-          alert(&quot;Deletion failed for one or more student(s)&quot;)
-        }
-        else{
-          deleted &#x3D; false;
-          console.log(&quot;deleteStudentPatient: &quot;, patientuid, &quot; does not exist&quot;);
-        }
+    this.patientDuplicateCheck(studentId, patientuid, col).then((patientuid) &#x3D;&gt; {
+      console.log(&#x27;size: &#x27;, patientuid.size);
+      counter++;
+      if (!patientuid.empty) {
+        // Delete all matching document(s)
+        patientuid.forEach((document) &#x3D;&gt; deleteDoc(doc(db, col, document.id)));
       }
-    )
-    console.log(&quot;deleteStudentPatient working!&quot;);
+      // When delete failed at any point
+      else if (counter &gt;&#x3D; patientuid.size - 1 &amp;&amp; !deleted) {
+        alert(&#x27;Deletion failed for one or more student(s)&#x27;);
+      } else {
+        deleted &#x3D; false;
+        console.log(&#x27;deleteStudentPatient: &#x27;, patientuid, &#x27; does not exist&#x27;);
+      }
+    });
+    console.log(&#x27;deleteStudentPatient working!&#x27;);
   }
 }
 </code></pre>

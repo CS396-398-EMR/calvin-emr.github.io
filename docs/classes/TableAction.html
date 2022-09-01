@@ -62,7 +62,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/types/table-action.enum.ts</code>
+            <code>src/app/shared/models/table-action.enum.ts</code>
         </p>
 
 
@@ -128,7 +128,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/types/table-action.enum.ts:66</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/shared/models/table-action.enum.ts:66</a></div>
                             </td>
                         </tr>
 
@@ -238,7 +238,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/types/table-action.enum.ts:61</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/shared/models/table-action.enum.ts:61</a></div>
                         </td>
                     </tr>
 
@@ -271,7 +271,7 @@ to display next to the action&#39;s name.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/types/table-action.enum.ts:55</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/shared/models/table-action.enum.ts:55</a></div>
                         </td>
                     </tr>
 
@@ -305,7 +305,7 @@ the &quot;Delete&quot; button to &quot;Undo Delete&quot; and vice versa.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/types/table-action.enum.ts:48</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/shared/models/table-action.enum.ts:48</a></div>
                         </td>
                     </tr>
 
@@ -338,7 +338,7 @@ to display next to the action&#39;s name.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/types/table-action.enum.ts:66</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/shared/models/table-action.enum.ts:66</a></div>
                         </td>
                     </tr>
 
@@ -370,7 +370,7 @@ to display next to the action&#39;s name.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/types/table-action.enum.ts:42</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/shared/models/table-action.enum.ts:42</a></div>
                         </td>
                     </tr>
 
@@ -396,26 +396,26 @@ to display next to the action&#39;s name.</p>
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export enum ActionName {
-  Add &#x3D; &quot;Add&quot;,
-  Edit &#x3D; &quot;Edit&quot;,
-  Delete &#x3D; &quot;Delete&quot;,
-  Navigate &#x3D; &quot;Navigate&quot;,
+  Create &#x3D; &#x27;Create&#x27;,
+  Update &#x3D; &#x27;Edit&#x27;,
+  Delete &#x3D; &#x27;Delete&#x27;,
+  Navigate &#x3D; &#x27;Navigate&#x27;,
 }
 
 /**
- * Used to pass data from the emr-table component to the parent component, since
- * the emr-table&#x27;s EventEmitters can only emit one object at a time. 
+ * Used to pass data from the table component to the parent component, since
+ * the table&#x27;s EventEmitters can only emit one object at a time.
  */
 export class TableEvent {
   /**
-   * The action that was clicked by the user in the emr-table row.
+   * The action that was clicked by the user in the table row.
    * Enables the parent component to act based upon the action that
    * was clicked.
    */
   action: TableAction;
 
   /**
-   * The data passed to the parent component. This is typically the object contained in the 
+   * The data passed to the parent component. This is typically the object contained in the
    * row that was clicked.
    */
   data: object;
@@ -443,10 +443,10 @@ export class TableAction {
 
   /**
    * The action&#x27;s alternative name - the name that the action changes to if the action
-   * is in its alternative form. This is used primarily in the emr-table to change 
+   * is in its alternative form. This is used primarily in the emr-table to change
    * the &quot;Delete&quot; button to &quot;Undo Delete&quot; and vice versa.
    */
-  altName: string // the name of the alternative action
+  altName: string; // the name of the alternative action
 
   /**
    * The icon of the alternative action. The icon is used as the identifier for the mat-icon
@@ -460,13 +460,14 @@ export class TableAction {
   isAlt: boolean;
 
   constructor(name?: string, icon?: string, altName?: string, altIcon?: string, isAlt?: boolean) {
-    this.name &#x3D; name ? name : &quot;&quot;;
-    this.altName &#x3D; altName ? altName : &quot;&quot;;
-    this.icon &#x3D; icon ? icon : &quot;error&quot;;
-    this.altIcon &#x3D; altIcon ? altIcon : &quot;error&quot;;
+    this.name &#x3D; name ? name : &#x27;&#x27;;
+    this.altName &#x3D; altName ? altName : &#x27;&#x27;;
+    this.icon &#x3D; icon ? icon : &#x27;error&#x27;;
+    this.altIcon &#x3D; altIcon ? altIcon : &#x27;error&#x27;;
     this.isAlt &#x3D; isAlt !&#x3D; null ? isAlt : false;
   }
-}</code></pre>
+}
+</code></pre>
     </div>
 </div>
 

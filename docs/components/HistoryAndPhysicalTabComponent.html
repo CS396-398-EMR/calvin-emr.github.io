@@ -1,0 +1,1194 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>calvin-emr documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">calvin-emr documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  HistoryAndPhysicalTabComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/patient-dashboard/history-and-physical-tab/history-and-physical-tab.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                            <code>DialogService</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-history-and-physical-tab</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./history-and-physical-tab.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./history-and-physical-tab.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#histAndPhysForm" >histAndPhysForm</a>
+                            </li>
+                            <li>
+                                <a href="#importedPatientHistory" >importedPatientHistory</a>
+                            </li>
+                            <li>
+                                <a href="#importErrors" >importErrors</a>
+                            </li>
+                            <li>
+                                <a href="#panelOpenState" >panelOpenState</a>
+                            </li>
+                            <li>
+                                <a href="#patient" >patient</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#patient$" >patient$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createPatientHistory" >createPatientHistory</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openUploadPatientHistoryDialog" >openUploadPatientHistoryDialog</a>
+                            </li>
+                            <li>
+                                <a href="#startLoading" >startLoading</a>
+                            </li>
+                            <li>
+                                <a href="#stopLoading" >stopLoading</a>
+                            </li>
+                            <li>
+                                <a href="#updatePatientField" >updatePatientField</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(patientStore: <a href="../injectables/PatientDashboardStore.html" target="_self">PatientDashboardStore</a>, authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, patientService: <a href="../injectables/PatientService.html" target="_self">PatientService</a>, dialogService: DialogService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/patient-dashboard/history-and-physical-tab/history-and-physical-tab.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>patientStore</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PatientDashboardStore.html" target="_self" >PatientDashboardStore</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>patientService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PatientService.html" target="_self" >PatientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createPatientHistory"></a>
+                    <span class="name">
+                        <span ><b>createPatientHistory</b></span>
+                        <a href="#createPatientHistory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createPatientHistory(patientHistoryList: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/patient-dashboard/history-and-physical-tab/history-and-physical-tab.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>patientHistoryList</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:39</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openUploadPatientHistoryDialog"></a>
+                    <span class="name">
+                        <span ><b>openUploadPatientHistoryDialog</b></span>
+                        <a href="#openUploadPatientHistoryDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openUploadPatientHistoryDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/app/patient-dashboard/history-and-physical-tab/history-and-physical-tab.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startLoading"></a>
+                    <span class="name">
+                        <span ><b>startLoading</b></span>
+                        <a href="#startLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>startLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:34</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stopLoading"></a>
+                    <span class="name">
+                        <span ><b>stopLoading</b></span>
+                        <a href="#stopLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>stopLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:38</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updatePatientField"></a>
+                    <span class="name">
+                        <span ><b>updatePatientField</b></span>
+                        <a href="#updatePatientField"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updatePatientField(field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:42</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>field</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="histAndPhysForm"></a>
+                    <span class="name">
+                        <span ><b>histAndPhysForm</b></span>
+                        <a href="#histAndPhysForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new HistoryAndPhysical()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/patient-dashboard/history-and-physical-tab/history-and-physical-tab.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="importedPatientHistory"></a>
+                    <span class="name">
+                        <span ><b>importedPatientHistory</b></span>
+                        <a href="#importedPatientHistory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/patient-dashboard/history-and-physical-tab/history-and-physical-tab.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="importErrors"></a>
+                    <span class="name">
+                        <span ><b>importErrors</b></span>
+                        <a href="#importErrors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/patient-dashboard/history-and-physical-tab/history-and-physical-tab.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="panelOpenState"></a>
+                    <span class="name">
+                        <span ><b>panelOpenState</b></span>
+                        <a href="#panelOpenState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/patient-dashboard/history-and-physical-tab/history-and-physical-tab.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="patient"></a>
+                    <span class="name">
+                        <span ><b>patient</b></span>
+                        <a href="#patient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Patient.html" target="_self" >Patient</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Patient()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/patient-dashboard/history-and-physical-tab/history-and-physical-tab.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoading"></a>
+                    <span class="name">
+                        <span ><b>isLoading</b></span>
+                        <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:24</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="patient$"></a>
+                    <span class="name">
+                        <span ><b>patient$</b></span>
+                        <a href="#patient$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Patient.html" target="_self" >Observable&lt;Patient&gt;</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Patient.html" target="_self" >PatientDashboardTabComponent</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Patient.html#source" target="_self" >PatientDashboardTabComponent:26</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Patient } from &#x27;../../shared/models/patient.model&#x27;;
+import { PatientService } from &#x27;src/app/shared/services/patient.service&#x27;;
+import { PatientDashboardTabComponent } from &#x27;src/app/patient-dashboard/dashboard-tab/dashboard-tab.component&#x27;;
+import { FileUploadDialogComponent } from &#x27;src/app/shared/file-upload-dialog/file-upload-dialog.component&#x27;;
+import { HistoryAndPhysical } from &#x27;src/app/shared/models/hist-and-phys.model&#x27;;
+import { PatientDashboardStore } from &#x27;src/app/patient-dashboard/state/patient-dashboard.store&#x27;;
+import { AuthService } from &#x27;src/app/shared/services/auth.service&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+
+@Component({
+  selector: &#x27;app-history-and-physical-tab&#x27;,
+  templateUrl: &#x27;./history-and-physical-tab.component.html&#x27;,
+  styleUrls: [&#x27;./history-and-physical-tab.component.scss&#x27;],
+  providers: [DialogService],
+})
+export class HistoryAndPhysicalTabComponent extends PatientDashboardTabComponent implements OnInit {
+  panelOpenState &#x3D; false;
+  histAndPhysForm &#x3D; new HistoryAndPhysical();
+
+  // Used for importing history and physical form
+  importedPatientHistory: string[] &#x3D; [];
+  importErrors: string[] &#x3D; [];
+
+  patient: Patient &#x3D; new Patient();
+
+  constructor(
+    patientStore: PatientDashboardStore,
+    authService: AuthService,
+    private patientService: PatientService,
+    private dialogService: DialogService
+  ) {
+    super(patientStore, authService);
+    this.patient$.subscribe((patient: Patient) &#x3D;&gt; {
+      this.patient &#x3D; patient;
+    });
+  }
+
+  ngOnInit(): void {
+    super.ngOnInit();
+  }
+
+  createPatientHistory(patientHistoryList: string) {
+    console.log(patientHistoryList);
+    console.log(&#x27;Create Patient History Test 1 - Load Data...Passed!&#x27;);
+    // Ignore first row, since first row is column headers
+    let newPatientHistory &#x3D; patientHistoryList.split(&#x27;\r&#x27;).slice(1);
+    // element 0 is the MRN, and element 1 is the date of when the form was created
+    // start at element 0 and remove the MRN and Date from the remaining array
+    let mrn &#x3D; newPatientHistory
+      .splice(0, 2)[0]
+      .split(&#x27;,&#x27;)
+      .filter((x) &#x3D;&gt; x !&#x3D; &#x27;&#x27;)
+      .map((x) &#x3D;&gt; x.trim())[1]; // the 0th element is key &quot;mrn&quot; and element 1 is the value to &quot;mrn&quot;
+    if (mrn &#x3D;&#x3D; this.patient.id) {
+      this.isLoading &#x3D; true;
+      console.log(&#x27;Create Patient History Test 2 - Assign MRN and remove date...Passed!&#x27;);
+
+      // now, newPatientHistory should only have keys starting from &quot;allergies&quot;
+      // get values from &quot;values&quot; column in .csv
+      let histAndPhysVal: string[] &#x3D; newPatientHistory.map(
+        (string) &#x3D;&gt; string.split(&#x27;,&#x27;).map((x) &#x3D;&gt; x.trim())[1] // the value is element in position 1
+      );
+
+      let histAndPhysForm &#x3D; new HistoryAndPhysical();
+      console.log(&#x27;Create Patient History Test 3 - created histAndPhysForm...Passed!&#x27;);
+
+      // assign values from .csv to attributes in the histAndPhysForm Object
+      Object.keys(histAndPhysForm).forEach((key: string, index: number) &#x3D;&gt; {
+        histAndPhysForm[key] &#x3D; histAndPhysVal[index];
+      });
+      console.log(histAndPhysForm);
+      console.log(&#x27;Create Patient History Test 4 - Mapped key-value pairs...Passed!&#x27;);
+      console.log(mrn);
+      console.log(&#x27;Create Patient History Test 5 - Retrieved MRN...Passed!&#x27;);
+      // turns the histAndPhysForm object into something that Firebase can understand when pushing to firebase
+      let obj &#x3D; JSON.parse(JSON.stringify(Object.assign({}, histAndPhysForm)));
+      this.patientService.setPatient(mrn, { historyAndPhysical: obj }, &#x27;patients&#x27;); // upload to firebase
+      console.log(&#x27;Create Patient History Test 6 - Pushing to firebase...Passed!&#x27;);
+      alert(&#x27;Your history and physical form has been uploaded!&#x27;);
+      // Try to add data; if data is not valid, add to errors array
+      this.stopLoading();
+    } else {
+      alert(&#x27;MRN in the uploaded file does not match the current patient!&#x27;);
+    }
+
+    // Display errors, if any
+    if (this.importErrors.length &gt; 0) {
+      let errorString &#x3D; this.importErrors.join(&#x27;\n&#x27;);
+      console.error(
+        &#x27;Could not import the following data:&#x27;,
+        errorString,
+        &#x27;\nVerify that your file is correctly formatted and that no data is missing.&#x27;
+      );
+      // TODO: make this a dialog box
+    }
+  }
+
+  openUploadPatientHistoryDialog() {
+    this.importErrors &#x3D; [];
+    const dialogRef &#x3D; this.dialogService.open(FileUploadDialogComponent, {
+      header: &#x27;Import History and Physical&#x27;,
+      width: &#x27;50%&#x27;,
+      data: this.importedPatientHistory,
+    });
+
+    // result is string, since fileReader returns string after parsing file
+    dialogRef.onClose.subscribe((result: string) &#x3D;&gt; {
+      this.createPatientHistory(result);
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;isAdmin&quot; class&#x3D;&quot;info-row&quot;&gt;
+  &lt;button
+    pButton
+    id&#x3D;&quot;hap-button&quot;
+    label&#x3D;&quot;Upload History and Physical&quot;
+    (click)&#x3D;&quot;openUploadPatientHistoryDialog()&quot;
+    aria-label&#x3D;&quot;Upload History and Physical&quot;
+    icon&#x3D;&quot;pi pi-upload&quot;
+    iconPos&#x3D;&quot;right&quot;
+  &gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;p-accordion&gt;
+  &lt;p-accordionTab header&#x3D;&quot;Patient Info (Chief Informant, Chief Complaint, etc.)&quot;&gt;
+    &lt;div class&#x3D;&quot;info-row&quot;&gt;
+      &lt;div class&#x3D;&quot;info-col&quot;&gt;
+        &lt;p&gt;&lt;b&gt;CHIEF INFORMANT: &lt;/b&gt;{{ patient.getInformant() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;CHIEF COMPLAINT: &lt;/b&gt;{{ patient.getChiefComplaint() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;HISTORY OF CURRENT PROBLEM: &lt;/b&gt;{{ patient.getHistOfCurrProb() }}&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;info-col&quot;&gt;
+        &lt;p&gt;&lt;b&gt;ALLERGIES: &lt;/b&gt;{{ patient.getAllergies() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;FAMILY HISTORY: &lt;/b&gt;{{ patient.getFamilyHistory() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;SOCIAL HISTORY: &lt;/b&gt;{{ patient.getSocialHistory() }}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/p-accordionTab&gt;
+  &lt;p-accordionTab header&#x3D;&quot;Past Medical History (Previous Illnesses, Injuries, Trauma, etc.)&quot;&gt;
+    &lt;div class&#x3D;&quot;info-row&quot;&gt;
+      &lt;div class&#x3D;&quot;info-col&quot;&gt;
+        &lt;p&gt;&lt;b&gt;PREVIOUS ILLNESSES: &lt;/b&gt;{{ patient.getPreviousIllnesses() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;INJURIES OR TRAUMA: &lt;/b&gt;{{ patient.getInjuries() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;DIETARY HISTORY: &lt;/b&gt;{{ patient.getDietHistory() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;CURRENT MEDICATIONS: &lt;/b&gt;{{ patient.getCurrentMeds() }}&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;info-col&quot;&gt;
+        &lt;p&gt;&lt;b&gt;CONTAGIOUS DISEASES: &lt;/b&gt;{{ patient.getContagiousDiseases() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;SURGICAL HISTORY: &lt;/b&gt;{{ patient.getSurgicalHistory() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;OTHER: &lt;/b&gt;{{ patient.getOtherPastMedHist() }}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/p-accordionTab&gt;
+  &lt;p-accordionTab header&#x3D;&quot;Review of Systems (Integument, Cardiovascular, Gastrointestinal, etc.)&quot;&gt;
+    &lt;div class&#x3D;&quot;info-row&quot;&gt;
+      &lt;div class&#x3D;&quot;info-col&quot;&gt;
+        &lt;p&gt;&lt;b&gt;H.E.E.N.T.: &lt;/b&gt;{{ patient.getHEENT() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;LYMPHATIC: &lt;/b&gt;{{ patient.getLymphatic() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;INTEGUMENT: &lt;/b&gt;{{ patient.getIntegument() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;RESPIRATORY: &lt;/b&gt;{{ patient.getRespiratory() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;CARDIOVASCULAR: &lt;/b&gt;{{ patient.getCardiovascular() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;MUSCULOSKELETAL: &lt;/b&gt;{{ patient.getMusculoskeletal() }}&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;info-col&quot;&gt;
+        &lt;p&gt;&lt;b&gt;GASTROINTESTINAL: &lt;/b&gt;{{ patient.getGastrointestinal() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;DEVELOPMENTAL: &lt;/b&gt;{{ patient.getDevelopmental() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;NEUROLOGIC: &lt;/b&gt;{{ patient.getNeurologic() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;ENDOCRINE: &lt;/b&gt;{{ patient.getEndocrine() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;GENITOURINARY (G/U): &lt;/b&gt;{{ patient.getGenitoUrinary() }}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/p-accordionTab&gt;
+  &lt;p-accordionTab header&#x3D;&quot;Physical Examination (General, Vital Signs, Integument, etc.)&quot;&gt;
+    &lt;!-- TODO: PHYSICAL EXAM SECTION IS STILL A WIP. NEED TO WORK ON FIREBASE TOO --&gt;
+    &lt;div class&#x3D;&quot;info-row&quot;&gt;
+      &lt;div class&#x3D;&quot;info-col&quot;&gt;
+        &lt;p&gt;&lt;b&gt;GENERAL: &lt;/b&gt;{{ patient.getPEGeneral() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;VITAL SIGNS: &lt;/b&gt;{{ patient.getPEVitalSigns() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;SKIN: &lt;/b&gt;{{ patient.getPESkin() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;H.E.E.N.T.: &lt;/b&gt;{{ patient.getPEHEENT() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;CARDIOVASCULAR: &lt;/b&gt;{{ patient.getPECardiovascular() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;RESPIRATORY &lt;/b&gt;{{ patient.getPERespiratory() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;GASTROINTESTINAL: &lt;/b&gt;{{ patient.getPEGastrointestinal() }}&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;info-col&quot;&gt;
+        &lt;p&gt;&lt;b&gt;GENITOURINARY: &lt;/b&gt;{{ patient.getPEGenitourinary() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;MUSCULOSKELETAL: &lt;/b&gt;{{ patient.getPEMusculoskeletal() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;NEUROLOGIC: &lt;/b&gt;{{ patient.getPENeurologic() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;DEVELOPMENTAL: &lt;/b&gt;{{ patient.getPEDevelopmental() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;ENDOCRINE: &lt;/b&gt;{{ patient.getPEEndocrine() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;LYMPHATIC: &lt;/b&gt;{{ patient.getPELymphatic() }}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/p-accordionTab&gt;
+  &lt;p-accordionTab header&#x3D;&quot;Impressions (Plan, Provider Signature, Day)&quot;&gt;
+    &lt;div class&#x3D;&quot;info-row&quot;&gt;
+      &lt;div class&#x3D;&quot;info-col&quot;&gt;
+        &lt;p&gt;&lt;b&gt;IMPRESSIONS: &lt;/b&gt;{{ patient.getImpressions() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;PLAN: &lt;/b&gt;{{ patient.getPlan() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;PROVIDER SIGNATURE: &lt;/b&gt;{{ patient.getProvSignature() }}&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;DAY: &lt;/b&gt;{{ patient.getImpressionsDay() }}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/p-accordionTab&gt;
+&lt;/p-accordion&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./history-and-physical-tab.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">mat-panel-title {
+  font-family: Helvetica;
+  font-weight: 600;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+  // flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.info-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#hap-button{
+  margin: 2rem;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="isAdmin" class="info-row">  <button    pButton    id="hap-button"    label="Upload History and Physical"    (click)="openUploadPatientHistoryDialog()"    aria-label="Upload History and Physical"    icon="pi pi-upload"    iconPos="right"  ></button></div><p-accordion>  <p-accordionTab header="Patient Info (Chief Informant, Chief Complaint, etc.)">    <div class="info-row">      <div class="info-col">        <p><b>CHIEF INFORMANT: </b>{{ patient.getInformant() }}</p>        <p><b>CHIEF COMPLAINT: </b>{{ patient.getChiefComplaint() }}</p>        <p><b>HISTORY OF CURRENT PROBLEM: </b>{{ patient.getHistOfCurrProb() }}</p>      </div>      <div class="info-col">        <p><b>ALLERGIES: </b>{{ patient.getAllergies() }}</p>        <p><b>FAMILY HISTORY: </b>{{ patient.getFamilyHistory() }}</p>        <p><b>SOCIAL HISTORY: </b>{{ patient.getSocialHistory() }}</p>      </div>    </div>  </p-accordionTab>  <p-accordionTab header="Past Medical History (Previous Illnesses, Injuries, Trauma, etc.)">    <div class="info-row">      <div class="info-col">        <p><b>PREVIOUS ILLNESSES: </b>{{ patient.getPreviousIllnesses() }}</p>        <p><b>INJURIES OR TRAUMA: </b>{{ patient.getInjuries() }}</p>        <p><b>DIETARY HISTORY: </b>{{ patient.getDietHistory() }}</p>        <p><b>CURRENT MEDICATIONS: </b>{{ patient.getCurrentMeds() }}</p>      </div>      <div class="info-col">        <p><b>CONTAGIOUS DISEASES: </b>{{ patient.getContagiousDiseases() }}</p>        <p><b>SURGICAL HISTORY: </b>{{ patient.getSurgicalHistory() }}</p>        <p><b>OTHER: </b>{{ patient.getOtherPastMedHist() }}</p>      </div>    </div>  </p-accordionTab>  <p-accordionTab header="Review of Systems (Integument, Cardiovascular, Gastrointestinal, etc.)">    <div class="info-row">      <div class="info-col">        <p><b>H.E.E.N.T.: </b>{{ patient.getHEENT() }}</p>        <p><b>LYMPHATIC: </b>{{ patient.getLymphatic() }}</p>        <p><b>INTEGUMENT: </b>{{ patient.getIntegument() }}</p>        <p><b>RESPIRATORY: </b>{{ patient.getRespiratory() }}</p>        <p><b>CARDIOVASCULAR: </b>{{ patient.getCardiovascular() }}</p>        <p><b>MUSCULOSKELETAL: </b>{{ patient.getMusculoskeletal() }}</p>      </div>      <div class="info-col">        <p><b>GASTROINTESTINAL: </b>{{ patient.getGastrointestinal() }}</p>        <p><b>DEVELOPMENTAL: </b>{{ patient.getDevelopmental() }}</p>        <p><b>NEUROLOGIC: </b>{{ patient.getNeurologic() }}</p>        <p><b>ENDOCRINE: </b>{{ patient.getEndocrine() }}</p>        <p><b>GENITOURINARY (G/U): </b>{{ patient.getGenitoUrinary() }}</p>      </div>    </div>  </p-accordionTab>  <p-accordionTab header="Physical Examination (General, Vital Signs, Integument, etc.)">    <!-- TODO: PHYSICAL EXAM SECTION IS STILL A WIP. NEED TO WORK ON FIREBASE TOO -->    <div class="info-row">      <div class="info-col">        <p><b>GENERAL: </b>{{ patient.getPEGeneral() }}</p>        <p><b>VITAL SIGNS: </b>{{ patient.getPEVitalSigns() }}</p>        <p><b>SKIN: </b>{{ patient.getPESkin() }}</p>        <p><b>H.E.E.N.T.: </b>{{ patient.getPEHEENT() }}</p>        <p><b>CARDIOVASCULAR: </b>{{ patient.getPECardiovascular() }}</p>        <p><b>RESPIRATORY </b>{{ patient.getPERespiratory() }}</p>        <p><b>GASTROINTESTINAL: </b>{{ patient.getPEGastrointestinal() }}</p>      </div>      <div class="info-col">        <p><b>GENITOURINARY: </b>{{ patient.getPEGenitourinary() }}</p>        <p><b>MUSCULOSKELETAL: </b>{{ patient.getPEMusculoskeletal() }}</p>        <p><b>NEUROLOGIC: </b>{{ patient.getPENeurologic() }}</p>        <p><b>DEVELOPMENTAL: </b>{{ patient.getPEDevelopmental() }}</p>        <p><b>ENDOCRINE: </b>{{ patient.getPEEndocrine() }}</p>        <p><b>LYMPHATIC: </b>{{ patient.getPELymphatic() }}</p>      </div>    </div>  </p-accordionTab>  <p-accordionTab header="Impressions (Plan, Provider Signature, Day)">    <div class="info-row">      <div class="info-col">        <p><b>IMPRESSIONS: </b>{{ patient.getImpressions() }}</p>        <p><b>PLAN: </b>{{ patient.getPlan() }}</p>        <p><b>PROVIDER SIGNATURE: </b>{{ patient.getProvSignature() }}</p>        <p><b>DAY: </b>{{ patient.getImpressionsDay() }}</p>      </div>    </div>  </p-accordionTab></p-accordion></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AdministrationScheduleComponent', 'selector': 'app-administration-schedule'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'emr-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrDialogComponent', 'selector': 'emr-dialog'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'emr-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'HistoryAndPhysicalTabComponent', 'selector': 'app-history-and-physical-tab'},{'name': 'HtmlDialogComponent', 'selector': 'app-html-dialog'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedicationDialogComponent', 'selector': 'emr-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MedicationScheduleComponent', 'selector': 'app-medication-schedule'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteEditDialogComponent', 'selector': 'app-note-edit-dialog'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialogComponent', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientDashboardTabComponent', 'selector': 'app-base'},{'name': 'PatientFormComponent', 'selector': 'app-patient-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'PrnScheduleComponent', 'selector': 'app-prn-schedule'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+    var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
+    var ACTUAL_COMPONENT = {'name': 'HistoryAndPhysicalTabComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HistoryAndPhysicalTabComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

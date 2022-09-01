@@ -35,7 +35,7 @@
 <p>The Calvin University Electronic Medical Record (EMR) aims to reproduce enterprise EMR software at a fraction of the cost for the purpose of educating and training aspiring nurses.</p>
 <p>The project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 12.2.6, but has been since upgraded to Angular CLI version 13.3.7.</p>
 <h2 id="contributing-to-the-project">Contributing to the Project</h2>
-<p>Before you start writing code for the project, please read the <em>Important</em> section of this documentation. Each of the <em>Important</em> pages details an important aspect about the app: the entire tech stack, the frontend&#39;s data flow, and more. Reading these pages will hopefully give you a better sense of how to navigate our app and make changes accordingly.</p>
+<p>Before you start writing code for the project, please read the <em>Important</em> section of the <a href="https://cs396-398-emr.github.io/calvin-emr.github.io/">documentation</a>. Each of the <em>Important</em> pages details an important aspect about the app: the entire tech stack, the frontend&#39;s data flow, and more. Reading these pages will hopefully give you a better sense of how to navigate our app and make changes accordingly.</p>
 <p>Additionally, make sure to read up on the section of the EMR you plan to make changes on. For example, if you are looking to change the Nursing Assessment, read the documentation on the Assessment classes (e.g. Genitourinary, Gastrointestinal, etc.) and how they are used to send data to Firestore. The documentation for the classes and functions involved may have important tips on how to use them.</p>
 <p>The following section describes how to use the Angular CLI to build, serve, and test the app.</p>
 <h2 id="environment-set-up">Environment Set-Up</h2>
@@ -46,7 +46,7 @@
 <li><a href="https://angular.io/cli">Angular CLI</a></li>
 </ul>
 <p>The above should install without much issue on Linux and MacOS. If you are running Windows, see the <a href="#windows-troubleshooting">Windows troubleshooting</a> guide.</p>
-<p><strong>Notes</strong>: </p>
+<p><strong>Notes</strong>:</p>
 <ul>
 <li>It is strongly recommended to install <a href="https://github.com/nvm-sh/nvm#installing-and-updating">nvm</a> to manage different versions of Node.js and npm. As of the time of writing, we use Node v16.15.0 (npm v8.5.5).</li>
 <li>When installing the Angular CLI, you may need to use <code>sudo npm install -g @angular/cli</code>.</li>
@@ -54,16 +54,19 @@
 <ol>
 <li>Clone the application repo to your local machine:</li>
 </ol>
-<div><pre class="line-numbers"><code class="language-none">git clone https://github.com/CS396-398-EMR/calvin-emr.git</code></pre></div><ol start="2">
+<div><pre class="line-numbers"><code class="language-bash">git clone https://github.com/CS396-398-EMR/calvin-emr.git</code></pre></div><ol start="2">
 <li>Enter into the <code>calvin-emr</code> directory:</li>
 </ol>
-<div><pre class="line-numbers"><code class="language-none">cd calvin-emr</code></pre></div><ol start="3">
+<div><pre class="line-numbers"><code class="language-bash">cd calvin-emr</code></pre></div><ol start="3">
+<li>If you are using nvm, switch Node to v16.15.0:</li>
+</ol>
+<div><pre class="line-numbers"><code class="language-bash">nvm use v16.15.0</code></pre></div><ol start="4">
 <li>Install all npm packages:</li>
 </ol>
-<div><pre class="line-numbers"><code class="language-none">npm install</code></pre></div><ol start="4">
+<div><pre class="line-numbers"><code class="language-bash">npm install</code></pre></div><ol start="5">
 <li>Serve the application!</li>
 </ol>
-<div><pre class="line-numbers"><code class="language-none">ng serve</code></pre></div><h2 id="windows-troubleshooting">Windows Troubleshooting</h2>
+<div><pre class="line-numbers"><code class="language-bash">ng serve</code></pre></div><h2 id="windows-troubleshooting">Windows Troubleshooting</h2>
 <p>As mentioned in the <em>Environment Set-Up</em> section, you will need Git, Node.js, npm, and Angular CLI installed to build the project. However, these may not be easy to do on Windows. This section serves as a guide to setting up the environment on Windows.</p>
 <h3 id="nodejs-and-npm">Node.js and npm</h3>
 <p>It is strongly recommended to install <a href="https://github.com/nvm-sh/nvm#installing-and-updating">nvm</a> to manage different versions of Node.js and npm. As of the time of writing, we use Node v16.15.0 (npm v8.5.5).</p>

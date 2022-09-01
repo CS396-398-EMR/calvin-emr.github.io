@@ -65,7 +65,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/component/patient-list-dialog/patient-list-dialog.component.ts</code>
+            <code>src/app/pages/patient-list/patient-list-dialog/patient-list-dialog.component.ts</code>
         </p>
 
 
@@ -99,12 +99,6 @@
                                         <a href="#prompt" 
 >
                                             prompt
-                                        </a>
-                                </li>
-                                <li>
-                                        <a href="#title" 
->
-                                            title
                                         </a>
                                 </li>
                                 <li>
@@ -227,39 +221,6 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <a name="title"></a>
-                                        <span class="name "><b>title</b>
-                                            <a href="#title">
-                                                <span class="icon ion-ios-link"></span>
-                                            </a>
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>title:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                                        </td>
-                                    </tr>
-
-
-
-
-
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
                                         <a name="type"></a>
                                         <span class="name "><b>type</b>
                                             <a href="#type">
@@ -294,13 +255,12 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Inject } from &#x27;@angular/core&#x27;;
-import { MatDialogRef, MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
-import { Patient } from &#x27;src/app/types/patient.type&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { DynamicDialogRef, DynamicDialogConfig } from &#x27;primeng/dynamicdialog&#x27;;
+import { Patient } from &#x27;src/app/shared/models/patient.model&#x27;;
 
 export interface PatientListDialogData {
   type: string;
-  title: string;
   prompt: string;
   buttonLabel: string;
   patients: Patient[];
@@ -309,32 +269,26 @@ export interface PatientListDialogData {
 @Component({
   selector: &#x27;app-patient-list-dialog&#x27;,
   templateUrl: &#x27;./patient-list-dialog.component.html&#x27;,
-  styleUrls: [&#x27;./patient-list-dialog.component.scss&#x27;]
+  styleUrls: [&#x27;./patient-list-dialog.component.scss&#x27;],
 })
 export class PatientListDialogComponent implements OnInit {
-
-  title: string &#x3D; &quot;&quot;;
-  prompt: string &#x3D; &quot;&quot;;
-  buttonLabel: string &#x3D; &quot;&quot;;
-  type: string &#x3D; &quot;&quot;;
-  displayedColumns: string[] &#x3D; [&quot;id&quot;, &quot;name&quot;];
+  prompt: string &#x3D; &#x27;&#x27;;
+  buttonLabel: string &#x3D; &#x27;&#x27;;
+  type: string &#x3D; &#x27;&#x27;;
+  displayedColumns: string[] &#x3D; [&#x27;id&#x27;, &#x27;name&#x27;];
   dataSource: Patient[] &#x3D; [];
   selectedPatients: any[] &#x3D; [];
   selectedRows: number[] &#x3D; [];
 
-  constructor(
-      public dialogRef: MatDialogRef&lt;PatientListDialogComponent&gt;,
-      @Inject(MAT_DIALOG_DATA) public data: PatientListDialogData
-    ){ }
+  constructor(public dialogRef: DynamicDialogRef, public config: DynamicDialogConfig) {}
 
   ngOnInit(): void {
-    this.title &#x3D; this.data.title;
-    this.prompt &#x3D; this.data.prompt;
-    this.buttonLabel &#x3D; this.data.buttonLabel;
-    this.dataSource &#x3D; this.data.patients;
-    this.type &#x3D; this.data.type;
+    this.prompt &#x3D; this.config.data.prompt;
+    this.buttonLabel &#x3D; this.config.data.buttonLabel;
+    this.dataSource &#x3D; this.config.data.patients;
+    this.type &#x3D; this.config.data.type;
 
-    console.log(&quot;type: &quot;, this.type)
+    console.log(&#x27;type: &#x27;, this.type);
   }
   /**
    * Quits dialog without assigning patient to the student.
@@ -343,35 +297,33 @@ export class PatientListDialogComponent implements OnInit {
     this.dialogRef.close();
   }
 
-
   /**
    * Add selected row into the selected patient array to be returned once dialog closes.
    * Different logic applies for studentPatient type as it requires entire patient data
    * whereas default (patient) type only requires patient&#x27;s uid
-   * 
-   * @param {Patient} row   Patient data of the selected row 
+   *
+   * @param {Patient} row   Patient data of the selected row
    * @param {number} index  Index number of selected row
    */
   selectPatient(row: Patient, index: number): void {
     let pid &#x3D; row.getId();
 
-    // If patient has been selected already, de-select it; otherwise, add 
+    // If patient has been selected already, de-select it; otherwise, add
     // patient ID and index to arrays
-    if(this.selectedPatients.includes(pid)) {
-      this.selectedPatients &#x3D; this.selectedPatients.filter((id) &#x3D;&gt; id !&#x3D; pid)
-      this.selectedRows &#x3D; this.selectedRows.filter((i) &#x3D;&gt; i !&#x3D; index)
+    if (this.selectedPatients.includes(pid)) {
+      this.selectedPatients &#x3D; this.selectedPatients.filter((id) &#x3D;&gt; id !&#x3D; pid);
+      this.selectedRows &#x3D; this.selectedRows.filter((i) &#x3D;&gt; i !&#x3D; index);
     }
     // Same as above, but modified conditional statement for studentPatient
-    else if(this.selectedPatients.find(x &#x3D;&gt; x.id &#x3D;&#x3D;&#x3D; pid)){
-      this.selectedPatients &#x3D; this.selectedPatients.filter((row) &#x3D;&gt; row.getId() !&#x3D; pid)
-      this.selectedRows &#x3D; this.selectedRows.filter((i) &#x3D;&gt; i !&#x3D; index)
-    }
-    else {
-      switch(this.type){
-        case &quot;studentPatient&quot;:
+    else if (this.selectedPatients.find((x) &#x3D;&gt; x.id &#x3D;&#x3D;&#x3D; pid)) {
+      this.selectedPatients &#x3D; this.selectedPatients.filter((row) &#x3D;&gt; row.getId() !&#x3D; pid);
+      this.selectedRows &#x3D; this.selectedRows.filter((i) &#x3D;&gt; i !&#x3D; index);
+    } else {
+      switch (this.type) {
+        case &#x27;studentPatient&#x27;:
           this.selectedPatients.push(row);
           this.selectedRows.push(index);
-          break
+          break;
         default:
           this.selectedPatients.push(row.getId());
           this.selectedRows.push(index);
@@ -380,17 +332,18 @@ export class PatientListDialogComponent implements OnInit {
   }
 
   /**
-   * Returns appropriate boolean value if the index value of the row 
+   * Returns appropriate boolean value if the index value of the row
    * is included in the selectedRows array
-   * 
-   * @param index Row&#x27;s index number    
+   *
+   * @param index Row&#x27;s index number
    * @returns Whether or not the index passed to the function is in the
    * selectedRows array.
    */
   isSelected(index: number): boolean {
     return this.selectedRows.includes(index);
   }
-}</code></pre>
+}
+</code></pre>
     </div>
 </div>
 

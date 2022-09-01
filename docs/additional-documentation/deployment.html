@@ -58,8 +58,11 @@
 <p>You can read more about Firebase Hosting <a href="https://firebase.google.com/docs/hosting">here</a>.</p>
 <h2 id="deploying-cloud-functions">Deploying Cloud Functions</h2>
 <p>The application uses Firebase Cloud Functions to handle user account creation and deletion. You can read more about Firebase Cloud Functions <a href="cloud-functions.html">here</a>.</p>
-<p>To deploy the Cloud Functions, run the following command:</p>
-<div><pre class="line-numbers"><code class="language-none">firebase deploy --only functions</code></pre></div><p>This will run a linter on the files containing the function code to ensure the code is formatted correctly. This check may fail, so be sure to fix all errors that are displayed in the console before running the command again (luckily, the errors are pretty informational).</p>
+<p>To deploy the Cloud Functions, first install all node modules in the <code>functions</code> directory. Assuming you are in the root directory:</p>
+<div><pre class="line-numbers"><code class="language-bash">cd functions
+nvm use v16.15.0
+npm install</code></pre></div><p>Then run the following command:</p>
+<div><pre class="line-numbers"><code class="language-bash">firebase deploy --only functions</code></pre></div><p>This will run a linter on the files containing the function code to ensure the code is formatted correctly. This check may fail, so be sure to fix all errors that are displayed in the console before running the command again (thankfully, the errors are pretty informational).</p>
 <p>After the code passes the formatting test, it will be packaged and deployed to Firebase. You can view the functions and the function logs under the <code>Functions</code> tab in the Firebase project.</p>
 
                    </div><div class="search-results">

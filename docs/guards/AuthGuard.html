@@ -60,7 +60,7 @@
             <h3>File</h3>
             </p>
             <p class="comment">
-                <code>src/app/guards/auth.guard.ts</code>
+                <code>src/app/shared/guards/auth.guard.ts</code>
             </p>
 
 
@@ -132,7 +132,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/guards/auth.guard.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/shared/guards/auth.guard.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -207,8 +207,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="33"
-                            class="link-to-prism">src/app/guards/auth.guard.ts:33</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/shared/guards/auth.guard.ts:29</a></div>
                 </td>
             </tr>
 
@@ -295,8 +295,8 @@ will continue to be redirected to &#39;/login&#39; so long as they are logged ou
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="63"
-                            class="link-to-prism">src/app/guards/auth.guard.ts:63</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/shared/guards/auth.guard.ts:58</a></div>
                 </td>
             </tr>
 
@@ -372,20 +372,16 @@ will continue to be redirected to &#39;/login&#39; so long as they are logged ou
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree, Router } from &#x27;@angular/router&#x27;;
 import { Observable } from &#x27;rxjs&#x27;;
 import { map, take } from &#x27;rxjs/operators&#x27;;
-import { AuthService } from &#x27;src/app/services/auth.service&#x27;;
-import { loginPath } from &#x27;../global&#x27;;
+import { AuthService } from &#x27;src/app/shared/services/auth.service&#x27;;
+import { PATH_LOGIN } from &#x27;../../global&#x27;;
 
 @Injectable({
-  providedIn: &#x27;root&#x27;
+  providedIn: &#x27;root&#x27;,
 })
 export class AuthGuard implements CanActivate {
-  
   loggedIn$: Observable&lt;boolean&gt;;
 
-  constructor(
-    public authService: AuthService,
-    public router: Router
-  ) { 
+  constructor(public authService: AuthService, public router: Router) {
     this.loggedIn$ &#x3D; authService.loggedIn$;
   }
 
@@ -395,28 +391,27 @@ export class AuthGuard implements CanActivate {
    * route can be accessed. If the user is logged in, they are redirected to the &#x27;/login&#x27;
    * route. They are also unable to access any routes guarded by AuthGuard, and they
    * will continue to be redirected to &#x27;/login&#x27; so long as they are logged out.
-   * 
+   *
    * @param next
-   * @param state 
+   * @param state
    * @returns The loggedIn$ Observable from AuthService.
    */
   canActivate(
     next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable&lt;boolean | UrlTree&gt; | Promise&lt;boolean | UrlTree&gt; | boolean | UrlTree {
-
+    state: RouterStateSnapshot
+  ): Observable&lt;boolean | UrlTree&gt; | Promise&lt;boolean | UrlTree&gt; | boolean | UrlTree {
     return this.loggedIn$.pipe(
       take(1),
-      map(auth &#x3D;&gt; {
-        const authenticated &#x3D; !!auth
-        if(!authenticated) {
-          this.router.navigateByUrl(loginPath);
+      map((auth) &#x3D;&gt; {
+        const authenticated &#x3D; !!auth;
+        if (!authenticated) {
+          this.router.navigateByUrl(PATH_LOGIN);
           return false;
-        }
-        else {
+        } else {
           return true;
         }
-      }),
-    )
+      })
+    );
   }
 
   /**
@@ -425,28 +420,27 @@ export class AuthGuard implements CanActivate {
    * route can be accessed. If the user is logged in, they are redirected to the &#x27;/login&#x27;
    * route. They are also unable to access any routes guarded by AuthGuard, and they
    * will continue to be redirected to &#x27;/login&#x27; so long as they are logged out.
-   * 
+   *
    * @param next
-   * @param state 
+   * @param state
    * @returns The loggedIn Observable from AuthService.
    */
-   canActivateChild(
+  canActivateChild(
     next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable&lt;boolean | UrlTree&gt; | Promise&lt;boolean | UrlTree&gt; | boolean | UrlTree {
-
+    state: RouterStateSnapshot
+  ): Observable&lt;boolean | UrlTree&gt; | Promise&lt;boolean | UrlTree&gt; | boolean | UrlTree {
     return this.loggedIn$.pipe(
       take(1),
-      map(auth &#x3D;&gt; {
-        const authenticated &#x3D; !!auth
-        if(!authenticated) {
-          this.router.navigateByUrl(loginPath);
+      map((auth) &#x3D;&gt; {
+        const authenticated &#x3D; !!auth;
+        if (!authenticated) {
+          this.router.navigateByUrl(PATH_LOGIN);
           return false;
-        }
-        else {
+        } else {
           return true;
         }
-      }),
-    )
+      })
+    );
   }
 }
 </code></pre>

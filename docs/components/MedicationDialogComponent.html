@@ -38,7 +38,7 @@
   <li>Components</li>
   <li
   >
-  MedDialogComponent</li>
+  MedicationDialogComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/shared/med-dialog/med-dialog.component.ts</code>
+    <code>src/app/medications/med-dialog/med-dialog.component.ts</code>
 </p>
 
 
@@ -95,7 +95,7 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-med-dialog</code></td>
+                <td class="col-md-9"><code>emr-med-dialog</code></td>
             </tr>
 
             <tr>
@@ -134,18 +134,14 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#action" >action</a>
+                            </li>
+                            <li>
                                 <a href="#btnLabel" >btnLabel</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#data" >data</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Public</span>
-                                <a href="#dialogRef" >dialogRef</a>
-                            </li>
-                            <li>
-                                <a href="#documentEditForm" >documentEditForm</a>
+                                <a href="#config" >config</a>
                             </li>
                             <li>
                                 <a href="#form" >form</a>
@@ -157,13 +153,11 @@
                                 <a href="#med" >med</a>
                             </li>
                             <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ref" >ref</a>
+                            </li>
+                            <li>
                                 <a href="#routes" >routes</a>
-                            </li>
-                            <li>
-                                <a href="#title" >title</a>
-                            </li>
-                            <li>
-                                <a href="#type" >type</a>
                             </li>
                         </ul>
                     </td>
@@ -190,19 +184,22 @@
                                 <a href="#getRoutes" >getRoutes</a>
                             </li>
                             <li>
-                                <a href="#isOther" >isOther</a>
+                                <a href="#isOtherRoute" >isOtherRoute</a>
                             </li>
                             <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
                             <li>
+                                <a href="#onCancel" >onCancel</a>
+                            </li>
+                            <li>
                                 <a href="#onSubmit" >onSubmit</a>
                             </li>
                             <li>
-                                <a href="#routeChanged" >routeChanged</a>
+                                <a href="#resetDialog" >resetDialog</a>
                             </li>
                             <li>
-                                <a href="#updateMedication" >updateMedication</a>
+                                <a href="#routeChanged" >routeChanged</a>
                             </li>
                         </ul>
                     </td>
@@ -221,7 +218,7 @@
                         <td class="col-md-4">
                             <ul class="index-list">
                                 <li>
-                                    <a href="#isAddType" >isAddType</a>
+                                    <a href="#isCreateType" >isCreateType</a>
                                 </li>
                                 <li>
                                     <a href="#isEditType" >isEditType</a>
@@ -263,12 +260,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(dialogRef: <a href="../components/MedDialogComponent.html" target="_self">MatDialogRef&lt;MedDialogComponent&gt;</a>, data: <a href="../classes/TableEvent.html" target="_self">TableEvent</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+<code>constructor(fb: UntypedFormBuilder, ref: DynamicDialogRef, config: DynamicDialogConfig)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:82</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:78</a></div>
                             </td>
                         </tr>
 
@@ -288,34 +285,34 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>dialogRef</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="../components/MedDialogComponent.html" target="_self" >MatDialogRef&lt;MedDialogComponent&gt;</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                        <td>data</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="../classes/TableEvent.html" target="_self" >TableEvent</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
                                                         <td>fb</td>
                                                   
                                                         <td>
-                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                                    <code>UntypedFormBuilder</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ref</td>
+                                                  
+                                                        <td>
+                                                                    <code>DynamicDialogRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>config</td>
+                                                  
+                                                        <td>
+                                                                    <code>DynamicDialogConfig</code>
                                                         </td>
                                                   
                                                     <td>
@@ -361,8 +358,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="153"
-                            class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:153</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:134</a></div>
                 </td>
             </tr>
 
@@ -440,8 +437,8 @@ otherName FormControl will be set to whatever &quot;...&quot; is.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="185"
-                            class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:185</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="166"
+                            class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:166</a></div>
                 </td>
             </tr>
 
@@ -516,8 +513,8 @@ otherName FormControl will be set to whatever &quot;...&quot; is.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="140"
-                            class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:140</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:121</a></div>
                 </td>
             </tr>
 
@@ -556,8 +553,8 @@ field with the value.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="237"
-                            class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:237</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:203</a></div>
                 </td>
             </tr>
 
@@ -588,24 +585,24 @@ then they will be combined into one string: &quot;Other - ...&quot;</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="isOther"></a>
+                    <a name="isOtherRoute"></a>
                     <span class="name">
-                        <span ><b>isOther</b></span>
-                        <a href="#isOther"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>isOtherRoute</b></span>
+                        <a href="#isOtherRoute"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>isOther(fg: <a href="https://angular.io/api/forms/AbstractControl" target="_blank">AbstractControl</a>)</code>
+<code>isOtherRoute(fg: <a href="https://angular.io/api/forms/AbstractControl" target="_blank">AbstractControl</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="210"
-                            class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:210</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="190"
+                            class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:190</a></div>
                 </td>
             </tr>
 
@@ -681,8 +678,45 @@ then they will be combined into one string: &quot;Other - ...&quot;</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="134"
-                            class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:134</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onCancel"></a>
+                    <span class="name">
+                        <span ><b>onCancel</b></span>
+                        <a href="#onCancel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onCancel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="231"
+                            class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:231</a></div>
                 </td>
             </tr>
 
@@ -718,8 +752,8 @@ then they will be combined into one string: &quot;Other - ...&quot;</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="217"
-                            class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:217</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="239"
+                            class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:239</a></div>
                 </td>
             </tr>
 
@@ -727,6 +761,45 @@ then they will be combined into one string: &quot;Other - ...&quot;</p>
             <tr>
                 <td class="col-md-4">
                     <div class="io-description"><p>Sets values of medication to pass back to caller based on the type of dialog that is open.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetDialog"></a>
+                    <span class="name">
+                        <span ><b>resetDialog</b></span>
+                        <a href="#resetDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="226"
+                            class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:226</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Resets the dialog form.</p>
 </div>
 
                     <div class="io-description">
@@ -757,8 +830,8 @@ then they will be combined into one string: &quot;Other - ...&quot;</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="194"
-                            class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:194</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:175</a></div>
                 </td>
             </tr>
 
@@ -813,54 +886,44 @@ then they will be combined into one string: &quot;Other - ...&quot;</p>
             </tr>
         </tbody>
     </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="updateMedication"></a>
-                    <span class="name">
-                        <span ><b>updateMedication</b></span>
-                        <a href="#updateMedication"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>updateMedication()</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="262"
-                            class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:262</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Sets the (nonempty) Medication object&#39;s properties to the current values
-in the form group and passes the updated object to the MedicationService.
-The ID is not changed, since we want to update and not create a new object.
-Closes the dialog.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
 </section>
     <section>
     
     <h3 id="inputs">
         Properties
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="action"></a>
+                    <span class="name">
+                        <span ><b>action</b></span>
+                        <a href="#action"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The action which specifies what to display in the dialog.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -880,18 +943,18 @@ Closes the dialog.</p>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>&quot;&quot;</code>
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:77</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:78</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>The text label of the form&#39;s submit button.</p>
+                    <div class="io-description"><p>Text to be displayed in the submit button.</p>
 </div>
                 </td>
             </tr>
@@ -902,94 +965,23 @@ Closes the dialog.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="data"></a>
+                    <a name="config"></a>
                     <span class="name">
                             <span class="modifier">Public</span>
-                        <span ><b>data</b></span>
-                        <a href="#data"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="../classes/TableEvent.html" target="_self" >TableEvent</a></code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <b>Decorators : </b>
-                        <br />
-                        <code>
-                            @Inject(MAT_DIALOG_DATA)<br />
-                        </code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:89</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="dialogRef"></a>
-                    <span class="name">
-                            <span class="modifier">Public</span>
-                        <span ><b>dialogRef</b></span>
-                        <a href="#dialogRef"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="../components/MedDialogComponent.html" target="_self" >MatDialogRef&lt;MedDialogComponent&gt;</a></code>
+                        <i>Type : </i>    <code>DynamicDialogConfig</code>
 
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:88</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="documentEditForm"></a>
-                    <span class="name">
-                        <span ><b>documentEditForm</b></span>
-                        <a href="#documentEditForm"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroupDirective" target="_blank" >FormGroupDirective</a></code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <b>Decorators : </b>
-                        <br />
-                        <code>
-                            @ViewChild(&#x27;documentEditForm&#x27;)<br />
-                        </code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:29</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:83</a></div>
                         </td>
                     </tr>
 
@@ -1018,7 +1010,7 @@ Closes the dialog.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:39</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:53</a></div>
                         </td>
                     </tr>
 
@@ -1048,14 +1040,9 @@ Closes the dialog.</p>
 
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[]</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:34</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:43</a></div>
                         </td>
                     </tr>
 
@@ -1085,14 +1072,9 @@ Closes the dialog.</p>
 
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>new Medication()</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:82</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:48</a></div>
                         </td>
                     </tr>
 
@@ -1102,6 +1084,33 @@ Closes the dialog.</p>
 </div>
                 </td>
             </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ref"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ref</b></span>
+                        <a href="#ref"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DynamicDialogRef</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:83</a></div>
+                        </td>
+                    </tr>
+
 
         </tbody>
     </table>
@@ -1125,103 +1134,28 @@ Closes the dialog.</p>
                 <tr>
                     <td class="col-md-4">
                         <i>Default value : </i><code>[
-    new FormOption(&quot;IM&quot;),
-    new FormOption(&quot;Inhalation&quot;),
-    new FormOption(&quot;IV&quot;),
-    new FormOption(&quot;NS&quot;),
-    new FormOption(&quot;Oral&quot;),
-    new FormOption(&quot;SL&quot;),
-    new FormOption(&quot;SQ&quot;),
-    new FormOption(&quot;Topical&quot;),
-    new FormOption(&quot;Rectal&quot;),
-    new FormOption(&quot;Other&quot;),
+    new FormOption(&#x27;IM&#x27;),
+    new FormOption(&#x27;Inhalation&#x27;),
+    new FormOption(&#x27;IV&#x27;),
+    new FormOption(&#x27;NS&#x27;),
+    new FormOption(&#x27;Oral&#x27;),
+    new FormOption(&#x27;SL&#x27;),
+    new FormOption(&#x27;SQ&#x27;),
+    new FormOption(&#x27;Topical&#x27;),
+    new FormOption(&#x27;Rectal&#x27;),
+    new FormOption(&#x27;Other&#x27;),
   ]</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:48</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:62</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
                     <div class="io-description"><p>List of possible medication administration routes.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="title"></a>
-                    <span class="name">
-                        <span ><b>title</b></span>
-                        <a href="#title"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>&quot;&quot;</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:72</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>The title text to display at the top of the dialog box.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="type"></a>
-                    <span class="name">
-                        <span ><b>type</b></span>
-                        <a href="#type"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>&quot;&quot;</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:67</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Specifies the content to render within the dialog. Three types:
-Add, Edit, and Delete.</p>
 </div>
                 </td>
             </tr>
@@ -1238,19 +1172,19 @@ Add, Edit, and Delete.</p>
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="isAddType"></a>
-                        <span class="name"><b>isAddType</b><a href="#isAddType"><span class="icon ion-ios-link"></span></a></span>
+                        <a name="isCreateType"></a>
+                        <span class="name"><b>isCreateType</b><a href="#isCreateType"><span class="icon ion-ios-link"></span></a></span>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>get</b><code>isAddType()</code></span>
+                        <span class="accessor"><b>get</b><code>isCreateType()</code></span>
                     </td>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="267" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:267</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="248" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:248</a></div>
                                 </td>
                             </tr>
 
@@ -1272,7 +1206,7 @@ Add, Edit, and Delete.</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="271" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:271</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="252" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:252</a></div>
                                 </td>
                             </tr>
 
@@ -1294,7 +1228,7 @@ Add, Edit, and Delete.</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="275" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:275</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="256" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:256</a></div>
                                 </td>
                             </tr>
 
@@ -1316,7 +1250,7 @@ Add, Edit, and Delete.</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="280" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:280</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="260" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:260</a></div>
                                 </td>
                             </tr>
 
@@ -1338,7 +1272,7 @@ Add, Edit, and Delete.</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="284" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:284</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="264" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:264</a></div>
                                 </td>
                             </tr>
 
@@ -1360,7 +1294,7 @@ Add, Edit, and Delete.</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="288" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:288</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="268" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:268</a></div>
                                 </td>
                             </tr>
 
@@ -1382,7 +1316,7 @@ Add, Edit, and Delete.</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="292" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:292</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="272" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:272</a></div>
                                 </td>
                             </tr>
 
@@ -1404,7 +1338,7 @@ Add, Edit, and Delete.</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="296" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:296</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="276" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:276</a></div>
                                 </td>
                             </tr>
 
@@ -1426,7 +1360,7 @@ Add, Edit, and Delete.</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="300" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:300</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="280" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:280</a></div>
                                 </td>
                             </tr>
 
@@ -1448,7 +1382,7 @@ Add, Edit, and Delete.</p>
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="304" class="link-to-prism">src/app/shared/med-dialog/med-dialog.component.ts:304</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="284" class="link-to-prism">src/app/medications/med-dialog/med-dialog.component.ts:284</a></div>
                                 </td>
                             </tr>
 
@@ -1459,13 +1393,20 @@ Add, Edit, and Delete.</p>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Inject, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
-import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroupDirective, Validators } from &#x27;@angular/forms&#x27;;
-import { MatDialogRef, MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
-import { FormOption } from &#x27;src/app/types/form-option.type&#x27;;
-import { Medication } from &#x27;src/app/types/medication.type&#x27;;
-import { ActionName, TableEvent } from &#x27;src/app/types/table-action.enum&#x27;;
-import { uniqueEntryValidator } from &#x27;src/app/directives/unique-entry.directive&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { AbstractControl, UntypedFormArray, UntypedFormBuilder, UntypedFormControl, Validators } from &#x27;@angular/forms&#x27;;
+import { FormOption } from &#x27;src/app/shared/models/form-option.model&#x27;;
+import { Medication } from &#x27;src/app/shared/models/medication.model&#x27;;
+import { ActionName } from &#x27;src/app/shared/models/table-action.enum&#x27;;
+import { uniqueEntryValidator } from &#x27;src/app/shared/directives/unique-entry.directive&#x27;;
+import { EmrDialogComponent } from &#x27;src/app/shared/emr-dialog/emr-dialog.component&#x27;;
+import { DynamicDialogConfig, DynamicDialogRef } from &#x27;primeng/dynamicdialog&#x27;;
+
+export interface MedicationDialogData {
+  action: string;
+  medication: Medication;
+  ids: string[];
+}
 
 export interface RouteForm {
   routeName: string;
@@ -1473,18 +1414,25 @@ export interface RouteForm {
 }
 
 @Component({
-  selector: &#x27;app-med-dialog&#x27;,
+  selector: &#x27;emr-med-dialog&#x27;,
   templateUrl: &#x27;./med-dialog.component.html&#x27;,
-  styleUrls: [&#x27;./med-dialog.component.scss&#x27;]
+  styleUrls: [&#x27;./med-dialog.component.scss&#x27;],
 })
-export class MedDialogComponent implements OnInit {
-
-  @ViewChild(&#x27;documentEditForm&#x27;) documentEditForm!: FormGroupDirective; 
+export class MedicationDialogComponent implements OnInit {
+  /**
+   * The action which specifies what to display in the dialog.
+   */
+  action!: string;
 
   /**
    * List of medication ids passed from parent (medication-list) to validate id input.
    */
-  ids: string[] &#x3D; [];
+  ids!: string[];
+
+  /**
+   * Medication that is being added/edited/deleted.
+   */
+  med!: Medication;
 
   /**
    * Form group for the dialog&#x27;s form.
@@ -1499,140 +1447,107 @@ export class MedDialogComponent implements OnInit {
    * List of possible medication administration routes.
    */
   routes &#x3D; [
-    new FormOption(&quot;IM&quot;),
-    new FormOption(&quot;Inhalation&quot;),
-    new FormOption(&quot;IV&quot;),
-    new FormOption(&quot;NS&quot;),
-    new FormOption(&quot;Oral&quot;),
-    new FormOption(&quot;SL&quot;),
-    new FormOption(&quot;SQ&quot;),
-    new FormOption(&quot;Topical&quot;),
-    new FormOption(&quot;Rectal&quot;),
-    new FormOption(&quot;Other&quot;),
-  ]
-  
-  
-  /**
-   * Specifies the content to render within the dialog. Three types:
-   * Add, Edit, and Delete.
-   */
-  
-  type: string &#x3D; &quot;&quot;;
+    new FormOption(&#x27;IM&#x27;),
+    new FormOption(&#x27;Inhalation&#x27;),
+    new FormOption(&#x27;IV&#x27;),
+    new FormOption(&#x27;NS&#x27;),
+    new FormOption(&#x27;Oral&#x27;),
+    new FormOption(&#x27;SL&#x27;),
+    new FormOption(&#x27;SQ&#x27;),
+    new FormOption(&#x27;Topical&#x27;),
+    new FormOption(&#x27;Rectal&#x27;),
+    new FormOption(&#x27;Other&#x27;),
+  ];
 
   /**
-   * The title text to display at the top of the dialog box.
+   * Text to be displayed in the submit button.
    */
-  title: string &#x3D; &quot;&quot;;
-
-  /**
-   * The text label of the form&#x27;s submit button.
-   */
-  btnLabel: string &#x3D; &quot;&quot;;
-
-  /**
-   * Medication that is being added/edited/deleted.
-   */
-  med: Medication &#x3D; new Medication();
+  btnLabel: string &#x3D; &#x27;&#x27;;
 
   /**
    * Assigns the dialog&#x27;s properties values based on the action passed to it.
    */
-  constructor(
-    public dialogRef: MatDialogRef&lt;MedDialogComponent&gt;,
-    @Inject(MAT_DIALOG_DATA) public data: TableEvent,
-    private fb: FormBuilder
-  ) { 
-    // Split the passed data into the medication and the list of medication IDs
-    let obj &#x3D; data.data as {medication: Medication, ids: string[]}
-    Object.assign(this.med, obj.medication);
+  constructor(private fb: UntypedFormBuilder, public ref: DynamicDialogRef, public config: DynamicDialogConfig) {
+    this.action &#x3D; config.data.action;
+    this.med &#x3D; config.data.medication;
+    this.ids &#x3D; config.data.ids;
+  }
 
-    switch(data.action.name) {
-      case ActionName.Add: {
-        this.type &#x3D; ActionName.Add;
-        this.title &#x3D; &quot;New Medication&quot;;
-        this.btnLabel &#x3D; &quot;Add&quot;;
-        this.ids &#x3D; obj.ids;
-        this.addRoute();    // Add a route to routes FormArray
+  ngOnInit(): void {
+    switch (this.action) {
+      case ActionName.Create: {
+        this.btnLabel &#x3D; &#x27;Create&#x27;;
+        this.addRoute(); // Add a route to routes FormArray
 
         // Add validator to medication id to ensure it is unique
         this.idFormControl.addValidators([uniqueEntryValidator(this.ids)]);
         break;
       }
-      case ActionName.Edit: {
-        this.type &#x3D; ActionName.Edit;
-        this.title &#x3D; &quot;Edit Medication&quot;;
-        this.btnLabel &#x3D; &quot;Update&quot;;
+      case ActionName.Update: {
+        this.btnLabel &#x3D; &#x27;Update&#x27;;
         this.idFormControl.setValue(this.med.id);
         this.nameFormControl.setValue(this.med.name);
 
         // Set route controls
         this.med.getRoutes().forEach((route) &#x3D;&gt; {
           this.addRoute(route);
-        })
+        });
 
-        break;
-      }
-      case ActionName.Delete: {
-        this.type &#x3D; ActionName.Delete;
-        this.title &#x3D; &quot;Delete Medication&quot;;
-        this.btnLabel &#x3D; &quot;Delete&quot;;
         break;
       }
       default: {
-        this.title &#x3D; &quot;Error&quot;;
+        this.btnLabel &#x3D; &#x27;Error&#x27;;
       }
     }
   }
-
-  ngOnInit(): void { }
 
   /**
    * Generates a random ID for a new medication and fills the ID form
    * field with the value.
    */
   generateID() {
-    let id &#x3D; (&quot;D9&quot; + Date.now()).slice(0, 14);
+    let id &#x3D; (&#x27;D9&#x27; + Date.now()).slice(0, 14);
     this.form.controls.id.setValue(id);
   }
 
   /**
    * Adds a route FormControl to the routes FormArray. Default values are empty strings,
    * but if name is specified, the FormControls will be pre-filled based on the name.
-   * If name is &quot;Other - ...&quot;, with the &quot;...&quot; being a custom route string, then the 
+   * If name is &quot;Other - ...&quot;, with the &quot;...&quot; being a custom route string, then the
    * otherName FormControl will be set to whatever &quot;...&quot; is.
-   * 
+   *
    * @param name route name as string
    */
   addRoute(name?: string) {
     // Defaults for a route that has not been filled in
-    let rName &#x3D; &quot;&quot;;
-    let oName &#x3D; &quot;&quot;;
+    let rName &#x3D; &#x27;&#x27;;
+    let oName &#x3D; &#x27;&#x27;;
     let disabled &#x3D; true;
 
     // Get route name; if route name is &quot;Other&quot;, get other name as well
-    if(name) {
+    if (name) {
       let routeNames &#x3D; name.split(&#x27; - &#x27;);
       rName &#x3D; routeNames[0];
 
-      if(rName &#x3D;&#x3D; &quot;Other&quot;) {
-        if(routeNames.length &gt; 1) {
+      if (rName &#x3D;&#x3D; &#x27;Other&#x27;) {
+        if (routeNames.length &gt; 1) {
           oName &#x3D; routeNames[1];
         }
         disabled &#x3D; false;
-      } 
+      }
     }
 
     // Create form group to push to form array
-    const routeForm &#x3D; this.fb.group({ 
+    const routeForm &#x3D; this.fb.group({
       routeName: [rName],
-      otherName: [{value: oName, disabled: disabled}]
+      otherName: [{ value: oName, disabled: disabled }],
     });
     this.routesFormArray.push(routeForm);
   }
 
   /**
    * Deletes the FormControl at the specified index.
-   * 
+   *
    * @param routeIndex the index of the route FormControl in the FormArray
    */
   deleteRoute(routeIndex: number) {
@@ -1641,14 +1556,13 @@ export class MedDialogComponent implements OnInit {
 
   /**
    * Enables the secondary input if user selects &quot;Other&quot; as the route.
-   * 
+   *
    * @param fg FormGroup passed from template (assumed to be the FormGroups added to routes FormArray)
    */
   routeChanged(fg: AbstractControl) {
-    if(this.isOther(fg)) {
+    if (this.isOtherRoute(fg)) {
       fg.get(&#x27;otherName&#x27;)?.enable();
-    }
-    else {
+    } else {
       fg.get(&#x27;otherName&#x27;)?.disable();
       fg.get(&#x27;otherName&#x27;)?.setValue(&#x27;&#x27;);
     }
@@ -1656,26 +1570,12 @@ export class MedDialogComponent implements OnInit {
 
   /**
    * Checks if routeName contol is &quot;Other&quot;.
-   * 
+   *
    * @param fg FormGroup (assumed to be the FormGroups added to routes FormArray)
    * @returns boolean value
    */
-  isOther(fg: AbstractControl) {
-    return fg.get(&#x27;routeName&#x27;)?.value &#x3D;&#x3D; &quot;Other&quot;;
-  }
-
-  /**
-   * Sets values of medication to pass back to caller based on the type of dialog that is open.
-   */
-  onSubmit(): void {
-    // Set medication values based on form
-    if(this.type &#x3D;&#x3D; ActionName.Add || this.type &#x3D;&#x3D; ActionName.Edit) {
-      this.med.id &#x3D; this.form.get(&#x27;id&#x27;)?.value
-      this.med.name &#x3D; this.form.get(&#x27;name&#x27;)?.value
-      this.med.routes &#x3D; this.getRoutes();  
-    }
-
-    this.dialogRef.close(this.med);
+  isOtherRoute(fg: AbstractControl) {
+    return fg.get(&#x27;routeName&#x27;)?.value &#x3D;&#x3D;&#x3D; &#x27;Other&#x27;;
   }
 
   /**
@@ -1683,51 +1583,65 @@ export class MedDialogComponent implements OnInit {
    * transforms them into strings.
    * If the route name is &quot;Other&quot; and the other route name is &quot;...&quot;,
    * then they will be combined into one string: &quot;Other - ...&quot;
-   * 
+   *
    * @returns array of routes as strings
-   * 
+   *
    */
   getRoutes(): string[] {
-    let routeObjs &#x3D; this.form.get(&#x27;routes&#x27;)?.value
-    let routeStr &#x3D; &quot;&quot;;
-    let routes: string[] &#x3D; []
+    let routeObjs &#x3D; this.form.get(&#x27;routes&#x27;)?.value;
+    let routeStr &#x3D; &#x27;&#x27;;
+    let routes: string[] &#x3D; [];
 
-    routes &#x3D; routeObjs.map((obj: RouteForm) &#x3D;&gt; {
-      routeStr &#x3D; obj.routeName;
-      if(routeStr &#x3D;&#x3D; &quot;Other&quot;) {
-        routeStr +&#x3D; &quot; - &quot; + obj.otherName
-      }
-      return routeStr;
-    }).filter((routeStr: string) &#x3D;&gt; {
-      return routeStr !&#x3D; &quot;&quot;;
-    })
+    routes &#x3D; routeObjs
+      .map((obj: RouteForm) &#x3D;&gt; {
+        routeStr &#x3D; obj.routeName;
+        if (routeStr &#x3D;&#x3D; &#x27;Other&#x27;) {
+          routeStr +&#x3D; &#x27; - &#x27; + obj.otherName;
+        }
+        return routeStr;
+      })
+      .filter((routeStr: string) &#x3D;&gt; {
+        return routeStr !&#x3D; &#x27;&#x27;;
+      });
 
     return routes;
   }
 
-
   /**
-   * Sets the (nonempty) Medication object&#x27;s properties to the current values
-   * in the form group and passes the updated object to the MedicationService.
-   * The ID is not changed, since we want to update and not create a new object.
-   * Closes the dialog.
+   * Resets the dialog form.
    */
-  updateMedication(): void {
-    this.med.name &#x3D; this.form.get(&#x27;name&#x27;)?.value
-    this.med.routes &#x3D; this.getRoutes();
+  resetDialog() {
+    this.routesFormArray.clear();
+    this.form.reset();
   }
 
-  get isAddType(): boolean {
-    return this.type &#x3D;&#x3D; ActionName.Add;
+  onCancel(): void {
+    this.resetDialog();
+    this.ref.close();
+  }
+
+  /**
+   * Sets values of medication to pass back to caller based on the type of dialog that is open.
+   */
+  onSubmit(): void {
+    // Set medication values based on form
+    this.med.id &#x3D; this.form.get(&#x27;id&#x27;)?.value;
+    this.med.name &#x3D; this.form.get(&#x27;name&#x27;)?.value;
+    this.med.routes &#x3D; this.getRoutes();
+    this.resetDialog();
+    this.ref.close(this.med);
+  }
+
+  get isCreateType(): boolean {
+    return this.action &#x3D;&#x3D; ActionName.Create;
   }
 
   get isEditType(): boolean {
-    return this.type &#x3D;&#x3D; ActionName.Edit;
+    return this.action &#x3D;&#x3D; ActionName.Update;
   }
 
   get hasIdError(): boolean {
-    return this.idFormControl.invalid &amp;&amp; 
-          (this.idFormControl.dirty || this.idFormControl.touched);
+    return this.idFormControl.invalid &amp;&amp; (this.idFormControl.dirty || this.idFormControl.touched);
   }
 
   get hasIdRequiredError(): boolean {
@@ -1743,53 +1657,53 @@ export class MedDialogComponent implements OnInit {
   }
 
   get isSubmitDisabled(): boolean {
-    return !this.form.valid &amp;&amp; this.type !&#x3D; ActionName.Delete;
+    return !this.form.valid;
   }
 
-  get routesFormArray(): FormArray {
-    return this.form.controls[&quot;routes&quot;] as FormArray;
+  get routesFormArray(): UntypedFormArray {
+    return this.form.controls.routes as UntypedFormArray;
   }
 
-  get idFormControl(): FormControl {
-    return this.form.controls.id as FormControl;
+  get idFormControl(): UntypedFormControl {
+    return this.form.controls.id as UntypedFormControl;
   }
 
-  get nameFormControl(): FormControl {
-    return this.form.controls.name as FormControl;
+  get nameFormControl(): UntypedFormControl {
+    return this.form.controls.name as UntypedFormControl;
   }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;dialog-container&quot;&gt;
-  &lt;h1 mat-dialog-title&gt;{{title}}&lt;/h1&gt;
-
-  &lt;p *ngIf&#x3D;&quot;isAddType&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Barcode will automatically be downloaded upon submitting this form to create the medication.&lt;/p&gt;
-  &lt;p *ngIf&#x3D;&quot;isEditType&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Medication IDs cannot be changed. If you wish to edit a medication&#x27;s ID, you must create a new medication.&lt;/p&gt;
-
-  &lt;div mat-dialog-content&gt;
-    &lt;!-- Add/edit medication --&gt;
-    &lt;form *ngIf&#x3D;&quot;isAddType || isEditType; else deleteMed&quot;
-    [formGroup]&#x3D;&quot;form&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot; id&#x3D;&quot;form&quot; #documentEditForm&#x3D;&quot;ngForm&quot; autocomplete&#x3D;&quot;off&quot;&gt;
-      &lt;div *ngIf&#x3D;&quot;isAddType&quot;&gt;
-        &lt;div class&#x3D;&quot;id-container&quot;&gt;
-          &lt;mat-form-field appearance&#x3D;&quot;fill&quot;&gt;
-            &lt;mat-label for&#x3D;&quot;id&quot;&gt;Medication ID&lt;/mat-label&gt;
-            &lt;input matInput id&#x3D;&quot;id&quot; name&#x3D;&quot;id&quot; formControlName&#x3D;&quot;id&quot;&gt;
-          &lt;/mat-form-field&gt;
-          &lt;button mat-stroked-button color&#x3D;&quot;primary&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;generateID()&quot;&gt;
-            Generate ID
-          &lt;/button&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;content-container&quot;&gt;
+  &lt;div class&#x3D;&quot;form-container&quot;&gt;
+    &lt;p *ngIf&#x3D;&quot;isCreateType&quot;&gt;
+      &lt;b&gt;Note:&lt;/b&gt; Barcode will automatically be downloaded upon submitting this form to create the medication.
+    &lt;/p&gt;
+    &lt;p *ngIf&#x3D;&quot;isEditType&quot;&gt;
+      &lt;b&gt;Note:&lt;/b&gt; Medication IDs cannot be changed. If you wish to edit a medication&#x27;s ID, you must create a new
+      medication.
+    &lt;/p&gt;
+    &lt;form [formGroup]&#x3D;&quot;form&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot; id&#x3D;&quot;form&quot; #documentEditForm&#x3D;&quot;ngForm&quot; autocomplete&#x3D;&quot;off&quot;&gt;
+      &lt;div *ngIf&#x3D;&quot;isCreateType&quot;&gt;
+        &lt;div class&#x3D;&quot;content-section&quot;&gt;
+          &lt;div class&#x3D;&quot;id-container&quot;&gt;
+            &lt;emr-input type&#x3D;&quot;text&quot; label&#x3D;&quot;Medication ID&quot; [control]&#x3D;&quot;idFormControl&quot; [bottomSpace]&#x3D;&quot;true&quot;&gt;&lt;/emr-input&gt;
+            &lt;button
+              pButton
+              pRipple
+              type&#x3D;&quot;button&quot;
+              class&#x3D;&quot;p-button-outlined&quot;
+              label&#x3D;&quot;Generate ID&quot;
+              (click)&#x3D;&quot;generateID()&quot;
+            &gt;&lt;/button&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-  
+
         &lt;span *ngIf&#x3D;&quot;hasIdError&quot;&gt;
-          &lt;span *ngIf&#x3D;&quot;hasIdRequiredError&quot; class&#x3D;&quot;error-msg&quot;&gt;
-            ID is required.
-          &lt;/span&gt;
-          &lt;span *ngIf&#x3D;&quot;hasIdMinLengthError&quot; class&#x3D;&quot;warn-msg&quot;&gt;
-            ID must be at least 4 characters.
-          &lt;/span&gt;
+          &lt;span *ngIf&#x3D;&quot;hasIdRequiredError&quot; class&#x3D;&quot;error-msg&quot;&gt; ID is required. &lt;/span&gt;
+          &lt;span *ngIf&#x3D;&quot;hasIdMinLengthError&quot; class&#x3D;&quot;warn-msg&quot;&gt; ID must be at least 4 characters. &lt;/span&gt;
           &lt;span *ngIf&#x3D;&quot;hasIdUniqueEntryError&quot; class&#x3D;&quot;error-msg&quot;&gt;
             This ID is already in use by another medication!
           &lt;/span&gt;
@@ -1797,68 +1711,90 @@ export class MedDialogComponent implements OnInit {
       &lt;/div&gt;
 
       &lt;!-- If editing, make ID uneditable since ID is used to specify the document to change --&gt;
-      &lt;p *ngIf&#x3D;&quot;isEditType&quot;&gt;ID: {{med.id}}&lt;/p&gt;
+      &lt;p *ngIf&#x3D;&quot;isEditType&quot;&gt;ID: {{ med.id }}&lt;/p&gt;
 
-      &lt;mat-form-field appearance&#x3D;&quot;fill&quot;&gt;
-        &lt;mat-label for&#x3D;&quot;name&quot;&gt;Medication Name&lt;/mat-label&gt;
-        &lt;input matInput id&#x3D;&quot;name&quot; name&#x3D;&quot;name&quot; formControlName&#x3D;&quot;name&quot;&gt;
-      &lt;/mat-form-field&gt;
+      &lt;div class&#x3D;&quot;content-section&quot;&gt;
+        &lt;emr-input type&#x3D;&quot;text&quot; label&#x3D;&quot;Medication Name&quot; [control]&#x3D;&quot;nameFormControl&quot;&gt;&lt;/emr-input&gt;
+      &lt;/div&gt;
 
-      &lt;h3&gt;Administration Routes&lt;/h3&gt;
+      &lt;div class&#x3D;&quot;content-section routes-container&quot;&gt;
+        &lt;h3&gt;Administration Routes&lt;/h3&gt;
         &lt;ng-container formArrayName&#x3D;&quot;routes&quot;&gt;
           &lt;ng-container *ngFor&#x3D;&quot;let routeFormGroup of routesFormArray.controls; let i &#x3D; index&quot; [formGroupName]&#x3D;&quot;i&quot;&gt;
             &lt;div class&#x3D;&quot;route-form-row&quot;&gt;
-              &lt;mat-form-field appearance&#x3D;&quot;fill&quot;&gt;
-                &lt;mat-label for&#x3D;&quot;route&quot;&gt;Route {{i + 1}}&lt;/mat-label&gt;
-                &lt;mat-select class&#x3D;&quot;route-select&quot; formControlName&#x3D;&quot;routeName&quot; (selectionChange)&#x3D;&quot;routeChanged(routeFormGroup)&quot;&gt;
-                  &lt;mat-option *ngFor&#x3D;&quot;let route of routes&quot; [value]&#x3D;&quot;route.viewValue&quot;&gt;
-                    {{route.viewValue}}
-                  &lt;/mat-option&gt;
-                &lt;/mat-select&gt;
-              &lt;/mat-form-field&gt;
-              &lt;mat-form-field appearance&#x3D;&quot;fill&quot; *ngIf&#x3D;&quot;isOther(routeFormGroup)&quot;&gt;
-                &lt;mat-label for&#x3D;&quot;otherName&quot;&gt;Enter other route name&lt;/mat-label&gt;
-                &lt;input matInput id&#x3D;&quot;otherName&quot; name&#x3D;&quot;otherName&quot; formControlName&#x3D;&quot;otherName&quot;&gt;
-              &lt;/mat-form-field&gt;
-              &lt;button mat-icon-button type&#x3D;&quot;button&quot; (click)&#x3D;&quot;deleteRoute(i)&quot;&gt;
-                &lt;mat-icon&gt;delete_forever&lt;/mat-icon&gt;
-              &lt;/button&gt;
+              &lt;span class&#x3D;&quot;route-field-container&quot;&gt;
+                &lt;label for&#x3D;&quot;route-name&quot;&gt;Route {{ i + 1 }}&lt;/label&gt;
+                &lt;p-dropdown
+                  id&#x3D;&quot;route-name&quot;
+                  class&#x3D;&quot;input-field dropdown-field&quot;
+                  placeholder&#x3D;&quot;Select route name&quot;
+                  emptyMessage&#x3D;&quot;No routes found.&quot;
+                  [autoDisplayFirst]&#x3D;&quot;false&quot;
+                  [options]&#x3D;&quot;routes&quot;
+                  formControlName&#x3D;&quot;routeName&quot;
+                  (onChange)&#x3D;&quot;routeChanged(routeFormGroup)&quot;
+                &gt;
+                &lt;/p-dropdown&gt;
+                &lt;span style&#x3D;&quot;font-size: 0.8em&quot;&gt;&amp;nbsp;&lt;/span&gt;
+              &lt;/span&gt;
+              &lt;span class&#x3D;&quot;route-field-container&quot; *ngIf&#x3D;&quot;isOtherRoute(routeFormGroup)&quot;&gt;
+                &lt;label for&#x3D;&quot;other-name&quot;&gt;Other Route Name&lt;/label&gt;
+                &lt;input
+                  pInputText
+                  id&#x3D;&quot;other-name&quot;
+                  class&#x3D;&quot;input-field&quot;
+                  placeholder&#x3D;&quot;Enter other name&quot;
+                  formControlName&#x3D;&quot;otherName&quot;
+                /&gt;
+                &lt;span style&#x3D;&quot;font-size: 0.8em&quot;&gt;&amp;nbsp;&lt;/span&gt;
+              &lt;/span&gt;
+              &lt;button
+                pButton
+                pRipple
+                type&#x3D;&quot;button&quot;
+                icon&#x3D;&quot;pi pi-trash&quot;
+                class&#x3D;&quot;p-button-rounded p-button-secondary p-button-text&quot;
+                (click)&#x3D;&quot;deleteRoute(i)&quot;
+              &gt;&lt;/button&gt;
             &lt;/div&gt;
           &lt;/ng-container&gt;
-          &lt;button mat-stroked-button color&#x3D;&quot;primary&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;addRoute()&quot;&gt;
-            &lt;mat-icon&gt;add&lt;/mat-icon&gt; Add Route
-          &lt;/button&gt;
+          &lt;button
+            pButton
+            pRipple
+            type&#x3D;&quot;button&quot;
+            class&#x3D;&quot;p-button-outlined&quot;
+            label&#x3D;&quot;Add Route&quot;
+            icon&#x3D;&quot;pi pi-plus&quot;
+            (click)&#x3D;&quot;addRoute()&quot;
+          &gt;&lt;/button&gt;
         &lt;/ng-container&gt;
+      &lt;/div&gt;
     &lt;/form&gt;
-
-    &lt;!-- Delete medication --&gt;
-    &lt;ng-template #deleteMed&gt;
-      &lt;p&gt;Are you sure you would like to delete the following medication?&lt;/p&gt;
-      &lt;p&gt;ID: &lt;b&gt;{{med.getId()}}&lt;/b&gt;&lt;/p&gt;
-      &lt;p&gt;Name: &lt;b&gt;{{med.getName()}}&lt;/b&gt;&lt;/p&gt;
-      &lt;p&gt;Adminstration routes: &lt;b&gt;{{med.getRoutesAsCSV()}}&lt;/b&gt;&lt;/p&gt;
-    &lt;/ng-template&gt;
-
-    &lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
-
-  &lt;div mat-dialog-actions&gt;
-    &lt;button mat-button mat-dialog-close cdkFocusInitial&gt;Cancel&lt;/button&gt;
-
-    &lt;!-- Add/edit medication --&gt;
-    &lt;button mat-button type&#x3D;&quot;submit&quot; color&#x3D;&quot;accent&quot;
-    (click)&#x3D;&quot;onSubmit()&quot; [disabled]&#x3D;&quot;isSubmitDisabled&quot;&gt;
-      {{btnLabel}} Medication
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;footer-container&quot;&gt;
+  &lt;button pButton type&#x3D;&quot;button&quot; label&#x3D;&quot;Cancel&quot; (click)&#x3D;&quot;onCancel()&quot;&gt;&lt;/button&gt;
+  &lt;button
+    pButton
+    pRipple
+    type&#x3D;&quot;button&quot;
+    label&#x3D;&quot;{{ btnLabel }} Medication&quot;
+    [disabled]&#x3D;&quot;isSubmitDisabled&quot;
+    (click)&#x3D;&quot;onSubmit()&quot;
+  &gt;&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
                     <code>./med-dialog.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">.dialog-container {
+                <pre class="line-numbers"><code class="language-scss">p-dialog {
+  margin-top: 1rem;
+}
+
+.content-container {
   height: auto;
 }
 
@@ -1868,19 +1804,28 @@ form {
   justify-content: space-between;
 }
 
-.id-container {
+.content-section {
+  margin-bottom: 1rem;
+}
+
+.id-container,
+.route-form-row,
+.footer-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+}
 
-  mat-form-field {
-    flex: 4;
-    margin-right: 1rem;
-  };
+.id-container {
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+
+  emr-input {
+    flex: 2;
+  }
 
   button {
     flex: 1;
-    height: 25%;
   }
 }
 
@@ -1892,15 +1837,26 @@ form {
   color: #666;
 }
 
-.route-form-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.routes-container {
+  margin-bottom: 5rem;
 }
 
-.spacer {
-  flex-grow: 1;
-}</code></pre>
+.route-form-row {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.route-field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  justify-content: flex-end;
+  column-gap: 1rem;
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -1928,10 +1884,10 @@ form {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="dialog-container">  <h1 mat-dialog-title>{{title}}</h1>  <p *ngIf="isAddType"><b>Note:</b> Barcode will automatically be downloaded upon submitting this form to create the medication.</p>  <p *ngIf="isEditType"><b>Note:</b> Medication IDs cannot be changed. If you wish to edit a medication\'s ID, you must create a new medication.</p>  <div mat-dialog-content>    <!-- Add/edit medication -->    <form *ngIf="isAddType || isEditType; else deleteMed"    [formGroup]="form" (ngSubmit)="onSubmit()" id="form" #documentEditForm="ngForm" autocomplete="off">      <div *ngIf="isAddType">        <div class="id-container">          <mat-form-field appearance="fill">            <mat-label for="id">Medication ID</mat-label>            <input matInput id="id" name="id" formControlName="id">          </mat-form-field>          <button mat-stroked-button color="primary" type="button" (click)="generateID()">            Generate ID          </button>        </div>          <span *ngIf="hasIdError">          <span *ngIf="hasIdRequiredError" class="error-msg">            ID is required.          </span>          <span *ngIf="hasIdMinLengthError" class="warn-msg">            ID must be at least 4 characters.          </span>          <span *ngIf="hasIdUniqueEntryError" class="error-msg">            This ID is already in use by another medication!          </span>        </span>      </div>      <!-- If editing, make ID uneditable since ID is used to specify the document to change -->      <p *ngIf="isEditType">ID: {{med.id}}</p>      <mat-form-field appearance="fill">        <mat-label for="name">Medication Name</mat-label>        <input matInput id="name" name="name" formControlName="name">      </mat-form-field>      <h3>Administration Routes</h3>        <ng-container formArrayName="routes">          <ng-container *ngFor="let routeFormGroup of routesFormArray.controls; let i = index" [formGroupName]="i">            <div class="route-form-row">              <mat-form-field appearance="fill">                <mat-label for="route">Route {{i + 1}}</mat-label>                <mat-select class="route-select" formControlName="routeName" (selectionChange)="routeChanged(routeFormGroup)">                  <mat-option *ngFor="let route of routes" [value]="route.viewValue">                    {{route.viewValue}}                  </mat-option>                </mat-select>              </mat-form-field>              <mat-form-field appearance="fill" *ngIf="isOther(routeFormGroup)">                <mat-label for="otherName">Enter other route name</mat-label>                <input matInput id="otherName" name="otherName" formControlName="otherName">              </mat-form-field>              <button mat-icon-button type="button" (click)="deleteRoute(i)">                <mat-icon>delete_forever</mat-icon>              </button>            </div>          </ng-container>          <button mat-stroked-button color="primary" type="button" (click)="addRoute()">            <mat-icon>add</mat-icon> Add Route          </button>        </ng-container>    </form>    <!-- Delete medication -->    <ng-template #deleteMed>      <p>Are you sure you would like to delete the following medication?</p>      <p>ID: <b>{{med.getId()}}</b></p>      <p>Name: <b>{{med.getName()}}</b></p>      <p>Adminstration routes: <b>{{med.getRoutesAsCSV()}}</b></p>    </ng-template>    <div class="spacer"></div>  </div>  <div mat-dialog-actions>    <button mat-button mat-dialog-close cdkFocusInitial>Cancel</button>    <!-- Add/edit medication -->    <button mat-button type="submit" color="accent"    (click)="onSubmit()" [disabled]="isSubmitDisabled">      {{btnLabel}} Medication    </button>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'EmrTableComponent', 'selector': 'app-emr-table'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'app-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MainNavComponent', 'selector': 'app-main-nav'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedDialogComponent', 'selector': 'app-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialog', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientHistoryFormComponent', 'selector': 'app-patient-history-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'TabComponent', 'selector': 'app-base'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
+        var COMPONENT_TEMPLATE = '<div><div class="content-container">  <div class="form-container">    <p *ngIf="isCreateType">      <b>Note:</b> Barcode will automatically be downloaded upon submitting this form to create the medication.    </p>    <p *ngIf="isEditType">      <b>Note:</b> Medication IDs cannot be changed. If you wish to edit a medication\'s ID, you must create a new      medication.    </p>    <form [formGroup]="form" (ngSubmit)="onSubmit()" id="form" #documentEditForm="ngForm" autocomplete="off">      <div *ngIf="isCreateType">        <div class="content-section">          <div class="id-container">            <emr-input type="text" label="Medication ID" [control]="idFormControl" [bottomSpace]="true"></emr-input>            <button              pButton              pRipple              type="button"              class="p-button-outlined"              label="Generate ID"              (click)="generateID()"            ></button>          </div>        </div>        <span *ngIf="hasIdError">          <span *ngIf="hasIdRequiredError" class="error-msg"> ID is required. </span>          <span *ngIf="hasIdMinLengthError" class="warn-msg"> ID must be at least 4 characters. </span>          <span *ngIf="hasIdUniqueEntryError" class="error-msg">            This ID is already in use by another medication!          </span>        </span>      </div>      <!-- If editing, make ID uneditable since ID is used to specify the document to change -->      <p *ngIf="isEditType">ID: {{ med.id }}</p>      <div class="content-section">        <emr-input type="text" label="Medication Name" [control]="nameFormControl"></emr-input>      </div>      <div class="content-section routes-container">        <h3>Administration Routes</h3>        <ng-container formArrayName="routes">          <ng-container *ngFor="let routeFormGroup of routesFormArray.controls; let i = index" [formGroupName]="i">            <div class="route-form-row">              <span class="route-field-container">                <label for="route-name">Route {{ i + 1 }}</label>                <p-dropdown                  id="route-name"                  class="input-field dropdown-field"                  placeholder="Select route name"                  emptyMessage="No routes found."                  [autoDisplayFirst]="false"                  [options]="routes"                  formControlName="routeName"                  (onChange)="routeChanged(routeFormGroup)"                >                </p-dropdown>                <span style="font-size: 0.8em">&nbsp;</span>              </span>              <span class="route-field-container" *ngIf="isOtherRoute(routeFormGroup)">                <label for="other-name">Other Route Name</label>                <input                  pInputText                  id="other-name"                  class="input-field"                  placeholder="Enter other name"                  formControlName="otherName"                />                <span style="font-size: 0.8em">&nbsp;</span>              </span>              <button                pButton                pRipple                type="button"                icon="pi pi-trash"                class="p-button-rounded p-button-secondary p-button-text"                (click)="deleteRoute(i)"              ></button>            </div>          </ng-container>          <button            pButton            pRipple            type="button"            class="p-button-outlined"            label="Add Route"            icon="pi pi-plus"            (click)="addRoute()"          ></button>        </ng-container>      </div>    </form>  </div></div><div class="footer-container">  <button pButton type="button" label="Cancel" (click)="onCancel()"></button>  <button    pButton    pRipple    type="button"    label="{{ btnLabel }} Medication"    [disabled]="isSubmitDisabled"    (click)="onSubmit()"  ></button></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AdministerMedDialogComponent', 'selector': 'app-administer-med-dialog'},{'name': 'AdministrationScheduleComponent', 'selector': 'app-administration-schedule'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssessmentForm', 'selector': 'app-base'},{'name': 'AssessmentInfoComponent', 'selector': 'app-assessment-info'},{'name': 'AssessmentRowComponent', 'selector': 'assessment-row'},{'name': 'AssessmentsHistoryTabComponent', 'selector': 'app-assessments-history-tab'},{'name': 'AssessmentsTabComponent', 'selector': 'app-assessments-tab'},{'name': 'CardiovascularFormComponent', 'selector': 'app-cardiovascular-form'},{'name': 'CardiovascularInfoComponent', 'selector': 'app-cardiovascular-info'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ConfirmationDialogComponent', 'selector': 'emr-confirmation-dialog'},{'name': 'CreatePatientComponent', 'selector': 'app-create-patient'},{'name': 'EmrCheckboxComponent', 'selector': 'emr-checkbox'},{'name': 'EmrCheckboxGroupComponent', 'selector': 'emr-checkbox-group'},{'name': 'EmrDialogComponent', 'selector': 'emr-dialog'},{'name': 'EmrInputComponent', 'selector': 'emr-input'},{'name': 'EmrListComponent', 'selector': 'emr-list'},{'name': 'ExpansionPanelComponent', 'selector': 'app-expansion-panel'},{'name': 'FileUploadDialogComponent', 'selector': 'emr-file-upload-dialog'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'GastrointestinalFormComponent', 'selector': 'app-gastrointestinal-form'},{'name': 'GastrointestinalInfoComponent', 'selector': 'app-gastrointestinal-info'},{'name': 'GenitourinaryFormComponent', 'selector': 'app-genitourinary-form'},{'name': 'GenitourinaryInfoComponent', 'selector': 'app-genitourinary-info'},{'name': 'HistoryAndPhysicalTabComponent', 'selector': 'app-history-and-physical-tab'},{'name': 'HtmlDialogComponent', 'selector': 'app-html-dialog'},{'name': 'IntegumentaryFormComponent', 'selector': 'app-integumentary-form'},{'name': 'IntegumentaryInfoComponent', 'selector': 'app-integumentary-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginDialogComponent', 'selector': 'app-login-dialog'},{'name': 'MarTabComponent', 'selector': 'app-mar-tab'},{'name': 'MedicationDialogComponent', 'selector': 'emr-med-dialog'},{'name': 'MedicationListComponent', 'selector': 'app-medication-list'},{'name': 'MedicationScheduleComponent', 'selector': 'app-medication-schedule'},{'name': 'MusculoskeletalFormComponent', 'selector': 'app-musculoskeletal-form'},{'name': 'MusculoskeletalInfoComponent', 'selector': 'app-musculoskeletal-info'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NeurologicalFormComponent', 'selector': 'app-neurological-form'},{'name': 'NeurologicalInfoComponent', 'selector': 'app-neurological-info'},{'name': 'NoteEditDialogComponent', 'selector': 'app-note-edit-dialog'},{'name': 'NoteFormComponent', 'selector': 'app-note-form'},{'name': 'OrderEditDialogComponent', 'selector': 'app-order-edit-dialog'},{'name': 'OrderFormComponent', 'selector': 'app-order-form'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PasswordInputComponent', 'selector': 'app-password-input'},{'name': 'PatientDashboardComponent', 'selector': 'app-patient-dashboard'},{'name': 'PatientDashboardTabComponent', 'selector': 'app-base'},{'name': 'PatientFormComponent', 'selector': 'app-patient-form'},{'name': 'PatientListComponent', 'selector': 'app-patient-list'},{'name': 'PatientListDialogComponent', 'selector': 'app-patient-list-dialog'},{'name': 'PrnScheduleComponent', 'selector': 'app-prn-schedule'},{'name': 'ProgressNotesTabComponent', 'selector': 'app-progress-notes-tab'},{'name': 'ProviderChartsTabComponent', 'selector': 'app-provider-charts-tab'},{'name': 'ProviderOrdersTabComponent', 'selector': 'app-provider-orders-tab'},{'name': 'PsychosocialFormComponent', 'selector': 'app-psychosocial-form'},{'name': 'PsychosocialInfoComponent', 'selector': 'app-psychosocial-info'},{'name': 'RespiratoryFormComponent', 'selector': 'app-respiratory-form'},{'name': 'RespiratoryInfoComponent', 'selector': 'app-respiratory-info'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsGeneralComponent', 'selector': 'app-settings-general'},{'name': 'SettingsHelpComponent', 'selector': 'app-settings-help'},{'name': 'SettingsProfileComponent', 'selector': 'app-settings-profile'},{'name': 'StudentDialogComponent', 'selector': 'app-student-dialog'},{'name': 'StudentListComponent', 'selector': 'app-student-list'},{'name': 'StudentPatientSelectDialogComponent', 'selector': 'app-student-patient-select-dialog'},{'name': 'VitalsChartComponent', 'selector': 'app-vitals-chart'},{'name': 'VitalsFormComponent', 'selector': 'app-vitals-form'},{'name': 'VitalsTabComponent', 'selector': 'app-vitals-tab'}];
     var DIRECTIVES = [{'name': 'UniqueEntryValidatorDirective', 'selector': '[uniqueEntry]'}];
-    var ACTUAL_COMPONENT = {'name': 'MedDialogComponent'};
+    var ACTUAL_COMPONENT = {'name': 'MedicationDialogComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -1977,7 +1933,7 @@ form {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'MedDialogComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'MedicationDialogComponent.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
